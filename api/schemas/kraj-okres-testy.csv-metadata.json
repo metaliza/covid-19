@@ -1,0 +1,104 @@
+{
+    "@context": [
+        "http://www.w3.org/ns/csvw",
+        {
+            "@language": "cs"
+        }
+    ],
+    "url": "kraj-okres-testy.csv",
+    "dc:title": "COVID-19: Celkový (kumulativní) počet provedených testů podle krajů a okresů ČR",
+    "dc:description": "Datová sada obsahující přírůstkové a kumulativní denní počty provedených PCR testů s korekcí na opakovaně pozitivní (kontrolní) testy, a to bez rozdílu způsobu úhrady (tedy včetně samoplátců), na COVID 19 za celou ČR podle hlášení laboratoří (rychlotesty nejsou do přehledu zařazeny). Tento přehled je k dispozici od 1. srpna 2020 z důvodu úplnosti nahlášených dat jednotlivými laboratořemi na individuální úrovni. V předchozím období existuje riziko neúplnosti těchto individuálních dat a proto do 31. července vycházíme pouze z dat agregovaných, která však neumožňují složitější analytické výpočty.",
+    "dc:source": "Krajské hygienické stanice v ČR",
+    "dcat:keyword": [
+        "koronavirus",
+        "covid-19",
+        "testy",
+        "laboratoře",
+        "testy s korekcí na opakovaně pozitivní (kontrolní) testy",
+        "opakované testy",
+        "kraj",
+        "okres"
+    ],
+    "dc:publisher": {
+        "schema:name": "ÚZIS ČR",
+        "schema:url": {
+            "@id": "https://www.uzis.cz/"
+        }
+    },
+    "dc:license": {
+        "@id": "https://data.gov.cz/podm%C3%ADnky-u%C5%BEit%C3%AD/voln%C3%BD-p%C5%99%C3%ADstup/"
+    },
+    "dc:modified": {
+        "@value": "2021-01-23",
+        "@type": "xsd:date"
+    },
+    "tableSchema": {
+        "columns": [
+            {
+                "name": "datum",
+                "titles": "datum",
+                "datatype": "date"
+            },
+            {
+                "name": "kraj_nuts_kod",
+                "titles": "kraj_nuts_kod",
+                "datatype": "string",
+                "dc:description": "Identifikátor kraje podle klasifikace NUTS 3."
+            },
+            {
+                "name": "okres_lau_kod",
+                "titles": "okres_lau_kod",
+                "datatype": "string",
+                "dc:description": "Identifikátor okresu podle klasifikace LAU 1."
+            },
+            {
+                "name": "prirustkovy_pocet_testu_okres",
+                "titles": "prirustkovy_pocet_testu_okres",
+                "datatype": "integer",
+                "dc:description": "Přírůstkový počet všech provedených testů v daném okrese."
+            },
+            {
+                "name": "kumulativni_pocet_testu_okres",
+                "titles": "kumulativni_pocet_testu_okres",
+                "datatype": "integer",
+                "dc:description": "Kumulativní počet všech provedených testů v daném okrese."
+            },
+            {
+                "name": "prirustkovy_pocet_testu_kraj",
+                "titles": "prirustkovy_pocet_testu_kraj",
+                "datatype": "integer",
+                "dc:description": "Přírůstkový počet všech provedených testů v daném kraji."
+            },
+            {
+                "name": "kumulativni_pocet_testu_kraj",
+                "titles": "kumulativni_pocet_testu_kraj",
+                "datatype": "integer",
+                "dc:description": "Kumulativní počet všech provedených testů v daném kraji."
+            },
+            {
+                "name": "prirustkovy_pocet_prvnich_testu_okres",
+                "titles": "prirustkovy_pocet_prvnich_testu_okres",
+                "datatype": "integer",
+                "dc:description": "Přírůstkový počet provedených testů s korekcí na opakovaně pozitivní (kontrolní) testy v daném okrese."
+            },
+            {
+                "name": "kumulativni_pocet_prvnich_testu_okres",
+                "titles": "kumulativni_pocet_prvnich_testu_okres",
+                "datatype": "integer",
+                "dc:description": "Kumulativní počet provedených testů s korekcí na opakovaně pozitivní (kontrolní) testy v daném okrese."
+            },
+            {
+                "name": "prirustkovy_pocet_prvnich_testu_kraj",
+                "titles": "prirustkovy_pocet_prvnich_testu_kraj",
+                "datatype": "integer",
+                "dc:description": "Přírůstkový počet provedených testů s korekcí na opakovaně pozitivní (kontrolní) testy v daném kraji."
+            },
+            {
+                "name": "kumulativni_pocet_prvnich_testu_kraj",
+                "titles": "kumulativni_pocet_prvnich_testu_kraj",
+                "datatype": "integer",
+                "dc:description": "Kumulativní počet provedených testů s korekcí na opakovaně pozitivní (kontrolní) testy v daném kraji."
+            }
+        ]
+    }
+}

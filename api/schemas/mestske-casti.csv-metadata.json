@@ -1,0 +1,88 @@
+{
+    "@context": [
+        "http://www.w3.org/ns/csvw",
+        {
+            "@language": "cs"
+        }
+    ],
+    "url": "mestske-casti.csv",
+    "dc:title": "COVID-19: Epidemiologická charakteristika městských částí hlavního města Prahy",
+    "dc:description": "Obsah datové sady na úrovni městkých části hlavního města Prahy zahrnuje základní epidemiologické parametry (počty diagnostikovaných osob s COVID-19, počty aktuálně nakažených), které umožní průběžně sledovat základní epidemiologické ukazatele a vyhodnocovat trendy na pozadí dat publikovaných pro celou ČR.\n\nNa základě informací z některých malých obcí eviduje správce systému ISIN problémy s přiřazením bydliště obyvatel. Jde o chybu ztotožňování bydliště v reálném čase u minority případů, kdy není uvedeno bydliště z šetření KHS a jsou dostupná pouze data z laboratoří. Bydliště je správně určeno na úrovni kraje a okresu, ale došlo k chybnému přiřazení osob ke konkrétní obci. Případy podle všeho patří do velkých měst, a drobné obce byly přiřazeny omylem.\n\nDalším problémem může být přiřazení správného trvalého bydliště k dané obci u pacienta, který avšak v obci nepobývá (pouze je tam přihlášen k pobytu) a jeho diagnóza i léčba probíhá jinde. Správce i provozovatel ISIN děkují vedení obcí za zpětnou vazbu, neboť jinak takové chyby nelze odhalit. Publikování dat na úrovni obcí bylo vedeno snahou o bezbariérový informační servis – tato data jsou nyní ve spolupráci se správou základních registrů zpětně validována. Nejde o chyby velkého rozsahu, nicméně je nutné je dořešit. Pro starosty všech obcí je nově připravený nový internetový dashboard, který umožní rychlou zpětnou kontrolu správnosti.",
+    "dc:source": "Krajské hygienické stanice v ČR",
+    "dcat:keyword": [
+        "koronavirus",
+        "covid-19",
+        "krajská hygienická stanice",
+        "incidence",
+        "prevalence",
+        "kraj",
+        "okres",
+        "obec s rozšířenou působností",
+        "městská část",
+        "hlavní město Praha"
+    ],
+    "dc:publisher": {
+        "schema:name": "ÚZIS ČR",
+        "schema:url": {
+            "@id": "https://www.uzis.cz/"
+        }
+    },
+    "dc:license": {
+        "@id": "https://data.gov.cz/podm%C3%ADnky-u%C5%BEit%C3%AD/voln%C3%BD-p%C5%99%C3%ADstup/"
+    },
+    "dc:modified": {
+        "@value": "2021-01-22",
+        "@type": "xsd:date"
+    },
+    "tableSchema": {
+        "columns": [
+            {
+                "name": "den",
+                "titles": "den",
+                "datatype": "string",
+                "dc:description": "Označení příslušného dne."
+            },
+            {
+                "name": "datum",
+                "titles": "datum",
+                "datatype": "date"
+            },
+            {
+                "name": "okres_nuts_kod",
+                "titles": "okres_nuts_kod",
+                "datatype": "string",
+                "dc:description": "Identifikátor okresu podle klasifikace NUTS 4."
+            },
+            {
+                "name": "orp_kod",
+                "titles": "orp_kod",
+                "datatype": "integer",
+                "dc:description": "Kód obce s rozšířenou působností dle číselníku ÚZIS ČR (https://pzu-api.uzis.cz/api/orp)."
+            },
+            {
+                "name": "orp_nazev",
+                "titles": "orp_nazev",
+                "datatype": "string",
+                "dc:description": "Název obce s rozšířenou působností."
+            },
+            {
+                "name": "mc_kod",
+                "titles": "mc_kod",
+                "datatype": "integer",
+                "dc:description": "Kód městské části dle číselníku CISMC."
+            },
+            {
+                "name": "nove_pripady",
+                "titles": "nove_pripady",
+                "datatype": "integer",
+                "dc:description": "Celkový počet nově diagnostikovaných za daný den."
+            },
+            {
+                "name": "aktivni_pripady",
+                "titles": "aktivni_pripady",
+                "datatype": "integer",
+                "dc:description": "Počet osob pozitivně testovaných na původce onemocnění COVID‑19, které nebyly k danému datu dosud označeny za vyléčené ani nezemřely."
+            }
+        ]
+    }
+}

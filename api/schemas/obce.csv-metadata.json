@@ -1,0 +1,111 @@
+{
+    "@context": [
+        "http://www.w3.org/ns/csvw",
+        {
+            "@language": "cs"
+        }
+    ],
+    "url": "obce.csv",
+    "dc:title": "COVID-19: Epidemiologická charakteristika obcí",
+    "dc:description": "Obsah datové sady zahrnuje základní epidemiologické parametry (počty nově diagnostikovaných osob s COVID-19, počty aktuálně nakažených) na úrovni obcí ČR.\n\nNa základě informací z některých malých obcí eviduje správce systému ISIN problémy s přiřazením bydliště obyvatel. Jde o chybu ztotožňování bydliště v reálném čase u minority případů, kdy není uvedeno bydliště z šetření KHS a jsou dostupná pouze data z laboratoří. Bydliště je správně určeno na úrovni kraje a okresu, ale došlo k chybnému přiřazení osob ke konkrétní obci. Případy podle všeho patří do velkých měst, a drobné obce byly přiřazeny omylem.\n\nDalším problémem může být přiřazení správného trvalého bydliště k dané obci u pacienta, který avšak v obci nepobývá (pouze je tam přihlášen k pobytu) a jeho diagnóza i léčba probíhá jinde. Správce i provozovatel ISIN děkují vedení obcí za zpětnou vazbu, neboť jinak takové chyby nelze odhalit. Publikování dat na úrovni obcí bylo vedeno snahou o bezbariérový informační servis – tato data jsou nyní ve spolupráci se správou základních registrů zpětně validována. Nejde o chyby velkého rozsahu, nicméně je nutné je dořešit. Pro starosty všech obcí je nově připravený nový internetový dashboard, který umožní rychlou zpětnou kontrolu správnosti.",
+    "dc:source": "Krajské hygienické stanice v ČR",
+    "dcat:keyword": [
+        "koronavirus",
+        "covid-19",
+        "krajská hygienická stanice",
+        "incidence",
+        "prevalence",
+        "kraj",
+        "okres",
+        "obec s rozšířenou působností",
+        "obec"
+    ],
+    "dc:publisher": {
+        "schema:name": "ÚZIS ČR",
+        "schema:url": {
+            "@id": "https://www.uzis.cz/"
+        }
+    },
+    "dc:license": {
+        "@id": "https://data.gov.cz/podm%C3%ADnky-u%C5%BEit%C3%AD/voln%C3%BD-p%C5%99%C3%ADstup/"
+    },
+    "dc:modified": {
+        "@value": "2021-01-23",
+        "@type": "xsd:date"
+    },
+    "tableSchema": {
+        "columns": [
+            {
+                "name": "den",
+                "titles": "den",
+                "datatype": "string",
+                "dc:description": "Označení příslušného dne."
+            },
+            {
+                "name": "datum",
+                "titles": "datum",
+                "datatype": "date"
+            },
+            {
+                "name": "kraj_nuts_kod",
+                "titles": "kraj_nuts_kod",
+                "datatype": "string",
+                "dc:description": "Identifikátor kraje podle klasifikace NUTS 3."
+            },
+            {
+                "name": "kraj_nazev",
+                "titles": "kraj_nazev",
+                "datatype": "string",
+                "dc:description": "Název kraje."
+            },
+            {
+                "name": "okres_lau_kod",
+                "titles": "okres_lau_kod",
+                "datatype": "string",
+                "dc:description": "Identifikátor okresu podle klasifikace LAU 1."
+            },
+            {
+                "name": "okres_nazev",
+                "titles": "okres_nazev",
+                "datatype": "string",
+                "dc:description": "Název okresu."
+            },
+            {
+                "name": "orp_kod",
+                "titles": "orp_kod",
+                "datatype": "integer",
+                "dc:description": "Kód obce s rozšířenou působností dle číselníku ÚZIS ČR (https://pzu-api.uzis.cz/api/orp)."
+            },
+            {
+                "name": "orp_nazev",
+                "titles": "orp_nazev",
+                "datatype": "string",
+                "dc:description": "Název obce s rozšířenou působností."
+            },
+            {
+                "name": "obec_kod",
+                "titles": "obec_kod",
+                "datatype": "integer",
+                "dc:description": "Kód obce dle číselníku CISOB."
+            },
+            {
+                "name": "obec_nazev",
+                "titles": "obec_nazev",
+                "datatype": "string",
+                "dc:description": "Název obce."
+            },
+            {
+                "name": "nove_pripady",
+                "titles": "nove_pripady",
+                "datatype": "integer",
+                "dc:description": "Celkový počet nově diagnostikovaných za daný den."
+            },
+            {
+                "name": "aktivni_pripady",
+                "titles": "aktivni_pripady",
+                "datatype": "integer",
+                "dc:description": "Počet osob pozitivně testovaných na původce onemocnění COVID‑19, které nebyly k danému datu dosud označeny za vyléčené ani nezemřely."
+            }
+        ]
+    }
+}

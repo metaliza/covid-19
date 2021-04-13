@@ -1,0 +1,134 @@
+{
+    "@context": [
+        "http://www.w3.org/ns/csvw",
+        {
+            "@language": "cs"
+        }
+    ],
+    "url": "testy-pcr-antigenni.csv",
+    "dc:title": "COVID-19: Přehled provedených testů podle typu a indikace",
+    "dc:description": "Datová sada obsahující denní počty provedených testů s rozlišením na PCR testy a antigenní testy na onemocnění COVID-19 dle hlášení laboratoří. Dál jsou v sadě uvedeny počty testů dle indikace (diagnostické indikace, epidemiologické indikace, preventivní a plošné testování, ostatní), pozitivní záchyty dle indikace testu a pozitivní záchyty dle typu testu (symptomy jsou objektivně vyšetřeny u indikovaných osob, v ramci plošného testování jde o vyjáření subjektivního posouzení testovaného). Zdrojem dat je centrální Informační systém infekčních nemocí (ISIN). Primární data byla analyticky zpracována a následně transformována do podoby publikovatelné online týmem ÚZIS ČR.",
+    "dc:source": "Krajské hygienické stanice v ČR",
+    "dcat:keyword": [
+        "PCR testy",
+        "Antigenní testy",
+        "Diagnostické indikace",
+        "Epidemiologické indikace",
+        "Pozitivní záchyty",
+        "Preventivní a plošné testování",
+        "Symptomatické případy",
+        "Asymptomatické případy"
+    ],
+    "dc:publisher": {
+        "schema:name": "ÚZIS ČR",
+        "schema:url": {
+            "@id": "https://www.uzis.cz/"
+        }
+    },
+    "dc:license": {
+        "@id": "https://data.gov.cz/podm%C3%ADnky-u%C5%BEit%C3%AD/voln%C3%BD-p%C5%99%C3%ADstup/"
+    },
+    "dc:modified": {
+        "@value": "2021-01-23",
+        "@type": "xsd:date"
+    },
+    "tableSchema": {
+        "columns": [
+            {
+                "name": "datum",
+                "titles": "datum",
+                "datatype": "date"
+            },
+            {
+                "name": "pocet_PCR_testy",
+                "titles": "pocet_PCR_testy",
+                "datatype": "integer",
+                "dc:description": "Přírůstkový počet provedených PCR testů."
+            },
+            {
+                "name": "pocet_AG_testy",
+                "titles": "pocet_AG_testy",
+                "datatype": "integer",
+                "dc:description": "Přírůstkový počet provedených antigenních testů."
+            },
+            {
+                "name": "typologie_test_indik_diagnosticka",
+                "titles": "typologie_test_indik_diagnosticka",
+                "datatype": "integer",
+                "dc:description": "Diagnostické indikace."
+            },
+            {
+                "name": "typologie_test_indik_epidemiologicka",
+                "titles": "typologie_test_indik_epidemiologicka",
+                "datatype": "integer",
+                "dc:description": "Epidemiologické indikace."
+            },
+            {
+                "name": "typologie_test_indik_preventivni",
+                "titles": "typologie_test_indik_preventivni",
+                "datatype": "integer",
+                "dc:description": "Preventivní a plošné testování."
+            },
+            {
+                "name": "typologie_test_indik_ostatni",
+                "titles": "typologie_test_indik_ostatni",
+                "datatype": "integer",
+                "dc:description": "Ostatní."
+            },
+            {
+                "name": "incidence_pozitivni",
+                "titles": "incidence_pozitivni",
+                "datatype": "integer",
+                "dc:description": "Pozitivní záchyty dle indikace testu celkem."
+            },
+            {
+                "name": "pozit_typologie_test_indik_diagnosticka",
+                "titles": "pozit_typologie_test_indik_diagnosticka",
+                "datatype": "integer",
+                "dc:description": "Pozitivní záchyty dle indikace testu: diagnostické indikace."
+            },
+            {
+                "name": "pozit_typologie_test_indik_epidemiologicka",
+                "titles": "pozit_typologie_test_indik_epidemiologicka",
+                "datatype": "integer",
+                "dc:description": "Pozitivní záchyty dle indikace testu: epidemiologické indikace."
+            },
+            {
+                "name": "pozit_typologie_test_indik_preventivni",
+                "titles": "pozit_typologie_test_indik_preventivni",
+                "datatype": "integer",
+                "dc:description": "Pozitivní záchyty dle indikace testu: preventivní a plošné testy."
+            },
+            {
+                "name": "pozit_typologie_test_indik_ostatni",
+                "titles": "pozit_typologie_test_indik_ostatni",
+                "datatype": "integer",
+                "dc:description": "Pozitivní záchyty dle indikace testu: ostatní."
+            },
+            {
+                "name": "PCR_pozit_sympt",
+                "titles": "PCR_pozit_sympt",
+                "datatype": "integer",
+                "dc:description": "Pozitivní záchyty dle PCR testu: symptomatické případy."
+            },
+            {
+                "name": "PCR_pozit_asymp",
+                "titles": "PCR_pozit_asymp",
+                "datatype": "integer",
+                "dc:description": "Pozitivní záchyty dle PCR testu: asymptomatické případy."
+            },
+            {
+                "name": "AG_pozit_symp",
+                "titles": "AG_pozit_symp",
+                "datatype": "integer",
+                "dc:description": "Pozitivní záchyty dle antigenního testu: PCR: symptomatické případy."
+            },
+            {
+                "name": "AG_pozit_asymp_PCR_conf",
+                "titles": "AG_pozit_asymp_PCR_conf",
+                "datatype": "integer",
+                "dc:description": "Pozitivní záchyty dle antigenního testu: asymptomatické případy (konfirmováno PCR)."
+            }
+        ]
+    }
+}

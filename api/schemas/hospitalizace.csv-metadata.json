@@ -1,0 +1,129 @@
+{
+    "@context": [
+        "http://www.w3.org/ns/csvw",
+        {
+            "@language": "cs"
+        }
+    ],
+    "url": "hospitalizace.csv",
+    "dc:title": "COVID-19: Přehled hospitalizací",
+    "dc:description": "Datová sada obsahující data hospitalizovaných pacientů popisující průběh hospitalizace (aktuální a celkový počet hospitalizovaných, rozdělení podle příznaků, rozdělení podle podpůrných přístrojů, počet úmrtí).",
+    "dc:source": "Krajské hygienické stanice v ČR",
+    "dcat:keyword": [
+        "koronavirus",
+        "covid-19",
+        "hospitalizace"
+    ],
+    "dc:publisher": {
+        "schema:name": "ÚZIS ČR",
+        "schema:url": {
+            "@id": "https://www.uzis.cz/"
+        }
+    },
+    "dc:license": {
+        "@id": "https://data.gov.cz/podm%C3%ADnky-u%C5%BEit%C3%AD/voln%C3%BD-p%C5%99%C3%ADstup/"
+    },
+    "dc:modified": {
+        "@value": "2021-01-23",
+        "@type": "xsd:date"
+    },
+    "tableSchema": {
+        "columns": [
+            {
+                "name": "datum",
+                "titles": "datum",
+                "datatype": "date"
+            },
+            {
+                "name": "pacient_prvni_zaznam",
+                "titles": "pacient_prvni_zaznam",
+                "datatype": "integer",
+                "dc:description": "Počet osob, které byly poprvé hospitalizovány."
+            },
+            {
+                "name": "kum_pacient_prvni_zaznam",
+                "titles": "kum_pacient_prvni_zaznam",
+                "datatype": "integer",
+                "dc:description": "Celkový počet hospitalizovaných osob."
+            },
+            {
+                "name": "pocet_hosp",
+                "titles": "pocet_hosp",
+                "datatype": "integer",
+                "dc:description": "Aktuální počet hospitalizovaných osob."
+            },
+            {
+                "name": "stav_bez_priznaku",
+                "titles": "stav_bez_priznaku",
+                "datatype": "integer",
+                "dc:description": "Počet pacientů bez příznaků."
+            },
+            {
+                "name": "stav_lehky",
+                "titles": "stav_lehky",
+                "datatype": "integer",
+                "dc:description": "Počet pacientů v lehkém stavu."
+            },
+            {
+                "name": "stav_stredni",
+                "titles": "stav_stredni",
+                "datatype": "integer",
+                "dc:description": "Počet pacientů ve středně vážném stavu."
+            },
+            {
+                "name": "stav_tezky",
+                "titles": "stav_tezky",
+                "datatype": "integer",
+                "dc:description": "Počet pacientů v těžkém stavu."
+            },
+            {
+                "name": "jip",
+                "titles": "jip",
+                "datatype": "integer",
+                "dc:description": "Počet pacientů umístěným na jednotce intenzivní péče (JIP)."
+            },
+            {
+                "name": "kyslik",
+                "titles": "kyslik",
+                "datatype": "integer",
+                "dc:description": "Počet pacientů – O2."
+            },
+            {
+                "name": "hfno",
+                "titles": "hfno",
+                "datatype": "integer",
+                "dc:description": "Počet pacientů – HFNO (vysokoprůtoková nosní oxygenoterapie)."
+            },
+            {
+                "name": "upv",
+                "titles": "upv",
+                "datatype": "integer",
+                "dc:description": "Počet pacientů – UPV (umělá plicní ventilace)."
+            },
+            {
+                "name": "ecmo",
+                "titles": "ecmo",
+                "datatype": "integer",
+                "dc:description": "Počet pacientů – ECMO (mimotělní membránová oxygenace (pokročilá metoda podpory životních funkcí))."
+            },
+            {
+                "name": "tezky_upv_ecmo",
+                "titles": "tezky_upv_ecmo",
+                "datatype": "integer",
+                "dc:description": "Počet pacientů v těžkém stavu nebo s vysoce intenzivní péčí (UPV, ECMO)."
+            },
+            {
+                "name": "umrti",
+                "titles": "umrti",
+                "datatype": "integer",
+                "dc:description": "Počet pacientů, kteří v daný den zemřeli."
+            },
+            {
+                "name": "kum_umrti",
+                "titles": "kum_umrti",
+                "datatype": "integer",
+                "dc:description": "Celkový počet pacientu, kteří zemřeli."
+            }
+        ]
+    }
+}
