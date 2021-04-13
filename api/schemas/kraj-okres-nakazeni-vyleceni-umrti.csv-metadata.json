@@ -1,0 +1,74 @@
+{
+    "@context": [
+        "http://www.w3.org/ns/csvw",
+        {
+            "@language": "cs"
+        }
+    ],
+    "url": "kraj-okres-nakazeni-vyleceni-umrti.csv",
+    "dc:title": "COVID-19: Přehled epidemiologické situace dle hlášení krajských hygienických stanic podle okresu",
+    "dc:description": "Datová sada podle krajů a okresů ČR obsahující kumulativní denní počty osob s prokázaným onemocněním COVID-19 dle validovaných hlášení krajských hygienických stanic, kumulativní denní počty vyléčených po onemocnění COVID‑19 dle hlášení krajských hygienických stanic a kumulativní denní počty úmrtí v souvislosti s onemocněním COVID‑19 dle hlášení krajských hygienických stanic a hospitalizačních úmrtí. S ohledem na fakt, že vykazování vyléčených osob a úmrtí má určité zpoždění oproti reálnému stavu z důvodu validace a uzavírání případů krajských hygienických stanic, se mohou denní záznamy zpětně měnit právě z důvodu průběžného doplňování. Datová sada je z důvodu validace záznamů krajskými hygienickými stanicemi zveřejňována s týdenním zpožděním.",
+    "dc:source": "Krajské hygienické stanice v ČR",
+    "dcat:keyword": [
+        "covid-19",
+        "koronavirus",
+        "krajské hygienické stanice",
+        "kraj",
+        "okres",
+        "prokázaná nákaza",
+        "vyléčení",
+        "úmrtí"
+    ],
+    "dc:publisher": {
+        "schema:name": "ÚZIS ČR",
+        "schema:url": {
+            "@id": "https://www.uzis.cz/"
+        }
+    },
+    "dc:license": {
+        "@id": "https://data.gov.cz/podm%C3%ADnky-u%C5%BEit%C3%AD/voln%C3%BD-p%C5%99%C3%ADstup/"
+    },
+    "dc:modified": {
+        "@value": "2020-11-16",
+        "@type": "xsd:date"
+    },
+    "tableSchema": {
+        "columns": [
+            {
+                "name": "datum",
+                "titles": "datum",
+                "datatype": "date"
+            },
+            {
+                "name": "kraj_nuts_kod",
+                "titles": "kraj_nuts_kod",
+                "datatype": "string",
+                "dc:description": "Identifikátor kraje podle klasifikace NUTS 3."
+            },
+            {
+                "name": "okres_lau_kod",
+                "titles": "okres_lau_kod",
+                "datatype": "string",
+                "dc:description": "Identifikátor okresu podle klasifikace LAU 1."
+            },
+            {
+                "name": "kumulativni_pocet_nakazenych",
+                "titles": "kumulativni_pocet_nakazenych",
+                "datatype": "integer",
+                "dc:description": "Kumulativní počet osob s prokázanou nákazou."
+            },
+            {
+                "name": "kumulativni_pocet_vylecenych",
+                "titles": "kumulativni_pocet_vylecenych",
+                "datatype": "integer",
+                "dc:description": "Kumulativní počet vyléčených osob."
+            },
+            {
+                "name": "kumulativni_pocet_umrti",
+                "titles": "kumulativni_pocet_umrti",
+                "datatype": "integer",
+                "dc:description": "Kumulativní počet úmrtí."
+            }
+        ]
+    }
+}
