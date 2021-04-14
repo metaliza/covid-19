@@ -24,10 +24,10 @@
         }
     },
     "dc:license": {
-        "@id": "https://data.gov.cz/podm%C3%ADnky-u%C5%BEit%C3%AD/voln%C3%BD-p%C5%99%C3%ADstup/"
+        "@id": "https://data.gov.cz/podmínky-užití/volný-přístup/"
     },
     "dc:modified": {
-        "@value": "2020-11-11",
+        "@value": "2021-04-07",
         "@type": "xsd:date"
     },
     "tableSchema": {
@@ -51,13 +51,13 @@
                 "name": "kraj_nuts_kod",
                 "titles": "kraj_nuts_kod",
                 "datatype": "string",
-                "dc:description": "Identifikátor kraje podle klasifikace NUTS 3."
+                "dc:description": "Identifikátor kraje podle klasifikace NUTS 3. V případě, že není uvedena žádná hodnota, nebylo možné identifikovat místo bydliště nakažené osoby. Jde o problém se ztotožňováním bydliště v reálném čase u minority případů, kdy není uvedeno bydliště ze šetření KHS a jsou dostupná pouze data z laboratoří. Bydliště je správně určeno na úrovni kraje a okresu, ale došlo k chybnému přiřazení osob ke konkrétní obci."
             },
             {
                 "name": "okres_lau_kod",
                 "titles": "okres_lau_kod",
                 "datatype": "string",
-                "dc:description": "Identifikátor okresu podle klasifikace LAU 1."
+                "dc:description": "Identifikátor okresu podle klasifikace LAU 1. V případě, že není uvedena žádná hodnota, nebylo možné identifikovat místo bydliště nakažené osoby. Jde o problém se ztotožňováním bydliště v reálném čase u minority případů, kdy není uvedeno bydliště ze šetření KHS a jsou dostupná pouze data z laboratoří. Bydliště je správně určeno na úrovni kraje a okresu, ale došlo k chybnému přiřazení osob ke konkrétní obci."
             }
         ]
     }

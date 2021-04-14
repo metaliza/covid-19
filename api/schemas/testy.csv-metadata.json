@@ -7,13 +7,15 @@
     ],
     "url": "testy.csv",
     "dc:title": "COVID-19: Celkový (kumulativní) počet provedených testů (v2)",
-    "dc:description": "Datová sada obsahující přírůstkové a kumulativní denní počty provedených testů na onemocnění COVID-19 dle hlášení laboratoří. Datová sada nahrazuje předchozí verzi dostupnou na adrese https://onemocneni-aktualne.mzcr.cz/api/v1/covid-19/ .",
+    "dc:description": "Datová sada obsahující přírůstkové a&nbsp;kumulativní denní počty provedených PCR testů s&nbsp;rozlišením na prvotesty (počet testů v&nbsp;daném dni po korekci na opakované a&nbsp;kontrolní testy) a&nbsp;opakované testy u&nbsp;stejné osoby na onemocnění COVID-19 dle hlášení laboratoří. Datová sada nahrazuje předchozí verzi dostupnou na adrese https://onemocneni-aktualne.mzcr.cz/api/v1/covid-19/ . Prvotesty jsou k&nbsp;dispozici od 1. srpna 2020 z&nbsp;důvodu úplnosti nahlášených dat jednotlivými laboratořemi na individuální úrovni. V&nbsp;předchozím období existuje riziko neúplnosti těchto individuálních dat a&nbsp;proto do 31. července vycházíme pouze z&nbsp;dat agregovaných, která však neumožňují složitější analytické výpočty.\n\nDatová sada s&nbsp;diagnostickými testy na COVID-19 je od 16. 11. 2020 doplněna dle mezinárodních metodik ECDC, které kalkulují při výpočtu míry (%) pozitivních na počtu testů (test positivity rate) na celkový počet provedených testů RT-PCR ( https://www.ecdc.europa.eu/en/publications-data/covid-19-testing ). Provedené doplnění datových sad reaguje na zahájení testování antigenními testy v&nbsp;ČR a&nbsp;zajišťuje shodu údajů s&nbsp;mezinárodně publikovanými daty, které ČR hlásí podle metodik ECDC do zahraničí. Jako testy určující denní počet nově diagnostikovaných případů jsou nadále uvažovány pouze testy primárně pozitivní.\n\nZásadním důvodem doplnění datové sady je zahájení testování antigenními testy v&nbsp;ČR, u&nbsp;kterých je opakované vyšetření PCR indikováno jako konfirmační a&nbsp;nelze jej v&nbsp;případě negativního výsledku nezahrnout do centrálních statistik. Datová sada zatím nezahrnuje výsledky samotných antigenních testů, o&nbsp;jejich začlenění bude rozhodnuto na základě mezinárodních doporučení, která budou v&nbsp;brzké době v&nbsp;tomto smyslu aktualizována. Nyní provedená úprava znamená, že do výpočtu indexu rizika 23. 11. 2020 byla zahrnuta 7denní časová řada počtu testů doplněných a&nbsp;odvozených dle výše citované ECDC metodiky, což vede k&nbsp;posunu výsledků míry (%) pozitivních na počtu testů (test positivity rate) oproti indexu rizika z&nbsp;22. 11. 2020, který započítává pouze testy bez výše uvedených doplnění. Tato změna se promítá i&nbsp;do otevřených datových sad počtu testů umožňujících ruční výpočet indexu rizika.",
     "dc:source": "Krajské hygienické stanice v ČR",
     "dcat:keyword": [
         "koronavirus",
         "covid-19",
         "testy",
-        "laboratoře"
+        "laboratoře",
+        "prvotesty",
+        "opakované testy"
     ],
     "dc:publisher": {
         "schema:name": "ÚZIS ČR",
@@ -22,10 +24,10 @@
         }
     },
     "dc:license": {
-        "@id": "https://data.gov.cz/podm%C3%ADnky-u%C5%BEit%C3%AD/voln%C3%BD-p%C5%99%C3%ADstup/"
+        "@id": "https://data.gov.cz/podmínky-užití/volný-přístup/"
     },
     "dc:modified": {
-        "@value": "2020-11-15",
+        "@value": "2021-04-13",
         "@type": "xsd:date"
     },
     "tableSchema": {
@@ -46,6 +48,18 @@
                 "titles": "kumulativni_pocet_testu",
                 "datatype": "integer",
                 "dc:description": "Kumulativní počet provedených testů."
+            },
+            {
+                "name": "prirustkovy_pocet_prvnich_testu",
+                "titles": "prirustkovy_pocet_prvnich_testu",
+                "datatype": "integer",
+                "dc:description": "Přírůstkový počet provedených prvotestů."
+            },
+            {
+                "name": "kumulativni_pocet_prvnich_testu",
+                "titles": "kumulativni_pocet_prvnich_testu",
+                "datatype": "integer",
+                "dc:description": "Kumulativní počet provedených prvotestů."
             }
         ]
     }

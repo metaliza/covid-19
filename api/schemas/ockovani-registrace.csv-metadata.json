@@ -27,7 +27,7 @@
         "@id": "https://data.gov.cz/podmínky-užití/volný-přístup/"
     },
     "dc:modified": {
-        "@value": "2021-03-08",
+        "@value": "2021-04-13",
         "@type": "xsd:date"
     },
     "tableSchema": {
@@ -90,7 +90,7 @@
                 "name": "datum_rezervace",
                 "titles": "datum_rezervace",
                 "datatype": "date",
-                "dc:description": "Termín rezervace na očkování proti onemocnění COVID-19."
+                "dc:description": "Termín první rezervace v systému na očkování proti onemocnění COVID-19, který však není nadále aktualizován ani dále validován. Jedná se o informativní údaj, který je vztažen pouze k registracím a neobsahuje všechny rezervace. Tento atribut bude doplněn společně s novou verzi datového skladu centrálního systému."
             }
         ]
     }

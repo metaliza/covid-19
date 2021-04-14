@@ -5,9 +5,9 @@
             "@language": "cs"
         }
     ],
-    "url": "ockovaci-mista.csv",
-    "dc:title": "COVID-19: Přehled vykázaných očkování podle očkovacích míst ČR",
-    "dc:description": "Datová sada poskytuje řádková data o vykázaných očkováních na jednotlivých očkovacích místech ČR. Každý řádek přehledu popisuje jedno vykázané očkování v daném dni a věkové skupině, s použitím vybrané očkovací látky, na konkrétním očkovacím místu a ve vybraném kraji.",
+    "url": "ockovani-profese.csv",
+    "dc:title": "COVID-19: Přehled vykázaných očkování podle profesí",
+    "dc:description": "Datová sada poskytuje řádková data o vykázaných očkováních na jednotlivých očkovacích místech ČR. Každý řádek přehledu popisuje jedno vykázané očkování v daném dni a indikační skupině profese, s použitím dané dávky očkovací látky, na konkrétním očkovacím místu a ve vybraném kraji.",
     "dc:source": "Krajské hygienické stanice v ČR",
     "dcat:keyword": [
         "koronavirus",
@@ -16,7 +16,8 @@
         "očkovací místo",
         "vakcinace",
         "očkovací látka",
-        "věková skupina"
+        "indikační skupina",
+        "profese"
     ],
     "dc:publisher": {
         "schema:name": "ÚZIS ČR",
@@ -76,10 +77,34 @@
                 "dc:description": "Pořadí dávky (první, druhá) danou očkovací látkou."
             },
             {
-                "name": "vekova_skupina",
-                "titles": "vekova_skupina",
-                "datatype": "string",
-                "dc:description": "Rozdělení očkovaných osob podle věku do skupin: 0-17, 18-24, 25-29, 30-34, 35-39, 40-44, 45-49, 50-54, 55-59, 60-64, 65-69, 70-74, 75-79, 80+, nezařazeno - pokud nelze určit věkovou skupinu."
+                "name": "indikace_zdravotnik",
+                "titles": "indikace_zdravotnik",
+                "datatype": "boolean",
+                "dc:description": "Určení, zda očkovaná osoba spadá mezi zdravotnické pracovníky (zejména nemocnice, ZZS, primární ambulantní péče, farmaceuti, laboratoře vyšetřující COVID-19, zdravotníci v sociálních službách) nebo do oblasti ochrany veřejného zdraví."
+            },
+            {
+                "name": "indikace_socialni_sluzby",
+                "titles": "indikace_socialni_sluzby",
+                "datatype": "boolean",
+                "dc:description": "Určení, zda očkovaná osoba spadá mezi pracovníky nebo klienty v sociálních službách."
+            },
+            {
+                "name": "indikace_ostatni",
+                "titles": "indikace_ostatni",
+                "datatype": "boolean",
+                "dc:description": "Určení, zda očkovaná osoba spadá mezi pracovníky kritické infrastruktury, které zahrnují integrovaný záchranný systém, pracovníky energetiky, vládu a krizové štáby (osoba není začleněna v indikačních skupinách zdravotník nebo sociální služby)."
+            },
+            {
+                "name": "indikace_pedagog",
+                "titles": "indikace_pedagog",
+                "datatype": "boolean",
+                "dc:description": "Určení, zda očkovaná osoba spadá mezi pedagogické pracovníky."
+            },
+            {
+                "name": "indikace_skolstvi_ostatni",
+                "titles": "indikace_skolstvi_ostatni",
+                "datatype": "boolean",
+                "dc:description": "Určení, zda očkovaná osoba spadá mezi ostatní pracovníky ve školství."
             }
         ]
     }

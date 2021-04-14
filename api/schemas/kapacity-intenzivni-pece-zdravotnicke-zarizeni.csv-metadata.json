@@ -7,7 +7,7 @@
     ],
     "url": "kapacity-intenzivni-pece-zdravotnicke-zarizeni.csv",
     "dc:title": "COVID-19: Online dispečink intenzivní péče – volné kapacity podle zdravotnických zařízení",
-    "dc:description": "Datová sada podle zdravotnických zařízení (nemocnice akutní lůžkové péče) ČR obsahující denní přehledy změn volných kapacit (celkové počty dostupných přístrojů a lůžek společně s volnými kapacitami v jednotlivých dnech) v souvislosti se šířením nákazy onemocnění COVID-19. Datová sada obsahuje přehledy o přístrojové technice (ECMO, UPV, CRRT, IHD, ventilátory - přenosné a operační sál) a obsazenosti lůžek (pouze lůžka za ARO+JIP dospělí a standardní lůžka s kyslíkem za celou nemocnici). Pravidelně jsou aktualizovaná lůžka, která umožňují poskytování daného typu péče, tj. mají nezbytný personál a odpovídající materiálně technické zabezpečení. Definování nezbytného počtu personálu pro daný typ lůžka se může mezi jednotlivými nemocnicemi lišit. Data jsou dostupná od 1. září 2020, kdy se začaly opět pravidelně aktualizovat volné kapacity.",
+    "dc:description": "Datová sada podle krajů ČR obsahující denní přehledy změn volných kapacit v nemocnicích akutní péče (celkové počty dostupných přístrojů a lůžek společně s volnými kapacitami v jednotlivých dnech) v souvislosti se šířením nákazy onemocnění COVID-19. Datová sada obsahuje přehledy o přístrojové technice (ECMO, UPV, CRRT, IHD, ventilátory – přenosné a operační sál) a obsazenosti lůžek (pouze lůžka za ARO JIP dospělí a standardní lůžka s kyslíkem za celou nemocnici). Pravidelně jsou aktualizovaná lůžka, která umožňují poskytování daného typu péče, tj. mají nezbytný personál a odpovídající materiálně technické zabezpečení. Definování nezbytného počtu personálu pro daný typ lůžka se může mezi jednotlivými nemocnicemi lišit. Data jsou dostupná od 1. září 2020 do 25. března 2021. Od 29. března je publikována nová otevřená datová sada, kde budou uvedeny aktuálně sledované kapacity.",
     "dc:source": "Národní zdravotnický informační systém, Národní registr hrazených zdravotních služeb",
     "dcat:keyword": [
         "covid-19",
@@ -30,7 +30,7 @@
         "@id": "https://data.gov.cz/podm%C3%ADnky-u%C5%BEit%C3%AD/voln%C3%BD-p%C5%99%C3%ADstup/"
     },
     "dc:modified": {
-        "@value": "2021-03-09",
+        "@value": "2021-03-25",
         "@type": "xsd:date"
     },
     "tableSchema": {
