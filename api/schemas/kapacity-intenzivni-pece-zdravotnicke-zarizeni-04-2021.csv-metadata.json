@@ -1,0 +1,170 @@
+{
+    "@context": [
+        "http://www.w3.org/ns/csvw",
+        {
+            "@language": "cs"
+        }
+    ],
+    "url": "kapacity-intenzivni-pece-zdravotnicke-zarizeni-04-2021.csv",
+    "dc:title": "COVID-19: Online dispečink intenzivní péče – volné kapacity podle zdravotnických zařízení (duben 2021)",
+    "dc:description": "Datová sada podle krajů ČR obsahující denní přehledy změn volných kapacit v nemocnicích akutní péče (celkové počty dostupných přístrojů a lůžek společně s volnými kapacitami v jednotlivých dnech) v souvislosti se šířením nákazy onemocnění COVID-19. Datová sada obsahuje přehledy o následujících parametrech: lůžka (standardní s kyslíkem), lůžka (HFNO/CPAP), lůžka (UPV/NIV), přístroje: ECMO, přístroje: CVVHD, přístroje: ventilátory přenosné, přístroje: anesteziologické přístroje s ventilátorem. Data jsou dostupná od 30. března 2021, kdy byla kompletně spuštěna aktualizace nově sledovaných kapacit. Při aktualizaci dat se vždy zohledňuje primární účel použití daného přístroje a v souladu s tímto účelem se vyplňuje volná kapacitu (je-li například lůžko s přístrojem pro UPV, který je vybaven také funkcí HFNO, pak se uvádí do skupiny lůžka (UPV/NIV)). Lůžka se vždy vykazují pouze v kombinaci s daným přístrojem (O2, HFNO, UPV), samostatná evidence těchto přístrojů neuvádí potřebnou informaci pro sledování a plánování kapacit IP.",
+    "dc:source": "Národní zdravotnický informační systém, Národní registr hrazených zdravotních služeb",
+    "dcat:keyword": [
+        "covid-19",
+        "koronavirus",
+        "kraj",
+        "online dispečink intenzivní péče",
+        "zdravotnické zařízení",
+        "kapacita",
+        "přístrojová technika",
+        "lůžko"
+    ],
+    "dc:publisher": {
+        "schema:name": "ÚZIS ČR",
+        "schema:url": {
+            "@id": "https://www.uzis.cz/"
+        }
+    },
+    "dc:license": {
+        "@id": "https://data.gov.cz/podmínky-užití/volný-přístup/"
+    },
+    "dc:modified": {
+        "@value": "2021-04-14",
+        "@type": "xsd:date"
+    },
+    "tableSchema": {
+        "columns": [
+            {
+                "name": "datum",
+                "titles": "datum",
+                "datatype": "date"
+            },
+            {
+                "name": "zz_kod",
+                "titles": "zz_kod",
+                "datatype": "string",
+                "dc:description": "Identifikátor zdravotnického zařízení (IČZ)."
+            },
+            {
+                "name": "zz_nazev",
+                "titles": "zz_nazev",
+                "datatype": "string",
+                "dc:description": "Název zdravotnického zařízení."
+            },
+            {
+                "name": "kraj_nuts_kod",
+                "titles": "kraj_nuts_kod",
+                "datatype": "string",
+                "dc:description": "Identifikátor kraje podle klasifikace NUTS 3."
+            },
+            {
+                "name": "kraj_nazev",
+                "titles": "kraj_nazev",
+                "datatype": "string",
+                "dc:description": "Název kraje podle klasifikace NUTS 3."
+            },
+            {
+                "name": "luzka_standard_kyslik_kapacita_volna_covid_pozitivni",
+                "titles": "luzka_standard_kyslik_kapacita_volna_covid_pozitivni",
+                "datatype": "integer",
+                "dc:description": "Volná kapacita pro COVID pozitivní pacienty v daný den: Lůžka, ke kterým je přiveden kyslík."
+            },
+            {
+                "name": "luzka_standard_kyslik_kapacita_volna_covid_negativni",
+                "titles": "luzka_standard_kyslik_kapacita_volna_covid_negativni",
+                "datatype": "integer",
+                "dc:description": "Volná kapacita pro COVID negativní pacienty v daný den: Lůžka, ke kterým je přiveden kyslík."
+            },
+            {
+                "name": "luzka_standard_kyslik_kapacita_celkem",
+                "titles": "luzka_standard_kyslik_kapacita_celkem",
+                "datatype": "integer",
+                "dc:description": "Celková kapacita ve zdravotnickém zařízení: Lůžka, ke kterým je přiveden kyslík."
+            },
+            {
+                "name": "luzka_hfno_cpap_kapacita_volna_covid_pozitivni",
+                "titles": "luzka_hfno_cpap_kapacita_volna_covid_pozitivni",
+                "datatype": "integer",
+                "dc:description": "Volná kapacita pro COVID pozitivní pacienty v daný den: Lůžka, u kterých je používán přístroj HFNO (vysokoprůtoková aplikace kyslíku) nebo CPAP (trvalý pozitivní přetlak v dýchacích cestách)."
+            },
+            {
+                "name": "luzka_hfno_cpap_kapacita_volna_covid_negativni",
+                "titles": "luzka_hfno_cpap_kapacita_volna_covid_negativni",
+                "datatype": "integer",
+                "dc:description": "Volná kapacita pro COVID negativní pacienty v daný den: Lůžka, u kterých je používán přístroj HFNO (vysokoprůtoková aplikace kyslíku) nebo CPAP (trvalý pozitivní přetlak v dýchacích cestách)."
+            },
+            {
+                "name": "luzka_hfno_cpap_kapacita_celkem",
+                "titles": "luzka_hfno_cpap_kapacita_celkem",
+                "datatype": "integer",
+                "dc:description": "Celková kapacita ve zdravotnickém zařízení: Lůžka, u kterých je používán přístroj HFNO (vysokoprůtoková aplikace kyslíku) nebo CPAP (trvalý pozitivní přetlak v dýchacích cestách)."
+            },
+            {
+                "name": "luzka_upv_niv_kapacita_volna_covid_pozitivni",
+                "titles": "luzka_upv_niv_kapacita_volna_covid_pozitivni",
+                "datatype": "integer",
+                "dc:description": "Volná kapacita pro COVID pozitivní pacienty v daný den: Lůžka, u kterých je používán přístroj UPV (umělá plicní ventilace) a NIV (neinvazivní ventilace)."
+            },
+            {
+                "name": "luzka_upv_niv_kapacita_volna_covid_negativni",
+                "titles": "luzka_upv_niv_kapacita_volna_covid_negativni",
+                "datatype": "integer",
+                "dc:description": "Volná kapacita pro COVID negativní pacienty v daný den: Lůžka, u kterých je používán přístroj UPV (umělá plicní ventilace) a NIV (neinvazivní ventilace)."
+            },
+            {
+                "name": "luzka_upv_niv_kapacita_celkem",
+                "titles": "luzka_upv_niv_kapacita_celkem",
+                "datatype": "integer",
+                "dc:description": "Celková kapacita ve zdravotnickém zařízení: Lůžka (standardní s kyslíkem) - Lůžka, u kterých je používán přístroj UPV (umělá plicní ventilace) a NIV (neinvazivní ventilace)."
+            },
+            {
+                "name": "ecmo_kapacita_volna",
+                "titles": "ecmo_kapacita_volna",
+                "datatype": "integer",
+                "dc:description": "Volná kapacita v daný den: Extrakorporální membránová oxygenace (mimotělní podpora života)."
+            },
+            {
+                "name": "ecmo_kapacita_celkem",
+                "titles": "ecmo_kapacita_celkem",
+                "datatype": "integer",
+                "dc:description": "Celková kapacita ve zdravotnickém zařízení: Extrakorporální membránová oxygenace (mimotělní podpora života)."
+            },
+            {
+                "name": "cvvhd_kapacita_volna",
+                "titles": "cvvhd_kapacita_volna",
+                "datatype": "integer",
+                "dc:description": "Volná kapacita v daný den."
+            },
+            {
+                "name": "cvvhd_kapacita_celkem",
+                "titles": "cvvhd_kapacita_celkem",
+                "datatype": "integer",
+                "dc:description": "Celková kapacita ve zdravotnickém zařízení."
+            },
+            {
+                "name": "ventilatory_prenosne_kapacita_volna",
+                "titles": "ventilatory_prenosne_kapacita_volna",
+                "datatype": "integer",
+                "dc:description": "Volná kapacita v daný den."
+            },
+            {
+                "name": "ventilatory_prenosne_kapacita_celkem",
+                "titles": "ventilatory_prenosne_kapacita_celkem",
+                "datatype": "integer",
+                "dc:description": "Celková kapacita ve zdravotnickém zařízení."
+            },
+            {
+                "name": "ventilatory_operacni_sal_kapacita_volna",
+                "titles": "ventilatory_operacni_sal_kapacita_volna",
+                "datatype": "integer",
+                "dc:description": "Volná kapacita v daný den."
+            },
+            {
+                "name": "ventilatory_operacni_sal_kapacita_celkem",
+                "titles": "ventilatory_operacni_sal_kapacita_celkem",
+                "datatype": "integer",
+                "dc:description": "Celková kapacita ve zdravotnickém zařízení."
+            }
+        ]
+    }
+}
