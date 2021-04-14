@@ -1,0 +1,108 @@
+{
+    "@context": [
+        "http://www.w3.org/ns/csvw",
+        {
+            "@language": "cs"
+        }
+    ],
+    "url": "prehled-odberovych-mist.csv",
+    "dc:title": "COVID-19: Odběrová místa v ČR",
+    "dc:description": "Datová sada poskytuje seznam odběrových míst v ČR, kde jsou prováděny PCR a antigenní testy na onemocnění COVID-19. Součástí publikovaného seznamu nejsou odběrová místa ve zdravotnických zařízeních, kde jsou prováděny testy před přijetím pacienta v souvislosti s poskytováním neodkladné péče. Mobilní odběrové týmy mají kapacitu pevně nastavenu (na hodnotu 20), protože není možné přesně určit tuto kapacitu.",
+    "dc:source": "Krajské hygienické stanice v ČR",
+    "dcat:keyword": [
+        "koronavirus",
+        "covid-19",
+        "odběrová místa",
+        "PCR testy",
+        "antigenní testy"
+    ],
+    "dc:publisher": {
+        "schema:name": "ÚZIS ČR",
+        "schema:url": {
+            "@id": "https://www.uzis.cz/"
+        }
+    },
+    "dc:license": {
+        "@id": "https://data.gov.cz/podmínky-užití/volný-přístup/"
+    },
+    "dc:modified": {
+        "@value": "2021-03-08",
+        "@type": "xsd:date"
+    },
+    "tableSchema": {
+        "columns": [
+            {
+                "name": "odberove_misto_id",
+                "titles": "odberove_misto_id",
+                "datatype": "string",
+                "dc:description": "Jednoznačný identifikátor odběrového místa."
+            },
+            {
+                "name": "odberove_misto_nazev",
+                "titles": "odberove_misto_nazev",
+                "datatype": "string",
+                "dc:description": "Název odběrového místa."
+            },
+            {
+                "name": "okres_nuts_kod",
+                "titles": "okres_nuts_kod",
+                "datatype": "string",
+                "dc:description": " Identifikátor okresu podle klasifikace NUTS4, kde se očkovací místo nachází."
+            },
+            {
+                "name": "operacni_status",
+                "titles": "operacni_status",
+                "datatype": "boolean",
+                "dc:description": "Příznak, zda je oodběrové místo v provozu (https://registrace.mzcr.cz/)."
+            },
+            {
+                "name": "odberove_misto_adresa",
+                "titles": "odberove_misto_adresa",
+                "datatype": "string",
+                "dc:description": "Adresa odběrového místa."
+            },
+            {
+                "name": "latitude",
+                "titles": "latitude",
+                "datatype": "string",
+                "dc:description": "Souřadnice (zeměpisná šířka) určující polohu odběrového místa."
+            },
+            {
+                "name": "longitude",
+                "titles": "longitude",
+                "datatype": "string",
+                "dc:description": "Souřadnice (zeměpisná délka) určující polohu odběrového místa."
+            },
+            {
+                "name": "testovaci_kapacita",
+                "titles": "testovaci_kapacita",
+                "datatype": "integer",
+                "dc:description": "Celkový počet vzorků nezávisle na typu odběru (nasofaryngeální, orofaryngeální nebo antigenní odběr), které je schopno odběrové místo provést za den."
+            },
+            {
+                "name": "nasofaryngealni_odber",
+                "titles": "nasofaryngealni_odber",
+                "datatype": "boolean",
+                "dc:description": "Příznak, zda odběrové místo provádí PCR testy nasofaryngeálně."
+            },
+            {
+                "name": "orofaryngealni_odber",
+                "titles": "orofaryngealni_odber",
+                "datatype": "boolean",
+                "dc:description": "Příznak, zda odběrové místo provádí PCR testy orofaryngeálně."
+            },
+            {
+                "name": "antigenni_odber",
+                "titles": "antigenni_odber",
+                "datatype": "boolean",
+                "dc:description": "Příznak, zda odběrové místo provádí antigenní testy."
+            },
+            {
+                "name": "drive_in",
+                "titles": "drive_in",
+                "datatype": "boolean",
+                "dc:description": "Příznak, zda odběrové místo funguje v tzv. drive-in režimu (pacienti přijíždějí autem a nevystupují)."
+            }
+        ]
+    }
+}

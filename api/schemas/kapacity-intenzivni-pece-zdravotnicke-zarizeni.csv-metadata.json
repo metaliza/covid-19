@@ -1,0 +1,213 @@
+{
+    "@context": [
+        "http://www.w3.org/ns/csvw",
+        {
+            "@language": "cs"
+        }
+    ],
+    "url": "kapacity-intenzivni-pece-zdravotnicke-zarizeni.csv",
+    "dc:title": "COVID-19: Online dispečink intenzivní péče – volné kapacity podle zdravotnických zařízení",
+    "dc:description": "Datová sada podle zdravotnických zařízení (nemocnice akutní lůžkové péče) ČR obsahující denní přehledy změn volných kapacit (celkové počty dostupných přístrojů a lůžek společně s volnými kapacitami v jednotlivých dnech) v souvislosti se šířením nákazy onemocnění COVID-19. Datová sada obsahuje přehledy o přístrojové technice (ECMO, UPV, CRRT, IHD, ventilátory - přenosné a operační sál) a obsazenosti lůžek (pouze lůžka za ARO+JIP dospělí a standardní lůžka s kyslíkem za celou nemocnici). Pravidelně jsou aktualizovaná lůžka, která umožňují poskytování daného typu péče, tj. mají nezbytný personál a odpovídající materiálně technické zabezpečení. Definování nezbytného počtu personálu pro daný typ lůžka se může mezi jednotlivými nemocnicemi lišit. Data jsou dostupná od 1. září 2020, kdy se začaly opět pravidelně aktualizovat volné kapacity.",
+    "dc:source": "Národní zdravotnický informační systém, Národní registr hrazených zdravotních služeb",
+    "dcat:keyword": [
+        "covid-19",
+        "koronavirus",
+        "kraj",
+        "online dispečink intenzivní péče",
+        "zdravotnické zařízení",
+        "kapacita",
+        "přístrojová technika",
+        "lůžko",
+        "reprofilizovaná kapacita"
+    ],
+    "dc:publisher": {
+        "schema:name": "ÚZIS ČR",
+        "schema:url": {
+            "@id": "https://www.uzis.cz/"
+        }
+    },
+    "dc:license": {
+        "@id": "https://data.gov.cz/podm%C3%ADnky-u%C5%BEit%C3%AD/voln%C3%BD-p%C5%99%C3%ADstup/"
+    },
+    "dc:modified": {
+        "@value": "2021-03-09",
+        "@type": "xsd:date"
+    },
+    "tableSchema": {
+        "columns": [
+            {
+                "name": "datum",
+                "titles": "datum",
+                "datatype": "date"
+            },
+            {
+                "name": "zz_kod",
+                "titles": "zz_kod",
+                "datatype": "string",
+                "dc:description": "Identifikátor zdravotnického zařízení (IČZ)."
+            },
+            {
+                "name": "zz_nazev",
+                "titles": "zz_nazev",
+                "datatype": "string",
+                "dc:description": "Název zdravotnického zařízení."
+            },
+            {
+                "name": "kraj_nuts_kod",
+                "titles": "kraj_nuts_kod",
+                "datatype": "string",
+                "dc:description": "Identifikátor kraje podle klasifikace NUTS 3."
+            },
+            {
+                "name": "kraj_nazev",
+                "titles": "kraj_nazev",
+                "datatype": "string",
+                "dc:description": "Název kraje podle klasifikace NUTS 3."
+            },
+            {
+                "name": "ecmo_kapacita_volna",
+                "titles": "ecmo_kapacita_volna",
+                "datatype": "integer",
+                "dc:description": "Počet přístrojů ECMO na pracovišti ARO A JIP (ARO – zdravotní péče z těchto lůžek se vykazuje pod odborností 7I8 nebo 7T8; JIP – zdravotní péče z těchto lůžek se vykazuje pod odborností I nebo T, nejedná se o lůžka následné a dlouhodobé péče). Volná kapacita."
+            },
+            {
+                "name": "ecmo_kapacita_celkem",
+                "titles": "ecmo_kapacita_celkem",
+                "datatype": "integer",
+                "dc:description": "Počet přístrojů ECMO na pracovišti ARO A JIP (ARO – zdravotní péče z těchto lůžek se vykazuje pod odborností 7I8 nebo 7T8; JIP – zdravotní péče z těchto lůžek se vykazuje pod odborností I nebo T, nejedná se o lůžka následné a dlouhodobé péče). Celková kapacita."
+            },
+            {
+                "name": "upv_kapacita_volna",
+                "titles": "upv_kapacita_volna",
+                "datatype": "integer",
+                "dc:description": "Počet přístrojů UPV na pracovišti ARO A JIP (ARO – zdravotní péče z těchto lůžek se vykazuje pod odborností 7I8 nebo 7T8; JIP – zdravotní péče z těchto lůžek se vykazuje pod odborností I nebo T, nejedná se o lůžka následné a dlouhodobé péče). Volná kapacita."
+            },
+            {
+                "name": "upv_kapacita_celkem",
+                "titles": "upv_kapacita_celkem",
+                "datatype": "integer",
+                "dc:description": "Počet přístrojů UPV na pracovišti ARO A JIP (ARO – zdravotní péče z těchto lůžek se vykazuje pod odborností 7I8 nebo 7T8; JIP – zdravotní péče z těchto lůžek se vykazuje pod odborností I nebo T, nejedná se o lůžka následné a dlouhodobé péče). Celková kapacita."
+            },
+            {
+                "name": "crrt_kapacita_volna",
+                "titles": "crrt_kapacita_volna",
+                "datatype": "integer",
+                "dc:description": "Počet přístrojů pro kontinuální dialýzu (bez rozlišení, na kterém pracovišti se momentálně nachází). Volná kapacita."
+            },
+            {
+                "name": "crrt_kapacita_celkem",
+                "titles": "crrt_kapacita_celkem",
+                "datatype": "integer",
+                "dc:description": "Počet přístrojů pro kontinuální dialýzu (bez rozlišení, na kterém pracovišti se momentálně nachází). Celková kapacita."
+            },
+            {
+                "name": "ihd_kapacita_volna",
+                "titles": "ihd_kapacita_volna",
+                "datatype": "integer",
+                "dc:description": "Počet přístrojů pro intermitentní dialýzu (bez rozlišení, na kterém pracovišti se momentálně nachází). Nejedná se o přístroje pro léčbu pacientů s chronickým dialyzačním programem. Volná kapacita."
+            },
+            {
+                "name": "ihd_kapacita_celkem",
+                "titles": "ihd_kapacita_celkem",
+                "datatype": "integer",
+                "dc:description": "Počet přístrojů pro intermitentní dialýzu (bez rozlišení, na kterém pracovišti se momentálně nachází). Nejedná se o přístroje pro léčbu pacientů s chronickým dialyzačním programem. Celková kapacita."
+            },
+            {
+                "name": "luzka_aro_jip_kapacita_celkem",
+                "titles": "luzka_aro_jip_kapacita_celkem",
+                "datatype": "integer",
+                "dc:description": "Počet lůžek anesteziologicko–resuscitačního oddělení (zdravotní péče z těchto lůžek se vykazuje pod odborností 7I8 nebo 7T8) a počet lůžek na jednotkách intenzivní péče pro dospělé (zdravotní péče z těchto lůžek se vykazuje pod odborností I nebo T, nejedná se o lůžka následné a dlouhodobé péče). Celková kapacita."
+            },
+            {
+                "name": "luzka_aro_jip_kapacita_volna_covid_pozitivni",
+                "titles": "luzka_aro_jip_kapacita_volna_covid_pozitivni",
+                "datatype": "integer",
+                "dc:description": "Počet lůžek anesteziologicko–resuscitačního oddělení (zdravotní péče z těchto lůžek se vykazuje pod odborností 7I8 nebo 7T8) a počet lůžek na jednotkách intenzivní péče pro dospělé (zdravotní péče z těchto lůžek se vykazuje pod odborností I nebo T, nejedná se o lůžka následné a dlouhodobé péče). Volná kapacita pro pacienty COVID-19 pozitivní."
+            },
+            {
+                "name": "luzka_aro_jip_kapacita_volna_covid_negativni",
+                "titles": "luzka_aro_jip_kapacita_volna_covid_negativni",
+                "datatype": "integer",
+                "dc:description": "Počet lůžek anesteziologicko–resuscitačního oddělení (zdravotní péče z těchto lůžek se vykazuje pod odborností 7I8 nebo 7T8) a počet lůžek na jednotkách intenzivní péče pro dospělé (zdravotní péče z těchto lůžek se vykazuje pod odborností I nebo T, nejedná se o lůžka následné a dlouhodobé péče). Volná kapacita pro pacienty COVID-19 negativní."
+            },
+            {
+                "name": "luzka_standard_kyslik_kapacita_celkem",
+                "titles": "luzka_standard_kyslik_kapacita_celkem",
+                "datatype": "integer",
+                "dc:description": "Z celkového počtu standardních akutních lůžek se uvádí počet lůžek, ke kterým je přiveden kyslík (zdravotní péče z těchto lůžek se vykazuje pod odborností H nebo F, nejedná se o lůžka následné a dlouhodobé péče). Celková kapacita."
+            },
+            {
+                "name": "luzka_standard_kyslik_kapacita_volna_covid_pozitivni",
+                "titles": "luzka_standard_kyslik_kapacita_volna_covid_pozitivni",
+                "datatype": "integer",
+                "dc:description": "Z celkového počtu standardních akutních lůžek se uvádí počet lůžek, ke kterým je přiveden kyslík (zdravotní péče z těchto lůžek se vykazuje pod odborností H nebo F, nejedná se o lůžka následné a dlouhodobé péče). Volná kapacita pro pacienty COVID-19 pozitivní."
+            },
+            {
+                "name": "luzka_standard_kyslik_kapacita_volna_covid_negativni",
+                "titles": "luzka_standard_kyslik_kapacita_volna_covid_negativni",
+                "datatype": "integer",
+                "dc:description": "Z celkového počtu standardních akutních lůžek se uvádí počet lůžek, ke kterým je přiveden kyslík (zdravotní péče z těchto lůžek se vykazuje pod odborností H nebo F, nejedná se o lůžka následné a dlouhodobé péče). Volná kapacita pro pacienty COVID-19 negativní."
+            },
+            {
+                "name": "ventilatory_prenosne_kapacita_volna",
+                "titles": "ventilatory_prenosne_kapacita_volna",
+                "datatype": "integer",
+                "dc:description": "Počet přenosných/transportních ventilátorů. Volná kapacita."
+            },
+            {
+                "name": "ventilatory_prenosne_kapacita_celkem",
+                "titles": "ventilatory_prenosne_kapacita_celkem",
+                "datatype": "integer",
+                "dc:description": "Počet přenosných/transportních ventilátorů. Celková kapacita."
+            },
+            {
+                "name": "ventilatory_operacni_sal_kapacita_volna",
+                "titles": "ventilatory_operacni_sal_kapacita_volna",
+                "datatype": "integer",
+                "dc:description": "Počet ventilátorů na operačních sálech (přístroje, které jsou fyzicky umístěny na sálech). Volná kapacita."
+            },
+            {
+                "name": "ventilatory_operacni_sal_kapacita_celkem",
+                "titles": "ventilatory_operacni_sal_kapacita_celkem",
+                "datatype": "integer",
+                "dc:description": "Počet ventilátorů na operačních sálech (přístroje, které jsou fyzicky umístěny na sálech). Celková kapacita."
+            },
+            {
+                "name": "reprofilizovana_kapacita_luzka_aro_jip_kapacita_volna",
+                "titles": "reprofilizovana_kapacita_luzka_aro_jip_kapacita_volna",
+                "datatype": "integer",
+                "dc:description": "Lůžka IP (UPV +/- ) nově vyhrazená pro COVID pozitivní pacienty, která byla původně určena k poskytování jiného typu péče nebo péče jiného oboru/odbornosti. Volná kapacita."
+            },
+            {
+                "name": "reprofilizovana_kapacita_luzka_aro_jip_kapacita_celkem",
+                "titles": "reprofilizovana_kapacita_luzka_aro_jip_kapacita_celkem",
+                "datatype": "integer",
+                "dc:description": "Lůžka IP (UPV +/- ) nově vyhrazená pro COVID pozitivní pacienty, která byla původně určena k poskytování jiného typu péče nebo péče jiného oboru/odbornosti. Celková kapacita."
+            },
+            {
+                "name": "reprofilizovana_kapacita_luzka_aro_jip_kapacita_planovana",
+                "titles": "reprofilizovana_kapacita_luzka_aro_jip_kapacita_planovana",
+                "datatype": "integer",
+                "dc:description": "Lůžka IP (UPV +/- ) nově vyhrazená pro COVID pozitivní pacienty, která byla původně určena k poskytování jiného typu péče nebo péče jiného oboru/odbornosti. Plánovaná kapacita je pevně stanovená MZ ČR, kterou nelze v systému DIP uživatelsky měnit."
+            },
+            {
+                "name": "reprofilizovana_kapacita_luzka_standard_kyslik_kapacita_volna",
+                "titles": "reprofilizovana_kapacita_luzka_standard_kyslik_kapacita_volna",
+                "datatype": "integer",
+                "dc:description": "Lůžka standardní s kyslíkem nově vyhrazená pro COVID pozitivní pacienty, která byla původně určena k poskytování jiného typu péče nebo péče jiného oboru/odbornosti. Volná kapacita."
+            },
+            {
+                "name": "reprofilizovana_kapacita_luzka_standard_kyslik_kapacita_celkem",
+                "titles": "reprofilizovana_kapacita_luzka_standard_kyslik_kapacita_celkem",
+                "datatype": "integer",
+                "dc:description": "Lůžka standardní s kyslíkem nově vyhrazená pro COVID pozitivní pacienty, která byla původně určena k poskytování jiného typu péče nebo péče jiného oboru/odbornosti. Celková kapacita."
+            },
+            {
+                "name": "reprofilizovana_kapacita_luzka_standard_kyslik_kapacita_planovana",
+                "titles": "reprofilizovana_kapacita_luzka_standard_kyslik_kapacita_planovana",
+                "datatype": "integer",
+                "dc:description": "Lůžka standardní s kyslíkem nově vyhrazená pro COVID pozitivní pacienty, která byla původně určena k poskytování jiného typu péče nebo péče jiného oboru/odbornosti. Plánovaná kapacita je pevně stanovená MZ ČR, kterou nelze v systému DIP uživatelsky měnit."
+            }
+        ]
+    }
+}
