@@ -24,7 +24,7 @@
         "@id": "https://data.gov.cz/podmínky-užití/volný-přístup/"
     },
     "dc:modified": {
-        "@value": "2021-04-14",
+        "@value": "2021-04-16",
         "@type": "xsd:date"
     },
     "tableSchema": {
@@ -56,25 +56,25 @@
                 "name": "stav_bez_priznaku",
                 "titles": "stav_bez_priznaku",
                 "datatype": "integer",
-                "dc:description": "Počet pacientů bez příznaků."
+                "dc:description": "Počet pacientů bez příznaků na základě subjektivního hodnocení lékaře."
             },
             {
                 "name": "stav_lehky",
                 "titles": "stav_lehky",
                 "datatype": "integer",
-                "dc:description": "Počet pacientů v lehkém stavu."
+                "dc:description": "Počet pacientů v lehkém stavu na základě subjektivního hodnocení lékaře."
             },
             {
                 "name": "stav_stredni",
                 "titles": "stav_stredni",
                 "datatype": "integer",
-                "dc:description": "Počet pacientů ve středně vážném stavu."
+                "dc:description": "Počet pacientů ve středně vážném stavu na základě subjektivního hodnocení lékaře."
             },
             {
                 "name": "stav_tezky",
                 "titles": "stav_tezky",
                 "datatype": "integer",
-                "dc:description": "Počet pacientů v těžkém stavu."
+                "dc:description": "Počet pacientů v těžkém stavu na základě subjektivního hodnocení lékaře."
             },
             {
                 "name": "jip",

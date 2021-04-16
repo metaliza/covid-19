@@ -31,7 +31,7 @@
         "@id": "https://data.gov.cz/podmínky-užití/volný-přístup/"
     },
     "dc:modified": {
-        "@value": "2021-04-14",
+        "@value": "2021-04-16",
         "@type": "xsd:date"
     },
     "tableSchema": {
@@ -82,6 +82,24 @@
                 "titles": "aktivni_pripady",
                 "datatype": "integer",
                 "dc:description": "Počet osob pozitivně testovaných na původce onemocnění COVID‑19, které nebyly k danému datu dosud označeny za vyléčené ani nezemřely."
+            },
+            {
+                "name": "nove_pripady_65",
+                "titles": "nove_pripady_65",
+                "datatype": "integer",
+                "dc:description": "Počet nově diagnostikovaných za daný den ve věkové skupině 65+."
+            },
+            {
+                "name": "nove_pripady_7_dni",
+                "titles": "nove_pripady_7_dni",
+                "datatype": "integer",
+                "dc:description": "Počet nově diagnostikovaných za předchozích 7 dní."
+            },
+            {
+                "name": "nove_pripady_14_dni",
+                "titles": "nove_pripady_14_dni",
+                "datatype": "integer",
+                "dc:description": "Počet nově diagnostikovaných za předchozích 14 dní."
             }
         ]
     }
