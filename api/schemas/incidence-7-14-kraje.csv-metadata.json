@@ -1,0 +1,76 @@
+{
+    "@context": [
+        "https://www.w3.org/ns/csvw",
+        {
+            "@language": "cs"
+        }
+    ],
+    "url": "incidence-7-14-kraje.csv",
+    "dc:title": "COVID-19: Přehled osob s prokázanou nákazou dle krajských hygienických stanic včetně laboratoří za 7 a 14 dní podle krajů",
+    "dc:description": "Datová sada obsahující počty potvrzených případů za posledních 7 a 14 dní za kraje ČR včetně přepočtu na 100 000 obyvatel. Pro přepočet na 100 000 obyvatel je použita otevřená datová sada Obyvatelstvo podle pětiletých věkových skupin a pohlaví v krajích a okresech (https://www.czso.cz/csu/czso/obyvatelstvo-podle-petiletych-vekovych-skupin-a-pohlavi-v-krajich-a-okresech).",
+    "dc:source": "Krajské hygienické stanice v ČR",
+    "dcat:keyword": [
+        "koronavirus",
+        "covid-19",
+        "potvrzené případy",
+        "incidence"
+    ],
+    "dc:publisher": {
+        "schema:name": "ÚZIS ČR",
+        "schema:url": {
+            "@id": "https://www.uzis.cz/"
+        }
+    },
+    "dc:license": {
+        "@id": "http://data.gov.cz/podmínky-užití/volný-přístup/"
+    },
+    "dc:modified": {
+        "@value": "2021-04-30",
+        "@type": "xsd:date"
+    },
+    "tableSchema": {
+        "columns": [
+            {
+                "name": "datum",
+                "titles": "datum",
+                "datatype": "date"
+            },
+            {
+                "name": "kraj_nuts_kod",
+                "titles": "kraj_nuts_kod",
+                "datatype": "string",
+                "dc:description": "Identifikátor kraje podle klasifikace NUTS 3, ve kterém byly případy diagnostikovány."
+            },
+            {
+                "name": "kraj_nazev",
+                "titles": "kraj_nazev",
+                "datatype": "string",
+                "dc:description": "Název kraje, ve kterém byly případy diagnostikovány."
+            },
+            {
+                "name": "incidence_7",
+                "titles": "incidence_7",
+                "datatype": "integer",
+                "dc:description": "Celkový počet nově diagnostikovaných případů za předchozích 7 dní ode dne uvedeného ve sloupci \"datum\"."
+            },
+            {
+                "name": "incidence_14",
+                "titles": "incidence_14",
+                "datatype": "integer",
+                "dc:description": "Celkový počet nově diagnostikovaných případů za předchozích 14 dní ode dne uvedeného ve sloupci \"datum\"."
+            },
+            {
+                "name": "incidence_7_100000",
+                "titles": "incidence_7_100000",
+                "datatype": "float",
+                "dc:description": "Celkový počet nově diagnostikovaných případů za předchozích 7 dní ode dne uvedeného ve sloupci \"datum\", který je přepočtený na 100 000 obyvatel."
+            },
+            {
+                "name": "incidence_14_100000",
+                "titles": "incidence_14_100000",
+                "datatype": "float",
+                "dc:description": "Celkový počet nově diagnostikovaných případů za předchozích 14 dní ode dne uvedeného ve sloupci \"datum\", který je přepočtený na 100 000 obyvatel."
+            }
+        ]
+    }
+}
