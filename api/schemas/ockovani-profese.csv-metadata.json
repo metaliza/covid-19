@@ -1,6 +1,6 @@
 {
     "@context": [
-        "http://www.w3.org/ns/csvw",
+        "https://www.w3.org/ns/csvw",
         {
             "@language": "cs"
         }
@@ -26,10 +26,10 @@
         }
     },
     "dc:license": {
-        "@id": "https://data.gov.cz/podmínky-užití/volný-přístup/"
+        "@id": "http://data.gov.cz/podmínky-užití/volný-přístup/"
     },
     "dc:modified": {
-        "@value": "2021-04-14",
+        "@value": "2021-04-30",
         "@type": "xsd:date"
     },
     "tableSchema": {
@@ -105,6 +105,18 @@
                 "titles": "indikace_skolstvi_ostatni",
                 "datatype": "boolean",
                 "dc:description": "Určení, zda očkovaná osoba spadá mezi ostatní pracovníky ve školství."
+            },
+            {
+                "name": "indikace_bezpecnostni_infrastruktura",
+                "titles": "indikace_bezpecnostni_infrastruktura",
+                "datatype": "boolean",
+                "dc:description": "Určení, zda očkovaná osoba spadá mezi zaměstnance Ministerstva obrany nebo bezpečnostní sbory."
+            },
+            {
+                "name": "indikace_chronicke_onemocneni",
+                "titles": "indikace_chronicke_onemocneni",
+                "datatype": "boolean",
+                "dc:description": "Určení, zda očkovaná osoba spadá mezi chronicky nemocné (hematoonkologické onemocnění, onkologické onemocnění (solidní nádory), závažné akutní nebo dlouhodobé onemocnění srdce, závažné dlouhodobé onemocnění plic, diabetes mellitus, obezita, závažné dlouhodobé onemocnění ledvin, závažné dlouhodobé onemocnění jater, stav po transplantaci nebo na čekací listině, hypertenze, závažné neurologické nebo neuromuskulární onemocnění, vrozený nebo získaný kognitivní deficit, vzácné genetické onemocnění, závažné oslabení imunitního systému, jiné závažné onemocnění)."
             }
         ]
     }
