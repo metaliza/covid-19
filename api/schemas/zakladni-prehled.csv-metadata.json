@@ -1,6 +1,6 @@
 {
     "@context": [
-        "http://www.w3.org/ns/csvw",
+        "https://www.w3.org/ns/csvw",
         {
             "@language": "cs"
         }
@@ -21,10 +21,10 @@
         }
     },
     "dc:license": {
-        "@id": "https://data.gov.cz/podmínky-užití/volný-přístup/"
+        "@id": "http://data.gov.cz/podmínky-užití/volný-přístup/"
     },
     "dc:modified": {
-        "@value": "2021-04-14",
+        "@value": "2021-04-30",
         "@type": "xsd:date"
     },
     "tableSchema": {
@@ -160,6 +160,24 @@
                 "titles": "potvrzene_pripady_65_vcerejsi_den_datum",
                 "datatype": "date",
                 "dc:description": "Datum přírůstku odhalených pozitivních případů ve věkové kategorii 65+ za poslední uzavřený den."
+            },
+            {
+                "name": "ockovane_osoby_celkem",
+                "titles": "ockovane_osoby_celkem",
+                "datatype": "integer",
+                "dc:description": "Celkový počet vykázaných očkovaných osob s alespoň 1 dávkou proti onemocnění COVID-19 za celou ČR. Data se mohou zpětně mírně měnit z důvodu průběžného doplňování."
+            },
+            {
+                "name": "ockovane_osoby_vcerejsi_den",
+                "titles": "ockovane_osoby_vcerejsi_den",
+                "datatype": "integer",
+                "dc:description": "Celkový počet vykázaných očkovaných osob s alespoň 1 dávkou proti onemocnění COVID-19 za celou ČR v předchozím dni."
+            },
+            {
+                "name": "ockovane_osoby_vcerejsi_den_datum",
+                "titles": "ockovane_osoby_vcerejsi_den_datum",
+                "datatype": "date",
+                "dc:description": "Datum přírůstku vykázaných očkovaných osob s alespoň 1 dávkou za poslední uzavřený den."
             }
         ]
     }
