@@ -1,6 +1,6 @@
 {
     "@context": [
-        "http://www.w3.org/ns/csvw",
+        "https://www.w3.org/ns/csvw",
         {
             "@language": "cs"
         }
@@ -8,7 +8,7 @@
     "url": "kapacity-intenzivni-pece-zdravotnicke-zarizeni-04-2021.csv",
     "dc:title": "COVID-19: Online dispečink intenzivní péče – volné kapacity podle zdravotnických zařízení (duben 2021)",
     "dc:description": "Datová sada podle krajů ČR obsahující denní přehledy změn volných kapacit v nemocnicích akutní péče (celkové počty dostupných přístrojů a lůžek společně s volnými kapacitami v jednotlivých dnech) v souvislosti se šířením nákazy onemocnění COVID-19. Datová sada obsahuje přehledy o následujících parametrech: lůžka (standardní s kyslíkem), lůžka (HFNO/CPAP), lůžka (UPV/NIV), přístroje: ECMO, přístroje: CVVHD, přístroje: ventilátory přenosné, přístroje: anesteziologické přístroje s ventilátorem. Data jsou dostupná od 30. března 2021, kdy byla kompletně spuštěna aktualizace nově sledovaných kapacit. Při aktualizaci dat se vždy zohledňuje primární účel použití daného přístroje a v souladu s tímto účelem se vyplňuje volná kapacitu (je-li například lůžko s přístrojem pro UPV, který je vybaven také funkcí HFNO, pak se uvádí do skupiny lůžka (UPV/NIV)). Lůžka se vždy vykazují pouze v kombinaci s daným přístrojem (O2, HFNO, UPV), samostatná evidence těchto přístrojů neuvádí potřebnou informaci pro sledování a plánování kapacit IP.",
-    "dc:source": "Národní zdravotnický informační systém, Národní registr hrazených zdravotních služeb",
+    "dc:source": "COVID-19: Online dispečink intenzivní péče - https://dip.mzcr.cz, kontakt: helpdesk.registry@uzis.cz",
     "dcat:keyword": [
         "covid-19",
         "koronavirus",
@@ -29,7 +29,7 @@
         "@id": "https://data.gov.cz/podmínky-užití/volný-přístup/"
     },
     "dc:modified": {
-        "@value": "2021-04-14",
+        "@value": "2021-05-19",
         "@type": "xsd:date"
     },
     "tableSchema": {
