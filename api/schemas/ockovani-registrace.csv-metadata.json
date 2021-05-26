@@ -7,8 +7,8 @@
     ],
     "url": "ockovani-registrace.csv",
     "dc:title": "COVID-19: Přehled registrací podle očkovacích míst ČR",
-    "dc:description": "Datová sada poskytuje přehled vytvořených registrací v centrálním rezervačním systému na očkování proti onemocnění COVID-19 (https://registrace.mzcr.cz/). Záznamy (řádky) datové sady popisují jednotlivé anonymizované registrace, které byly vytvořeny na dané očkovací místo v daný den.",
-    "dc:source": "Krajské hygienické stanice v ČR",
+    "dc:description": "Datová sada poskytuje přehled vytvořených registrací v centrálním rezervačním systému na očkování proti onemocnění COVID-19 (https://registrace.mzcr.cz/). Záznamy (řádky) datové sady popisují jednotlivé anonymizované registrace, které byly vytvořeny na dané očkovací místo v daný den. Do datové sady spadají také osoby, které již byly očkovány. Registrovaná osoba je definována tak, že spadá do jedné s následujících skupin: (i) osoba je registrovaná a čeká na přidělení možnosti výběru termínu očkování, (ii) osoba obdržela možnost výběru termínu očkování, (iii) osoba provedla výběr termínu a má tedy rezervaci.\n\nPopis procesu rezervace a registrace: (1) Osoba se registruje v centrálním rezervačním systému na očkování. (2) Probíhá proces ztotožnění proti centrálnímu registru obyvatel. (3) Po ověření totožnosti čeká osoba na přidělení možnosti výběru termínu (stav před závorou). (4) Po přidělení možnosti výběru termínu si osoba vybírá vhodný termín (stav za závorou). (5) Po výběru termínu má daná osoba provedenu rezervaci termínu na očkování. (6) Po provedení očkování zůstává záznam v datové sadě s blokovanou registrací (zablokovano = ANO) a současně je uveden důvod blokace (blokace_duvod = Ztotožněn, ale již vakcinován).",
+    "dc:source": "Centrální rezervační systém - https://crs.uzis.cz/, kontakt: covid-podpora@nakit.cz",
     "dcat:keyword": [
         "koronavirus",
         "covid-19",
@@ -27,7 +27,7 @@
         "@id": "http://data.gov.cz/podmínky-užití/volný-přístup/"
     },
     "dc:modified": {
-        "@value": "2021-04-30",
+        "@value": "2021-05-26",
         "@type": "xsd:date"
     },
     "tableSchema": {
@@ -90,7 +90,31 @@
                 "name": "datum_rezervace",
                 "titles": "datum_rezervace",
                 "datatype": "date",
-                "dc:description": "Termín první rezervace v systému na očkování proti onemocnění COVID-19, který však není nadále aktualizován ani dále validován. Jedná se o informativní údaj, který je vztažen pouze k registracím a neobsahuje všechny rezervace. Tento atribut bude doplněn společně s novou verzi datového skladu centrálního systému."
+                "dc:description": "Datum rezervace na očkování proti onemocnění COVID-19."
+            },
+            {
+                "name": "zavora_status",
+                "titles": "zavora_status",
+                "datatype": "string",
+                "dc:description": "Určení, v jakém stavu se nachází registrace dané osoby: 1. stav „před závorou“ = osoba je registrovaná v systému a čeká na přidělení možnosti výběru termínu na očkování; 2. stav „za závorou“ = osoba je registrovaná v systému a má možnost výběru termínu na očkování; 3. stav „zablokován“ = osoba byla zablokována; 4. stav „vrácen před závoru“ = osoba měla možnost výběru termínu, ale nevyužila ji"
+            },
+            {
+                "name": "prioritni_skupina",
+                "titles": "prioritni_skupina",
+                "datatype": "string",
+                "dc:description": "Určení, do jaké prioritní skupiny byla osoba přiřazena (u jednoho záznamu je právě jedna prioritní skupina)."
+            },
+            {
+                "name": "zablokovano",
+                "titles": "zablokovano",
+                "datatype": "boolean",
+                "dc:description": "Stav, zda byla registrace zablokována."
+            },
+            {
+                "name": "duvod_blokace",
+                "titles": "duvod_blokace",
+                "datatype": "string",
+                "dc:description": "Zdůvodnění, proč byla očkovaná osoba zablokována. 1. Vytvoření novější registrace (Procedura při vytváření registrace) - V okamžiku, kdy je vytvářena nová registrace, je předchozí registrace se stejným identifikátorem zablokována, pokud u ní není rezervace. 2. Existence předchozí registrace s rezervací (Procedura při vytváření registrace) - V okamžiku, kdy je vytvářena nová registrace, a je nalezena předchozí nezablokovaná registrace se stejným identifikátorem s platnou rezervací, je nově vytvářená registrace zablokovaná. 3. 5x špatně zadané PIN2 (Aplikační rozhraní) - Pokud uživatel při pokusu o vstup zadá 5x špatné PIN 2, je registrace zablokována. 4. Již existuje rezervace (Aplikační rozhraní) - Po vytvoření rezervace je registrace zablokována. V případě zrušení rezervace bude registrace odblokována. 5. Vyřazení ze hry (Závora) - Při zaslání 9 SMS v „SMS Game“ je registrace zablokována. 6. Registrace nebyla ztotožněna (Synchronizace s centrálními registry) - V případě, že není registrace ztotožněna. 7. Ztotožněn, ale již vakcinován (Synchronizace s centrálními registry) - V případě, že osoba v registraci byla ztotožněna, ale již u ní byla zahájena vakcinace. 8. Na žádost (Ruční administrace) - Pokud si uživatel v detailu registrace registraci zruší/vynuluje nebo změní své údaje. 9. Nalezení pozitivního PCR testu na COVID-19 (Procedura při kontrole COVID-19 pozitiv) - Při ztotožňování a následně 1x denně je kontrolováno, zda nemá registrovaná osoba PCR test na COVID-19 pozitivní v posledních 90 dnech. Pokud ano, je dočasně zablokována."
             }
         ]
     }
