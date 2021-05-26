@@ -8,7 +8,7 @@
     "url": "kraj-okres-testy.csv",
     "dc:title": "COVID-19: Celkový (kumulativní) počet provedených testů podle krajů a okresů ČR",
     "dc:description": "Datová sada obsahující přírůstkové a kumulativní denní počty provedených PCR testů s korekcí na opakovaně pozitivní (kontrolní) testy, a to bez rozdílu způsobu úhrady (tedy včetně samoplátců), na COVID 19 za celou ČR podle hlášení laboratoří (rychlotesty nejsou do přehledu zařazeny). Tento přehled je k dispozici od 1. srpna 2020 z důvodu úplnosti nahlášených dat jednotlivými laboratořemi na individuální úrovni. V předchozím období existuje riziko neúplnosti těchto individuálních dat a proto do 31. července vycházíme pouze z dat agregovaných, která však neumožňují složitější analytické výpočty.",
-    "dc:source": "Krajské hygienické stanice v ČR",
+    "dc:source": "Informační systém infekčních nemocí (ISIN) - https://www.uzis.cz/index.php?pg=registry-sber-dat--ochrana-verejneho-zdravi--informacni-system-infekcni-nemoci, kontakt: helpdesk.registry@uzis.cz",
     "dcat:keyword": [
         "koronavirus",
         "covid-19",
@@ -29,7 +29,7 @@
         "@id": "http://data.gov.cz/podmínky-užití/volný-přístup/"
     },
     "dc:modified": {
-        "@value": "2021-04-30",
+        "@value": "2021-05-26",
         "@type": "xsd:date"
     },
     "tableSchema": {

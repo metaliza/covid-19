@@ -1,6 +1,6 @@
 {
     "@context": [
-        "http://www.w3.org/ns/csvw",
+        "https://www.w3.org/ns/csvw",
         {
             "@language": "cs"
         }
@@ -8,7 +8,7 @@
     "url": "prehled-odberovych-mist.csv",
     "dc:title": "COVID-19: Odběrová místa v ČR",
     "dc:description": "Datová sada poskytuje seznam odběrových míst v ČR, kde jsou prováděny PCR a antigenní testy na onemocnění COVID-19. Součástí publikovaného seznamu nejsou odběrová místa ve zdravotnických zařízeních, kde jsou prováděny testy před přijetím pacienta v souvislosti s poskytováním neodkladné péče. Mobilní odběrové týmy mají kapacitu pevně nastavenu (na hodnotu 20), protože není možné přesně určit tuto kapacitu.",
-    "dc:source": "Krajské hygienické stanice v ČR",
+    "dc:source": "COVID Forms Application - https://cfa.uzis.cz/, kontakt: crtit@army.cz",
     "dcat:keyword": [
         "koronavirus",
         "covid-19",
@@ -23,10 +23,10 @@
         }
     },
     "dc:license": {
-        "@id": "https://data.gov.cz/podmínky-užití/volný-přístup/"
+        "@id": "http://data.gov.cz/podmínky-užití/volný-přístup/"
     },
     "dc:modified": {
-        "@value": "2021-03-08",
+        "@value": "2021-05-26",
         "@type": "xsd:date"
     },
     "tableSchema": {

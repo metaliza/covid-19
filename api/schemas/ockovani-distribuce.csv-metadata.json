@@ -8,7 +8,7 @@
     "url": "ockovani-distribuce.csv",
     "dc:title": "COVID-19: Přehled distribuce očkovacích látek v ČR",
     "dc:description": "Datová sada obsahuje přehled distribuce očkovacích látek proti onemocnění COVID-19 do očkovacích míst v ČR. Každý záznam (řádek) datové sady udává počet ampulek dané očkovací látky, která byla daným očkovacím místem v daný den přijata nebo vydána.",
-    "dc:source": "Krajské hygienické stanice v ČR",
+    "dc:source": "COVID Forms Application - https://cfa.uzis.cz/, kontakt: crtit@army.cz",
     "dcat:keyword": [
         "koronavirus",
         "covid-19",
@@ -26,7 +26,7 @@
         "@id": "http://data.gov.cz/podmínky-užití/volný-přístup/"
     },
     "dc:modified": {
-        "@value": "2021-04-30",
+        "@value": "2021-05-26",
         "@type": "xsd:date"
     },
     "tableSchema": {

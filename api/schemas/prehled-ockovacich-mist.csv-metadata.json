@@ -8,7 +8,7 @@
     "url": "prehled-ockovacich-mist.csv",
     "dc:title": "COVID-19: Očkovací místa v ČR",
     "dc:description": "Datová sada poskytuje seznam veřejných očkovacích míst v ČR, kde jsou podávány očkovací látky proti onemocnění COVID-19.",
-    "dc:source": "COVID Forms Application",
+    "dc:source": "COVID Forms Application - https://cfa.uzis.cz/, kontakt: crtit@army.cz",
     "dcat:keyword": [
         "koronavirus",
         "covid-19",
@@ -25,7 +25,7 @@
         "@id": "http://data.gov.cz/podmínky-užití/volný-přístup/"
     },
     "dc:modified": {
-        "@value": "2021-04-30",
+        "@value": "2021-05-26",
         "@type": "xsd:date"
     },
     "tableSchema": {

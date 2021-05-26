@@ -8,7 +8,7 @@
     "url": "zakladni-prehled.csv",
     "dc:title": "COVID-19: Základní přehled",
     "dc:description": "Stručný náhled na základní epidemiologická data o pandemii COVID-19 v ČR. Datová sada obsahuje aktuální kumulativní počet provedených PCR a antigenních testů (včetně informace za předchozí den), potvrzené případy celkem a ve věkové skupině 65+(včetně informace za předchozí den), aktivní případy, vyléčené, úmrtí, očkování a hopitalizované pacienty.",
-    "dc:source": "Krajské hygienické stanice v ČR",
+    "dc:source": "Informační systém infekčních nemocí (ISIN) - https://www.uzis.cz/index.php?pg=registry-sber-dat--ochrana-verejneho-zdravi--informacni-system-infekcni-nemoci, kontakt: helpdesk.registry@uzis.cz",
     "dcat:keyword": [
         "COVID-19",
         "widget",
@@ -24,7 +24,7 @@
         "@id": "http://data.gov.cz/podmínky-užití/volný-přístup/"
     },
     "dc:modified": {
-        "@value": "2021-04-30",
+        "@value": "2021-05-26",
         "@type": "xsd:date"
     },
     "tableSchema": {

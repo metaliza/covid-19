@@ -8,7 +8,7 @@
     "url": "ockovani-rezervace.csv",
     "dc:title": "COVID-19: Přehled rezervací podle očkovacích míst ČR",
     "dc:description": "Datová sada poskytuje přehled volné a maximální kapacity očkovacích míst v jednotlivých dnech podle informací z centrálního rezervačního systému na očkování proti onemocnění COVID-19 (https://reservatic.com/ockovani). Každý záznam (řádek) datové sady udává volnou a maximální kapacitu daného očkovacího místa v daný den.",
-    "dc:source": "Krajské hygienické stanice v ČR",
+    "dc:source": "Centrální rezervační systém - https://crs.uzis.cz/, kontakt: covid-podpora@nakit.cz",
     "dcat:keyword": [
         "koronavirus",
         "covid-19",
@@ -29,7 +29,7 @@
         "@id": "http://data.gov.cz/podmínky-užití/volný-přístup/"
     },
     "dc:modified": {
-        "@value": "2021-04-30",
+        "@value": "2021-05-26",
         "@type": "xsd:date"
     },
     "tableSchema": {

@@ -8,7 +8,7 @@
     "url": "hospitalizace.csv",
     "dc:title": "COVID-19: Přehled hospitalizací",
     "dc:description": "Datová sada obsahující data hospitalizovaných pacientů popisující průběh hospitalizace (aktuální a celkový počet hospitalizovaných, rozdělení podle příznaků, rozdělení podle podpůrných přístrojů, počet úmrtí).",
-    "dc:source": "Krajské hygienické stanice v ČR",
+    "dc:source": "Informační systém infekčních nemocí (ISIN) - https://www.uzis.cz/index.php?pg=registry-sber-dat--ochrana-verejneho-zdravi--informacni-system-infekcni-nemoci, kontakt: helpdesk.registry@uzis.cz",
     "dcat:keyword": [
         "koronavirus",
         "covid-19",
@@ -24,7 +24,7 @@
         "@id": "http://data.gov.cz/podmínky-užití/volný-přístup/"
     },
     "dc:modified": {
-        "@value": "2021-04-30",
+        "@value": "2021-05-26",
         "@type": "xsd:date"
     },
     "tableSchema": {
