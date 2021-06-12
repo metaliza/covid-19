@@ -7,7 +7,7 @@
     ],
     "url": "testy-pcr-antigenni.csv",
     "dc:title": "COVID-19: Přehled provedených testů podle typu a indikace",
-    "dc:description": "Datová sada obsahující denní počty provedených testů s rozlišením na PCR testy a antigenní testy na onemocnění COVID-19 dle hlášení laboratoří. Dál jsou v sadě uvedeny počty testů dle indikace (diagnostické indikace, epidemiologické indikace, preventivní a plošné testování, ostatní), pozitivní záchyty dle indikace testu a pozitivní záchyty dle typu testu (symptomy jsou objektivně vyšetřeny u indikovaných osob, v ramci plošného testování jde o vyjáření subjektivního posouzení testovaného). Zdrojem dat je centrální Informační systém infekčních nemocí (ISIN). Primární data byla analyticky zpracována a následně transformována do podoby publikovatelné online týmem ÚZIS ČR.",
+    "dc:description": "Datová sada obsahující denní počty provedených testů s rozlišením na PCR testy a antigenní testy na onemocnění COVID-19 dle hlášení laboratoří. Dále jsou v sadě uvedeny počty testů dle indikace (diagnostické indikace, epidemiologické indikace, preventivní a plošné testování, ostatní), pozitivní záchyty dle indikace testu a pozitivní záchyty dle typu testu (symptomy jsou objektivně vyšetřeny u indikovaných osob, v rámci plošného testování jde o vyjádření subjektivního posouzení testovaného). Zdrojem dat je centrální Informační systém infekčních nemocí (ISIN). Primární data byla analyticky zpracována a následně transformována do podoby publikovatelné online týmem ÚZIS ČR.",
     "dc:source": "Informační systém infekčních nemocí (ISIN) - https://www.uzis.cz/index.php?pg=registry-sber-dat--ochrana-verejneho-zdravi--informacni-system-infekcni-nemoci, kontakt: helpdesk.registry@uzis.cz",
     "dcat:keyword": [
         "PCR testy",
@@ -29,7 +29,7 @@
         "@id": "http://data.gov.cz/podmínky-užití/volný-přístup/"
     },
     "dc:modified": {
-        "@value": "2021-05-26",
+        "@value": "2021-06-11",
         "@type": "xsd:date"
     },
     "tableSchema": {
