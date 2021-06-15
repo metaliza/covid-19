@@ -7,7 +7,7 @@
     ],
     "url": "mestske-casti.csv",
     "dc:title": "COVID-19: Epidemiologická charakteristika městských částí hlavního města Prahy",
-    "dc:description": "Obsah datové sady na úrovni městkých části hlavního města Prahy zahrnuje základní epidemiologické parametry (počty diagnostikovaných osob s COVID-19, počty aktuálně nakažených), které umožní průběžně sledovat základní epidemiologické ukazatele a vyhodnocovat trendy na pozadí dat publikovaných pro celou ČR.\n\nNa základě informací z některých malých obcí eviduje správce systému ISIN problémy s přiřazením bydliště obyvatel. Jde o chybu ztotožňování bydliště v reálném čase u minority případů, kdy není uvedeno bydliště z šetření KHS a jsou dostupná pouze data z laboratoří. Bydliště je správně určeno na úrovni kraje a okresu, ale došlo k chybnému přiřazení osob ke konkrétní obci. Případy podle všeho patří do velkých měst, a drobné obce byly přiřazeny omylem.\n\nDalším problémem může být přiřazení správného trvalého bydliště k dané obci u pacienta, který avšak v obci nepobývá (pouze je tam přihlášen k pobytu) a jeho diagnóza i léčba probíhá jinde. Správce i provozovatel ISIN děkují vedení obcí za zpětnou vazbu, neboť jinak takové chyby nelze odhalit. Publikování dat na úrovni obcí bylo vedeno snahou o bezbariérový informační servis – tato data jsou nyní ve spolupráci se správou základních registrů zpětně validována. Nejde o chyby velkého rozsahu, nicméně je nutné je dořešit. Pro starosty všech obcí je nově připravený nový internetový dashboard, který umožní rychlou zpětnou kontrolu správnosti.",
+    "dc:description": "Obsah datové sady na úrovni městkých části hlavního města Prahy zahrnuje základní epidemiologické parametry (počty diagnostikovaných osob s COVID-19, počty aktuálně nakažených), které umožní průběžně sledovat základní epidemiologické ukazatele a vyhodnocovat trendy na pozadí dat publikovaných pro celou ČR.\n\nNa základě informací z některých malých obcí eviduje správce systému ISIN problémy s přiřazením bydliště obyvatel. Jde o chybu ztotožňování bydliště v reálném čase u minority případů, kdy není uvedeno bydliště z šetření KHS a jsou dostupná pouze data z laboratoří. Bydliště je správně určeno na úrovni kraje a okresu, ale došlo k chybnému přiřazení osob ke konkrétní obci. Případy podle všeho patří do velkých měst, a drobné obce byly přiřazeny omylem.\n\nDalším problémem může být přiřazení správného trvalého bydliště k dané obci u pacienta, který avšak v obci nepobývá (pouze je tam přihlášen k pobytu) a jeho diagnóza i léčba probíhá jinde. Správce i provozovatel ISIN děkují vedení obcí za zpětnou vazbu, neboť jinak takové chyby nelze odhalit. Publikování dat na úrovni obcí bylo vedeno snahou o bezbariérový informační servis – tato data jsou nyní ve spolupráci se správou základních registrů zpětně validována. Nejde o chyby velkého rozsahu, nicméně je nutné je dořešit. Pro starosty všech obcí je nově připravený nový internetový dashboard, který umožní rychlou zpětnou kontrolu správnosti.\n",
     "dc:source": "Informační systém infekčních nemocí (ISIN) - https://www.uzis.cz/index.php?pg=registry-sber-dat--ochrana-verejneho-zdravi--informacni-system-infekcni-nemoci, kontakt: helpdesk.registry@uzis.cz",
     "dcat:keyword": [
         "koronavirus",
@@ -31,7 +31,7 @@
         "@id": "http://data.gov.cz/podmínky-užití/volný-přístup/"
     },
     "dc:modified": {
-        "@value": "2021-05-26",
+        "@value": "2021-06-15",
         "@type": "xsd:date"
     },
     "tableSchema": {
@@ -100,6 +100,18 @@
                 "titles": "nove_pripady_14_dni",
                 "datatype": "integer",
                 "dc:description": "Počet nově diagnostikovaných za předchozích 14 dní."
+            },
+            {
+                "name": "zemreli",
+                "titles": "zemreli",
+                "datatype": "integer",
+                "dc:description": "Počet nově zemřelých za daný den."
+            },
+            {
+                "name": "vyleceni",
+                "titles": "vyleceni",
+                "datatype": "integer",
+                "dc:description": "Počet nově vyléčených za daný den."
             }
         ]
     }

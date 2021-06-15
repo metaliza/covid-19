@@ -7,7 +7,7 @@
     ],
     "url": "ockovani-registrace.csv",
     "dc:title": "COVID-19: Přehled registrací podle očkovacích míst ČR",
-    "dc:description": "Datová sada poskytuje přehled vytvořených registrací v centrálním rezervačním systému na očkování proti onemocnění COVID-19 (https://registrace.mzcr.cz/). Záznamy (řádky) datové sady popisují jednotlivé anonymizované registrace, které byly vytvořeny na dané očkovací místo v daný den. Do datové sady spadají také osoby, které již byly očkovány. Registrovaná osoba je definována tak, že spadá do jedné s následujících skupin: (i) osoba je registrovaná a čeká na přidělení možnosti výběru termínu očkování, (ii) osoba obdržela možnost výběru termínu očkování, (iii) osoba provedla výběr termínu a má tedy rezervaci.\n\nPopis procesu rezervace a registrace: (1) Osoba se registruje v centrálním rezervačním systému na očkování. (2) Probíhá proces ztotožnění proti centrálnímu registru obyvatel. (3) Po ověření totožnosti čeká osoba na přidělení možnosti výběru termínu (stav před závorou). (4) Po přidělení možnosti výběru termínu si osoba vybírá vhodný termín (stav za závorou). (5) Po výběru termínu má daná osoba provedenu rezervaci termínu na očkování. (6) Po provedení očkování zůstává záznam v datové sadě s blokovanou registrací (zablokovano = ANO) a současně je uveden důvod blokace (blokace_duvod = Ztotožněn, ale již vakcinován).",
+    "dc:description": "Datová sada poskytuje přehled vytvořených registrací v centrálním rezervačním systému na očkování proti onemocnění COVID-19 (https://registrace.mzcr.cz/). Záznamy (řádky) datové sady popisují jednotlivé anonymizované registrace, které byly vytvořeny na dané očkovací místo v daný den. Do datové sady spadají také osoby, které již byly očkovány. Registrovaná osoba je definována tak, že spadá do jedné s následujících skupin: (i) osoba je registrovaná a čeká na přidělení možnosti výběru termínu očkování, (ii) osoba obdržela možnost výběru termínu očkování, (iii) osoba provedla výběr termínu a má tedy rezervaci.\n\nPopis procesu rezervace a registrace: (1) Osoba se registruje v centrálním rezervačním systému na očkování. (2) Probíhá proces ztotožnění proti centrálnímu registru obyvatel. (3) Po ověření totožnosti čeká osoba na přidělení možnosti výběru termínu (stav před závorou). (4) Po přidělení možnosti výběru termínu si osoba vybírá vhodný termín (stav za závorou). (5) Po výběru termínu má daná osoba provedenu rezervaci termínu na očkování. (6) Po provedení očkování zůstává záznam v datové sadě s blokovanou registrací (zablokovano = ANO) a současně je uveden důvod blokace (blokace_duvod = Ztotožněn, ale již vakcinován).\n",
     "dc:source": "Centrální rezervační systém - https://crs.uzis.cz/, kontakt: covid-podpora@nakit.cz",
     "dcat:keyword": [
         "koronavirus",
@@ -27,7 +27,7 @@
         "@id": "http://data.gov.cz/podmínky-užití/volný-přístup/"
     },
     "dc:modified": {
-        "@value": "2021-05-26",
+        "@value": "2021-06-15",
         "@type": "xsd:date"
     },
     "tableSchema": {

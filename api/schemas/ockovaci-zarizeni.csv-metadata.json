@@ -25,7 +25,7 @@
         "@id": "http://data.gov.cz/podmínky-užití/volný-přístup/"
     },
     "dc:modified": {
-        "@value": "2021-05-26",
+        "@value": "2021-06-15",
         "@type": "xsd:date"
     },
     "tableSchema": {
@@ -89,6 +89,12 @@
                 "titles": "provoz_ukoncen",
                 "datatype": "date",
                 "dc:description": "Datum, kdy bylo ukončeno očkování v daném zdravotnickém zařízení."
+            },
+            {
+                "name": "prakticky_lekar",
+                "titles": "prakticky_lekar",
+                "datatype": "boolean",
+                "dc:description": "Příznak, zda se jedná o praktického lékaře."
             }
         ]
     }
