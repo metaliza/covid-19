@@ -1,6 +1,6 @@
 {
     "@context": [
-        "https://www.w3.org/ns/csvw",
+        "http://www.w3.org/ns/csvw",
         {
             "@language": "cs"
         }
@@ -29,7 +29,7 @@
         "@id": "http://data.gov.cz/podmínky-užití/volný-přístup/"
     },
     "dc:modified": {
-        "@value": "2021-05-26",
+        "@value": "2021-06-29",
         "@type": "xsd:date"
     },
     "tableSchema": {
@@ -117,6 +117,24 @@
                 "titles": "indikace_chronicke_onemocneni",
                 "datatype": "boolean",
                 "dc:description": "Určení, zda očkovaná osoba spadá mezi chronicky nemocné (hematoonkologické onemocnění, onkologické onemocnění (solidní nádory), závažné akutní nebo dlouhodobé onemocnění srdce, závažné dlouhodobé onemocnění plic, diabetes mellitus, obezita, závažné dlouhodobé onemocnění ledvin, závažné dlouhodobé onemocnění jater, stav po transplantaci nebo na čekací listině, hypertenze, závažné neurologické nebo neuromuskulární onemocnění, vrozený nebo získaný kognitivní deficit, vzácné genetické onemocnění, závažné oslabení imunitního systému, jiné závažné onemocnění)."
+            },
+            {
+                "name": "vekova_skupina",
+                "titles": "vekova_skupina",
+                "datatype": "string",
+                "dc:description": "Rozdělení očkovaných osob podle věku do skupin."
+            },
+            {
+                "name": "orp_bydliste",
+                "titles": "orp_bydliste",
+                "datatype": "string",
+                "dc:description": "Bydliště (na úrovni názvu obce s rozšířenou působností) očkované osoby."
+            },
+            {
+                "name": "orp_bydliste_kod",
+                "titles": "orp_bydliste_kod",
+                "datatype": "integer",
+                "dc:description": "Bydliště (na úrovni kódu obce s rozšířenou působností) podle číselníku ÚZIS ČR (https://pzu-api.uzis.cz/api/orp) očkované osoby."
             }
         ]
     }
