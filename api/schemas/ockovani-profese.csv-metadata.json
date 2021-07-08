@@ -29,7 +29,7 @@
         "@id": "http://data.gov.cz/podmínky-užití/volný-přístup/"
     },
     "dc:modified": {
-        "@value": "2021-06-30",
+        "@value": "2021-07-08",
         "@type": "xsd:date"
     },
     "tableSchema": {
@@ -135,6 +135,12 @@
                 "titles": "orp_bydliste_kod",
                 "datatype": "integer",
                 "dc:description": "Bydliště (na úrovni kódu obce s rozšířenou působností) podle číselníku ÚZIS ČR (https://pzu-api.uzis.cz/api/orp) očkované osoby."
+            },
+            {
+                "name": "prioritni_skupina_kod",
+                "titles": "prioritni_skupina_kod",
+                "datatype": "integer",
+                "dc:description": "Rozdělení očkovaných osob do prioritních skupin na základě prioritizačního systému Ministerstvem zdravotnictví ČR, které určuje na základě věku, zdravotní anamnézy a profese časový harmonogram očkování. Každá osoba spadá právě do jedné prioritní skupiny. Číselník prioritních skupin je dostupný na adrese https://onemocneni-aktualne.mzcr.cz/api/v2/covid-19/prioritni-skupiny.csv ."
             }
         ]
     }
