@@ -1,0 +1,96 @@
+{
+    "@context": [
+        "https://www.w3.org/ns/csvw",
+        {
+            "@language": "cs"
+        }
+    ],
+    "url": "ockovani-distribuce-sklad.csv",
+    "dc:title": "COVID-19: Přehled distribuce očkovacích látek v ČR z centrálního skladu",
+    "dc:description": "Datová sada obsahuje přehled distribuce očkovacích látek proti onemocnění COVID-19 v rámci centrálního skladu (příjem na centrální skladu a výdej do očkovacích míst v ČR). Každý záznam (řádek) datové sady udává počet ampulek dané očkovací látky, která byla daným očkovacím místem v daný den přijata nebo vydána.",
+    "dc:source": "COVID Forms Application - https://cfa.uzis.cz/, kontakt: crtit@army.cz",
+    "dcat:keyword": [
+        "koronavirus",
+        "covid-19",
+        "očkování",
+        "vakcinace",
+        "distribuce očkovacích látek"
+    ],
+    "dc:publisher": {
+        "schema:name": "ÚZIS ČR",
+        "schema:url": {
+            "@id": "https://www.uzis.cz/"
+        }
+    },
+    "dc:license": {
+        "@id": "http://data.gov.cz/podmínky-užití/volný-přístup/"
+    },
+    "dc:modified": {
+        "@value": "2021-07-14",
+        "@type": "xsd:date"
+    },
+    "tableSchema": {
+        "columns": [
+            {
+                "name": "datum",
+                "titles": "datum",
+                "datatype": "date",
+                "dc:description": "Datum, kdy byla akce (distribuční záznam) uživatelem zadána do systému."
+            },
+            {
+                "name": "akce",
+                "titles": "akce",
+                "datatype": "string",
+                "dc:description": "Příznak, zda se jedná o příjem na sklad (objednané nebo již přijaté dodávky na centrálním skladě, příznak vždy neznamená, že se jedná o naskladněnou dodávku, může jít o dodávku objednanou) nebo výdej z centrálního skladu na poskytovatele zdravotních služeb (dle Národního registru poskytovatelů zdravotních služeb - NRPZS), případně je možné specifikovat přímo očkovací místo. Atribut nrpzs_kod a nrpzs_nazev jsou při výdeji povinné, atributy ockovaci_misto_id a ockovaci_misto_nazev jsou povinné pouze v případě, pokud je daný poskytovatel současně očkovacím místem."
+            },
+            {
+                "name": "vyrobce",
+                "titles": "vyrobce",
+                "datatype": "string",
+                "dc:description": "Název výrobce distribuované očkovací látky."
+            },
+            {
+                "name": "pocet_ampulek",
+                "titles": "pocet_ampulek",
+                "datatype": "integer",
+                "dc:description": "Počet ampulek, které byly součástí akce (distribučního záznamu), tedy příjem nebo výdej (Comirnaty (Pfizer) = 6 dávek / ampulka, VAXZEVRIA = 10 dávek / ampulka, COVID-19 Vaccine Moderna (Moderna) = 10 dávek / ampulka, COVID-19 Vaccine Janssen = 5 dávek / ampulka)."
+            },
+            {
+                "name": "nrpzs_kod",
+                "titles": "nrpzs_kod",
+                "datatype": "string",
+                "dc:description": "Identifikátor poskytovatele zdravotních služeb dle registru NRPZS."
+            },
+            {
+                "name": "nrpzs_nazev",
+                "titles": "nrpzs_nazev",
+                "datatype": "string",
+                "dc:description": "Název poskytovatele zdravotních služeb dle registru NRPZS."
+            },
+            {
+                "name": "nrpzs_kraj_nazev",
+                "titles": "nrpzs_kraj_nazev",
+                "datatype": "string",
+                "dc:description": "Název kraje pro sídlo poskytovatele zdravotních služeb dle registru NRPZS."
+            },
+            {
+                "name": "ockovaci_misto_id",
+                "titles": "ockovaci_misto_id",
+                "datatype": "string",
+                "dc:description": "Jednoznačný identifikátor očkovacího místa."
+            },
+            {
+                "name": "ockovaci_misto_nazev",
+                "titles": "ockovaci_misto_nazev",
+                "datatype": "string",
+                "dc:description": "Název očkovacího místa."
+            },
+            {
+                "name": "distribuce_id",
+                "titles": "distribuce_id",
+                "datatype": "string",
+                "dc:description": "Identifikátor akce (distribučního záznamu), který umožňuje sprárování s datovou sadou o distribuci očkovacích látek mezi očkovacími místy."
+            }
+        ]
+    }
+}
