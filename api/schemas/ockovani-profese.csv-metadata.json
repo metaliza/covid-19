@@ -29,7 +29,7 @@
         "@id": "http://data.gov.cz/podmínky-užití/volný-přístup/"
     },
     "dc:modified": {
-        "@value": "2021-07-08",
+        "@value": "2021-07-20",
         "@type": "xsd:date"
     },
     "tableSchema": {
@@ -141,6 +141,12 @@
                 "titles": "prioritni_skupina_kod",
                 "datatype": "integer",
                 "dc:description": "Rozdělení očkovaných osob do prioritních skupin na základě prioritizačního systému Ministerstvem zdravotnictví ČR, které určuje na základě věku, zdravotní anamnézy a profese časový harmonogram očkování. Každá osoba spadá právě do jedné prioritní skupiny. Číselník prioritních skupin je dostupný na adrese https://onemocneni-aktualne.mzcr.cz/api/v2/covid-19/prioritni-skupiny.csv ."
+            },
+            {
+                "name": "pohlavi",
+                "titles": "pohlavi",
+                "datatype": "string",
+                "dc:description": "V případě neuvedení pohlaví u vykázaného očkování se jedná o cizince, u kterého není možné prostřednictvím centrálních registrů pohlaví identifikovat."
             }
         ]
     }
