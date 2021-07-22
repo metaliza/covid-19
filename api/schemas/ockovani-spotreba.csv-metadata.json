@@ -28,7 +28,7 @@
         "@id": "http://data.gov.cz/podmínky-užití/volný-přístup/"
     },
     "dc:modified": {
-        "@value": "2021-05-26",
+        "@value": "2021-07-22",
         "@type": "xsd:date"
     },
     "tableSchema": {
@@ -91,13 +91,13 @@
                 "name": "pouzite_davky",
                 "titles": "pouzite_davky",
                 "datatype": "integer",
-                "dc:description": "Počet použitých dávek očkovací látky (přepočet dávek v jedné ampulce podle informací výrobce): Comirnaty (Pfizer) = 6 dávek/ampulka, COVID-19 Vaccine AstraZeneca (AstraZeneca) = 10 dávek/ampulka, COVID-19 Vaccine Moderna (Moderna) = 10 dávek/ampulka."
+                "dc:description": "Počet použitých dávek očkovací látky (přepočet dávek v jedné ampulce podle informací výrobce): Comirnaty (Pfizer) = 6 dávek/ampulka, COVID-19 Vaccine AstraZeneca (AstraZeneca) = 10 dávek/ampulka, Spikevax (Moderna) = 10 dávek/ampulka."
             },
             {
                 "name": "znehodnocene_davky",
                 "titles": "znehodnocene_davky",
                 "datatype": "integer",
-                "dc:description": "Počet znehodnocených dávek očkovací látky (přepočet dávek v jedné ampulce podle informací výrobce): Comirnaty (Pfizer) = 6 dávek/ampulka, COVID-19 Vaccine AstraZeneca (AstraZeneca) = 10 dávek/ampulka, COVID-19 Vaccine Moderna (Moderna) = 10 dávek/ampulka."
+                "dc:description": "Počet znehodnocených dávek očkovací látky (přepočet dávek v jedné ampulce podle informací výrobce): Comirnaty (Pfizer) = 6 dávek/ampulka, COVID-19 Vaccine AstraZeneca (AstraZeneca) = 10 dávek/ampulka, Spikevax (Moderna) = 10 dávek/ampulka."
             }
         ]
     }

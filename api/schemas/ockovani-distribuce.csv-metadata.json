@@ -26,7 +26,7 @@
         "@id": "http://data.gov.cz/podmínky-užití/volný-přístup/"
     },
     "dc:modified": {
-        "@value": "2021-07-20",
+        "@value": "2021-07-22",
         "@type": "xsd:date"
     },
     "tableSchema": {
@@ -107,13 +107,13 @@
                 "name": "pocet_ampulek",
                 "titles": "pocet_ampulek",
                 "datatype": "integer",
-                "dc:description": "Počet ampulek distribuované očkovací látky. Počty dávek očkovací látky podle výrobce: Comirnaty (Pfizer) = 6 dávek/ampulka, COVID-19 Vaccine AstraZeneca (AstraZeneca) = 10 dávek/ampulka, COVID-19 Vaccine Moderna (Moderna) = 10 dávek/ampulka, COVID-19 Vaccine Janssen (Janssen) = 10 dávek/ampulka."
+                "dc:description": "Počet ampulek distribuované očkovací látky. Počty dávek očkovací látky podle výrobce: Comirnaty (Pfizer) = 6 dávek/ampulka, COVID-19 Vaccine AstraZeneca (AstraZeneca) = 10 dávek/ampulka, Spikevax (Moderna) = 10 dávek/ampulka, COVID-19 Vaccine Janssen (Janssen) = 10 dávek/ampulka."
             },
             {
                 "name": "pocet_davek",
                 "titles": "pocet_davek",
                 "datatype": "integer",
-                "dc:description": "Počet dávek distribuované očkovací látky (přepočet dávek v jedné ampulce podle informací výrobce): Comirnaty (Pfizer) = 6 dávek/ampulka, COVID-19 Vaccine AstraZeneca (AstraZeneca) = 10 dávek/ampulka, COVID-19 Vaccine Moderna (Moderna) = 10 dávek/ampulka, COVID-19 Vaccine Janssen (Janssen) = 10 dávek/ampulka."
+                "dc:description": "Počet dávek distribuované očkovací látky (přepočet dávek v jedné ampulce podle informací výrobce): Comirnaty (Pfizer) = 6 dávek/ampulka, COVID-19 Vaccine AstraZeneca (AstraZeneca) = 10 dávek/ampulka, Spikevax (Moderna) = 10 dávek/ampulka, COVID-19 Vaccine Janssen (Janssen) = 10 dávek/ampulka."
             },
             {
                 "name": "distribuce_id",

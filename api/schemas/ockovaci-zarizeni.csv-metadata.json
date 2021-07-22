@@ -25,7 +25,7 @@
         "@id": "http://data.gov.cz/podmínky-užití/volný-přístup/"
     },
     "dc:modified": {
-        "@value": "2021-06-15",
+        "@value": "2021-07-22",
         "@type": "xsd:date"
     },
     "tableSchema": {
@@ -75,7 +75,7 @@
             {
                 "name": "zrizovatel_kod",
                 "titles": "zrizovatel_kod",
-                "datatype": "string",
+                "datatype": "integer",
                 "dc:description": "Kód zřizovatele zdravotnického zařízení podle číselníku ÚZIS."
             },
             {

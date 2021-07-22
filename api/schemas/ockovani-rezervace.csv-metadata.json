@@ -29,7 +29,7 @@
         "@id": "http://data.gov.cz/podmínky-užití/volný-přístup/"
     },
     "dc:modified": {
-        "@value": "2021-05-26",
+        "@value": "2021-07-22",
         "@type": "xsd:date"
     },
     "tableSchema": {
@@ -38,7 +38,7 @@
                 "name": "datum",
                 "titles": "datum",
                 "datatype": "date",
-                "dc:description": " Den, ke kterému se vztahují volné a maximální kapacity očkovacího místa podle centrálního registračnímu systému na očkování proti onemocnění COVID-19."
+                "dc:description": "Datum, ke kterému se vztahují volné a maximální kapacity očkovacího místa podle centrálního registračnímu systému na očkování proti onemocnění COVID-19."
             },
             {
                 "name": "ockovaci_misto_id",

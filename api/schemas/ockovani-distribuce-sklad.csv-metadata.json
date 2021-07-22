@@ -26,7 +26,7 @@
         "@id": "http://data.gov.cz/podmínky-užití/volný-přístup/"
     },
     "dc:modified": {
-        "@value": "2021-07-14",
+        "@value": "2021-07-22",
         "@type": "xsd:date"
     },
     "tableSchema": {
@@ -53,7 +53,7 @@
                 "name": "pocet_ampulek",
                 "titles": "pocet_ampulek",
                 "datatype": "integer",
-                "dc:description": "Počet ampulek, které byly součástí akce (distribučního záznamu), tedy příjem nebo výdej (Comirnaty (Pfizer) = 6 dávek / ampulka, VAXZEVRIA = 10 dávek / ampulka, COVID-19 Vaccine Moderna (Moderna) = 10 dávek / ampulka, COVID-19 Vaccine Janssen = 5 dávek / ampulka)."
+                "dc:description": "Počet ampulek, které byly součástí akce (distribučního záznamu), tedy příjem nebo výdej (Comirnaty (Pfizer) = 6 dávek / ampulka, VAXZEVRIA = 10 dávek / ampulka, Spikevax (Moderna) = 10 dávek / ampulka, COVID-19 Vaccine Janssen = 5 dávek / ampulka)."
             },
             {
                 "name": "nrpzs_kod",
