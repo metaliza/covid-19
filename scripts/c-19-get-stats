@@ -1,0 +1,76 @@
+#!/bin/bash
+
+DPROG_NAME=$(basename $0)
+DIR_NAME=$(dirname $0)
+
+# ====== Functions decls & common initializations  ======
+
+. $DIR_NAME/functions.rc
+. $DIR_NAME/download-common.rc
+
+# ====== main block of code ======
+
+if [ -d "$target" -a -d "$ccTarget" ]; then
+#   download kapacity-intenzivni-pece-zdravotnicke-zarizeni-04-2021 ${DIP_URL_BASE}/kapacity-intenzivni-pece-zdravotnicke-zarizeni-04-2021 csv false $downloadMeta
+  
+  downloadCouple zakladni-prehled ${DISEASE_URL_BASE}/zakladni-prehled true false $downloadMeta
+  downloadCouple osoby ${DISEASE_URL_BASE}/osoby true false $downloadMeta
+  downloadCouple nakaza ${DISEASE_URL_BASE}/nakaza true false $downloadMeta
+  downloadCouple vyleceni ${DISEASE_URL_BASE}/vyleceni true false $downloadMeta
+  downloadCouple umrti ${DISEASE_URL_BASE}/umrti true false $downloadMeta
+  downloadCouple hospitalizace ${DISEASE_URL_BASE}/hospitalizace true true $downloadMeta           # copy
+  downloadCouple nakazeni-vyleceni-umrti-testy ${DISEASE_URL_BASE}/nakazeni-vyleceni-umrti-testy true true $downloadMeta         # copy
+  downloadCouple kraj-okres-nakazeni-vyleceni-umrti ${DISEASE_URL_BASE}/kraj-okres-nakazeni-vyleceni-umrti true false $downloadMeta
+  downloadCouple orp ${DISEASE_URL_BASE}/orp true false $downloadMeta
+  downloadCouple obce ${DISEASE_URL_BASE}/obce false false $downloadMeta
+  downloadCouple mestske-casti ${DISEASE_URL_BASE}/mestske-casti true false $downloadMeta
+  downloadCouple incidence-7-14-cr ${DISEASE_URL_BASE}/incidence-7-14-cr true false $downloadMeta
+  downloadCouple incidence-7-14-kraje ${DISEASE_URL_BASE}/incidence-7-14-kraje true false $downloadMeta
+  downloadCouple incidence-7-14-okresy ${DISEASE_URL_BASE}/incidence-7-14-okresy true false $downloadMeta
+  
+  downloadCouple testy ${DISEASE_URL_BASE}/testy true false $downloadMeta
+  downloadCouple testy-pcr-antigenni ${DISEASE_URL_BASE}/testy-pcr-antigenni true false $downloadMeta
+  downloadCouple kraj-okres-testy ${DISEASE_URL_BASE}/kraj-okres-testy true false $downloadMeta
+  downloadCouple prehled-odberovych-mist ${DISEASE_URL_BASE}/prehled-odberovych-mist true false $downloadMeta
+  
+  downloadCouple ockovani ${DISEASE_URL_BASE}/ockovani true true $downloadMeta                     # copy
+  downloadCouple ockovaci-mista ${DISEASE_URL_BASE}/ockovaci-mista false false $downloadMeta
+  downloadCouple prehled-ockovacich-mist ${DISEASE_URL_BASE}/prehled-ockovacich-mist true false $downloadMeta
+  downloadCouple ockovani-spotreba ${DISEASE_URL_BASE}/ockovani-spotreba true false $downloadMeta
+  downloadCouple ockovani-distribuce ${DISEASE_URL_BASE}/ockovani-distribuce true false $downloadMeta
+  downloadCouple ockovani-distribuce-sklad ${DISEASE_URL_BASE}/ockovani-distribuce-sklad true false $downloadMeta
+  downloadCouple ockovani-registrace ${DISEASE_URL_BASE}/ockovani-registrace false false $downloadMeta
+  downloadCouple ockovani-rezervace ${DISEASE_URL_BASE}/ockovani-rezervace true false $downloadMeta
+  downloadCouple ockovani-profese ${DISEASE_URL_BASE}/ockovani-profese false false $downloadMeta
+  downloadCouple ockovaci-zarizeni ${DISEASE_URL_BASE}/ockovaci-zarizeni true false $downloadMeta
+  downloadCouple prioritni-skupiny ${DISEASE_URL_BASE}/prioritni-skupiny true false $downloadMeta
+  
+  downloadCouple pomucky ${DISEASE_URL_BASE}/pomucky true false $downloadMeta
+  
+  download kapacity-intenzivni-pece-vlna-2 ${DIP_URL_BASE}/kapacity-intenzivni-pece-vlna-2 csv false $downloadMeta
+  download kapacity-intenzivni-pece-zdravotnicke-zarizeni ${DIP_URL_BASE}/kapacity-intenzivni-pece-zdravotnicke-zarizeni csv false $downloadMeta
+  download kapacity-intenzivni-pece-zdravotnicke-zarizeni-04-2021 ${DIP_URL_BASE}/kapacity-intenzivni-pece-zdravotnicke-zarizeni-04-2021 csv false $downloadMeta
+  
+  # 'obce' in old format
+  downloadSimple https://share.uzis.cz/s/dCZBiARJ27ayeoS/download $target/obce-$(getTstmp).zip obce.zip
+  
+  # download and copy PES-data
+  pesDest=$target/pes-data-$(getTstmp).zip
+  downloadSimple https://share.uzis.cz/s/BRfppYFpNTddAy4/download $pesDest pes-data.zip
+  unzip -o $pesDest -d $ccTarget
+  
+  # 'incidence' in old format
+  downloadSimple https://share.uzis.cz/s/sFMHoDD2SK7AbXW/download $target/web-pozitivni-$(getTstmp).zip web-pozitivni.zip
+  
+  # download copy of demographics data (origin: CZSO)
+  downloadSimple https://share.uzis.cz/s/KKsz8yTL5HpngDi/download $target/demografie-$(getTstmp).zip demografie.zip
+else
+  if [ -d "$target" ]; then
+    echo "'cc-target' dir $ccTarget doesn't exist!" >&2
+  else
+    echo "'target' dir $target doesn't exist!" >&2
+  fi
+  
+  errUsage
+  exit 2
+fi

@@ -1,0 +1,10 @@
+errUsage() {
+  echo "" >&2
+  echo "$USAGE_STR" >&2
+}
+
+function getTstmp() {
+#   return $(
+  date +%Y-%m-%d-%H.%M
+#   )
+}

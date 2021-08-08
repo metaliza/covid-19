@@ -1,0 +1,119 @@
+# ====== CONST declarations ======
+
+CONFIG_FILE=$DIR_NAME/wgetrc
+DISEASE_URL_BASE=https://onemocneni-aktualne.mzcr.cz/api/v2/covid-19
+DIP_URL_BASE=https://dip.mzcr.cz/api/v1
+
+USAGE_STR="Usage: $PROG_NAME target cc-target [metadata-target]
+
+Performs 3 things:
+  1) Downloads snapshots (with timestamp-enhanced filename) of data from these API's URLs:
+    - $DISEASE_URL_BASE
+    - $DIP_URL_BASE
+  
+  ... to the 'target' dir.
+  
+  2) Copies \"timestamp-stripped\" version of special subset of downloaded files to the 'cc-target' dir (for possible post-processing).
+  
+  3) (Optional) Downloads metadata from the same URLs as in step 1) to the 'metadata-target' dir - only in the case the argument is specified.
+  
+Arguments:
+  target - target for snapshots
+  cc-target - target for \"timestamp-stripped\" copy of \"special\" files
+  metadata-target - target for metadata
+
+Exit codes:
+  0 everything went OK
+  1 one of required params is missing
+  2 one of 'target' or 'cc-target' dirs doesn't exist
+
+"
+
+# ====== Functions ======
+
+# @param $1 code - exit code of download process
+# @param $2 filename - name of file (simple name) which caused the error
+#
+# @Depracated
+function errDownload() {
+  echo "Error during donwload: $2" >&2
+}
+
+# @param $1 src - source URL
+# @param $2 dest - filename of destination (output-document)
+# @param $3 simple filename - simple name of destination file (for the purpuse of error message)
+function downloadSimple() {
+  wget -a $logFile --config=$CONFIG_FILE -O $2 -- $1
+  
+  code=$?
+#   echo $code >&2
+  if [ $code -ne 0 ]; then
+#   else 
+    echo "Error during donwload: Exit code: $code, File: $3" >&2
+  fi
+}
+
+# @param $1 target filename prefix
+# @param $2 urlBase - URL base (without .csv/.json/.min.json suffix)
+# @param $3 suffix - suffix to append both to result filename and to URL
+# @param $4 copy flag - whether to copy downloaded file to '$ccTarget'
+# @param $5 download metadata flag - whether to download metadata to '$metaTarget'
+function download() {
+  src=$2.$3
+  dest=$target/$1-$(getTstmp).$3
+  plainFilename=$1.$3
+  
+  metaSrc=${src}-metadata.json
+  metaPlainFilename=${plainFilename}-metadata.json
+  metaDest=$metaTarget/$metaPlainFilename
+  
+  downloadSimple $src $dest $plainFilename
+  
+  if [ "$4" = true ]; then
+    cp -f $dest $ccTarget/$plainFilename
+  fi
+  if [ "$5" = true ]; then
+    downloadSimple $metaSrc $metaDest $metaPlainFilename
+  fi
+}
+
+# @param $1 target filename prefix
+# @param $2 urlBase - URL base (without .csv/.json/.min.json suffix)
+# @param $3 full flag - whether to download full version (formatted - human readable) of JSON
+# @param $4 copy flag - whether to copy downloaded CSV-file to 'ccTarget'
+# @param $5 download metadata flag - whether to download metadata to '$metaTarget'
+function downloadCouple() {
+  download $1 $2 csv $4 $5
+  
+  if [ "$3" = true ]; then
+    jsonSuffix=json
+  else
+    jsonSuffix=min.json
+  fi
+  
+  download $1 $2 ${jsonSuffix}
+}
+
+# ====== main block of code ======
+
+target=$1
+ccTarget=$2
+metaTarget=$3
+
+if [ -z $target ]; then
+  echo "Empty target param!" >&2
+  errUsage
+  exit 1
+fi
+
+if [ -z $ccTarget ]; then
+  echo "Empty cc-target param!" >&2
+  errUsage
+  exit 1
+fi
+
+if [ -n "$metaTarget" ]; then
+  downloadMeta=true
+fi
+
+logFile=$target/output-$(getTstmp).log
