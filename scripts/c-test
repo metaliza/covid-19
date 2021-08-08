@@ -52,19 +52,19 @@ if [ -d "$target" -a -d "$ccTarget" ]; then
 #   download kapacity-intenzivni-pece-zdravotnicke-zarizeni ${DIP_URL_BASE}/kapacity-intenzivni-pece-zdravotnicke-zarizeni csv false $downloadMeta
 #   download kapacity-intenzivni-pece-zdravotnicke-zarizeni-04-2021 ${DIP_URL_BASE}/kapacity-intenzivni-pece-zdravotnicke-zarizeni-04-2021 csv false $downloadMeta
 
-  # 'obce' in old format
-  downloadSimple https://share.uzis.cz/s/dCZBiARJ27ayeoS/download $target/obce-$(getTstmp).zip obce.zip
+#   # 'obce' in old format
+#   downloadSimple https://share.uzis.cz/s/dCZBiARJ27ayeoS/download $target/obce-$(getTstmp).zip obce.zip
   
   # download and copy PES-data
   pesDest=$target/pes-data-$(getTstmp).zip
   downloadSimple https://share.uzis.cz/s/BRfppYFpNTddAy4/download $pesDest pes-data.zip
-  unzip -o $pesDest -d $ccTarget
+  unzip -o $pesDest -d $ccTarget >> $logFile
   
-  # 'incidence' in old format
-  downloadSimple https://share.uzis.cz/s/sFMHoDD2SK7AbXW/download $target/web-pozitivni-$(getTstmp).zip web-pozitivni.zip
-  
-  # download copy of demographics data (origin: CZSO)
-  downloadSimple https://share.uzis.cz/s/KKsz8yTL5HpngDi/download $target/demografie-$(getTstmp).zip demografie.zip
+#   # 'incidence' in old format
+#   downloadSimple https://share.uzis.cz/s/sFMHoDD2SK7AbXW/download $target/web-pozitivni-$(getTstmp).zip web-pozitivni.zip
+#   
+#   # download copy of demographics data (origin: CZSO)
+#   downloadSimple https://share.uzis.cz/s/KKsz8yTL5HpngDi/download $target/demografie-$(getTstmp).zip demografie.zip
 :
 else
   if [ -d "$target" ]; then
