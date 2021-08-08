@@ -41,7 +41,7 @@ function errDownload() {
 
 # @param $1 src - source URL
 # @param $2 dest - filename of destination (output-document)
-# @param $3 simple filename - simple name of destination file (for the purpuse of error message)
+# @param $3 simple filename - simple name of destination file (for the purpose of error message)
 function downloadSimple() {
   wget -a $logFile --config=$CONFIG_FILE -O $2 -- $1
   

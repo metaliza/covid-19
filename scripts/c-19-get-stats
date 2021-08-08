@@ -1,6 +1,6 @@
 #!/bin/bash
 
-DPROG_NAME=$(basename $0)
+PROG_NAME=$(basename $0)
 DIR_NAME=$(dirname $0)
 
 # ====== Functions decls & common initializations  ======
