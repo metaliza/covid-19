@@ -1,0 +1,27 @@
+# ====== CONST declarations ======
+
+
+# ====== Functions ======
+
+function errTarget() {
+  echo "'target' dir $target doesn't exist!" >&2
+  errUsage
+  exit 2
+}
+
+# ====== main block of code ======
+
+target=$1
+prefix=$2
+
+if [ -z $target ]; then
+  echo "Empty target param!" >&2
+  errUsage
+  exit 1
+fi
+
+if [ -z $prefix ]; then
+  echo "Empty prefix param!" >&2
+  errUsage
+  exit 1
+fi
