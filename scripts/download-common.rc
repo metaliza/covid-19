@@ -70,7 +70,7 @@ function download() {
   downloadSimple $src $dest $plainFilename
   
   if [ "$4" = true ]; then
-    cp -f $dest $ccTarget/$plainFilename
+    cp -f --preserve=mode,timestamp $dest $ccTarget/$plainFilename
   fi
   if [ "$5" = true ]; then
     downloadSimple $metaSrc $metaDest $metaPlainFilename
@@ -92,6 +92,18 @@ function downloadCouple() {
   fi
   
   download $1 $2 ${jsonSuffix}
+}
+
+# Notifies about error &ndash; missing one of required "target" params.
+function errTargets() {
+  if [ -d "$target" ]; then
+    echo "'cc-target' dir $ccTarget doesn't exist!" >&2
+  else
+    echo "'target' dir $target doesn't exist!" >&2
+  fi
+  
+  errUsage
+  exit 2
 }
 
 # ====== main block of code ======

@@ -11,8 +11,6 @@ DIR_NAME=$(dirname $0)
 # ====== main block of code ======
 
 if [ -d "$target" -a -d "$ccTarget" ]; then
-#   download kapacity-intenzivni-pece-zdravotnicke-zarizeni-04-2021 ${DIP_URL_BASE}/kapacity-intenzivni-pece-zdravotnicke-zarizeni-04-2021 csv false $downloadMeta
-  
   downloadCouple zakladni-prehled ${DISEASE_URL_BASE}/zakladni-prehled true false $downloadMeta
   downloadCouple osoby ${DISEASE_URL_BASE}/osoby true false $downloadMeta
   downloadCouple nakaza ${DISEASE_URL_BASE}/nakaza true false $downloadMeta
@@ -65,12 +63,5 @@ if [ -d "$target" -a -d "$ccTarget" ]; then
   # download copy of demographics data (origin: CZSO)
   downloadSimple https://share.uzis.cz/s/KKsz8yTL5HpngDi/download $target/demografie-$(getTstmp).zip demografie.zip
 else
-  if [ -d "$target" ]; then
-    echo "'cc-target' dir $ccTarget doesn't exist!" >&2
-  else
-    echo "'target' dir $target doesn't exist!" >&2
-  fi
-  
-  errUsage
-  exit 2
+  errTargets
 fi
