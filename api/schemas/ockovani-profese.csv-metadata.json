@@ -6,7 +6,7 @@
         }
     ],
     "url": "ockovani-profese.csv",
-    "dc:title": "COVID-19: Přehled vykázaných očkování podle profesí",
+    "dc:title": "COVID-19: Přehled vykázaných očkování podle profesí (očkovací místo, bydliště očkovaného)",
     "dc:description": "Datová sada poskytuje řádková data o vykázaných očkováních na jednotlivých očkovacích místech ČR. Každý řádek přehledu popisuje jedno vykázané očkování v daném dni a indikační skupině profese, s použitím dané dávky očkovací látky, na konkrétním očkovacím místu a ve vybraném kraji.",
     "dc:source": "Informační systém infekčních nemocí (ISIN) - https://www.uzis.cz/index.php?pg=registry-sber-dat--ochrana-verejneho-zdravi--informacni-system-infekcni-nemoci, kontakt: helpdesk.registry@uzis.cz",
     "dcat:keyword": [
@@ -29,7 +29,7 @@
         "@id": "http://data.gov.cz/podmínky-užití/volný-přístup/"
     },
     "dc:modified": {
-        "@value": "2021-07-20",
+        "@value": "2021-08-12",
         "@type": "xsd:date"
     },
     "tableSchema": {
@@ -147,6 +147,24 @@
                 "titles": "pohlavi",
                 "datatype": "string",
                 "dc:description": "V případě neuvedení pohlaví u vykázaného očkování se jedná o cizince, u kterého není možné prostřednictvím centrálních registrů pohlaví identifikovat."
+            },
+            {
+                "name": "zrizovatel_kod",
+                "titles": "zrizovatel_kod",
+                "datatype": "integer",
+                "dc:description": "Kód zřizovatele očkovacího místa."
+            },
+            {
+                "name": "zrizovatel_nazev",
+                "titles": "zrizovatel_nazev",
+                "datatype": "string",
+                "dc:description": "Název zřizovatele očkovacího místa."
+            },
+            {
+                "name": "vakcina_kod",
+                "titles": "vakcina_kod",
+                "datatype": "string",
+                "dc:description": "Kód očkovací látky podle klasifikace ÚZIS ČR."
             }
         ]
     }
