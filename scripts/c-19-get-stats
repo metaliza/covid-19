@@ -62,6 +62,9 @@ if [ -d "$target" -a -d "$ccTarget" ]; then
   
   # download copy of demographics data (origin: CZSO)
   downloadSimple https://share.uzis.cz/s/KKsz8yTL5HpngDi/download $target/demografie-$(getTstmp).zip demografie.zip
+  
+  echo "" >> $logFile
+  echo "Download finished." >> $logFile
 else
   errTargets
 fi
