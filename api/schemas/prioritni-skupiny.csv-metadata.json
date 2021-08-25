@@ -7,7 +7,7 @@
     ],
     "url": "prioritni-skupiny.csv",
     "dc:title": "COVID-19: Číselník prioritních skupin očkování",
-    "dc:description": "Seznam prioritních skupin pro rozdělení očkovaných osob na základě prioritizačního systému Ministerstvem zdravotnictví ČR, který je použit v datové sadě COVID-19: Přehled vykázaných očkování podle profesí (očkovací místo, bydliště očkovaného).",
+    "dc:description": "Seznam prioritních skupin pro rozdělení očkovaných osob na základě prioritizačního systému Ministerstvem zdravotnictví ČR, který je použit v datové sadě COVID-19: Přehled vykázaných očkování podle profesí.",
     "dc:source": "Informační systém infekčních nemocí (ISIN) - https://www.uzis.cz/index.php?pg=registry-sber-dat--ochrana-verejneho-zdravi--informacni-system-infekcni-nemoci, kontakt: helpdesk.registry@uzis.cz",
     "dcat:keyword": [
         "covid-19",
@@ -25,7 +25,7 @@
         "@id": "http://data.gov.cz/podmínky-užití/volný-přístup/"
     },
     "dc:modified": {
-        "@value": "2021-08-18",
+        "@value": "2021-08-11",
         "@type": "xsd:date"
     },
     "tableSchema": {
