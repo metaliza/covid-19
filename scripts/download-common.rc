@@ -28,6 +28,10 @@ Exit codes:
   2 one of 'target' or 'cc-target' dirs doesn't exist
 
 "
+  
+# ====== Global vars ======
+
+cumulativeCode=0
 
 # ====== Functions ======
 
@@ -45,12 +49,14 @@ function errDownload() {
 function downloadSimple() {
   wget -a $logFile --config=$CONFIG_FILE -O $2 -- $1
   
-  code=$?
-#   echo $code >&2
-  if [ $code -ne 0 ]; then
+  local tmpCode=$?
+#   echo $tmpCode >&2
+  if [ $tmpCode -ne 0 ]; then
 #   else 
-    echo "Error during donwload: Exit code: $code, File: $3" >&2
+    echo "Error during donwload: Exit code: $tmpCode, File: $3" >&2
   fi
+  
+  return $tmpCode
 }
 
 # @param $1 target filename prefix
@@ -68,13 +74,18 @@ function download() {
   metaDest=$metaTarget/$metaPlainFilename
   
   downloadSimple $src $dest $plainFilename
+  local tmpCode=$?
   
   if [ "$4" = true ]; then
     cp -f --preserve=mode,timestamp $dest $ccTarget/$plainFilename
   fi
   if [ "$5" = true ]; then
     downloadSimple $metaSrc $metaDest $metaPlainFilename
+    tmpCode=$[$tmpCode | $?]
   fi
+  
+  cumulativeCode=$[$cumulativeCode | $tmpCode]
+  return $tmpCode
 }
 
 # @param $1 target filename prefix
@@ -84,6 +95,7 @@ function download() {
 # @param $5 download metadata flag - whether to download metadata to '$metaTarget'
 function downloadCouple() {
   download $1 $2 csv $4 $5
+  local tmpCode=$?
   
   if [ "$3" = true ]; then
     jsonSuffix=json
@@ -92,6 +104,10 @@ function downloadCouple() {
   fi
   
   download $1 $2 ${jsonSuffix}
+  tmpCode=$[$tmpCode | $?]
+  
+  cumulativeCode=$[$cumulativeCode | $tmpCode]
+  return $tmpCode
 }
 
 # Notifies about error &ndash; missing one of required "target" params.

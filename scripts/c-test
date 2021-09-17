@@ -11,12 +11,13 @@ DIR_NAME=$(dirname $0)
 # ====== main block of code ======
 
 if [ -d "$target" -a -d "$ccTarget" ]; then
-#   downloadCouple zakladni-prehled ${DISEASE_URL_BASE}/zakladni-prehled true false $downloadMeta
+  cumulativeCode=2
+  downloadCouple zakladni-prehled ${DISEASE_URL_BASE}/zakladni-prehled true false $downloadMeta
 #   downloadCouple osoby ${DISEASE_URL_BASE}/osoby true false $downloadMeta
 #   downloadCouple nakaza ${DISEASE_URL_BASE}/nakaza true false $downloadMeta
 #   downloadCouple vyleceni ${DISEASE_URL_BASE}/vyleceni true false $downloadMeta
 #   downloadCouple umrti ${DISEASE_URL_BASE}/umrti true false $downloadMeta
-  download umrti ${DISEASE_URL_BASE}/umrti csv false
+#   download umrti ${DISEASE_URL_BASE}/umrti csv false
 #   downloadCouple hospitalizace ${DISEASE_URL_BASE}/hospitalizace true true $downloadMeta           # copy
 #   downloadCouple nakazeni-vyleceni-umrti-testy ${DISEASE_URL_BASE}/nakazeni-vyleceni-umrti-testy true true $downloadMeta         # copy
 #   downloadCouple kraj-okres-nakazeni-vyleceni-umrti ${DISEASE_URL_BASE}/kraj-okres-nakazeni-vyleceni-umrti true false $downloadMeta
@@ -26,7 +27,7 @@ if [ -d "$target" -a -d "$ccTarget" ]; then
 #   downloadCouple incidence-7-14-cr ${DISEASE_URL_BASE}/incidence-7-14-cr true false $downloadMeta
 #   downloadCouple incidence-7-14-kraje ${DISEASE_URL_BASE}/incidence-7-14-kraje true false $downloadMeta
 #   download incidence-7-14-okresy ${DISEASE_URL_BASE}/incidence-7-14-okresy csv false $downloadMeta
-#   download nic http://localhost/badurl csv
+  download nic http://localhost/badurl csv
   
 #   downloadCouple testy ${DISEASE_URL_BASE}/testy true false $downloadMeta
 #   downloadCouple testy-pcr-antigenni ${DISEASE_URL_BASE}/testy-pcr-antigenni true false $downloadMeta
@@ -43,7 +44,10 @@ if [ -d "$target" -a -d "$ccTarget" ]; then
 #   download ockovani-registrace ${DISEASE_URL_BASE}/ockovani-registrace min.json true
 #   downloadCouple ockovani-rezervace ${DISEASE_URL_BASE}/ockovani-rezervace true false $downloadMeta
 #   downloadCouple ockovani-profese ${DISEASE_URL_BASE}/ockovani-profese false false $downloadMeta
+#   downloadCouple ockovani-demografie ${DISEASE_URL_BASE}/ockovani-demografie true false $downloadMeta
+#   downloadCouple ockovani-geografie ${DISEASE_URL_BASE}/ockovani-geografie true false $downloadMeta
 #   downloadCouple ockovaci-zarizeni ${DISEASE_URL_BASE}/ockovaci-zarizeni true false $downloadMeta
+#   downloadCouple ockovani-zakladni-prehled ${DISEASE_URL_BASE}/ockovani-zakladni-prehled true false $downloadMeta
 #   downloadCouple prioritni-skupiny ${DISEASE_URL_BASE}/prioritni-skupiny true false $downloadMeta
 #   
 #   downloadCouple pomucky ${DISEASE_URL_BASE}/pomucky true false $downloadMeta
@@ -65,12 +69,71 @@ if [ -d "$target" -a -d "$ccTarget" ]; then
 #   
 #   # download copy of demographics data (origin: CZSO)
 #   downloadSimple https://share.uzis.cz/s/KKsz8yTL5HpngDi/download $target/demografie-$(getTstmp).zip demografie.zip
+
+
+#   # ====== temp block for csv ======
+#   
+#   download zakladni-prehled ${DISEASE_URL_BASE}/zakladni-prehled csv false $downloadMeta
+#   download osoby ${DISEASE_URL_BASE}/osoby csv false $downloadMeta
+#   download nakaza ${DISEASE_URL_BASE}/nakaza csv false $downloadMeta
+#   download vyleceni ${DISEASE_URL_BASE}/vyleceni csv false $downloadMeta
+#   download umrti ${DISEASE_URL_BASE}/umrti csv false $downloadMeta
+#   download hospitalizace ${DISEASE_URL_BASE}/hospitalizace csv true $downloadMeta           # copy
+#   download nakazeni-vyleceni-umrti-testy ${DISEASE_URL_BASE}/nakazeni-vyleceni-umrti-testy csv true $downloadMeta         # copy
+#   download kraj-okres-nakazeni-vyleceni-umrti ${DISEASE_URL_BASE}/kraj-okres-nakazeni-vyleceni-umrti csv false $downloadMeta
+#   download orp ${DISEASE_URL_BASE}/orp csv false $downloadMeta
+#   download obce ${DISEASE_URL_BASE}/obce csv false $downloadMeta
+#   download mestske-casti ${DISEASE_URL_BASE}/mestske-casti csv false $downloadMeta
+#   download incidence-7-14-cr ${DISEASE_URL_BASE}/incidence-7-14-cr csv false $downloadMeta
+#   download incidence-7-14-kraje ${DISEASE_URL_BASE}/incidence-7-14-kraje csv false $downloadMeta
+#   download incidence-7-14-okresy ${DISEASE_URL_BASE}/incidence-7-14-okresy csv false $downloadMeta
+#   
+#   download testy ${DISEASE_URL_BASE}/testy csv false $downloadMeta
+#   download testy-pcr-antigenni ${DISEASE_URL_BASE}/testy-pcr-antigenni csv false $downloadMeta
+#   download kraj-okres-testy ${DISEASE_URL_BASE}/kraj-okres-testy csv false $downloadMeta
+#   download prehled-odberovych-mist ${DISEASE_URL_BASE}/prehled-odberovych-mist csv false $downloadMeta
+#   
+#   download ockovani ${DISEASE_URL_BASE}/ockovani csv true $downloadMeta                     # copy
+# #   download ockovaci-mista ${DISEASE_URL_BASE}/ockovaci-mista csv false $downloadMeta
+#   download prehled-ockovacich-mist ${DISEASE_URL_BASE}/prehled-ockovacich-mist csv false $downloadMeta
+#   download ockovani-spotreba ${DISEASE_URL_BASE}/ockovani-spotreba csv false $downloadMeta
+#   download ockovani-distribuce ${DISEASE_URL_BASE}/ockovani-distribuce csv false $downloadMeta
+#   download ockovani-distribuce-sklad ${DISEASE_URL_BASE}/ockovani-distribuce-sklad csv false $downloadMeta
+# #   download ockovani-registrace ${DISEASE_URL_BASE}/ockovani-registrace csv false $downloadMeta
+#   download ockovani-rezervace ${DISEASE_URL_BASE}/ockovani-rezervace csv false $downloadMeta
+# #   download ockovani-profese ${DISEASE_URL_BASE}/ockovani-profese csv false $downloadMeta
+#   download ockovaci-zarizeni ${DISEASE_URL_BASE}/ockovaci-zarizeni csv false $downloadMeta
+#   download prioritni-skupiny ${DISEASE_URL_BASE}/prioritni-skupiny csv false $downloadMeta
+#   
+#   download pomucky ${DISEASE_URL_BASE}/pomucky csv false $downloadMeta
+#   
+#   download kapacity-intenzivni-pece-vlna-2 ${DIP_URL_BASE}/kapacity-intenzivni-pece-vlna-2 csv false $downloadMeta
+#   download kapacity-intenzivni-pece-zdravotnicke-zarizeni ${DIP_URL_BASE}/kapacity-intenzivni-pece-zdravotnicke-zarizeni csv false $downloadMeta
+#   download kapacity-intenzivni-pece-zdravotnicke-zarizeni-04-2021 ${DIP_URL_BASE}/kapacity-intenzivni-pece-zdravotnicke-zarizeni-04-2021 csv false $downloadMeta
+# 
+#   # 'obce' in old format
+#   downloadSimple https://share.uzis.cz/s/dCZBiARJ27ayeoS/download $target/obce-$(getTstmp).zip obce.zip
+#   
+#   # download and copy PES-data
+#   pesDest=$target/pes-data-$(getTstmp).zip
+#   downloadSimple https://share.uzis.cz/s/BRfppYFpNTddAy4/download $pesDest pes-data.zip
+#   unzip -o $pesDest -d $ccTarget >> $logFile
+#   
+#   # 'incidence' in old format
+#   downloadSimple https://share.uzis.cz/s/sFMHoDD2SK7AbXW/download $target/web-pozitivni-$(getTstmp).zip web-pozitivni.zip
+#   
+#   # download copy of demographics data (origin: CZSO)
+#   downloadSimple https://share.uzis.cz/s/KKsz8yTL5HpngDi/download $target/demografie-$(getTstmp).zip demografie.zip
+#   
+#   # ====== end of temp block ======
   
   echo "" >> $logFile
-  echo "Download finished." >> $logFile
+  echo "Download finished with cumulative errCode: $cumulativeCode." >> $logFile
 else
   errTargets
 fi
+
+# https://onemocneni-aktualne.mzcr.cz/api/account/stbkltONzRu3wstWR0dxdBsL0g/file/
 
 #   wget -O $target/-$(getTstmp).csv 
 #   wget -O $target/-$(getTstmp).json 

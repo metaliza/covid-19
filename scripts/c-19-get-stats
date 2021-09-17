@@ -40,7 +40,10 @@ if [ -d "$target" -a -d "$ccTarget" ]; then
   downloadCouple ockovani-registrace ${DISEASE_URL_BASE}/ockovani-registrace false false $downloadMeta
   downloadCouple ockovani-rezervace ${DISEASE_URL_BASE}/ockovani-rezervace true false $downloadMeta
   downloadCouple ockovani-profese ${DISEASE_URL_BASE}/ockovani-profese false false $downloadMeta
+  downloadCouple ockovani-demografie ${DISEASE_URL_BASE}/ockovani-demografie true false $downloadMeta
+  downloadCouple ockovani-geografie ${DISEASE_URL_BASE}/ockovani-geografie true false $downloadMeta
   downloadCouple ockovaci-zarizeni ${DISEASE_URL_BASE}/ockovaci-zarizeni true false $downloadMeta
+  downloadCouple ockovani-zakladni-prehled ${DISEASE_URL_BASE}/ockovani-zakladni-prehled true false $downloadMeta
   downloadCouple prioritni-skupiny ${DISEASE_URL_BASE}/prioritni-skupiny true false $downloadMeta
   
   downloadCouple pomucky ${DISEASE_URL_BASE}/pomucky true false $downloadMeta
@@ -64,7 +67,7 @@ if [ -d "$target" -a -d "$ccTarget" ]; then
   downloadSimple https://share.uzis.cz/s/KKsz8yTL5HpngDi/download $target/demografie-$(getTstmp).zip demografie.zip
   
   echo "" >> $logFile
-  echo "Download finished." >> $logFile
+  echo "Download finished with cumulative errCode: $cumulativeCode." >> $logFile
 else
   errTargets
 fi
