@@ -1,0 +1,96 @@
+{
+    "@context": [
+        "https://www.w3.org/ns/csvw",
+        {
+            "@language": "cs"
+        }
+    ],
+    "url": "ockovani-zakladni-prehled.csv",
+    "dc:title": "COVID-19: Základní přehled vykázaných očkování",
+    "dc:description": "Datová sada poskytuje řádková data o vykázaných očkováních v ČR. Každý řádek přehledu popisuje množství vykázaných očkování v daném kraji a ORP s použitím dané dávky očkovací látky u konkrétní věkové skupiny a pohlaví.",
+    "dc:source": "Informační systém infekčních nemocí (ISIN) - https://www.uzis.cz/index.php?pg=registry-sber-dat--ochrana-verejneho-zdravi--informacni-system-infekcni-nemoci, kontakt: helpdesk.registry@uzis.cz",
+    "dcat:keyword": [
+        "koronavirus",
+        "covid-19",
+        "očkování",
+        "vakcinace",
+        "očkovací látka"
+    ],
+    "dc:publisher": {
+        "schema:name": "ÚZIS ČR",
+        "schema:url": {
+            "@id": "https://www.uzis.cz/"
+        }
+    },
+    "dc:license": {
+        "@id": "http://data.gov.cz/podmínky-užití/volný-přístup/"
+    },
+    "dc:modified": {
+        "@value": "2021-09-26",
+        "@type": "xsd:date"
+    },
+    "tableSchema": {
+        "columns": [
+            {
+                "name": "kraj_nazev",
+                "titles": "kraj_nazev",
+                "datatype": "string",
+                "dc:description": "Název kraje, ve kterém se nachází očkovací místo."
+            },
+            {
+                "name": "kraj_nuts_kod",
+                "titles": "kraj_nuts_kod",
+                "datatype": "string",
+                "dc:description": "Identifikátor kraje podle klasifikace NUTS 3, ve kterém se nachází očkovací místo."
+            },
+            {
+                "name": "orp_bydliste",
+                "titles": "orp_bydliste",
+                "datatype": "string",
+                "dc:description": "Bydliště (na úrovni názvu obce s rozšířenou působností) očkované osoby."
+            },
+            {
+                "name": "orp_bydliste_kod",
+                "titles": "orp_bydliste_kod",
+                "datatype": "integer",
+                "dc:description": "Bydliště (na úrovni kódu obce s rozšířenou působností) podle číselníku ÚZIS ČR (https://pzu-api.uzis.cz/api/orp) očkované osoby."
+            },
+            {
+                "name": "vakcina",
+                "titles": "vakcina",
+                "datatype": "string",
+                "dc:description": "Název očkovací látky."
+            },
+            {
+                "name": "vakcina_kod",
+                "titles": "vakcina_kod",
+                "datatype": "string",
+                "dc:description": "Kód očkovací látky podle klasifikace ÚZIS ČR."
+            },
+            {
+                "name": "poradi_davky",
+                "titles": "poradi_davky",
+                "datatype": "integer",
+                "dc:description": "Pořadí dávky (první, druhá) danou očkovací látkou."
+            },
+            {
+                "name": "vekova_skupina",
+                "titles": "vekova_skupina",
+                "datatype": "string",
+                "dc:description": "Rozdělení očkovaných osob podle věku do skupin."
+            },
+            {
+                "name": "pohlavi",
+                "titles": "pohlavi",
+                "datatype": "string",
+                "dc:description": "V případě neuvedení pohlaví u vykázaného očkování se jedná o cizince, u kterého není možné prostřednictvím centrálních registrů pohlaví identifikovat."
+            },
+            {
+                "name": "pocet_davek",
+                "titles": "pocet_davek",
+                "datatype": "integer",
+                "dc:description": "Počet vykázaných dávek očkování."
+            }
+        ]
+    }
+}
