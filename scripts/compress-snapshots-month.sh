@@ -10,7 +10,7 @@ Performs 3 things:
   
 Arguments:
   target - target for archives
-  prefix - prefix of snaphot dirs to be packed
+  prefix - \"month\" prefix of snaphots dirs to be packed
 
 Exit codes:
   0 everything went OK

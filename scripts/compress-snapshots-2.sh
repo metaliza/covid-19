@@ -10,7 +10,7 @@ Performs 3 things:
   
 Arguments:
   target - target for archives
-  prefix - prefix of snaphot dirs to be packed
+  prefix - prefix of snaphots dirs to be packed
 
 Exit codes:
   0 everything went OK
@@ -27,8 +27,13 @@ Exit codes:
 # ====== main block of code ======
 
 if [ -d "$target" ]; then
-  tar -cf - ${prefix}0 | xz -9 > $target/${prefix}0.tar.xz
-  tar -cf - ${prefix}1 | xz -9 > $target/${prefix}1.tar.xz
+  if [ -d "${prefix}0" ]; then
+    tar -cf - ${prefix}0 | xz -9 > $target/${prefix}0.tar.xz
+  fi
+  if [ -d "${prefix}0" ]; then
+    tar -cf - ${prefix}1 | xz -9 > $target/${prefix}1.tar.xz
+  fi
+  
 else
   errTarget
 fi
