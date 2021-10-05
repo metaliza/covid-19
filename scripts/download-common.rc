@@ -78,6 +78,8 @@ function download() {
   
   if [ "$4" = true ]; then
     cp -f --preserve=mode,timestamp $dest $ccTarget/$plainFilename
+  elif [ "$4" = link ]; then
+    ln -sf $(realpath $dest) $ccTarget/$plainFilename
   fi
   if [ "$5" = true ]; then
     downloadSimple $metaSrc $metaDest $metaPlainFilename

@@ -31,7 +31,7 @@ if [ -d "$target" -a -d "$ccTarget" ]; then
   downloadCouple kraj-okres-testy ${DISEASE_URL_BASE}/kraj-okres-testy true false $downloadMeta
   downloadCouple prehled-odberovych-mist ${DISEASE_URL_BASE}/prehled-odberovych-mist true false $downloadMeta
   
-  downloadCouple ockovani ${DISEASE_URL_BASE}/ockovani true true $downloadMeta                     # copy
+  downloadCouple ockovani ${DISEASE_URL_BASE}/ockovani true false $downloadMeta
   downloadCouple ockovaci-mista ${DISEASE_URL_BASE}/ockovaci-mista false false $downloadMeta
   downloadCouple prehled-ockovacich-mist ${DISEASE_URL_BASE}/prehled-ockovacich-mist true false $downloadMeta
   downloadCouple ockovani-spotreba ${DISEASE_URL_BASE}/ockovani-spotreba true false $downloadMeta
@@ -39,7 +39,7 @@ if [ -d "$target" -a -d "$ccTarget" ]; then
   downloadCouple ockovani-distribuce-sklad ${DISEASE_URL_BASE}/ockovani-distribuce-sklad true false $downloadMeta
   downloadCouple ockovani-registrace ${DISEASE_URL_BASE}/ockovani-registrace false false $downloadMeta
   downloadCouple ockovani-rezervace ${DISEASE_URL_BASE}/ockovani-rezervace true false $downloadMeta
-  downloadCouple ockovani-profese ${DISEASE_URL_BASE}/ockovani-profese false false $downloadMeta
+  downloadCouple ockovani-profese ${DISEASE_URL_BASE}/ockovani-profese false link $downloadMeta                     # link temporary to target
   downloadCouple ockovani-demografie ${DISEASE_URL_BASE}/ockovani-demografie true false $downloadMeta
   downloadCouple ockovani-geografie ${DISEASE_URL_BASE}/ockovani-geografie true false $downloadMeta
   downloadCouple ockovaci-zarizeni ${DISEASE_URL_BASE}/ockovaci-zarizeni true false $downloadMeta
