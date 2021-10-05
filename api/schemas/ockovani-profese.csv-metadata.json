@@ -29,7 +29,7 @@
         "@id": "http://data.gov.cz/podmínky-užití/volný-přístup/"
     },
     "dc:modified": {
-        "@value": "2021-08-12",
+        "@value": "2021-10-05",
         "@type": "xsd:date"
     },
     "tableSchema": {
@@ -165,6 +165,12 @@
                 "titles": "vakcina_kod",
                 "datatype": "string",
                 "dc:description": "Kód očkovací látky podle klasifikace ÚZIS ČR."
+            },
+            {
+                "name": "ukoncujici_davka",
+                "titles": "ukoncujici_davka",
+                "datatype": "boolean",
+                "dc:description": "Určení, zda je daná dávka ukončující."
             }
         ]
     }

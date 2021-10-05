@@ -24,7 +24,7 @@
         "@id": "http://data.gov.cz/podmínky-užití/volný-přístup/"
     },
     "dc:modified": {
-        "@value": "2021-05-26",
+        "@value": "2021-10-05",
         "@type": "xsd:date"
     },
     "tableSchema": {
@@ -51,19 +51,19 @@
                 "name": "aktivni_pripady",
                 "titles": "aktivni_pripady",
                 "datatype": "integer",
-                "dc:description": "Počet osob pozitivně testovaných na původce onemocnění COVID‑19, které nebyly k danému datu dosud označeny za vyléčené (dva negativní testy) ani nezemřely."
+                "dc:description": "Počet osob pozitivně testovaných na původce onemocnění COVID‑19, které nebyly k danému datu dosud označeny za vyléčené ani nezemřely."
             },
             {
                 "name": "vyleceni",
                 "titles": "vyleceni",
                 "datatype": "integer",
-                "dc:description": "Celkový počet osob, které byly pozitivně laboratorně testovány metodou PCR na přítomnost původce onemocnění COVID‑19 (bez ohledu na klinický průběh nemoci a případně aplikovanou léčbu), a následně u nich bylo dvakrát provedeno toto laboratorní testování s negativním výsledkem."
+                "dc:description": "Celkový počet osob, které byly pozitivně testovány na přítomnost původce onemocnění COVID‑19 (bez ohledu na klinický průběh nemoci a případně aplikovanou léčbu)."
             },
             {
                 "name": "umrti",
                 "titles": "umrti",
                 "datatype": "integer",
-                "dc:description": "Celkový počet úmrtí osob s onemocněním COVID‑19 zahrnuje všechna úmrtí osob, které byly pozitivně testovány na COVID‑19 (metodou PCR) bez ohledu na to, jaké byly příčiny jejich úmrtí, zda k jejichž úmrtí došlo v rámci hospitalizace či mimo ni. S ohledem na fakt, že vykazování úmrtí má určité zpoždění oproti reálnému stavu z důvodu validace a uzavírání případů krajských hygienických stanic, se mohou denní záznamy zpětně měnit právě z důvodu průběžného doplňování."
+                "dc:description": "Celkový počet úmrtí osob s onemocněním COVID‑19 zahrnuje všechna úmrtí osob, které byly pozitivně testovány na COVID‑19 bez ohledu na to, jaké byly příčiny jejich úmrtí, zda k jejichž úmrtí došlo v rámci hospitalizace či mimo ni. S ohledem na fakt, že vykazování úmrtí má určité zpoždění oproti reálnému stavu z důvodu validace a uzavírání případů krajských hygienických stanic, se mohou denní záznamy zpětně měnit právě z důvodu průběžného doplňování."
             },
             {
                 "name": "aktualne_hospitalizovani",
