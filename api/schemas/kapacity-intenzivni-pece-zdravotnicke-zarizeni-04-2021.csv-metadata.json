@@ -29,7 +29,7 @@
         "@id": "https://data.gov.cz/podmínky-užití/volný-přístup/"
     },
     "dc:modified": {
-        "@value": "2021-05-19",
+        "@value": "2021-10-13",
         "@type": "xsd:date"
     },
     "tableSchema": {
@@ -67,19 +67,19 @@
                 "name": "luzka_standard_kyslik_kapacita_volna_covid_pozitivni",
                 "titles": "luzka_standard_kyslik_kapacita_volna_covid_pozitivni",
                 "datatype": "integer",
-                "dc:description": "Volná kapacita pro COVID pozitivní pacienty v daný den: Lůžka, ke kterým je přiveden kyslík."
+                "dc:description": "Volná kapacita pro COVID pozitivní pacienty v daný den: Lůžka vybavena zdrojem kyslíku (rozvodem kapalného kyslíku nebo koncentrátorem kyslíku)."
             },
             {
                 "name": "luzka_standard_kyslik_kapacita_volna_covid_negativni",
                 "titles": "luzka_standard_kyslik_kapacita_volna_covid_negativni",
                 "datatype": "integer",
-                "dc:description": "Volná kapacita pro COVID negativní pacienty v daný den: Lůžka, ke kterým je přiveden kyslík."
+                "dc:description": "Volná kapacita pro COVID negativní pacienty v daný den: Lůžka vybavena zdrojem kyslíku (rozvodem kapalného kyslíku nebo koncentrátorem kyslíku)."
             },
             {
                 "name": "luzka_standard_kyslik_kapacita_celkem",
                 "titles": "luzka_standard_kyslik_kapacita_celkem",
                 "datatype": "integer",
-                "dc:description": "Celková kapacita ve zdravotnickém zařízení: Lůžka, ke kterým je přiveden kyslík."
+                "dc:description": "Celková kapacita ve zdravotnickém zařízení: Lůžka vybavena zdrojem kyslíku (rozvodem kapalného kyslíku nebo koncentrátorem kyslíku)."
             },
             {
                 "name": "luzka_hfno_cpap_kapacita_volna_covid_pozitivni",

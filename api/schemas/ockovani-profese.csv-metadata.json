@@ -29,7 +29,7 @@
         "@id": "http://data.gov.cz/podmínky-užití/volný-přístup/"
     },
     "dc:modified": {
-        "@value": "2021-10-05",
+        "@value": "2021-10-13",
         "@type": "xsd:date"
     },
     "tableSchema": {
@@ -170,7 +170,7 @@
                 "name": "ukoncujici_davka",
                 "titles": "ukoncujici_davka",
                 "datatype": "boolean",
-                "dc:description": "Určení, zda je daná dávka ukončující."
+                "dc:description": "Určení, zda osoba, které odpovídá vykázané očkování (bez ohledu na pořadí dávky), obdržela ukončující dávku. Prostřednictvím tohoto příznaku je možné rozlišit ty osoby, které prozatím nemají ukončené očkování."
             }
         ]
     }
