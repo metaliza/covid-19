@@ -1,6 +1,6 @@
 {
     "@context": [
-        "https://www.w3.org/ns/csvw",
+        "http://www.w3.org/ns/csvw",
         {
             "@language": "cs"
         }
@@ -24,7 +24,7 @@
         "@id": "http://data.gov.cz/podmínky-užití/volný-přístup/"
     },
     "dc:modified": {
-        "@value": "2021-10-05",
+        "@value": "2021-10-26",
         "@type": "xsd:date"
     },
     "tableSchema": {
