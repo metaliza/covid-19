@@ -7,7 +7,7 @@
     ],
     "url": "ockovani-profese.csv",
     "dc:title": "COVID-19: Přehled vykázaných očkování podle profesí (očkovací místo, bydliště očkovaného)",
-    "dc:description": "Datová sada poskytuje řádková data o vykázaných očkováních na jednotlivých očkovacích místech ČR. Každý řádek přehledu popisuje jedno vykázané očkování v daném dni a indikační skupině profese, s použitím dané dávky očkovací látky, na konkrétním očkovacím místu a ve vybraném kraji.",
+    "dc:description": "Datová sada poskytuje řádková data o vykázaných očkováních na jednotlivých očkovacích místech ČR. Každý řádek přehledu popisuje jedno vykázané očkování v daném dni a indikační skupině profese, s použitím dané dávky očkovací látky, na konkrétním očkovacím místu a ve vybraném kraji. Datová sada obsahuje také informaci o pořadí dávky (první, druhá nebo posilující dávka) a zda byla daná dávky ukončující.",
     "dc:source": "Informační systém infekčních nemocí (ISIN) - https://www.uzis.cz/index.php?pg=registry-sber-dat--ochrana-verejneho-zdravi--informacni-system-infekcni-nemoci, kontakt: helpdesk.registry@uzis.cz",
     "dcat:keyword": [
         "koronavirus",
@@ -29,7 +29,7 @@
         "@id": "http://data.gov.cz/podmínky-užití/volný-přístup/"
     },
     "dc:modified": {
-        "@value": "2021-10-26",
+        "@value": "2021-11-01",
         "@type": "xsd:date"
     },
     "tableSchema": {
