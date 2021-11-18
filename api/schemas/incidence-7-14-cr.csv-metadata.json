@@ -1,63 +1,68 @@
 {
     "@context": [
-        "http://www.w3.org/ns/csvw",
+        "http:\/\/www.w3.org\/ns\/csvw",
         {
             "@language": "cs"
         }
     ],
     "url": "incidence-7-14-cr.csv",
-    "dc:title": "COVID-19: Přehled osob s prokázanou nákazou dle krajských hygienických stanic včetně laboratoří za 7 a 14 dní za ČR",
-    "dc:description": "Datová sada obsahující počty potvrzených případů za posledních 7 a 14 dní za celou ČR včetně přepočtu na 100 000 obyvatel. Pro přepočet na 100 000 obyvatel je použita otevřená datová sada Obyvatelstvo podle pětiletých věkových skupin a pohlaví v krajích a okresech (https://www.czso.cz/csu/czso/obyvatelstvo-podle-petiletych-vekovych-skupin-a-pohlavi-v-krajich-a-okresech).",
-    "dc:source": "Informační systém infekčních nemocí (ISIN) - https://www.uzis.cz/index.php?pg=registry-sber-dat--ochrana-verejneho-zdravi--informacni-system-infekcni-nemoci, kontakt: helpdesk.registry@uzis.cz",
+    "dc:title": "incidence-7-14-cr",
+    "dc:description": "Datov\u00e1 sada obsahuj\u00edc\u00ed po\u010dty potvrzen\u00fdch p\u0159\u00edpad\u016f za posledn\u00edch 7 a 14 dn\u00ed za celou \u010cR v\u010detn\u011b p\u0159epo\u010dtu na 100 000 obyvatel. Pro p\u0159epo\u010det na 100 000 obyvatel je pou\u017eita otev\u0159en\u00e1 datov\u00e1 sada Obyvatelstvo podle p\u011btilet\u00fdch v\u011bkov\u00fdch skupin a pohlav\u00ed v kraj\u00edch a okresech (https:\/\/www.czso.cz\/csu\/czso\/obyvatelstvo-podle-petiletych-vekovych-skupin-a-pohlavi-v-krajich-a-okresech).",
+    "dc:source": "Informa\u010dn\u00ed syst\u00e9m infek\u010dn\u00edch nemoc\u00ed (ISIN) - https:\/\/www.uzis.cz\/index.php?pg=registry-sber-dat--ochrana-verejneho-zdravi--informacni-system-infekcni-nemoci, kontakt: helpdesk.registry@uzis.cz",
     "dcat:keyword": [
         "koronavirus",
         "covid-19",
-        "potvrzené případy",
+        "potvrzen\u00e9 p\u0159\u00edpady",
         "incidence"
     ],
     "dc:publisher": {
-        "schema:name": "ÚZIS ČR",
+        "schema:name": "\u00daZIS \u010cR",
         "schema:url": {
-            "@id": "https://www.uzis.cz/"
+            "@id": "https:\/\/www.uzis.cz\/"
         }
     },
     "dc:license": {
-        "@id": "http://data.gov.cz/podmínky-užití/volný-přístup/"
+        "@id": "https:\/\/data.gov.cz\/podm\u00ednky-u\u017eit\u00ed\/voln\u00fd-p\u0159\u00edstup\/"
     },
     "dc:modified": {
-        "@value": "2021-10-26",
+        "@value": "2021-11-18",
         "@type": "xsd:date"
     },
     "tableSchema": {
         "columns": [
             {
+                "name": "id",
+                "titles": "id",
+                "datatype": "string"
+            },
+            {
                 "name": "datum",
                 "titles": "datum",
-                "datatype": "date"
+                "datatype": "string"
             },
             {
                 "name": "incidence_7",
                 "titles": "incidence_7",
                 "datatype": "integer",
-                "dc:description": "Celkový počet nově diagnostikovaných případů za předchozích 7 dní ode dne uvedeného ve sloupci \"datum\"."
+                "dc:description": "Celkov\u00fd po\u010det nov\u011b diagnostikovan\u00fdch p\u0159\u00edpad\u016f za p\u0159edchoz\u00edch 7 dn\u00ed ode dne uveden\u00e9ho ve sloupci datum."
             },
             {
                 "name": "incidence_14",
                 "titles": "incidence_14",
                 "datatype": "integer",
-                "dc:description": "Celkový počet nově diagnostikovaných případů za předchozích 14 dní ode dne uvedeného ve sloupci \"datum\"."
+                "dc:description": "Celkov\u00fd po\u010det nov\u011b diagnostikovan\u00fdch p\u0159\u00edpad\u016f za p\u0159edchoz\u00edch 14 dn\u00ed ode dne uveden\u00e9ho ve sloupci datum."
             },
             {
                 "name": "incidence_7_100000",
                 "titles": "incidence_7_100000",
-                "datatype": "float",
-                "dc:description": "Celkový počet nově diagnostikovaných případů za předchozích 7 dní ode dne uvedeného ve sloupci \"datum\", který je přepočtený na 100 000 obyvatel."
+                "datatype": "number",
+                "dc:description": "Celkov\u00fd po\u010det nov\u011b diagnostikovan\u00fdch p\u0159\u00edpad\u016f za p\u0159edchoz\u00edch 7 dn\u00ed ode dne uveden\u00e9ho ve sloupci datum, kter\u00fd je p\u0159epo\u010dten\u00fd na 100 000 obyvatel."
             },
             {
                 "name": "incidence_14_100000",
                 "titles": "incidence_14_100000",
-                "datatype": "float",
-                "dc:description": "Celkový počet nově diagnostikovaných případů za předchozích 14 dní ode dne uvedeného ve sloupci \"datum\", který je přepočtený na 100 000 obyvatel."
+                "datatype": "number",
+                "dc:description": "Celkov\u00fd po\u010det nov\u011b diagnostikovan\u00fdch p\u0159\u00edpad\u016f za p\u0159edchoz\u00edch 14 dn\u00ed ode dne uveden\u00e9ho ve sloupci datum, kter\u00fd je p\u0159epo\u010dten\u00fd na 100 000 obyvatel."
             }
         ]
     }

@@ -1,77 +1,82 @@
 {
     "@context": [
-        "http://www.w3.org/ns/csvw",
+        "http:\/\/www.w3.org\/ns\/csvw",
         {
             "@language": "cs"
         }
     ],
     "url": "ockovani-demografie.csv",
-    "dc:title": "COVID-19: Demografický přehled vykázaných očkování v čase",
-    "dc:description": "Datová sada poskytuje řádková data o vykázaných očkováních v ČR. Každý řádek přehledu popisuje množství vykázaných očkování v daném dni s použitím dané dávky očkovací látky u konkrétního pohlaví a v konkrétní věkové skupině.",
-    "dc:source": "Informační systém infekčních nemocí (ISIN) - https://www.uzis.cz/index.php?pg=registry-sber-dat--ochrana-verejneho-zdravi--informacni-system-infekcni-nemoci, kontakt: helpdesk.registry@uzis.cz",
+    "dc:title": "ockovani-demografie",
+    "dc:description": "Datov\u00e1 sada poskytuje \u0159\u00e1dkov\u00e1 data o vyk\u00e1zan\u00fdch o\u010dkov\u00e1n\u00edch v \u010cR. Ka\u017ed\u00fd \u0159\u00e1dek p\u0159ehledu popisuje mno\u017estv\u00ed vyk\u00e1zan\u00fdch o\u010dkov\u00e1n\u00ed v dan\u00e9m dni s pou\u017eit\u00edm dan\u00e9 d\u00e1vky o\u010dkovac\u00ed l\u00e1tky u konkr\u00e9tn\u00edho pohlav\u00ed a v konkr\u00e9tn\u00ed v\u011bkov\u00e9 skupin\u011b.",
+    "dc:source": "Informa\u010dn\u00ed syst\u00e9m infek\u010dn\u00edch nemoc\u00ed (ISIN) - https:\/\/www.uzis.cz\/index.php?pg=registry-sber-dat--ochrana-verejneho-zdravi--informacni-system-infekcni-nemoci, kontakt: helpdesk.registry@uzis.cz",
     "dcat:keyword": [
         "koronavirus",
         "covid-19",
-        "očkování",
+        "o\u010dkov\u00e1n\u00ed",
         "vakcinace",
-        "očkovací látka"
+        "o\u010dkovac\u00ed l\u00e1tka"
     ],
     "dc:publisher": {
-        "schema:name": "ÚZIS ČR",
+        "schema:name": "\u00daZIS \u010cR",
         "schema:url": {
-            "@id": "https://www.uzis.cz/"
+            "@id": "https:\/\/www.uzis.cz\/"
         }
     },
     "dc:license": {
-        "@id": "http://data.gov.cz/podmínky-užití/volný-přístup/"
+        "@id": "https:\/\/data.gov.cz\/podm\u00ednky-u\u017eit\u00ed\/voln\u00fd-p\u0159\u00edstup\/"
     },
     "dc:modified": {
-        "@value": "2021-10-26",
+        "@value": "2021-11-18",
         "@type": "xsd:date"
     },
     "tableSchema": {
         "columns": [
             {
+                "name": "id",
+                "titles": "id",
+                "datatype": "string"
+            },
+            {
                 "name": "datum",
                 "titles": "datum",
-                "datatype": "date",
-                "dc:description": "Datum, ve kterém byla očkování v daném kraji provedena."
+                "datatype": "string",
+                "dc:description": "Datum, ve kter\u00e9m byla o\u010dkov\u00e1n\u00ed v dan\u00e9m kraji provedena."
             },
             {
                 "name": "vakcina",
                 "titles": "vakcina",
                 "datatype": "string",
-                "dc:description": "Název očkovací látky."
+                "dc:description": "N\u00e1zev o\u010dkovac\u00ed l\u00e1tky."
             },
             {
                 "name": "vakcina_kod",
                 "titles": "vakcina_kod",
                 "datatype": "string",
-                "dc:description": "Kód očkovací látky podle klasifikace ÚZIS ČR."
+                "dc:description": "K\u00f3d o\u010dkovac\u00ed l\u00e1tky podle klasifikace \u00daZIS \u010cR."
             },
             {
                 "name": "poradi_davky",
                 "titles": "poradi_davky",
                 "datatype": "integer",
-                "dc:description": "Pořadí dávky (první, druhá) danou očkovací látkou."
+                "dc:description": "Po\u0159ad\u00ed d\u00e1vky (prvn\u00ed, druh\u00e1, posiluj\u00edc\u00ed) danou o\u010dkovac\u00ed l\u00e1tkou."
             },
             {
                 "name": "vekova_skupina",
                 "titles": "vekova_skupina",
                 "datatype": "string",
-                "dc:description": "Rozdělení očkovaných osob podle věku do skupin."
+                "dc:description": "Rozd\u011blen\u00ed o\u010dkovan\u00fdch osob podle v\u011bku do skupin: 0-17, 18-24, 25-29, 30-34, 35-39, 40-44, 45-49, 50-54, 55-59, 60-64, 65-69, 70-74, 75-79, 80+, neza\u0159azeno - pokud nelze ur\u010dit v\u011bkovou skupinu."
             },
             {
                 "name": "pohlavi",
                 "titles": "pohlavi",
                 "datatype": "string",
-                "dc:description": "V případě neuvedení pohlaví u vykázaného očkování se jedná o cizince, u kterého není možné prostřednictvím centrálních registrů pohlaví identifikovat."
+                "dc:description": "V p\u0159\u00edpad\u011b neuveden\u00ed pohlav\u00ed u vyk\u00e1zan\u00e9ho o\u010dkov\u00e1n\u00ed se jedn\u00e1 o cizince, u kter\u00e9ho nen\u00ed mo\u017en\u00e9 prost\u0159ednictv\u00edm centr\u00e1ln\u00edch registr\u016f pohlav\u00ed identifikovat."
             },
             {
                 "name": "pocet_davek",
                 "titles": "pocet_davek",
                 "datatype": "integer",
-                "dc:description": "Počet vykázaných dávek očkování."
+                "dc:description": "Po\u010det vyk\u00e1zan\u00fdch d\u00e1vek o\u010dkov\u00e1n\u00ed."
             }
         ]
     }

@@ -1,116 +1,122 @@
 {
     "@context": [
-        "http://www.w3.org/ns/csvw",
+        "http:\/\/www.w3.org\/ns\/csvw",
         {
             "@language": "cs"
         }
     ],
     "url": "orp.csv",
-    "dc:title": "COVID-19: Přehled epidemiologické situace dle hlášení krajských hygienických stanic podle ORP",
-    "dc:description": "Obsahem je komplexní přehled základních epidemiologických parametrů (počty diagnostikovaných osob s COVID-19, počty aktuálně nakažených, hospitalizovaní pacienti) se zaměřením na seniorní zranitelné skupiny obyvatel (kategorie věku 65+, 75+) na geografické úrovni obcí s rozšířenou působností (ORP).",
-    "dc:source": "Informační systém infekčních nemocí (ISIN) - https://www.uzis.cz/index.php?pg=registry-sber-dat--ochrana-verejneho-zdravi--informacni-system-infekcni-nemoci, kontakt: helpdesk.registry@uzis.cz",
+    "dc:title": "orp",
+    "dc:description": "Obsahem je komplexn\u00ed p\u0159ehled z\u00e1kladn\u00edch epidemiologick\u00fdch parametr\u016f (po\u010dty diagnostikovan\u00fdch osob s COVID-19, po\u010dty aktu\u00e1ln\u011b naka\u017een\u00fdch, hospitalizovan\u00ed pacienti) se zam\u011b\u0159en\u00edm na seniorn\u00ed zraniteln\u00e9 skupiny obyvatel (kategorie v\u011bku 65+, 75+) na geografick\u00e9 \u00farovni obc\u00ed s roz\u0161\u00ed\u0159enou p\u016fsobnost\u00ed (ORP).",
+    "dc:source": "Informa\u010dn\u00ed syst\u00e9m infek\u010dn\u00edch nemoc\u00ed (ISIN) - https:\/\/www.uzis.cz\/index.php?pg=registry-sber-dat--ochrana-verejneho-zdravi--informacni-system-infekcni-nemoci, kontakt: helpdesk.registry@uzis.cz",
     "dcat:keyword": [
         "koronavirus",
         "covid-19",
-        "prokázaná nákaza",
-        "krajská hygienická stanice",
+        "prok\u00e1zan\u00e1 n\u00e1kaza",
+        "krajsk\u00e1 hygienick\u00e1 stanice",
         "incidence",
         "prevalence",
         "hospitalizace",
-        "obec s rozšířenou působností",
+        "obec s roz\u0161\u00ed\u0159enou p\u016fsobnost\u00ed",
         "PCR test"
     ],
     "dc:publisher": {
-        "schema:name": "ÚZIS ČR",
+        "schema:name": "\u00daZIS \u010cR",
         "schema:url": {
-            "@id": "https://www.uzis.cz/"
+            "@id": "https:\/\/www.uzis.cz\/"
         }
     },
     "dc:license": {
-        "@id": "http://data.gov.cz/podmínky-užití/volný-přístup/"
+        "@id": "https:\/\/data.gov.cz\/podm\u00ednky-u\u017eit\u00ed\/voln\u00fd-p\u0159\u00edstup\/"
     },
     "dc:modified": {
-        "@value": "2021-10-26",
+        "@value": "2021-11-18",
         "@type": "xsd:date"
     },
     "tableSchema": {
         "columns": [
             {
+                "name": "id",
+                "titles": "id",
+                "datatype": "string"
+            },
+            {
                 "name": "den",
                 "titles": "den",
                 "datatype": "string",
-                "dc:description": "Označení příslušného dne."
+                "dc:description": "Ozna\u010den\u00ed p\u0159\u00edslu\u0161n\u00e9ho dne."
             },
             {
                 "name": "datum",
                 "titles": "datum",
-                "datatype": "date"
+                "datatype": "string",
+                "dc:description": "Datum."
             },
             {
                 "name": "orp_kod",
                 "titles": "orp_kod",
-                "datatype": "string",
-                "dc:description": "Kód obce s rozšířenou působností dle číselníku ÚZIS ČR (https://pzu-api.uzis.cz/api/orp)."
+                "datatype": "integer",
+                "dc:description": "K\u00f3d obce s roz\u0161\u00ed\u0159enou p\u016fsobnost\u00ed dle \u010d\u00edseln\u00edku \u00daZIS \u010cR (https:\/\/pzu-api.uzis.cz\/api\/orp)."
             },
             {
                 "name": "orp_nazev",
                 "titles": "orp_nazev",
                 "datatype": "string",
-                "dc:description": "Název obce s rozšířenou působností."
+                "dc:description": "N\u00e1zev obce s roz\u0161\u00ed\u0159enou p\u016fsobnost\u00ed."
             },
             {
                 "name": "incidence_7",
                 "titles": "incidence_7",
                 "datatype": "integer",
-                "dc:description": "Celkový počet všech nově diagnostikovaných za týden zpětně ode dne uvedeného ve sloupci Datum."
+                "dc:description": "Celkov\u00fd po\u010det v\u0161ech nov\u011b diagnostikovan\u00fdch za t\u00fdden zp\u011btn\u011b ode dne uveden\u00e9ho ve sloupci Datum."
             },
             {
                 "name": "incidence_65_7",
                 "titles": "incidence_65_7",
                 "datatype": "integer",
-                "dc:description": "Celkový počet nově diagnostikovaných ve věkové skupině 65+ za týden zpětně ode dne uvedeného ve sloupci Datum."
+                "dc:description": "Celkov\u00fd po\u010det nov\u011b diagnostikovan\u00fdch ve v\u011bkov\u00e9 skupin\u011b 65+ za t\u00fdden zp\u011btn\u011b ode dne uveden\u00e9ho ve sloupci Datum."
             },
             {
                 "name": "incidence_75_7",
                 "titles": "incidence_75_7",
                 "datatype": "integer",
-                "dc:description": "Celkový počet nově diagnostikovaných ve věkové skupině 75+ za týden zpětně ode dne uvedeného ve sloupci Datum."
+                "dc:description": "Celkov\u00fd po\u010det nov\u011b diagnostikovan\u00fdch ve v\u011bkov\u00e9 skupin\u011b 75+ za t\u00fdden zp\u011btn\u011b ode dne uveden\u00e9ho ve sloupci Datum."
             },
             {
                 "name": "prevalence",
                 "titles": "prevalence",
                 "datatype": "integer",
-                "dc:description": "Aktuální počet aktivních případů ve stavu COVID+."
+                "dc:description": "Aktu\u00e1ln\u00ed po\u010det aktivn\u00edch p\u0159\u00edpad\u016f ve stavu COVID+."
             },
             {
                 "name": "prevalence_65",
                 "titles": "prevalence_65",
                 "datatype": "integer",
-                "dc:description": "Aktuální počet aktivních případů ve věkové skupině 65+ ve stavu COVID+."
+                "dc:description": "Aktu\u00e1ln\u00ed po\u010det aktivn\u00edch p\u0159\u00edpad\u016f ve v\u011bkov\u00e9 skupin\u011b 65+ ve stavu COVID+."
             },
             {
                 "name": "prevalence_75",
                 "titles": "prevalence_75",
                 "datatype": "integer",
-                "dc:description": "Aktuální počet aktivních případů ve věkové skupině 75+ ve stavu COVID+."
+                "dc:description": "Aktu\u00e1ln\u00ed po\u010det aktivn\u00edch p\u0159\u00edpad\u016f ve v\u011bkov\u00e9 skupin\u011b 75+ ve stavu COVID+."
             },
             {
                 "name": "aktualni_pocet_hospitalizovanych_osob",
                 "titles": "aktualni_pocet_hospitalizovanych_osob",
                 "datatype": "integer",
-                "dc:description": "Aktuální počet hospitalizovaných (dle bydliště v daném ORP)."
+                "dc:description": "Aktu\u00e1ln\u00ed po\u010det hospitalizovan\u00fdch (dle bydli\u0161t\u011b v dan\u00e9m ORP)."
             },
             {
                 "name": "nove_hosp_7",
                 "titles": "nove_hosp_7",
                 "datatype": "integer",
-                "dc:description": "Celkový počet nově hospitalizovaných za týden zpětně ode dne uvedeného ve sloupci Datum (dle bydliště v daném ORP)."
+                "dc:description": "Celkov\u00fd po\u010det nov\u011b hospitalizovan\u00fdch za t\u00fdden zp\u011btn\u011b ode dne uveden\u00e9ho ve sloupci Datum (dle bydli\u0161t\u011b v dan\u00e9m ORP)."
             },
             {
                 "name": "testy_7",
                 "titles": "testy_7",
                 "datatype": "integer",
-                "dc:description": "Celkový počet provedených PCR testů za týden zpětně ode dne uvedeného ve sloupci Datum (dle bydliště v daném ORP)."
+                "dc:description": "Celkov\u00fd po\u010det proveden\u00fdch PCR test\u016f za t\u00fdden zp\u011btn\u011b ode dne uveden\u00e9ho ve sloupci Datum (dle bydli\u0161t\u011b v dan\u00e9m ORP)."
             }
         ]
     }

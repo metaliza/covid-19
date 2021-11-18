@@ -1,103 +1,108 @@
 {
     "@context": [
-        "http://www.w3.org/ns/csvw",
+        "http:\/\/www.w3.org\/ns\/csvw",
         {
             "@language": "cs"
         }
     ],
     "url": "kraj-okres-testy.csv",
-    "dc:title": "COVID-19: Celkový (kumulativní) počet provedených testů podle krajů a okresů ČR",
-    "dc:description": "Datová sada obsahující přírůstkové a kumulativní denní počty provedených PCR testů s korekcí na opakovaně pozitivní (kontrolní) testy, a to bez rozdílu způsobu úhrady (tedy včetně samoplátců), na COVID 19 za celou ČR podle hlášení laboratoří (rychlotesty nejsou do přehledu zařazeny). Tento přehled je k dispozici od 1. srpna 2020 z důvodu úplnosti nahlášených dat jednotlivými laboratořemi na individuální úrovni. V předchozím období existuje riziko neúplnosti těchto individuálních dat a proto do 31. července vycházíme pouze z dat agregovaných, která však neumožňují složitější analytické výpočty.",
-    "dc:source": "Informační systém infekčních nemocí (ISIN) - https://www.uzis.cz/index.php?pg=registry-sber-dat--ochrana-verejneho-zdravi--informacni-system-infekcni-nemoci, kontakt: helpdesk.registry@uzis.cz",
+    "dc:title": "kraj-okres-testy",
+    "dc:description": "Datov\u00e1 sada obsahuj\u00edc\u00ed p\u0159\u00edr\u016fstkov\u00e9 a kumulativn\u00ed denn\u00ed po\u010dty proveden\u00fdch PCR test\u016f s korekc\u00ed na opakovan\u011b pozitivn\u00ed (kontroln\u00ed) testy, a to bez rozd\u00edlu zp\u016fsobu \u00fahrady (tedy v\u010detn\u011b samopl\u00e1tc\u016f), na COVID 19 za celou \u010cR podle hl\u00e1\u0161en\u00ed laborato\u0159\u00ed (rychlotesty nejsou do p\u0159ehledu za\u0159azeny). Tento p\u0159ehled je k dispozici od 1. srpna 2020 z d\u016fvodu \u00faplnosti nahl\u00e1\u0161en\u00fdch dat jednotliv\u00fdmi laborato\u0159emi na individu\u00e1ln\u00ed \u00farovni. V p\u0159edchoz\u00edm obdob\u00ed existuje riziko ne\u00faplnosti t\u011bchto individu\u00e1ln\u00edch dat a proto do 31. \u010dervence vych\u00e1z\u00edme pouze z dat agregovan\u00fdch, kter\u00e1 v\u0161ak neumo\u017e\u0148uj\u00ed slo\u017eit\u011bj\u0161\u00ed analytick\u00e9 v\u00fdpo\u010dty.",
+    "dc:source": "Informa\u010dn\u00ed syst\u00e9m infek\u010dn\u00edch nemoc\u00ed (ISIN) - https:\/\/www.uzis.cz\/index.php?pg=registry-sber-dat--ochrana-verejneho-zdravi--informacni-system-infekcni-nemoci, kontakt: helpdesk.registry@uzis.cz",
     "dcat:keyword": [
         "koronavirus",
         "covid-19",
         "testy",
-        "laboratoře",
-        "testy s korekcí na opakovaně pozitivní (kontrolní) testy",
-        "opakované testy",
+        "laborato\u0159e",
+        "testy s korekc\u00ed na opakovan\u011b pozitivn\u00ed (kontroln\u00ed) testy",
+        "opakovan\u00e9 testy",
         "kraj",
         "okres"
     ],
     "dc:publisher": {
-        "schema:name": "ÚZIS ČR",
+        "schema:name": "\u00daZIS \u010cR",
         "schema:url": {
-            "@id": "https://www.uzis.cz/"
+            "@id": "https:\/\/www.uzis.cz\/"
         }
     },
     "dc:license": {
-        "@id": "http://data.gov.cz/podmínky-užití/volný-přístup/"
+        "@id": "https:\/\/data.gov.cz\/podm\u00ednky-u\u017eit\u00ed\/voln\u00fd-p\u0159\u00edstup\/"
     },
     "dc:modified": {
-        "@value": "2021-10-26",
+        "@value": "2021-11-18",
         "@type": "xsd:date"
     },
     "tableSchema": {
         "columns": [
             {
+                "name": "id",
+                "titles": "id",
+                "datatype": "string"
+            },
+            {
                 "name": "datum",
                 "titles": "datum",
-                "datatype": "date"
+                "datatype": "string"
             },
             {
                 "name": "kraj_nuts_kod",
                 "titles": "kraj_nuts_kod",
                 "datatype": "string",
-                "dc:description": "Identifikátor kraje podle klasifikace NUTS 3."
+                "dc:description": "Identifik\u00e1tor kraje podle klasifikace NUTS 3."
             },
             {
                 "name": "okres_lau_kod",
                 "titles": "okres_lau_kod",
                 "datatype": "string",
-                "dc:description": "Identifikátor okresu podle klasifikace LAU 1."
+                "dc:description": "Identifik\u00e1tor okresu podle klasifikace LAU 1."
             },
             {
                 "name": "prirustkovy_pocet_testu_okres",
                 "titles": "prirustkovy_pocet_testu_okres",
                 "datatype": "integer",
-                "dc:description": "Přírůstkový počet všech provedených testů v daném okrese."
+                "dc:description": "P\u0159\u00edr\u016fstkov\u00fd po\u010det v\u0161ech proveden\u00fdch test\u016f v dan\u00e9m okrese."
             },
             {
                 "name": "kumulativni_pocet_testu_okres",
                 "titles": "kumulativni_pocet_testu_okres",
                 "datatype": "integer",
-                "dc:description": "Kumulativní počet všech provedených testů v daném okrese."
+                "dc:description": "Kumulativn\u00ed po\u010det v\u0161ech proveden\u00fdch test\u016f v dan\u00e9m okrese."
             },
             {
                 "name": "prirustkovy_pocet_testu_kraj",
                 "titles": "prirustkovy_pocet_testu_kraj",
                 "datatype": "integer",
-                "dc:description": "Přírůstkový počet všech provedených testů v daném kraji."
+                "dc:description": "P\u0159\u00edr\u016fstkov\u00fd po\u010det v\u0161ech proveden\u00fdch test\u016f v dan\u00e9m kraji."
             },
             {
                 "name": "kumulativni_pocet_testu_kraj",
                 "titles": "kumulativni_pocet_testu_kraj",
                 "datatype": "integer",
-                "dc:description": "Kumulativní počet všech provedených testů v daném kraji."
+                "dc:description": "Kumulativn\u00ed po\u010det v\u0161ech proveden\u00fdch test\u016f v dan\u00e9m kraji."
             },
             {
                 "name": "prirustkovy_pocet_prvnich_testu_okres",
                 "titles": "prirustkovy_pocet_prvnich_testu_okres",
                 "datatype": "integer",
-                "dc:description": "Přírůstkový počet provedených testů s korekcí na opakovaně pozitivní (kontrolní) testy v daném okrese."
+                "dc:description": "P\u0159\u00edr\u016fstkov\u00fd po\u010det proveden\u00fdch test\u016f s korekc\u00ed na opakovan\u011b pozitivn\u00ed (kontroln\u00ed) testy v dan\u00e9m okrese."
             },
             {
                 "name": "kumulativni_pocet_prvnich_testu_okres",
                 "titles": "kumulativni_pocet_prvnich_testu_okres",
                 "datatype": "integer",
-                "dc:description": "Kumulativní počet provedených testů s korekcí na opakovaně pozitivní (kontrolní) testy v daném okrese."
+                "dc:description": "Kumulativn\u00ed po\u010det proveden\u00fdch test\u016f s korekc\u00ed na opakovan\u011b pozitivn\u00ed (kontroln\u00ed) testy v dan\u00e9m okrese."
             },
             {
                 "name": "prirustkovy_pocet_prvnich_testu_kraj",
                 "titles": "prirustkovy_pocet_prvnich_testu_kraj",
                 "datatype": "integer",
-                "dc:description": "Přírůstkový počet provedených testů s korekcí na opakovaně pozitivní (kontrolní) testy v daném kraji."
+                "dc:description": "P\u0159\u00edr\u016fstkov\u00fd po\u010det proveden\u00fdch test\u016f s korekc\u00ed na opakovan\u011b pozitivn\u00ed (kontroln\u00ed) testy v dan\u00e9m kraji."
             },
             {
                 "name": "kumulativni_pocet_prvnich_testu_kraj",
                 "titles": "kumulativni_pocet_prvnich_testu_kraj",
                 "datatype": "integer",
-                "dc:description": "Kumulativní počet provedených testů s korekcí na opakovaně pozitivní (kontrolní) testy v daném kraji."
+                "dc:description": "Kumulativn\u00ed po\u010det proveden\u00fdch test\u016f s korekc\u00ed na opakovan\u011b pozitivn\u00ed (kontroln\u00ed) testy v dan\u00e9m kraji."
             }
         ]
     }

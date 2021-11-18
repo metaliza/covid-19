@@ -1,30 +1,30 @@
 {
     "@context": [
-        "http://www.w3.org/ns/csvw",
+        "http:\/\/www.w3.org\/ns\/csvw",
         {
             "@language": "cs"
         }
     ],
     "url": "zakladni-prehled.csv",
-    "dc:title": "COVID-19: Základní přehled",
-    "dc:description": "Stručný náhled na základní epidemiologická data o pandemii COVID-19 v ČR. Datová sada obsahuje aktuální kumulativní počet provedených PCR a antigenních testů (včetně informace za předchozí den), potvrzené případy celkem a ve věkové skupině 65+(včetně informace za předchozí den), aktivní případy, vyléčené, úmrtí, očkování a hopitalizované pacienty.",
-    "dc:source": "Informační systém infekčních nemocí (ISIN) - https://www.uzis.cz/index.php?pg=registry-sber-dat--ochrana-verejneho-zdravi--informacni-system-infekcni-nemoci, kontakt: helpdesk.registry@uzis.cz",
+    "dc:title": "zakladni-prehled",
+    "dc:description": "Stru\u010dn\u00fd n\u00e1hled na z\u00e1kladn\u00ed epidemiologick\u00e1 data o pandemii COVID-19 v \u010cR. Datov\u00e1 sada obsahuje aktu\u00e1ln\u00ed kumulativn\u00ed po\u010det proveden\u00fdch PCR a antigenn\u00edch test\u016f (v\u010detn\u011b informace za p\u0159edchoz\u00ed den), potvrzen\u00e9 p\u0159\u00edpady celkem a ve v\u011bkov\u00e9 skupin\u011b 65+(v\u010detn\u011b informace za p\u0159edchoz\u00ed den), aktivn\u00ed p\u0159\u00edpady, vyl\u00e9\u010den\u00e9, \u00famrt\u00ed, o\u010dkov\u00e1n\u00ed a hopitalizovan\u00e9 pacienty.",
+    "dc:source": "Informa\u010dn\u00ed syst\u00e9m infek\u010dn\u00edch nemoc\u00ed (ISIN) - https:\/\/www.uzis.cz\/index.php?pg=registry-sber-dat--ochrana-verejneho-zdravi--informacni-system-infekcni-nemoci, kontakt: helpdesk.registry@uzis.cz",
     "dcat:keyword": [
         "COVID-19",
         "widget",
-        "aktuální situace"
+        "aktu\u00e1ln\u00ed situace"
     ],
     "dc:publisher": {
-        "schema:name": "ÚZIS ČR",
+        "schema:name": "\u00daZIS \u010cR",
         "schema:url": {
-            "@id": "https://www.uzis.cz/"
+            "@id": "https:\/\/www.uzis.cz\/"
         }
     },
     "dc:license": {
-        "@id": "http://data.gov.cz/podmínky-užití/volný-přístup/"
+        "@id": "https:\/\/data.gov.cz\/podm\u00ednky-u\u017eit\u00ed\/voln\u00fd-p\u0159\u00edstup\/"
     },
     "dc:modified": {
-        "@value": "2021-10-26",
+        "@value": "2021-11-18",
         "@type": "xsd:date"
     },
     "tableSchema": {
@@ -32,152 +32,140 @@
             {
                 "name": "datum",
                 "titles": "datum",
-                "datatype": "date",
-                "dc:description": "Datum vytvoření aktualizace."
+                "datatype": "string",
+                "dc:description": "Datum vytvo\u0159en\u00ed aktualizace."
             },
             {
                 "name": "provedene_testy_celkem",
                 "titles": "provedene_testy_celkem",
                 "datatype": "integer",
-                "dc:description": "Celkový počet provedených PCR testů na původce onemocnění COVID‑19 za celou ČR (kumulativně od 27. 1. 2020) podle hlášení laboratoří (rychlotesty nejsou do přehledu zařazeny). S ohledem na fakt, že hlášení o provedených testech mají určité zpoždění oproti reálnému stavu, se mohou denní záznamy zpětně mírně měnit právě z důvodu průběžného doplňování."
+                "dc:description": "Celkov\u00fd po\u010det proveden\u00fdch PCR test\u016f na p\u016fvodce onemocn\u011bn\u00ed COVID-19 za celou \u010cR (kumulativn\u011b od 27. 1. 2020) podle hl\u00e1\u0161en\u00ed laborato\u0159\u00ed (rychlotesty nejsou do p\u0159ehledu za\u0159azeny). S ohledem na fakt, \u017ee hl\u00e1\u0161en\u00ed o proveden\u00fdch testech maj\u00ed ur\u010dit\u00e9 zpo\u017ed\u011bn\u00ed oproti re\u00e1ln\u00e9mu stavu, se mohou denn\u00ed z\u00e1znamy zp\u011btn\u011b m\u00edrn\u011b m\u011bnit pr\u00e1v\u011b z d\u016fvodu pr\u016fb\u011b\u017en\u00e9ho dopl\u0148ov\u00e1n\u00ed."
             },
             {
                 "name": "potvrzene_pripady_celkem",
                 "titles": "potvrzene_pripady_celkem",
                 "datatype": "integer",
-                "dc:description": "Celkový počet osob dosud pozitivně testovaných na původce onemocnění COVID‑19 (kumulativně od 1. 3. 2020) dle hlášení KHS a dle pozitivních nálezů laboratoří, které jsou určeny pro další šetření. S ohledem na fakt, že u publikovaných dat probíhá validace a průběžné doplňování hlášení, jsou přehledy osob s laboratorně prokázaným onemocněním COVID‑19 dle hlášení KHS a laboratoří uváděny k datu hlášení do systému a historicky se nemění (případné opravy tedy nejsou do již publikovaných výstupů promítnuty)."
+                "dc:description": "Celkov\u00fd po\u010det osob dosud pozitivn\u011b testovan\u00fdch na p\u016fvodce onemocn\u011bn\u00ed COVID-19 (kumulativn\u011b od 1. 3. 2020) dle hl\u00e1\u0161en\u00ed KHS a dle pozitivn\u00edch n\u00e1lez\u016f laborato\u0159\u00ed, kter\u00e9 jsou ur\u010deny pro dal\u0161\u00ed \u0161et\u0159en\u00ed. S ohledem na fakt, \u017ee u publikovan\u00fdch dat prob\u00edh\u00e1 validace a pr\u016fb\u011b\u017en\u00e9 dopl\u0148ov\u00e1n\u00ed hl\u00e1\u0161en\u00ed, jsou p\u0159ehledy osob s laboratorn\u011b prok\u00e1zan\u00fdm onemocn\u011bn\u00edm COVID-19 dle hl\u00e1\u0161en\u00ed KHS a laborato\u0159\u00ed uv\u00e1d\u011bny k datu hl\u00e1\u0161en\u00ed do syst\u00e9mu a historicky se nem\u011bn\u00ed (p\u0159\u00edpadn\u00e9 opravy tedy nejsou do ji\u017e publikovan\u00fdch v\u00fdstup\u016f prom\u00edtnuty)."
             },
             {
                 "name": "aktivni_pripady",
                 "titles": "aktivni_pripady",
                 "datatype": "integer",
-                "dc:description": "Počet osob pozitivně testovaných na původce onemocnění COVID‑19, které nebyly k danému datu dosud označeny za vyléčené ani nezemřely."
+                "dc:description": "Po\u010det osob pozitivn\u011b testovan\u00fdch na p\u016fvodce onemocn\u011bn\u00ed COVID\u201119, kter\u00e9 nebyly k dan\u00e9mu datu dosud ozna\u010deny za vyl\u00e9\u010den\u00e9 ani nezem\u0159ely."
             },
             {
                 "name": "vyleceni",
                 "titles": "vyleceni",
                 "datatype": "integer",
-                "dc:description": "Celkový počet osob, které byly pozitivně testovány na přítomnost původce onemocnění COVID‑19 (bez ohledu na klinický průběh nemoci a případně aplikovanou léčbu)."
+                "dc:description": "Celkov\u00fd po\u010det osob, kter\u00e9 byly pozitivn\u011b testov\u00e1ny na p\u0159\u00edtomnost p\u016fvodce onemocn\u011bn\u00ed COVID-19 (bez ohledu na klinick\u00fd pr\u016fb\u011bh nemoci a p\u0159\u00edpadn\u011b aplikovanou l\u00e9\u010dbu)."
             },
             {
                 "name": "umrti",
                 "titles": "umrti",
                 "datatype": "integer",
-                "dc:description": "Celkový počet úmrtí osob s onemocněním COVID‑19 zahrnuje všechna úmrtí osob, které byly pozitivně testovány na COVID‑19 bez ohledu na to, jaké byly příčiny jejich úmrtí, zda k jejichž úmrtí došlo v rámci hospitalizace či mimo ni. S ohledem na fakt, že vykazování úmrtí má určité zpoždění oproti reálnému stavu z důvodu validace a uzavírání případů krajských hygienických stanic, se mohou denní záznamy zpětně měnit právě z důvodu průběžného doplňování."
+                "dc:description": "Celkov\u00fd po\u010det \u00famrt\u00ed osob s onemocn\u011bn\u00edm COVID-19 zahrnuje v\u0161echna \u00famrt\u00ed osob, kter\u00e9 byly pozitivn\u011b testov\u00e1ny na COVID\u201119 bez ohledu na to, jak\u00e9 byly p\u0159\u00ed\u010diny jejich \u00famrt\u00ed, zda k jejich\u017e \u00famrt\u00ed do\u0161lo v r\u00e1mci hospitalizace \u010di mimo ni. S ohledem na fakt, \u017ee vykazov\u00e1n\u00ed \u00famrt\u00ed m\u00e1 ur\u010dit\u00e9 zpo\u017ed\u011bn\u00ed oproti re\u00e1ln\u00e9mu stavu z d\u016fvodu validace a uzav\u00edr\u00e1n\u00ed p\u0159\u00edpad\u016f krajsk\u00fdch hygienick\u00fdch stanic, se mohou denn\u00ed z\u00e1znamy zp\u011btn\u011b m\u011bnit pr\u00e1v\u011b z d\u016fvodu pr\u016fb\u011b\u017en\u00e9ho dopl\u0148ov\u00e1n\u00ed."
             },
             {
                 "name": "aktualne_hospitalizovani",
                 "titles": "aktualne_hospitalizovani",
                 "datatype": "integer",
-                "dc:description": "Aktuální počet hospitalizovaných osob s laboratorně prokázaným onemocněním COVID‑19 dle průběžného hlášení nemocnic bez ohledu na důvody hospitalizace."
+                "dc:description": "Aktu\u00e1ln\u00ed po\u010det hospitalizovan\u00fdch osob s laboratorn\u011b prok\u00e1zan\u00fdm onemocn\u011bn\u00edm COVID\u201119 dle pr\u016fb\u011b\u017en\u00e9ho hl\u00e1\u0161en\u00ed nemocnic bez ohledu na d\u016fvody hospitalizace."
             },
             {
                 "name": "provedene_testy_vcerejsi_den",
                 "titles": "provedene_testy_vcerejsi_den",
                 "datatype": "integer",
-                "dc:description": "Celkový počet provedených PCR testů (včetně opakovaných testů u stejné osoby a bez rozdílu způsobu úhrady, tedy včetně samoplátců) na původce onemocnění COVID‑19 za celou ČR v předchozím dni."
+                "dc:description": "Celkov\u00fd po\u010det proveden\u00fdch PCR test\u016f (v\u010detn\u011b opakovan\u00fdch test\u016f u stejn\u00e9 osoby a bez rozd\u00edlu zp\u016fsobu \u00fahrady, tedy v\u010detn\u011b samopl\u00e1tc\u016f) na p\u016fvodce onemocn\u011bn\u00ed COVID-19 za celou \u010cR v p\u0159edchoz\u00edm dni."
             },
             {
                 "name": "potvrzene_pripady_vcerejsi_den",
                 "titles": "potvrzene_pripady_vcerejsi_den",
                 "datatype": "integer",
-                "dc:description": "Celkový počet osob dosud pozitivně testovaných na původce onemocnění COVID‑19 v předchozím dni dle hlášení KHS a dle pozitivních nálezů laboratoří, které jsou určeny pro další šetření."
-            },
-            {
-                "name": "potvrzene_pripady_dnesni_den",
-                "titles": "potvrzene_pripady_dnesni_den",
-                "datatype": "integer",
-                "dc:description": "Celkový počet osob dosud pozitivně testovaných na původce onemocnění COVID‑19 v tomto dni dle hlášení KHS a dle pozitivních nálezů laboratoří, které jsou určeny pro další šetření."
+                "dc:description": "Celkov\u00fd po\u010det osob dosud pozitivn\u011b testovan\u00fdch na p\u016fvodce onemocn\u011bn\u00ed COVID-19 v p\u0159edchoz\u00edm dni dle hl\u00e1\u0161en\u00ed KHS a dle pozitivn\u00edch n\u00e1lez\u016f laborato\u0159\u00ed, kter\u00e9 jsou ur\u010deny pro dal\u0161\u00ed \u0161et\u0159en\u00ed."
             },
             {
                 "name": "provedene_testy_vcerejsi_den_datum",
                 "titles": "provedene_testy_vcerejsi_den_datum",
-                "datatype": "date",
-                "dc:description": "Datum přírůstku provedených testů za poslední uzavřený den."
+                "datatype": "string",
+                "dc:description": "Datum p\u0159\u00edr\u016fstku proveden\u00fdch test\u016f za posledn\u00ed uzav\u0159en\u00fd den."
             },
             {
                 "name": "potvrzene_pripady_vcerejsi_den_datum",
                 "titles": "potvrzene_pripady_vcerejsi_den_datum",
-                "datatype": "date",
-                "dc:description": "Datum přírůstku odhalených pozitivních případů za poslední uzavřený den."
-            },
-            {
-                "name": "potvrzene_pripady_dnesni_den_datum",
-                "titles": "potvrzene_pripady_dnesni_den_datum",
-                "datatype": "date",
-                "dc:description": "Datum průbežného přírůstku odhalených pozitivních případů za poslední neuzavřený den."
+                "datatype": "string",
+                "dc:description": "Datum p\u0159\u00edr\u016fstku odhalen\u00fdch pozitivn\u00edch p\u0159\u00edpad\u016f za posledn\u00ed uzav\u0159en\u00fd den."
             },
             {
                 "name": "provedene_antigenni_testy_celkem",
                 "titles": "provedene_antigenni_testy_celkem",
                 "datatype": "integer",
-                "dc:description": "Celkový počet provedených antigenních testů na původce onemocnění COVID-19 za celou ČR. S ohledem na fakt, že hlášení o provedených testech mají určité zpoždění oproti reálnému stavu, se mohou denní záznamy zpětně mírně měnit právě z důvodu průběžného doplňování."
+                "dc:description": "Celkov\u00fd po\u010det proveden\u00fdch antigenn\u00edch test\u016f na p\u016fvodce onemocn\u011bn\u00ed COVID-19 za celou \u010cR. S ohledem na fakt, \u017ee hl\u00e1\u0161en\u00ed o proveden\u00fdch testech maj\u00ed ur\u010dit\u00e9 zpo\u017ed\u011bn\u00ed oproti re\u00e1ln\u00e9mu stavu, se mohou denn\u00ed z\u00e1znamy zp\u011btn\u011b m\u00edrn\u011b m\u011bnit pr\u00e1v\u011b z d\u016fvodu pr\u016fb\u011b\u017en\u00e9ho dopl\u0148ov\u00e1n\u00ed."
             },
             {
                 "name": "provedene_antigenni_testy_vcerejsi_den",
                 "titles": "provedene_antigenni_testy_vcerejsi_den",
                 "datatype": "integer",
-                "dc:description": "Celkový počet provedených antigenních testů na původce onemocnění COVID-19 za celou ČR v předchozím dni."
+                "dc:description": "Celkov\u00fd po\u010det proveden\u00fdch antigenn\u00edch test\u016f na p\u016fvodce onemocn\u011bn\u00ed COVID-19 za celou \u010cR v p\u0159edchoz\u00edm dni."
             },
             {
                 "name": "provedene_antigenni_testy_vcerejsi_den_datum",
                 "titles": "provedene_antigenni_testy_vcerejsi_den_datum",
-                "datatype": "date",
-                "dc:description": "Datum přírůstku provedených antigenních testů za poslední uzavřený den."
+                "datatype": "string",
+                "dc:description": "Datum p\u0159\u00edr\u016fstku proveden\u00fdch antigenn\u00edch test\u016f za posledn\u00ed uzav\u0159en\u00fd den."
             },
             {
                 "name": "vykazana_ockovani_celkem",
                 "titles": "vykazana_ockovani_celkem",
                 "datatype": "integer",
-                "dc:description": "Celkový počet vykázaných očkování proti onemocnění COVID-19 za celou ČR. Data se mohou zpětně mírně měnit z důvodu průběžného doplňování."
+                "dc:description": "Celkov\u00fd po\u010det vyk\u00e1zan\u00fdch o\u010dkov\u00e1n\u00ed proti onemocn\u011bn\u00ed COVID-19 za celou \u010cR. Data se mohou zp\u011btn\u011b m\u00edrn\u011b m\u011bnit z d\u016fvodu pr\u016fb\u011b\u017en\u00e9ho dopl\u0148ov\u00e1n\u00ed."
             },
             {
                 "name": "vykazana_ockovani_vcerejsi_den",
                 "titles": "vykazana_ockovani_vcerejsi_den",
                 "datatype": "integer",
-                "dc:description": "Celkový počet vykázaných očkování proti onemocnění COVID-19 za celou ČR v předchozím dni."
+                "dc:description": "Celkov\u00fd po\u010det vyk\u00e1zan\u00fdch o\u010dkov\u00e1n\u00ed proti onemocn\u011bn\u00ed COVID-19 za celou \u010cR v p\u0159edchoz\u00edm dni."
             },
             {
                 "name": "vykazana_ockovani_vcerejsi_den_datum",
                 "titles": "vykazana_ockovani_vcerejsi_den_datum",
-                "datatype": "date",
-                "dc:description": "Datum přírůstku vykázaných očkování za poslední uzavřený den."
+                "datatype": "string",
+                "dc:description": "Datum p\u0159\u00edr\u016fstku vyk\u00e1zan\u00fdch o\u010dkov\u00e1n\u00ed za posledn\u00ed uzav\u0159en\u00fd den."
             },
             {
                 "name": "potvrzene_pripady_65_celkem",
                 "titles": "potvrzene_pripady_65_celkem",
                 "datatype": "integer",
-                "dc:description": "Celkový počet odhalených pozitivních případů ve věkové kategorii 65+."
+                "dc:description": "Celkov\u00fd po\u010det odhalen\u00fdch pozitivn\u00edch p\u0159\u00edpad\u016f ve v\u011bkov\u00e9 kategorii 65+."
             },
             {
                 "name": "potvrzene_pripady_65_vcerejsi_den",
                 "titles": "potvrzene_pripady_65_vcerejsi_den",
                 "datatype": "integer",
-                "dc:description": "Počet odhalených pozitivních případů ve věkové kategorii 65+ za poslední uzavřený den."
+                "dc:description": "Po\u010det odhalen\u00fdch pozitivn\u00edch p\u0159\u00edpad\u016f ve v\u011bkov\u00e9 kategorii 65+ za posledn\u00ed uzav\u0159en\u00fd den."
             },
             {
                 "name": "potvrzene_pripady_65_vcerejsi_den_datum",
                 "titles": "potvrzene_pripady_65_vcerejsi_den_datum",
-                "datatype": "date",
-                "dc:description": "Datum přírůstku odhalených pozitivních případů ve věkové kategorii 65+ za poslední uzavřený den."
+                "datatype": "string",
+                "dc:description": "Datum p\u0159\u00edr\u016fstku odhalen\u00fdch pozitivn\u00edch p\u0159\u00edpad\u016f ve v\u011bkov\u00e9 kategorii 65+ za posledn\u00ed uzav\u0159en\u00fd den."
             },
             {
                 "name": "ockovane_osoby_celkem",
                 "titles": "ockovane_osoby_celkem",
                 "datatype": "integer",
-                "dc:description": "Celkový počet vykázaných očkovaných osob s alespoň 1 dávkou proti onemocnění COVID-19 za celou ČR. Data se mohou zpětně mírně měnit z důvodu průběžného doplňování."
+                "dc:description": "Celkov\u00fd po\u010det vyk\u00e1zan\u00fdch o\u010dkovan\u00fdch osob s alespo\u0148 1 d\u00e1vkou proti onemocn\u011bn\u00ed COVID-19 za celou \u010cR. Data se mohou zp\u011btn\u011b m\u00edrn\u011b m\u011bnit z d\u016fvodu pr\u016fb\u011b\u017en\u00e9ho dopl\u0148ov\u00e1n\u00ed."
             },
             {
                 "name": "ockovane_osoby_vcerejsi_den",
                 "titles": "ockovane_osoby_vcerejsi_den",
                 "datatype": "integer",
-                "dc:description": "Celkový počet vykázaných očkovaných osob s alespoň 1 dávkou proti onemocnění COVID-19 za celou ČR v předchozím dni."
+                "dc:description": "Celkov\u00fd po\u010det vyk\u00e1zan\u00fdch o\u010dkovan\u00fdch osob s alespo\u0148 1 d\u00e1vkou proti onemocn\u011bn\u00ed COVID-19 za celou \u010cR v p\u0159edchoz\u00edm dni."
             },
             {
                 "name": "ockovane_osoby_vcerejsi_den_datum",
                 "titles": "ockovane_osoby_vcerejsi_den_datum",
-                "datatype": "date",
-                "dc:description": "Datum přírůstku vykázaných očkovaných osob s alespoň 1 dávkou za poslední uzavřený den."
+                "datatype": "string",
+                "dc:description": "Datum p\u0159\u00edr\u016fstku vyk\u00e1zan\u00fdch o\u010dkovan\u00fdch osob s alespo\u0148 1 d\u00e1vkou za posledn\u00ed uzav\u0159en\u00fd den."
             }
         ]
     }

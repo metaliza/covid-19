@@ -1,31 +1,31 @@
 {
     "@context": [
-        "http://www.w3.org/ns/csvw",
+        "http:\/\/www.w3.org\/ns\/csvw",
         {
             "@language": "cs"
         }
     ],
     "url": "prehled-ockovacich-mist.csv",
-    "dc:title": "COVID-19: Očkovací místa v ČR",
-    "dc:description": "Datová sada poskytuje seznam veřejných očkovacích míst v ČR, kde jsou podávány očkovací látky proti onemocnění COVID-19.",
-    "dc:source": "COVID Forms Application - https://cfa.uzis.cz/, kontakt: crtit@army.cz",
+    "dc:title": "prehled-ockovacich-mist",
+    "dc:description": "Datov\u00e1 sada poskytuje seznam ve\u0159ejn\u00fdch o\u010dkovac\u00edch m\u00edst v \u010cR, kde jsou pod\u00e1v\u00e1ny o\u010dkovac\u00ed l\u00e1tky proti onemocn\u011bn\u00ed COVID-19.",
+    "dc:source": "COVID Forms Application - https:\/\/cfa.uzis.cz\/, kontakt: crtit@army.cz",
     "dcat:keyword": [
         "koronavirus",
         "covid-19",
-        "očkování",
-        "očkovací místo"
+        "o\u010dkov\u00e1n\u00ed",
+        "o\u010dkovac\u00ed m\u00edsto"
     ],
     "dc:publisher": {
-        "schema:name": "ÚZIS ČR",
+        "schema:name": "\u00daZIS \u010cR",
         "schema:url": {
-            "@id": "https://www.uzis.cz/"
+            "@id": "https:\/\/www.uzis.cz\/"
         }
     },
     "dc:license": {
-        "@id": "http://data.gov.cz/podmínky-užití/volný-přístup/"
+        "@id": "https:\/\/data.gov.cz\/podm\u00ednky-u\u017eit\u00ed\/voln\u00fd-p\u0159\u00edstup\/"
     },
     "dc:modified": {
-        "@value": "2021-10-26",
+        "@value": "2021-11-18",
         "@type": "xsd:date"
     },
     "tableSchema": {
@@ -34,67 +34,67 @@
                 "name": "ockovaci_misto_id",
                 "titles": "ockovaci_misto_id",
                 "datatype": "string",
-                "dc:description": "Jednoznačný identifikátor očkovacího místa."
+                "dc:description": "Jednozna\u010dn\u00fd identifik\u00e1tor o\u010dkovac\u00edho m\u00edsta."
             },
             {
                 "name": "ockovaci_misto_nazev",
                 "titles": "ockovaci_misto_nazev",
                 "datatype": "string",
-                "dc:description": "Název očkovacího místa."
+                "dc:description": "N\u00e1zev o\u010dkovac\u00edho m\u00edsta."
             },
             {
                 "name": "okres_nuts_kod",
                 "titles": "okres_nuts_kod",
                 "datatype": "string",
-                "dc:description": " Identifikátor okresu podle klasifikace NUTS4, kde se očkovací místo nachází."
+                "dc:description": "Identifik\u00e1tor okresu podle klasifikace NUTS4, kde se o\u010dkovac\u00ed m\u00edsto nach\u00e1z\u00ed."
             },
             {
                 "name": "operacni_status",
                 "titles": "operacni_status",
                 "datatype": "boolean",
-                "dc:description": "Příznak, zda je očkovací místo veřejné. V datové sadě jsou uveřejněna pouze veřejná očkovací místa."
+                "dc:description": "P\u0159\u00edznak, zda je o\u010dkovac\u00ed m\u00edsto ve\u0159ejn\u00e9. V datov\u00e9 sad\u011b jsou uve\u0159ejn\u011bna pouze ve\u0159ejn\u00e1 o\u010dkovac\u00ed m\u00edsta."
             },
             {
                 "name": "ockovaci_misto_adresa",
                 "titles": "ockovaci_misto_adresa",
                 "datatype": "string",
-                "dc:description": "Adresa očkovacího místa."
+                "dc:description": "Adresa o\u010dkovac\u00edho m\u00edsta."
             },
             {
                 "name": "latitude",
                 "titles": "latitude",
                 "datatype": "string",
-                "dc:description": "Souřadnice (zeměpisná šířka) určující polohu očkovacího místa."
+                "dc:description": "Sou\u0159adnice (zem\u011bpisn\u00e1 \u0161\u00ed\u0159ka) ur\u010duj\u00edc\u00ed polohu o\u010dkovac\u00edho m\u00edsta."
             },
             {
                 "name": "longitude",
                 "titles": "longitude",
                 "datatype": "string",
-                "dc:description": "Souřadnice (zeměpisná délka) určující polohu očkovacího místa."
+                "dc:description": "Sou\u0159adnice (zem\u011bpisn\u00e1 d\u00e9lka) ur\u010duj\u00edc\u00ed polohu o\u010dkovac\u00edho m\u00edsta."
             },
             {
                 "name": "ockovaci_misto_typ",
                 "titles": "ockovaci_misto_typ",
                 "datatype": "string",
-                "dc:description": "Typ očkovacího místa (OČM: očkovací místo, VOČM: velkokapacitní očkovací místo, DOČM: distribuční očkovací místo)"
+                "dc:description": "Typ o\u010dkovac\u00edho m\u00edsta (O\u010cM: o\u010dkovac\u00ed m\u00edsto, VO\u010cM: velkokapacitn\u00ed o\u010dkovac\u00ed m\u00edsto, DO\u010cM: distribu\u010dn\u00ed o\u010dkovac\u00ed m\u00edsto)."
             },
             {
                 "name": "nrpzs_kod",
                 "titles": "nrpzs_kod",
-                "datatype": "integer",
-                "dc:description": "Kód zdravotnického zařízení podle Národního registru poskytovatelů zdravotních služeb. Jedno zdravotnické zařízení může disponovat jedním nebo více očkovacími místy."
+                "datatype": "string",
+                "dc:description": "K\u00f3d zdravotnick\u00e9ho za\u0159\u00edzen\u00ed podle N\u00e1rodn\u00edho registru poskytovatel\u016f zdravotn\u00edch slu\u017eeb. Jedno zdravotnick\u00e9 za\u0159\u00edzen\u00ed m\u016f\u017ee disponovat jedn\u00edm nebo v\u00edce o\u010dkovac\u00edmi m\u00edsty."
             },
             {
                 "name": "minimalni_kapacita",
                 "titles": "minimalni_kapacita",
                 "datatype": "integer",
-                "dc:description": "Minimalní kapacita očkovaných osob za jeden den."
+                "dc:description": "Minimaln\u00ed kapacita o\u010dkovan\u00fdch osob za jeden den."
             },
             {
                 "name": "bezbarierovy_pristup",
                 "titles": "bezbarierovy_pristup",
                 "datatype": "boolean",
-                "dc:description": "Příznak, zda očkovací místo disponuje bezbarierovým přístupem."
+                "dc:description": "P\u0159\u00edznak, zda o\u010dkovac\u00ed m\u00edsto disponuje bezbarierov\u00fdm p\u0159\u00edstupem."
             }
         ]
     }

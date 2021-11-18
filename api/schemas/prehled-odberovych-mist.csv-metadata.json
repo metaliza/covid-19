@@ -1,32 +1,32 @@
 {
     "@context": [
-        "http://www.w3.org/ns/csvw",
+        "http:\/\/www.w3.org\/ns\/csvw",
         {
             "@language": "cs"
         }
     ],
     "url": "prehled-odberovych-mist.csv",
-    "dc:title": "COVID-19: Odběrová místa v ČR",
-    "dc:description": "Datová sada poskytuje seznam odběrových míst v ČR, kde jsou prováděny PCR a antigenní testy na onemocnění COVID-19. Součástí publikovaného seznamu nejsou odběrová místa ve zdravotnických zařízeních, kde jsou prováděny testy před přijetím pacienta v souvislosti s poskytováním neodkladné péče. Mobilní odběrové týmy mají kapacitu pevně nastavenu (na hodnotu 20), protože není možné přesně určit tuto kapacitu.",
-    "dc:source": "COVID Forms Application - https://cfa.uzis.cz/, kontakt: crtit@army.cz",
+    "dc:title": "prehled-odberovych-mist",
+    "dc:description": "Datov\u00e1 sada poskytuje seznam odb\u011brov\u00fdch m\u00edst v \u010cR, kde jsou prov\u00e1d\u011bny PCR a antigenn\u00ed testy na onemocn\u011bn\u00ed COVID-19. Sou\u010d\u00e1st\u00ed publikovan\u00e9ho seznamu nejsou odb\u011brov\u00e1 m\u00edsta ve zdravotnick\u00fdch za\u0159\u00edzen\u00edch, kde jsou prov\u00e1d\u011bny testy p\u0159ed p\u0159ijet\u00edm pacienta v souvislosti s poskytov\u00e1n\u00edm neodkladn\u00e9 p\u00e9\u010de. Mobiln\u00ed odb\u011brov\u00e9 t\u00fdmy maj\u00ed kapacitu pevn\u011b nastavenu (na hodnotu 20), proto\u017ee nen\u00ed mo\u017en\u00e9 p\u0159esn\u011b ur\u010dit tuto kapacitu.",
+    "dc:source": "COVID Forms Application - https:\/\/cfa.uzis.cz\/, kontakt: crtit@army.cz",
     "dcat:keyword": [
         "koronavirus",
         "covid-19",
-        "odběrová místa",
+        "odb\u011brov\u00e1 m\u00edsta",
         "PCR testy",
-        "antigenní testy"
+        "antigenn\u00ed testy"
     ],
     "dc:publisher": {
-        "schema:name": "ÚZIS ČR",
+        "schema:name": "\u00daZIS \u010cR",
         "schema:url": {
-            "@id": "https://www.uzis.cz/"
+            "@id": "https:\/\/www.uzis.cz\/"
         }
     },
     "dc:license": {
-        "@id": "http://data.gov.cz/podmínky-užití/volný-přístup/"
+        "@id": "https:\/\/data.gov.cz\/podm\u00ednky-u\u017eit\u00ed\/voln\u00fd-p\u0159\u00edstup\/"
     },
     "dc:modified": {
-        "@value": "2021-10-26",
+        "@value": "2021-11-18",
         "@type": "xsd:date"
     },
     "tableSchema": {
@@ -35,73 +35,73 @@
                 "name": "odberove_misto_id",
                 "titles": "odberove_misto_id",
                 "datatype": "string",
-                "dc:description": "Jednoznačný identifikátor odběrového místa."
+                "dc:description": "Jednozna\u010dn\u00fd identifik\u00e1tor odb\u011brov\u00e9ho m\u00edsta."
             },
             {
                 "name": "odberove_misto_nazev",
                 "titles": "odberove_misto_nazev",
                 "datatype": "string",
-                "dc:description": "Název odběrového místa."
+                "dc:description": "N\u00e1zev odb\u011brov\u00e9ho m\u00edsta."
             },
             {
                 "name": "okres_nuts_kod",
                 "titles": "okres_nuts_kod",
                 "datatype": "string",
-                "dc:description": " Identifikátor okresu podle klasifikace NUTS4, kde se očkovací místo nachází."
+                "dc:description": "Identifik\u00e1tor okresu podle klasifikace NUTS4, kde se odb\u011brov\u00e9 m\u00edsto nach\u00e1z\u00ed."
             },
             {
                 "name": "operacni_status",
                 "titles": "operacni_status",
                 "datatype": "boolean",
-                "dc:description": "Příznak, zda je oodběrové místo v provozu (https://registrace.mzcr.cz/)."
+                "dc:description": "P\u0159\u00edznak, zda je odb\u011brov\u00e9 m\u00edsto v provozu (https:\/\/registrace.mzcr.cz\/)."
             },
             {
                 "name": "odberove_misto_adresa",
                 "titles": "odberove_misto_adresa",
                 "datatype": "string",
-                "dc:description": "Adresa odběrového místa."
+                "dc:description": "Adresa odb\u011brov\u00e9ho m\u00edsta."
             },
             {
                 "name": "latitude",
                 "titles": "latitude",
                 "datatype": "string",
-                "dc:description": "Souřadnice (zeměpisná šířka) určující polohu odběrového místa."
+                "dc:description": "Sou\u0159adnice (zem\u011bpisn\u00e1 \u0161\u00ed\u0159ka) ur\u010duj\u00edc\u00ed polohu odb\u011brov\u00e9ho m\u00edsta."
             },
             {
                 "name": "longitude",
                 "titles": "longitude",
                 "datatype": "string",
-                "dc:description": "Souřadnice (zeměpisná délka) určující polohu odběrového místa."
+                "dc:description": "Sou\u0159adnice (zem\u011bpisn\u00e1 d\u00e9lka) ur\u010duj\u00edc\u00ed polohu odb\u011brov\u00e9ho m\u00edsta."
             },
             {
                 "name": "testovaci_kapacita",
                 "titles": "testovaci_kapacita",
                 "datatype": "integer",
-                "dc:description": "Celkový počet vzorků nezávisle na typu odběru (nasofaryngeální, orofaryngeální nebo antigenní odběr), které je schopno odběrové místo provést za den."
+                "dc:description": "Celkov\u00fd po\u010det vzork\u016f nez\u00e1visle na typu odb\u011bru (nasofarynge\u00e1ln\u00ed, orofarynge\u00e1ln\u00ed nebo antigenn\u00ed odb\u011br), kter\u00e9 je schopno odb\u011brov\u00e9 m\u00edsto prov\u00e9st za den."
             },
             {
                 "name": "nasofaryngealni_odber",
                 "titles": "nasofaryngealni_odber",
                 "datatype": "boolean",
-                "dc:description": "Příznak, zda odběrové místo provádí PCR testy nasofaryngeálně."
+                "dc:description": "P\u0159\u00edznak, zda odb\u011brov\u00e9 m\u00edsto prov\u00e1d\u00ed PCR testy nasofarynge\u00e1ln\u011b."
             },
             {
                 "name": "orofaryngealni_odber",
                 "titles": "orofaryngealni_odber",
                 "datatype": "boolean",
-                "dc:description": "Příznak, zda odběrové místo provádí PCR testy orofaryngeálně."
+                "dc:description": "P\u0159\u00edznak, zda odb\u011brov\u00e9 m\u00edsto prov\u00e1d\u00ed PCR testy orofarynge\u00e1ln\u011b."
             },
             {
                 "name": "antigenni_odber",
                 "titles": "antigenni_odber",
                 "datatype": "boolean",
-                "dc:description": "Příznak, zda odběrové místo provádí antigenní testy."
+                "dc:description": "P\u0159\u00edznak, zda odb\u011brov\u00e9 m\u00edsto prov\u00e1d\u00ed antigenn\u00ed testy."
             },
             {
                 "name": "drive_in",
                 "titles": "drive_in",
                 "datatype": "boolean",
-                "dc:description": "Příznak, zda odběrové místo funguje v tzv. drive-in režimu (pacienti přijíždějí autem a nevystupují)."
+                "dc:description": "P\u0159\u00edznak, zda odb\u011brov\u00e9 m\u00edsto funguje v tzv. drive-in re\u017eimu (pacienti p\u0159ij\u00ed\u017ed\u011bj\u00ed autem a nevystupuj\u00ed)."
             }
         ]
     }

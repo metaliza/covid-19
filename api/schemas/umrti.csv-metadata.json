@@ -1,41 +1,46 @@
 {
     "@context": [
-        "http://www.w3.org/ns/csvw",
+        "http:\/\/www.w3.org\/ns\/csvw",
         {
             "@language": "cs"
         }
     ],
     "url": "umrti.csv",
-    "dc:title": "COVID-19: Přehled úmrtí dle hlášení krajských hygienických stanic",
-    "dc:description": "Datová sada obsahující záznamy o úmrtích v souvislosti s onemocněním COVID‑19 dle hlášení krajských hygienických stanic. Zahrnuje úmrtí osob, které byly pozitivně testovány na COVID‑19 (metodou PCR) bez ohledu na to, jaké byly příčiny jejich úmrtí, a k jejichž úmrtí došlo v rámci hospitalizace či mimo ni. S ohledem na fakt, že vykazování úmrtí má určité zpoždění oproti reálnému stavu z důvodu validace a uzavírání případů krajských hygienických stanic, se mohou denní záznamy zpětně měnit právě z důvodu průběžného doplňování. Tento přehled je aktualizován vždy jednou týdně ve středu a obsahuje data k předchozí neděli.",
-    "dc:source": "Informační systém infekčních nemocí (ISIN) - https://www.uzis.cz/index.php?pg=registry-sber-dat--ochrana-verejneho-zdravi--informacni-system-infekcni-nemoci, kontakt: helpdesk.registry@uzis.cz",
+    "dc:title": "umrti",
+    "dc:description": "Datov\u00e1 sada obsahuj\u00edc\u00ed z\u00e1znamy o \u00famrt\u00edch v souvislosti s onemocn\u011bn\u00edm COVID\u201119 dle hl\u00e1\u0161en\u00ed krajsk\u00fdch hygienick\u00fdch stanic. Zahrnuje \u00famrt\u00ed osob, kter\u00e9 byly pozitivn\u011b testov\u00e1ny na COVID\u201119 (metodou PCR) bez ohledu na to, jak\u00e9 byly p\u0159\u00ed\u010diny jejich \u00famrt\u00ed, a k jejich\u017e \u00famrt\u00ed do\u0161lo v r\u00e1mci hospitalizace \u010di mimo ni. S ohledem na fakt, \u017ee vykazov\u00e1n\u00ed \u00famrt\u00ed m\u00e1 ur\u010dit\u00e9 zpo\u017ed\u011bn\u00ed oproti re\u00e1ln\u00e9mu stavu z d\u016fvodu validace a uzav\u00edr\u00e1n\u00ed p\u0159\u00edpad\u016f krajsk\u00fdch hygienick\u00fdch stanic, se mohou denn\u00ed z\u00e1znamy zp\u011btn\u011b m\u011bnit pr\u00e1v\u011b z d\u016fvodu pr\u016fb\u011b\u017en\u00e9ho dopl\u0148ov\u00e1n\u00ed.",
+    "dc:source": "Informa\u010dn\u00ed syst\u00e9m infek\u010dn\u00edch nemoc\u00ed (ISIN) - https:\/\/www.uzis.cz\/index.php?pg=registry-sber-dat--ochrana-verejneho-zdravi--informacni-system-infekcni-nemoci, kontakt: helpdesk.registry@uzis.cz",
     "dcat:keyword": [
-        "covid-19",
         "koronavirus",
-        "krajské hygienické stanice",
+        "covid-19",
+        "krajsk\u00e9 hygienick\u00e9 stanice",
         "kraj",
         "okres",
-        "úmrtí"
+        "\u00famrt\u00ed"
     ],
     "dc:publisher": {
-        "schema:name": "ÚZIS ČR",
+        "schema:name": "\u00daZIS \u010cR",
         "schema:url": {
-            "@id": "https://www.uzis.cz/"
+            "@id": "https:\/\/www.uzis.cz\/"
         }
     },
     "dc:license": {
-        "@id": "http://data.gov.cz/podmínky-užití/volný-přístup/"
+        "@id": "https:\/\/data.gov.cz\/podm\u00ednky-u\u017eit\u00ed\/voln\u00fd-p\u0159\u00edstup\/"
     },
     "dc:modified": {
-        "@value": "2021-10-20",
+        "@value": "2021-11-18",
         "@type": "xsd:date"
     },
     "tableSchema": {
         "columns": [
             {
+                "name": "id",
+                "titles": "id",
+                "datatype": "string"
+            },
+            {
                 "name": "datum",
                 "titles": "datum",
-                "datatype": "date"
+                "datatype": "string"
             },
             {
                 "name": "vek",
@@ -51,13 +56,13 @@
                 "name": "kraj_nuts_kod",
                 "titles": "kraj_nuts_kod",
                 "datatype": "string",
-                "dc:description": "Identifikátor kraje podle klasifikace NUTS 3. V případě, že není uvedena žádná hodnota, nebylo možné identifikovat místo bydliště nakažené osoby. Jde o problém se ztotožňováním bydliště v reálném čase u minority případů, kdy není uvedeno bydliště ze šetření KHS a jsou dostupná pouze data z laboratoří. Bydliště je správně určeno na úrovni kraje a okresu, ale došlo k chybnému přiřazení osob ke konkrétní obci."
+                "dc:description": "Identifik\u00e1tor kraje podle klasifikace NUTS 3. V p\u0159\u00edpad\u011b, \u017ee nen\u00ed uvedena \u017e\u00e1dn\u00e1 hodnota, nebylo mo\u017en\u00e9 identifikovat m\u00edsto bydli\u0161t\u011b naka\u017een\u00e9 osoby. Jde o probl\u00e9m se ztoto\u017e\u0148ov\u00e1n\u00edm bydli\u0161t\u011b v re\u00e1ln\u00e9m \u010dase u minority p\u0159\u00edpad\u016f, kdy nen\u00ed uvedeno bydli\u0161t\u011b ze \u0161et\u0159en\u00ed KHS a jsou dostupn\u00e1 pouze data z laborato\u0159\u00ed. Bydli\u0161t\u011b je spr\u00e1vn\u011b ur\u010deno na \u00farovni kraje a okresu, ale do\u0161lo k chybn\u00e9mu p\u0159i\u0159azen\u00ed osob ke konkr\u00e9tn\u00ed obci."
             },
             {
                 "name": "okres_lau_kod",
                 "titles": "okres_lau_kod",
                 "datatype": "string",
-                "dc:description": "Identifikátor okresu podle klasifikace LAU 1. V případě, že není uvedena žádná hodnota, nebylo možné identifikovat místo bydliště nakažené osoby. Jde o problém se ztotožňováním bydliště v reálném čase u minority případů, kdy není uvedeno bydliště ze šetření KHS a jsou dostupná pouze data z laboratoří. Bydliště je správně určeno na úrovni kraje a okresu, ale došlo k chybnému přiřazení osob ke konkrétní obci."
+                "dc:description": "Identifik\u00e1tor okresu podle klasifikace LAU 1. V p\u0159\u00edpad\u011b, \u017ee nen\u00ed uvedena \u017e\u00e1dn\u00e1 hodnota, nebylo mo\u017en\u00e9 identifikovat m\u00edsto bydli\u0161t\u011b naka\u017een\u00e9 osoby. Jde o probl\u00e9m se ztoto\u017e\u0148ov\u00e1n\u00edm bydli\u0161t\u011b v re\u00e1ln\u00e9m \u010dase u minority p\u0159\u00edpad\u016f, kdy nen\u00ed uvedeno bydli\u0161t\u011b ze \u0161et\u0159en\u00ed KHS a jsou dostupn\u00e1 pouze data z laborato\u0159\u00ed. Bydli\u0161t\u011b je spr\u00e1vn\u011b ur\u010deno na \u00farovni kraje a okresu, ale do\u0161lo k chybn\u00e9mu p\u0159i\u0159azen\u00ed osob ke konkr\u00e9tn\u00ed obci."
             }
         ]
     }

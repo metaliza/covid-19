@@ -1,120 +1,125 @@
 {
     "@context": [
-        "http://www.w3.org/ns/csvw",
+        "http:\/\/www.w3.org\/ns\/csvw",
         {
             "@language": "cs"
         }
     ],
     "url": "ockovani-registrace.csv",
-    "dc:title": "COVID-19: Přehled registrací podle očkovacích míst ČR",
-    "dc:description": "Datová sada poskytuje přehled vytvořených registrací v centrálním rezervačním systému na očkování proti onemocnění COVID-19 (https://registrace.mzcr.cz/). Záznamy (řádky) datové sady popisují jednotlivé anonymizované registrace, které byly vytvořeny na dané očkovací místo v daný den. Do datové sady spadají také osoby, které již byly očkovány. Registrovaná osoba je definována tak, že spadá do jedné s následujících skupin: (i) osoba je registrovaná a čeká na přidělení možnosti výběru termínu očkování, (ii) osoba obdržela možnost výběru termínu očkování, (iii) osoba provedla výběr termínu a má tedy rezervaci.\n\nPopis procesu rezervace a registrace: (1) Osoba se registruje v centrálním rezervačním systému na očkování. (2) Probíhá proces ztotožnění proti centrálnímu registru obyvatel. (3) Po ověření totožnosti čeká osoba na přidělení možnosti výběru termínu (stav před závorou). (4) Po přidělení možnosti výběru termínu si osoba vybírá vhodný termín (stav za závorou). (5) Po výběru termínu má daná osoba provedenu rezervaci termínu na očkování. (6) Po provedení očkování zůstává záznam v datové sadě s blokovanou registrací (zablokovano = ANO) a současně je uveden důvod blokace (blokace_duvod = Ztotožněn, ale již vakcinován).\n",
-    "dc:source": "Centrální rezervační systém - https://crs.uzis.cz/, kontakt: covid-podpora@nakit.cz",
+    "dc:title": "ockovani-registrace",
+    "dc:description": "Datov\u00e1 sada poskytuje p\u0159ehled vytvo\u0159en\u00fdch registrac\u00ed v centr\u00e1ln\u00edm rezerva\u010dn\u00edm syst\u00e9mu na o\u010dkov\u00e1n\u00ed proti onemocn\u011bn\u00ed COVID-19 (https:\/\/registrace.mzcr.cz\/). Z\u00e1znamy (\u0159\u00e1dky) datov\u00e9 sady popisuj\u00ed jednotliv\u00e9 anonymizovan\u00e9 registrace, kter\u00e9 byly vytvo\u0159eny na dan\u00e9 o\u010dkovac\u00ed m\u00edsto v dan\u00fd den. Do datov\u00e9 sady spadaj\u00ed tak\u00e9 osoby, kter\u00e9 ji\u017e byly o\u010dkov\u00e1ny. Registrovan\u00e1 osoba je definov\u00e1na tak, \u017ee spad\u00e1 do jedn\u00e9 s n\u00e1sleduj\u00edc\u00edch skupin: (i) osoba je registrovan\u00e1 a \u010dek\u00e1 na p\u0159id\u011blen\u00ed mo\u017enosti v\u00fdb\u011bru term\u00ednu o\u010dkov\u00e1n\u00ed, (ii) osoba obdr\u017eela mo\u017enost v\u00fdb\u011bru term\u00ednu o\u010dkov\u00e1n\u00ed, (iii) osoba provedla v\u00fdb\u011br term\u00ednu a m\u00e1 tedy rezervaci.\\n\\nPopis procesu rezervace a registrace: (1) Osoba se registruje v centr\u00e1ln\u00edm rezerva\u010dn\u00edm syst\u00e9mu na o\u010dkov\u00e1n\u00ed. (2) Prob\u00edh\u00e1 proces ztoto\u017en\u011bn\u00ed proti centr\u00e1ln\u00edmu registru obyvatel. (3) Po ov\u011b\u0159en\u00ed toto\u017enosti \u010dek\u00e1 osoba na p\u0159id\u011blen\u00ed mo\u017enosti v\u00fdb\u011bru term\u00ednu (stav p\u0159ed z\u00e1vorou). (4) Po p\u0159id\u011blen\u00ed mo\u017enosti v\u00fdb\u011bru term\u00ednu si osoba vyb\u00edr\u00e1 vhodn\u00fd term\u00edn (stav za z\u00e1vorou). (5) Po v\u00fdb\u011bru term\u00ednu m\u00e1 dan\u00e1 osoba provedenu rezervaci term\u00ednu na o\u010dkov\u00e1n\u00ed. (6) Po proveden\u00ed o\u010dkov\u00e1n\u00ed z\u016fst\u00e1v\u00e1 z\u00e1znam v datov\u00e9 sad\u011b s blokovanou registrac\u00ed (zablokovano = ANO) a sou\u010dasn\u011b je uveden d\u016fvod blokace (blokace_duvod = Ztoto\u017en\u011bn, ale ji\u017e vakcinov\u00e1n).",
+    "dc:source": "Informa\u010dn\u00ed syst\u00e9m infek\u010dn\u00edch nemoc\u00ed (ISIN) - https:\/\/www.uzis.cz\/index.php?pg=registry-sber-dat--ochrana-verejneho-zdravi--informacni-system-infekcni-nemoci, kontakt: helpdesk.registry@uzis.cz",
     "dcat:keyword": [
         "koronavirus",
         "covid-19",
-        "očkování",
-        "očkovací místo",
+        "o\u010dkov\u00e1n\u00ed",
+        "o\u010dkovac\u00ed m\u00edsto",
         "vakcinace",
         "registrace"
     ],
     "dc:publisher": {
-        "schema:name": "ÚZIS ČR",
+        "schema:name": "\u00daZIS \u010cR",
         "schema:url": {
-            "@id": "https://www.uzis.cz/"
+            "@id": "https:\/\/www.uzis.cz\/"
         }
     },
     "dc:license": {
-        "@id": "http://data.gov.cz/podmínky-užití/volný-přístup/"
+        "@id": "https:\/\/data.gov.cz\/podm\u00ednky-u\u017eit\u00ed\/voln\u00fd-p\u0159\u00edstup\/"
     },
     "dc:modified": {
-        "@value": "2021-10-26",
+        "@value": "2021-11-18",
         "@type": "xsd:date"
     },
     "tableSchema": {
         "columns": [
             {
+                "name": "id",
+                "titles": "id",
+                "datatype": "string"
+            },
+            {
                 "name": "datum",
                 "titles": "datum",
-                "datatype": "date",
-                "dc:description": "Den, kdy byla registrace v centrálním registračním systému na očkování proti onemocnění COVID-19 vytvořena."
+                "datatype": "string",
+                "dc:description": "Den, kdy byla registrace v centr\u00e1ln\u00edm registra\u010dn\u00edm syst\u00e9mu na o\u010dkov\u00e1n\u00ed proti onemocn\u011bn\u00ed COVID-19 vytvo\u0159ena."
             },
             {
                 "name": "ockovaci_misto_id",
                 "titles": "ockovaci_misto_id",
                 "datatype": "string",
-                "dc:description": "Jednoznačný identifikátor očkovacího místa."
+                "dc:description": "Jednozna\u010dn\u00fd identifik\u00e1tor o\u010dkovac\u00edho m\u00edsta."
             },
             {
                 "name": "ockovaci_misto_nazev",
                 "titles": "ockovaci_misto_nazev",
                 "datatype": "string",
-                "dc:description": "Název očkovacího místa."
+                "dc:description": "N\u00e1zev o\u010dkovac\u00edho m\u00edsta."
             },
             {
                 "name": "kraj_nuts_kod",
                 "titles": "kraj_nuts_kod",
                 "datatype": "string",
-                "dc:description": "Identifikátor kraje podle klasifikace NUTS 3, ve kterém se nachází očkovací místo."
+                "dc:description": "Identifik\u00e1tor kraje podle klasifikace NUTS 3, ve kter\u00e9m se nach\u00e1z\u00ed o\u010dkovac\u00ed m\u00edsto."
             },
             {
                 "name": "kraj_nazev",
                 "titles": "kraj_nazev",
                 "datatype": "string",
-                "dc:description": "Název kraje podle klasifikace NUTS 3, ve kterém se nachází očkovací místo."
+                "dc:description": "N\u00e1zev kraje podle klasifikace NUTS 3, ve kter\u00e9m se nach\u00e1z\u00ed o\u010dkovac\u00ed m\u00edsto."
             },
             {
                 "name": "vekova_skupina",
                 "titles": "vekova_skupina",
                 "datatype": "string",
-                "dc:description": "Věková skupina, do které spadá uživatel vytvářející registraci na očkování proti onemocnění COVID-19."
+                "dc:description": "V\u011bkov\u00e1 skupina, do kter\u00e9 spad\u00e1 u\u017eivatel vytv\u00e1\u0159ej\u00edc\u00ed registraci na o\u010dkov\u00e1n\u00ed proti onemocn\u011bn\u00ed COVID-19."
             },
             {
                 "name": "povolani",
                 "titles": "povolani",
                 "datatype": "string",
-                "dc:description": "Povolání uživatele vytvářejícího registraci na očkování proti onemocnění COVID-19 podle Národního registru zdravotnických pracovníků."
+                "dc:description": "Povol\u00e1n\u00ed u\u017eivatele vytv\u00e1\u0159ej\u00edc\u00edho registraci na o\u010dkov\u00e1n\u00ed proti onemocn\u011bn\u00ed COVID-19 podle N\u00e1rodn\u00edho registru zdravotnick\u00fdch pracovn\u00edk\u016f."
             },
             {
                 "name": "stat",
                 "titles": "stat",
                 "datatype": "string",
-                "dc:description": "Stát, ze kterého je uživatel vytvářející registraci na očkování proti onemocnění COVID-19."
+                "dc:description": "St\u00e1t, ze kter\u00e9ho je u\u017eivatel vytv\u00e1\u0159ej\u00edc\u00ed registraci na o\u010dkov\u00e1n\u00ed proti onemocn\u011bn\u00ed COVID-19."
             },
             {
                 "name": "rezervace",
                 "titles": "rezervace",
                 "datatype": "boolean",
-                "dc:description": "Příznak, zda uživatel již obdržel rezervaci termínu na očkování proti onemocnění COVID-19."
+                "dc:description": "P\u0159\u00edznak, zda u\u017eivatel ji\u017e obdr\u017eel rezervaci term\u00ednu na o\u010dkov\u00e1n\u00ed proti onemocn\u011bn\u00ed COVID-19."
             },
             {
                 "name": "datum_rezervace",
                 "titles": "datum_rezervace",
-                "datatype": "date",
-                "dc:description": "Datum rezervace na očkování proti onemocnění COVID-19."
+                "datatype": "string",
+                "dc:description": "Datum rezervace na o\u010dkov\u00e1n\u00ed proti onemocn\u011bn\u00ed COVID-19."
             },
             {
                 "name": "zavora_status",
                 "titles": "zavora_status",
                 "datatype": "string",
-                "dc:description": "Určení, v jakém stavu se nachází registrace dané osoby: 1. stav „před závorou“ = osoba je registrovaná v systému a čeká na přidělení možnosti výběru termínu na očkování; 2. stav „za závorou“ = osoba je registrovaná v systému a má možnost výběru termínu na očkování; 3. stav „zablokován“ = osoba byla zablokována; 4. stav „vrácen před závoru“ = osoba měla možnost výběru termínu, ale nevyužila ji"
+                "dc:description": "Ur\u010den\u00ed, v jak\u00e9m stavu se nach\u00e1z\u00ed registrace dan\u00e9 osoby: 1. stav \u201ep\u0159ed z\u00e1vorou\u201c = osoba je registrovan\u00e1 v syst\u00e9mu a \u010dek\u00e1 na p\u0159id\u011blen\u00ed mo\u017enosti v\u00fdb\u011bru term\u00ednu na o\u010dkov\u00e1n\u00ed; 2. stav \u201eza z\u00e1vorou\u201c = osoba je registrovan\u00e1 v syst\u00e9mu a m\u00e1 mo\u017enost v\u00fdb\u011bru term\u00ednu na o\u010dkov\u00e1n\u00ed; 3. stav \u201ezablokov\u00e1n\u201c = osoba byla zablokov\u00e1na; 4. stav \u201evr\u00e1cen p\u0159ed z\u00e1voru\u201c = osoba m\u011bla mo\u017enost v\u00fdb\u011bru term\u00ednu, ale nevyu\u017eila ji"
             },
             {
                 "name": "prioritni_skupina",
                 "titles": "prioritni_skupina",
                 "datatype": "string",
-                "dc:description": "Určení, do jaké prioritní skupiny byla osoba přiřazena (u jednoho záznamu je právě jedna prioritní skupina)."
+                "dc:description": "Ur\u010den\u00ed, do jak\u00e9 prioritn\u00ed skupiny byla osoba p\u0159i\u0159azena (u jednoho z\u00e1znamu je pr\u00e1v\u011b jedna prioritn\u00ed skupina)."
             },
             {
                 "name": "zablokovano",
                 "titles": "zablokovano",
                 "datatype": "boolean",
-                "dc:description": "Stav, zda byla registrace zablokována."
+                "dc:description": "Stav, zda byla registrace zablokov\u00e1na."
             },
             {
                 "name": "duvod_blokace",
                 "titles": "duvod_blokace",
                 "datatype": "string",
-                "dc:description": "Zdůvodnění, proč byla očkovaná osoba zablokována. 1. Vytvoření novější registrace (Procedura při vytváření registrace) - V okamžiku, kdy je vytvářena nová registrace, je předchozí registrace se stejným identifikátorem zablokována, pokud u ní není rezervace. 2. Existence předchozí registrace s rezervací (Procedura při vytváření registrace) - V okamžiku, kdy je vytvářena nová registrace, a je nalezena předchozí nezablokovaná registrace se stejným identifikátorem s platnou rezervací, je nově vytvářená registrace zablokovaná. 3. 5x špatně zadané PIN2 (Aplikační rozhraní) - Pokud uživatel při pokusu o vstup zadá 5x špatné PIN 2, je registrace zablokována. 4. Již existuje rezervace (Aplikační rozhraní) - Po vytvoření rezervace je registrace zablokována. V případě zrušení rezervace bude registrace odblokována. 5. Vyřazení ze hry (Závora) - Při pasivním chování uživatele, kterému bylo umožněno vybrat si termín očkování (stav „za závorou“, jsou zasílány SMS notifikace pro připomenutí. Pokud si uživatel ani po zaslání 9 notifikací nevybere termín, je automaticky zablokován. 6. Registrace nebyla ztotožněna (Synchronizace s centrálními registry) - V případě, že není registrace ztotožněna. 7. Ztotožněn, ale již vakcinován (Synchronizace s centrálními registry) - V případě, že osoba v registraci byla ztotožněna, ale již u ní byla zahájena vakcinace. 8. Na žádost (Ruční administrace) - Pokud si uživatel v detailu registrace registraci zruší/vynuluje nebo změní své údaje. 9. Nalezení pozitivního PCR testu na COVID-19 (Procedura při kontrole COVID-19 pozitiv) - Při ztotožňování a následně 1x denně je kontrolováno, zda nemá registrovaná osoba PCR test na COVID-19 pozitivní v posledních 90 dnech. Pokud ano, je dočasně zablokována."
+                "dc:description": "Zd\u016fvodn\u011bn\u00ed, pro\u010d byla o\u010dkovan\u00e1 osoba zablokov\u00e1na. 1. Vytvo\u0159en\u00ed nov\u011bj\u0161\u00ed registrace (Procedura p\u0159i vytv\u00e1\u0159en\u00ed registrace) - V okam\u017eiku, kdy je vytv\u00e1\u0159ena nov\u00e1 registrace, je p\u0159edchoz\u00ed registrace se stejn\u00fdm identifik\u00e1torem zablokov\u00e1na, pokud u n\u00ed nen\u00ed rezervace. 2. Existence p\u0159edchoz\u00ed registrace s rezervac\u00ed (Procedura p\u0159i vytv\u00e1\u0159en\u00ed registrace) - V okam\u017eiku, kdy je vytv\u00e1\u0159ena nov\u00e1 registrace, a je nalezena p\u0159edchoz\u00ed nezablokovan\u00e1 registrace se stejn\u00fdm identifik\u00e1torem s platnou rezervac\u00ed, je nov\u011b vytv\u00e1\u0159en\u00e1 registrace zablokovan\u00e1. 3. 5x \u0161patn\u011b zadan\u00e9 PIN2 (Aplika\u010dn\u00ed rozhran\u00ed) - Pokud u\u017eivatel p\u0159i pokusu o vstup zad\u00e1 5x \u0161patn\u00e9 PIN 2, je registrace zablokov\u00e1na. 4. Ji\u017e existuje rezervace (Aplika\u010dn\u00ed rozhran\u00ed) - Po vytvo\u0159en\u00ed rezervace je registrace zablokov\u00e1na. V p\u0159\u00edpad\u011b zru\u0161en\u00ed rezervace bude registrace odblokov\u00e1na. 5. Vy\u0159azen\u00ed ze hry (Z\u00e1vora) - P\u0159i pasivn\u00edm chov\u00e1n\u00ed u\u017eivatele, kter\u00e9mu bylo umo\u017en\u011bno vybrat si term\u00edn o\u010dkov\u00e1n\u00ed (stav \u201eza z\u00e1vorou\u201c, jsou zas\u00edl\u00e1ny SMS notifikace pro p\u0159ipomenut\u00ed. Pokud si u\u017eivatel ani po zasl\u00e1n\u00ed 9 notifikac\u00ed nevybere term\u00edn, je automaticky zablokov\u00e1n. 6. Registrace nebyla ztoto\u017en\u011bna (Synchronizace s centr\u00e1ln\u00edmi registry) - V p\u0159\u00edpad\u011b, \u017ee nen\u00ed registrace ztoto\u017en\u011bna. 7. Ztoto\u017en\u011bn, ale ji\u017e vakcinov\u00e1n (Synchronizace s centr\u00e1ln\u00edmi registry) - V p\u0159\u00edpad\u011b, \u017ee osoba v registraci byla ztoto\u017en\u011bna, ale ji\u017e u n\u00ed byla zah\u00e1jena vakcinace. 8. Na \u017e\u00e1dost (Ru\u010dn\u00ed administrace) - Pokud si u\u017eivatel v detailu registrace registraci zru\u0161\u00ed\/vynuluje nebo zm\u011bn\u00ed sv\u00e9 \u00fadaje. 9. Nalezen\u00ed pozitivn\u00edho PCR testu na COVID-19 (Procedura p\u0159i kontrole COVID-19 pozitiv) - P\u0159i ztoto\u017e\u0148ov\u00e1n\u00ed a n\u00e1sledn\u011b 1x denn\u011b je kontrolov\u00e1no, zda nem\u00e1 registrovan\u00e1 osoba PCR test na COVID-19 pozitivn\u00ed v posledn\u00edch 90 dnech. Pokud ano, je do\u010dasn\u011b zablokov\u00e1na."
             }
         ]
     }

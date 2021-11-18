@@ -1,39 +1,44 @@
 {
     "@context": [
-        "http://www.w3.org/ns/csvw",
+        "http:\/\/www.w3.org\/ns\/csvw",
         {
             "@language": "cs"
         }
     ],
     "url": "osoby.csv",
-    "dc:title": "COVID-19: Přehled osob s prokázanou nákazou dle hlášení krajských hygienických stanic (v2)",
-    "dc:description": "Datová sada obsahující základní denní incidenční přehled osob s prokázanou nákazou COVID-19 dle hlášení krajských hygienických stanic (datum hlášení, věk a pohlaví nakažené osoby, KHS, informace o místě a zemi nákazy). Datová sada nahrazuje předchozí verzi dostupnou na adrese https://onemocneni-aktualne.mzcr.cz/api/v1/covid-19/ .",
-    "dc:source": "Informační systém infekčních nemocí (ISIN) - https://www.uzis.cz/index.php?pg=registry-sber-dat--ochrana-verejneho-zdravi--informacni-system-infekcni-nemoci, kontakt: helpdesk.registry@uzis.cz",
+    "dc:title": "osoby",
+    "dc:description": "Datov\u00e1 sada obsahuj\u00edc\u00ed z\u00e1kladn\u00ed denn\u00ed inciden\u010dn\u00ed p\u0159ehled osob s prok\u00e1zanou n\u00e1kazou COVID-19 dle hl\u00e1\u0161en\u00ed krajsk\u00fdch hygienick\u00fdch stanic v\u010detn\u011b laborato\u0159\u00ed (datum hl\u00e1\u0161en\u00ed, v\u011bk a pohlav\u00ed naka\u017een\u00e9 osoby, KHS, informace o m\u00edst\u011b a zemi n\u00e1kazy, nahl\u00e1\u0161eno na krajskou hygienickou stanici). Datov\u00e1 sada nahrazuje p\u0159edchoz\u00ed verzi dostupnou na adrese https:\/\/onemocneni-aktualne.mzcr.cz\/api\/v1\/covid-19\/ .",
+    "dc:source": "Informa\u010dn\u00ed syst\u00e9m infek\u010dn\u00edch nemoc\u00ed (ISIN) - https:\/\/www.uzis.cz\/index.php?pg=registry-sber-dat--ochrana-verejneho-zdravi--informacni-system-infekcni-nemoci, kontakt: helpdesk.registry@uzis.cz",
     "dcat:keyword": [
         "koronavirus",
         "covid-19",
-        "prokázaná nákaza",
-        "krajské hygienické stanice"
+        "prok\u00e1zan\u00e1 n\u00e1kaza",
+        "krajsk\u00e9 hygienick\u00e9 stanice"
     ],
     "dc:publisher": {
-        "schema:name": "ÚZIS ČR",
+        "schema:name": "\u00daZIS \u010cR",
         "schema:url": {
-            "@id": "https://www.uzis.cz/"
+            "@id": "https:\/\/www.uzis.cz\/"
         }
     },
     "dc:license": {
-        "@id": "http://data.gov.cz/podmínky-užití/volný-přístup/"
+        "@id": "https:\/\/data.gov.cz\/podm\u00ednky-u\u017eit\u00ed\/voln\u00fd-p\u0159\u00edstup\/"
     },
     "dc:modified": {
-        "@value": "2021-10-26",
+        "@value": "2021-11-18",
         "@type": "xsd:date"
     },
     "tableSchema": {
         "columns": [
             {
+                "name": "id",
+                "titles": "id",
+                "datatype": "string"
+            },
+            {
                 "name": "datum",
                 "titles": "datum",
-                "datatype": "date"
+                "datatype": "string"
             },
             {
                 "name": "vek",
@@ -49,25 +54,31 @@
                 "name": "kraj_nuts_kod",
                 "titles": "kraj_nuts_kod",
                 "datatype": "string",
-                "dc:description": "Identifikátor kraje podle klasifikace NUTS 3, ve kterém byla pozitivní nákaza hlášena krajskou hygienickou stanicí. V případě, že není uvedena žádná hodnota, nebylo možné identifikovat místo bydliště nakažené osoby. Jde o problém se ztotožňováním bydliště v reálném čase u minority případů, kdy není uvedeno bydliště ze šetření KHS a jsou dostupná pouze data z laboratoří. Bydliště je správně určeno na úrovni kraje a okresu, ale došlo k chybnému přiřazení osob ke konkrétní obci."
+                "dc:description": "Identifik\u00e1tor kraje podle klasifikace NUTS 3. V p\u0159\u00edpad\u011b, \u017ee nen\u00ed uvedena \u017e\u00e1dn\u00e1 hodnota, nebylo mo\u017en\u00e9 identifikovat m\u00edsto bydli\u0161t\u011b naka\u017een\u00e9 osoby. Jde o probl\u00e9m se ztoto\u017e\u0148ov\u00e1n\u00edm bydli\u0161t\u011b v re\u00e1ln\u00e9m \u010dase u minority p\u0159\u00edpad\u016f, kdy nen\u00ed uvedeno bydli\u0161t\u011b ze \u0161et\u0159en\u00ed KHS a jsou dostupn\u00e1 pouze data z laborato\u0159\u00ed. Bydli\u0161t\u011b je spr\u00e1vn\u011b ur\u010deno na \u00farovni kraje a okresu, ale do\u0161lo k chybn\u00e9mu p\u0159i\u0159azen\u00ed osob ke konkr\u00e9tn\u00ed obci."
             },
             {
                 "name": "okres_lau_kod",
                 "titles": "okres_lau_kod",
                 "datatype": "string",
-                "dc:description": "Identifikátor okresu podle klasifikace LAU 1. V případě, že není uvedena žádná hodnota, nebylo možné identifikovat místo bydliště nakažené osoby. Jde o problém se ztotožňováním bydliště v reálném čase u minority případů, kdy není uvedeno bydliště ze šetření KHS a jsou dostupná pouze data z laboratoří. Bydliště je správně určeno na úrovni kraje a okresu, ale došlo k chybnému přiřazení osob ke konkrétní obci."
+                "dc:description": "Identifik\u00e1tor okresu podle klasifikace LAU 1. V p\u0159\u00edpad\u011b, \u017ee nen\u00ed uvedena \u017e\u00e1dn\u00e1 hodnota, nebylo mo\u017en\u00e9 identifikovat m\u00edsto bydli\u0161t\u011b naka\u017een\u00e9 osoby. Jde o probl\u00e9m se ztoto\u017e\u0148ov\u00e1n\u00edm bydli\u0161t\u011b v re\u00e1ln\u00e9m \u010dase u minority p\u0159\u00edpad\u016f, kdy nen\u00ed uvedeno bydli\u0161t\u011b ze \u0161et\u0159en\u00ed KHS a jsou dostupn\u00e1 pouze data z laborato\u0159\u00ed. Bydli\u0161t\u011b je spr\u00e1vn\u011b ur\u010deno na \u00farovni kraje a okresu, ale do\u0161lo k chybn\u00e9mu p\u0159i\u0159azen\u00ed osob ke konkr\u00e9tn\u00ed obci."
             },
             {
                 "name": "nakaza_v_zahranici",
                 "titles": "nakaza_v_zahranici",
                 "datatype": "boolean",
-                "dc:description": "Příznak, zda došlo k nákaze mimo ČR."
+                "dc:description": "P\u0159\u00edznak, zda do\u0161lo k n\u00e1kaze mimo \u010cR."
             },
             {
                 "name": "nakaza_zeme_csu_kod",
                 "titles": "nakaza_zeme_csu_kod",
                 "datatype": "string",
-                "dc:description": "Identifikátor státu v zahraničí, kde došlo k nákaze (dvoumístný kód z číselníku zemí CZEM)."
+                "dc:description": "Identifik\u00e1tor st\u00e1tu v zahrani\u010d\u00ed, kde do\u0161lo k n\u00e1kaze (dvoum\u00edstn\u00fd k\u00f3d z \u010d\u00edseln\u00edku zem\u00ed CZEM)."
+            },
+            {
+                "name": "reportovano_khs",
+                "titles": "reportovano_khs",
+                "datatype": "boolean",
+                "dc:description": "P\u0159\u00edznak, zda byl p\u0159\u00edpad nahl\u00e1\u0161en KHS."
             }
         ]
     }

@@ -1,117 +1,122 @@
 {
     "@context": [
-        "http://www.w3.org/ns/csvw",
+        "http:\/\/www.w3.org\/ns\/csvw",
         {
             "@language": "cs"
         }
     ],
     "url": "mestske-casti.csv",
-    "dc:title": "COVID-19: Epidemiologická charakteristika městských částí hlavního města Prahy",
-    "dc:description": "Obsah datové sady na úrovni městkých části hlavního města Prahy zahrnuje základní epidemiologické parametry (počty diagnostikovaných osob s COVID-19, počty aktuálně nakažených), které umožní průběžně sledovat základní epidemiologické ukazatele a vyhodnocovat trendy na pozadí dat publikovaných pro celou ČR.\n\nNa základě informací z některých malých obcí eviduje správce systému ISIN problémy s přiřazením bydliště obyvatel. Jde o chybu ztotožňování bydliště v reálném čase u minority případů, kdy není uvedeno bydliště z šetření KHS a jsou dostupná pouze data z laboratoří. Bydliště je správně určeno na úrovni kraje a okresu, ale došlo k chybnému přiřazení osob ke konkrétní obci. Případy podle všeho patří do velkých měst, a drobné obce byly přiřazeny omylem.\n\nDalším problémem může být přiřazení správného trvalého bydliště k dané obci u pacienta, který avšak v obci nepobývá (pouze je tam přihlášen k pobytu) a jeho diagnóza i léčba probíhá jinde. Správce i provozovatel ISIN děkují vedení obcí za zpětnou vazbu, neboť jinak takové chyby nelze odhalit. Publikování dat na úrovni obcí bylo vedeno snahou o bezbariérový informační servis – tato data jsou nyní ve spolupráci se správou základních registrů zpětně validována. Nejde o chyby velkého rozsahu, nicméně je nutné je dořešit. Pro starosty všech obcí je nově připravený nový internetový dashboard, který umožní rychlou zpětnou kontrolu správnosti.\n",
-    "dc:source": "Informační systém infekčních nemocí (ISIN) - https://www.uzis.cz/index.php?pg=registry-sber-dat--ochrana-verejneho-zdravi--informacni-system-infekcni-nemoci, kontakt: helpdesk.registry@uzis.cz",
+    "dc:title": "mestske-casti",
+    "dc:description": "Obsah datov\u00e9 sady na \u00farovni m\u011bstk\u00fdch \u010d\u00e1sti hlavn\u00edho m\u011bsta Prahy zahrnuje z\u00e1kladn\u00ed epidemiologick\u00e9 parametry (po\u010dty diagnostikovan\u00fdch osob s COVID-19, po\u010dty aktu\u00e1ln\u011b naka\u017een\u00fdch), kter\u00e9 umo\u017en\u00ed pr\u016fb\u011b\u017en\u011b sledovat z\u00e1kladn\u00ed epidemiologick\u00e9 ukazatele a vyhodnocovat trendy na pozad\u00ed dat publikovan\u00fdch pro celou \u010cR.\\n\\nNa z\u00e1klad\u011b informac\u00ed z n\u011bkter\u00fdch mal\u00fdch obc\u00ed eviduje spr\u00e1vce syst\u00e9mu ISIN probl\u00e9my s p\u0159i\u0159azen\u00edm bydli\u0161t\u011b obyvatel. Jde o chybu ztoto\u017e\u0148ov\u00e1n\u00ed bydli\u0161t\u011b v re\u00e1ln\u00e9m \u010dase u minority p\u0159\u00edpad\u016f, kdy nen\u00ed uvedeno bydli\u0161t\u011b z \u0161et\u0159en\u00ed KHS a jsou dostupn\u00e1 pouze data z laborato\u0159\u00ed. Bydli\u0161t\u011b je spr\u00e1vn\u011b ur\u010deno na \u00farovni kraje a okresu, ale do\u0161lo k chybn\u00e9mu p\u0159i\u0159azen\u00ed osob ke konkr\u00e9tn\u00ed obci. P\u0159\u00edpady podle v\u0161eho pat\u0159\u00ed do velk\u00fdch m\u011bst, a drobn\u00e9 obce byly p\u0159i\u0159azeny omylem.\\n\\nDal\u0161\u00edm probl\u00e9mem m\u016f\u017ee b\u00fdt p\u0159i\u0159azen\u00ed spr\u00e1vn\u00e9ho trval\u00e9ho bydli\u0161t\u011b k dan\u00e9 obci u pacienta, kter\u00fd av\u0161ak v obci nepob\u00fdv\u00e1 (pouze je tam p\u0159ihl\u00e1\u0161en k pobytu) a jeho diagn\u00f3za i l\u00e9\u010dba prob\u00edh\u00e1 jinde. Spr\u00e1vce i provozovatel ISIN d\u011bkuj\u00ed veden\u00ed obc\u00ed za zp\u011btnou vazbu, nebo\u0165 jinak takov\u00e9 chyby nelze odhalit. Publikov\u00e1n\u00ed dat na \u00farovni obc\u00ed bylo vedeno snahou o bezbari\u00e9rov\u00fd informa\u010dn\u00ed servis \u2013 tato data jsou nyn\u00ed ve spolupr\u00e1ci se spr\u00e1vou z\u00e1kladn\u00edch registr\u016f zp\u011btn\u011b validov\u00e1na. Nejde o chyby velk\u00e9ho rozsahu, nicm\u00e9n\u011b je nutn\u00e9 je do\u0159e\u0161it. Pro starosty v\u0161ech obc\u00ed je nov\u011b p\u0159ipraven\u00fd nov\u00fd internetov\u00fd dashboard, kter\u00fd umo\u017en\u00ed rychlou zp\u011btnou kontrolu spr\u00e1vnosti.",
+    "dc:source": "Informa\u010dn\u00ed syst\u00e9m infek\u010dn\u00edch nemoc\u00ed (ISIN) - https:\/\/www.uzis.cz\/index.php?pg=registry-sber-dat--ochrana-verejneho-zdravi--informacni-system-infekcni-nemoci, kontakt: helpdesk.registry@uzis.cz",
     "dcat:keyword": [
         "koronavirus",
         "covid-19",
-        "krajská hygienická stanice",
+        "krajsk\u00e1 hygienick\u00e1 stanice",
         "incidence",
         "prevalence",
         "kraj",
         "okres",
-        "obec s rozšířenou působností",
-        "městská část",
-        "hlavní město Praha"
+        "obec s roz\u0161\u00ed\u0159enou p\u016fsobnost\u00ed",
+        "m\u011bstsk\u00e1 \u010d\u00e1st",
+        "hlavn\u00ed m\u011bsto Praha"
     ],
     "dc:publisher": {
-        "schema:name": "ÚZIS ČR",
+        "schema:name": "\u00daZIS \u010cR",
         "schema:url": {
-            "@id": "https://www.uzis.cz/"
+            "@id": "https:\/\/www.uzis.cz\/"
         }
     },
     "dc:license": {
-        "@id": "http://data.gov.cz/podmínky-užití/volný-přístup/"
+        "@id": "https:\/\/data.gov.cz\/podm\u00ednky-u\u017eit\u00ed\/voln\u00fd-p\u0159\u00edstup\/"
     },
     "dc:modified": {
-        "@value": "2021-10-26",
+        "@value": "2021-11-18",
         "@type": "xsd:date"
     },
     "tableSchema": {
         "columns": [
             {
+                "name": "id",
+                "titles": "id",
+                "datatype": "string"
+            },
+            {
                 "name": "den",
                 "titles": "den",
                 "datatype": "string",
-                "dc:description": "Označení příslušného dne."
+                "dc:description": "Ozna\u010den\u00ed p\u0159\u00edslu\u0161n\u00e9ho dne."
             },
             {
                 "name": "datum",
                 "titles": "datum",
-                "datatype": "date"
+                "datatype": "string"
             },
             {
                 "name": "okres_nuts_kod",
                 "titles": "okres_nuts_kod",
                 "datatype": "string",
-                "dc:description": "Identifikátor okresu podle klasifikace NUTS 4."
+                "dc:description": "Identifik\u00e1tor okresu podle klasifikace NUTS 4."
             },
             {
                 "name": "orp_kod",
                 "titles": "orp_kod",
                 "datatype": "integer",
-                "dc:description": "Kód obce s rozšířenou působností dle číselníku ÚZIS ČR (https://pzu-api.uzis.cz/api/orp)."
+                "dc:description": "K\u00f3d obce s roz\u0161\u00ed\u0159enou p\u016fsobnost\u00ed dle \u010d\u00edseln\u00edku \u00daZIS \u010cR (https:\/\/pzu-api.uzis.cz\/api\/orp)."
             },
             {
                 "name": "orp_nazev",
                 "titles": "orp_nazev",
                 "datatype": "string",
-                "dc:description": "Název obce s rozšířenou působností."
+                "dc:description": "N\u00e1zev obce s roz\u0161\u00ed\u0159enou p\u016fsobnost\u00ed."
             },
             {
                 "name": "mc_kod",
                 "titles": "mc_kod",
                 "datatype": "integer",
-                "dc:description": "Kód městské části dle číselníku CISMC."
+                "dc:description": "K\u00f3d m\u011bstsk\u00e9 \u010d\u00e1sti dle \u010d\u00edseln\u00edku CISMC."
             },
             {
                 "name": "nove_pripady",
                 "titles": "nove_pripady",
                 "datatype": "integer",
-                "dc:description": "Celkový počet nově diagnostikovaných za daný den."
+                "dc:description": "Celkov\u00fd po\u010det nov\u011b diagnostikovan\u00fdch za dan\u00fd den."
             },
             {
                 "name": "aktivni_pripady",
                 "titles": "aktivni_pripady",
                 "datatype": "integer",
-                "dc:description": "Počet osob pozitivně testovaných na původce onemocnění COVID‑19, které nebyly k danému datu dosud označeny za vyléčené ani nezemřely."
+                "dc:description": "Po\u010det osob pozitivn\u011b testovan\u00fdch na p\u016fvodce onemocn\u011bn\u00ed COVID\u201119, kter\u00e9 nebyly k dan\u00e9mu datu dosud ozna\u010deny za vyl\u00e9\u010den\u00e9 ani nezem\u0159ely."
             },
             {
                 "name": "nove_pripady_65",
                 "titles": "nove_pripady_65",
                 "datatype": "integer",
-                "dc:description": "Počet nově diagnostikovaných za daný den ve věkové skupině 65+."
+                "dc:description": "Po\u010det nov\u011b diagnostikovan\u00fdch za dan\u00fd den ve v\u011bkov\u00e9 skupin\u011b 65+."
             },
             {
                 "name": "nove_pripady_7_dni",
                 "titles": "nove_pripady_7_dni",
                 "datatype": "integer",
-                "dc:description": "Počet nově diagnostikovaných za předchozích 7 dní."
+                "dc:description": "Po\u010det nov\u011b diagnostikovan\u00fdch za p\u0159edchoz\u00edch 7 dn\u00ed."
             },
             {
                 "name": "nove_pripady_14_dni",
                 "titles": "nove_pripady_14_dni",
                 "datatype": "integer",
-                "dc:description": "Počet nově diagnostikovaných za předchozích 14 dní."
+                "dc:description": "Po\u010det nov\u011b diagnostikovan\u00fdch za p\u0159edchoz\u00edch 14 dn\u00ed."
             },
             {
                 "name": "zemreli",
                 "titles": "zemreli",
                 "datatype": "integer",
-                "dc:description": "Počet nově zemřelých za daný den."
+                "dc:description": "Po\u010det nov\u011b zem\u0159el\u00fdch za dan\u00fd den."
             },
             {
                 "name": "vyleceni",
                 "titles": "vyleceni",
                 "datatype": "integer",
-                "dc:description": "Počet nově vyléčených za daný den."
+                "dc:description": "Po\u010det nov\u011b vyl\u00e9\u010den\u00fdch za dan\u00fd den."
             }
         ]
     }

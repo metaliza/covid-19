@@ -1,84 +1,89 @@
 {
     "@context": [
-        "http://www.w3.org/ns/csvw",
+        "http:\/\/www.w3.org\/ns\/csvw",
         {
             "@language": "cs"
         }
     ],
     "url": "ockovani.csv",
-    "dc:title": "COVID-19: Přehled vykázaných očkování podle krajů ČR",
-    "dc:description": "Datová sada poskytuje agregovaná data o vykázaných očkováních na úrovni krajů ČR. Každý řádek přehledu popisuje počet vykázaných očkování v daném dni, za věkovou skupinu, s použitím vybrané očkovací látky a ve vybraném kraji. Za jeden den tedy přehled obsahuje maximálně X řádků, kde X = počet krajů (14) x počet věkových skupin (15) x počet druhů očkovacích látek (v okamžik publikace 4) = 840. Data jsou aktualizována k času 20.00 h předchozího dne a mohou se zpětně mírně měnit z důvodu průběžného doplňování.",
-    "dc:source": "Centrální rezervační systém - https://crs.uzis.cz/, kontakt: covid-podpora@nakit.cz",
+    "dc:title": "ockovani",
+    "dc:description": "Datov\u00e1 sada poskytuje agregovan\u00e1 data o vyk\u00e1zan\u00fdch o\u010dkov\u00e1n\u00edch na \u00farovni kraj\u016f \u010cR. Ka\u017ed\u00fd \u0159\u00e1dek p\u0159ehledu popisuje po\u010det vyk\u00e1zan\u00fdch o\u010dkov\u00e1n\u00ed v dan\u00e9m dni, za v\u011bkovou skupinu, s pou\u017eit\u00edm vybran\u00e9 o\u010dkovac\u00ed l\u00e1tky a ve vybran\u00e9m kraji. Za jeden den tedy p\u0159ehled obsahuje maxim\u00e1ln\u011b X \u0159\u00e1dk\u016f, kde X = po\u010det kraj\u016f (14) x po\u010det v\u011bkov\u00fdch skupin (15) x po\u010det druh\u016f o\u010dkovac\u00edch l\u00e1tek (v okam\u017eik publikace 4) = 840. Data jsou aktualizov\u00e1na k \u010dasu 20.00 h p\u0159edchoz\u00edho dne a mohou se zp\u011btn\u011b m\u00edrn\u011b m\u011bnit z d\u016fvodu pr\u016fb\u011b\u017en\u00e9ho dopl\u0148ov\u00e1n\u00ed.",
+    "dc:source": "Centr\u00e1ln\u00ed rezerva\u010dn\u00ed syst\u00e9m - https:\/\/crs.uzis.cz\/, kontakt: covid-podpora@nakit.cz",
     "dcat:keyword": [
         "koronavirus",
         "covid-19",
-        "očkování",
+        "o\u010dkov\u00e1n\u00ed",
         "vakcinace",
-        "očkovací látka",
-        "věková skupina"
+        "o\u010dkovac\u00ed l\u00e1tka",
+        "v\u011bkov\u00e1 skupina"
     ],
     "dc:publisher": {
-        "schema:name": "ÚZIS ČR",
+        "schema:name": "\u00daZIS \u010cR",
         "schema:url": {
-            "@id": "https://www.uzis.cz/"
+            "@id": "https:\/\/www.uzis.cz\/"
         }
     },
     "dc:license": {
-        "@id": "http://data.gov.cz/podmínky-užití/volný-přístup/"
+        "@id": "https:\/\/data.gov.cz\/podm\u00ednky-u\u017eit\u00ed\/voln\u00fd-p\u0159\u00edstup\/"
     },
     "dc:modified": {
-        "@value": "2021-10-26",
+        "@value": "2021-11-18",
         "@type": "xsd:date"
     },
     "tableSchema": {
         "columns": [
             {
+                "name": "id",
+                "titles": "id",
+                "datatype": "string"
+            },
+            {
                 "name": "datum",
                 "titles": "datum",
-                "datatype": "date",
-                "dc:description": "Datum, ve kterém byla očkování v daném kraji provedena."
+                "datatype": "string",
+                "dc:description": "Datum, ve kter\u00e9m byla o\u010dkov\u00e1n\u00ed v dan\u00e9m kraji provedena."
             },
             {
                 "name": "vakcina",
                 "titles": "vakcina",
                 "datatype": "string",
-                "dc:description": "Název očkovací látky."
+                "dc:description": "N\u00e1zev o\u010dkovac\u00ed l\u00e1tky."
             },
             {
                 "name": "kraj_nuts_kod",
                 "titles": "kraj_nuts_kod",
                 "datatype": "string",
-                "dc:description": "Identifikátor kraje podle klasifikace NUTS 3, ve kterém se nachází očkovací místo."
+                "dc:description": "Identifik\u00e1tor kraje podle klasifikace NUTS 3, ve kter\u00e9m se nach\u00e1z\u00ed o\u010dkovac\u00ed m\u00edsto."
             },
             {
                 "name": "kraj_nazev",
                 "titles": "kraj_nazev",
                 "datatype": "string",
-                "dc:description": "Název kraje, ve kterém se nachází očkovací místo."
+                "dc:description": "N\u00e1zev kraje, ve kter\u00e9m se nach\u00e1z\u00ed o\u010dkovac\u00ed m\u00edsto."
             },
             {
                 "name": "vekova_skupina",
                 "titles": "vekova_skupina",
                 "datatype": "string",
-                "dc:description": "Rozdělení očkovaných osob podle věku do skupin: 0-17, 18-24, 25-29, 30-34, 35-39, 40-44, 45-49, 50-54, 55-59, 60-64, 65-69, 70-74, 75-79, 80+, nezařazeno - pokud nelze určit věkovou skupinu."
+                "dc:description": "Rozd\u011blen\u00ed o\u010dkovan\u00fdch osob podle v\u011bku do skupin: 0-17, 18-24, 25-29, 30-34, 35-39, 40-44, 45-49, 50-54, 55-59, 60-64, 65-69, 70-74, 75-79, 80+, neza\u0159azeno - pokud nelze ur\u010dit v\u011bkovou skupinu."
             },
             {
                 "name": "prvnich_davek",
                 "titles": "prvnich_davek",
                 "datatype": "integer",
-                "dc:description": "Počet osob, které v daném kraji a v daném dni obdrželi první dávku dané očkovací látky."
+                "dc:description": "Po\u010det osob, kter\u00e9 v dan\u00e9m kraji a v dan\u00e9m dni obdr\u017eeli prvn\u00ed d\u00e1vku dan\u00e9 o\u010dkovac\u00ed l\u00e1tky."
             },
             {
                 "name": "druhych_davek",
                 "titles": "druhych_davek",
                 "datatype": "integer",
-                "dc:description": "Počet osob, které v daném kraji a v daném dni obdrželi druhou dávku dané očkovací látky."
+                "dc:description": "Po\u010det osob, kter\u00e9 v dan\u00e9m kraji a v dan\u00e9m dni obdr\u017eeli druhou d\u00e1vku dan\u00e9 o\u010dkovac\u00ed l\u00e1tky."
             },
             {
                 "name": "celkem_davek",
                 "titles": "celkem_davek",
                 "datatype": "integer",
-                "dc:description": "Celkový počet osob, které v daném kraji a v daném dni obdrželi dávku dané očkovací látky (součet prvních a druhých dávek dané očkovací látky)."
+                "dc:description": "Celkov\u00fd po\u010det osob, kter\u00e9 v dan\u00e9m kraji a v dan\u00e9m dni obdr\u017eeli d\u00e1vku dan\u00e9 o\u010dkovac\u00ed l\u00e1tky (sou\u010det prvn\u00edch a druh\u00fdch d\u00e1vek dan\u00e9 o\u010dkovac\u00ed l\u00e1tky)."
             }
         ]
     }

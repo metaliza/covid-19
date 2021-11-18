@@ -1,86 +1,91 @@
 {
     "@context": [
-        "http://www.w3.org/ns/csvw",
+        "http:\/\/www.w3.org\/ns\/csvw",
         {
             "@language": "cs"
         }
     ],
     "url": "ockovani-rezervace.csv",
-    "dc:title": "COVID-19: Přehled rezervací podle očkovacích míst ČR",
-    "dc:description": "Datová sada poskytuje přehled volné a maximální kapacity očkovacích míst v jednotlivých dnech podle informací z centrálního rezervačního systému na očkování proti onemocnění COVID-19 (https://reservatic.com/ockovani). Každý záznam (řádek) datové sady udává volnou a maximální kapacitu daného očkovacího místa v daný den.",
-    "dc:source": "Centrální rezervační systém - https://crs.uzis.cz/, kontakt: covid-podpora@nakit.cz",
+    "dc:title": "ockovani-rezervace",
+    "dc:description": "Datov\u00e1 sada poskytuje p\u0159ehled voln\u00e9 a maxim\u00e1ln\u00ed kapacity o\u010dkovac\u00edch m\u00edst v jednotliv\u00fdch dnech podle informac\u00ed z centr\u00e1ln\u00edho rezerva\u010dn\u00edho syst\u00e9mu na o\u010dkov\u00e1n\u00ed proti onemocn\u011bn\u00ed COVID-19 (https:\/\/reservatic.com\/ockovani). Ka\u017ed\u00fd z\u00e1znam (\u0159\u00e1dek) datov\u00e9 sady ud\u00e1v\u00e1 volnou a maxim\u00e1ln\u00ed kapacitu dan\u00e9ho o\u010dkovac\u00edho m\u00edsta v dan\u00fd den.",
+    "dc:source": "Informa\u010dn\u00ed syst\u00e9m infek\u010dn\u00edch nemoc\u00ed (ISIN) - https:\/\/www.uzis.cz\/index.php?pg=registry-sber-dat--ochrana-verejneho-zdravi--informacni-system-infekcni-nemoci, kontakt: helpdesk.registry@uzis.cz",
     "dcat:keyword": [
         "koronavirus",
         "covid-19",
-        "očkování",
-        "očkovací místo",
+        "o\u010dkov\u00e1n\u00ed",
+        "o\u010dkovac\u00ed m\u00edsto",
         "vakcinace",
         "rezervace",
-        "volná kapacita",
-        "maximální kapacita"
+        "voln\u00e1 kapacita",
+        "maxim\u00e1ln\u00ed kapacita"
     ],
     "dc:publisher": {
-        "schema:name": "ÚZIS ČR",
+        "schema:name": "\u00daZIS \u010cR",
         "schema:url": {
-            "@id": "https://www.uzis.cz/"
+            "@id": "https:\/\/www.uzis.cz\/"
         }
     },
     "dc:license": {
-        "@id": "http://data.gov.cz/podmínky-užití/volný-přístup/"
+        "@id": "https:\/\/data.gov.cz\/podm\u00ednky-u\u017eit\u00ed\/voln\u00fd-p\u0159\u00edstup\/"
     },
     "dc:modified": {
-        "@value": "2021-10-26",
+        "@value": "2021-11-18",
         "@type": "xsd:date"
     },
     "tableSchema": {
         "columns": [
             {
+                "name": "id",
+                "titles": "id",
+                "datatype": "string"
+            },
+            {
                 "name": "datum",
                 "titles": "datum",
-                "datatype": "date",
-                "dc:description": "Datum, ke kterému se vztahují volné a maximální kapacity očkovacího místa podle centrálního registračnímu systému na očkování proti onemocnění COVID-19."
+                "datatype": "string",
+                "dc:description": "Datum, ke kter\u00e9mu se vztahuj\u00ed voln\u00e9 a maxim\u00e1ln\u00ed kapacity o\u010dkovac\u00edho m\u00edsta podle centr\u00e1ln\u00edho registra\u010dn\u00edmu syst\u00e9mu na o\u010dkov\u00e1n\u00ed proti onemocn\u011bn\u00ed COVID-19."
             },
             {
                 "name": "ockovaci_misto_id",
                 "titles": "ockovaci_misto_id",
                 "datatype": "string",
-                "dc:description": "Jednoznačný identifikátor očkovacího místa."
+                "dc:description": "Jednozna\u010dn\u00fd identifik\u00e1tor o\u010dkovac\u00edho m\u00edsta."
             },
             {
                 "name": "ockovaci_misto_nazev",
                 "titles": "ockovaci_misto_nazev",
                 "datatype": "string",
-                "dc:description": "Název očkovacího místa"
+                "dc:description": "N\u00e1zev o\u010dkovac\u00edho m\u00edsta."
             },
             {
                 "name": "kraj_nuts_kod",
                 "titles": "kraj_nuts_kod",
                 "datatype": "string",
-                "dc:description": "Identifikátor kraje podle klasifikace NUTS 3, ve kterém se nachází očkovací místo."
+                "dc:description": "Identifik\u00e1tor kraje podle klasifikace NUTS 3, ve kter\u00e9m se nach\u00e1z\u00ed o\u010dkovac\u00ed m\u00edsto."
             },
             {
                 "name": "kraj_nazev",
                 "titles": "kraj_nazev",
                 "datatype": "string",
-                "dc:description": "Název kraje podle klasifikace NUTS 3, ve kterém se nachází očkovací místo."
+                "dc:description": "N\u00e1zev kraje podle klasifikace NUTS 3, ve kter\u00e9m se nach\u00e1z\u00ed o\u010dkovac\u00ed m\u00edsto."
             },
             {
                 "name": "volna_kapacita",
                 "titles": "volna_kapacita",
                 "datatype": "integer",
-                "dc:description": "Volná kapacita očkovacího místa v daný den."
+                "dc:description": "Voln\u00e1 kapacita o\u010dkovac\u00edho m\u00edsta v dan\u00fd den."
             },
             {
                 "name": "maximalni_kapacita",
                 "titles": "maximalni_kapacita",
                 "datatype": "integer",
-                "dc:description": "Maximální kapacita očkovacího místa v daný den."
+                "dc:description": "Maxim\u00e1ln\u00ed kapacita o\u010dkovac\u00edho m\u00edsta v dan\u00fd den."
             },
             {
                 "name": "kalendar_ockovani",
                 "titles": "kalendar_ockovani",
                 "datatype": "string",
-                "dc:description": "Identifikátor, zda se jedná o rezervaci na první dávku (hodnota V1), druhou dávku (hodnota V2) nebo jde o přednostní rezervaci (např. lékařů) (hodnota VX)."
+                "dc:description": "Identifik\u00e1tor, zda se jedn\u00e1 o rezervaci na prvn\u00ed d\u00e1vku (hodnota V1), druhou d\u00e1vku (hodnota V2) nebo jde o p\u0159ednostn\u00ed rezervaci (nap\u0159. l\u00e9ka\u0159\u016f) (hodnota VX)."
             }
         ]
     }

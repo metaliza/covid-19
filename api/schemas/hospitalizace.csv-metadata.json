@@ -1,128 +1,133 @@
 {
     "@context": [
-        "http://www.w3.org/ns/csvw",
+        "http:\/\/www.w3.org\/ns\/csvw",
         {
             "@language": "cs"
         }
     ],
     "url": "hospitalizace.csv",
-    "dc:title": "COVID-19: Přehled hospitalizací",
-    "dc:description": "Datová sada obsahující data hospitalizovaných pacientů popisující průběh hospitalizace (aktuální a celkový počet hospitalizovaných, rozdělení podle příznaků, rozdělení podle podpůrných přístrojů, počet úmrtí).",
-    "dc:source": "Informační systém infekčních nemocí (ISIN) - https://www.uzis.cz/index.php?pg=registry-sber-dat--ochrana-verejneho-zdravi--informacni-system-infekcni-nemoci, kontakt: helpdesk.registry@uzis.cz",
+    "dc:title": "hospitalizace",
+    "dc:description": "Datov\u00e1 sada obsahuj\u00edc\u00ed data hospitalizovan\u00fdch pacient\u016f popisuj\u00edc\u00ed pr\u016fb\u011bh hospitalizace (aktu\u00e1ln\u00ed a celkov\u00fd po\u010det hospitalizovan\u00fdch, rozd\u011blen\u00ed podle p\u0159\u00edznak\u016f, rozd\u011blen\u00ed podle podp\u016frn\u00fdch p\u0159\u00edstroj\u016f, po\u010det \u00famrt\u00ed).",
+    "dc:source": "Informa\u010dn\u00ed syst\u00e9m infek\u010dn\u00edch nemoc\u00ed (ISIN) - https:\/\/www.uzis.cz\/index.php?pg=registry-sber-dat--ochrana-verejneho-zdravi--informacni-system-infekcni-nemoci, kontakt: helpdesk.registry@uzis.cz",
     "dcat:keyword": [
         "koronavirus",
         "covid-19",
         "hospitalizace"
     ],
     "dc:publisher": {
-        "schema:name": "ÚZIS ČR",
+        "schema:name": "\u00daZIS \u010cR",
         "schema:url": {
-            "@id": "https://www.uzis.cz/"
+            "@id": "https:\/\/www.uzis.cz\/"
         }
     },
     "dc:license": {
-        "@id": "http://data.gov.cz/podmínky-užití/volný-přístup/"
+        "@id": "https:\/\/data.gov.cz\/podm\u00ednky-u\u017eit\u00ed\/voln\u00fd-p\u0159\u00edstup\/"
     },
     "dc:modified": {
-        "@value": "2021-10-26",
+        "@value": "2021-11-18",
         "@type": "xsd:date"
     },
     "tableSchema": {
         "columns": [
             {
+                "name": "id",
+                "titles": "id",
+                "datatype": "string"
+            },
+            {
                 "name": "datum",
                 "titles": "datum",
-                "datatype": "date"
+                "datatype": "string"
             },
             {
                 "name": "pacient_prvni_zaznam",
                 "titles": "pacient_prvni_zaznam",
                 "datatype": "integer",
-                "dc:description": "Počet osob, které byly poprvé hospitalizovány."
+                "dc:description": "Po\u010det osob, kter\u00e9 byly poprv\u00e9 hospitalizov\u00e1ny."
             },
             {
                 "name": "kum_pacient_prvni_zaznam",
                 "titles": "kum_pacient_prvni_zaznam",
                 "datatype": "integer",
-                "dc:description": "Celkový počet hospitalizovaných osob."
+                "dc:description": "Celkov\u00fd po\u010det hospitalizovan\u00fdch osob."
             },
             {
                 "name": "pocet_hosp",
                 "titles": "pocet_hosp",
                 "datatype": "integer",
-                "dc:description": "Aktuální počet hospitalizovaných osob."
+                "dc:description": "Aktu\u00e1ln\u00ed po\u010det hospitalizovan\u00fdch osob."
             },
             {
                 "name": "stav_bez_priznaku",
                 "titles": "stav_bez_priznaku",
                 "datatype": "integer",
-                "dc:description": "Počet pacientů bez příznaků na základě subjektivního hodnocení lékaře."
+                "dc:description": "Po\u010det pacient\u016f bez p\u0159\u00edznak\u016f na z\u00e1klad\u011b subjektivn\u00edho hodnocen\u00ed l\u00e9ka\u0159e."
             },
             {
                 "name": "stav_lehky",
                 "titles": "stav_lehky",
                 "datatype": "integer",
-                "dc:description": "Počet pacientů v lehkém stavu na základě subjektivního hodnocení lékaře."
+                "dc:description": "Po\u010det pacient\u016f v lehk\u00e9m stavu na z\u00e1klad\u011b subjektivn\u00edho hodnocen\u00ed l\u00e9ka\u0159e."
             },
             {
                 "name": "stav_stredni",
                 "titles": "stav_stredni",
                 "datatype": "integer",
-                "dc:description": "Počet pacientů ve středně vážném stavu na základě subjektivního hodnocení lékaře."
+                "dc:description": "Po\u010det pacient\u016f ve st\u0159edn\u011b v\u00e1\u017en\u00e9m stavu na z\u00e1klad\u011b subjektivn\u00edho hodnocen\u00ed l\u00e9ka\u0159e."
             },
             {
                 "name": "stav_tezky",
                 "titles": "stav_tezky",
                 "datatype": "integer",
-                "dc:description": "Počet pacientů v těžkém stavu na základě subjektivního hodnocení lékaře."
+                "dc:description": "Po\u010det pacient\u016f v t\u011b\u017ek\u00e9m stavu na z\u00e1klad\u011b subjektivn\u00edho hodnocen\u00ed l\u00e9ka\u0159e."
             },
             {
                 "name": "jip",
                 "titles": "jip",
                 "datatype": "integer",
-                "dc:description": "Počet pacientů umístěným na jednotce intenzivní péče (JIP)."
+                "dc:description": "Po\u010det pacient\u016f um\u00edst\u011bn\u00fdm na jednotce intenzivn\u00ed p\u00e9\u010de (JIP)."
             },
             {
                 "name": "kyslik",
                 "titles": "kyslik",
                 "datatype": "integer",
-                "dc:description": "Počet pacientů – O2."
+                "dc:description": "Po\u010det pacient\u016f \u2013 O2."
             },
             {
                 "name": "hfno",
                 "titles": "hfno",
                 "datatype": "integer",
-                "dc:description": "Počet pacientů – HFNO (vysokoprůtoková nosní oxygenoterapie)."
+                "dc:description": "Po\u010det pacient\u016f \u2013 HFNO (vysokopr\u016ftokov\u00e1 nosn\u00ed oxygenoterapie)."
             },
             {
                 "name": "upv",
                 "titles": "upv",
                 "datatype": "integer",
-                "dc:description": "Počet pacientů – UPV (umělá plicní ventilace)."
+                "dc:description": "Po\u010det pacient\u016f \u2013 UPV (um\u011bl\u00e1 plicn\u00ed ventilace)."
             },
             {
                 "name": "ecmo",
                 "titles": "ecmo",
                 "datatype": "integer",
-                "dc:description": "Počet pacientů – ECMO (mimotělní membránová oxygenace (pokročilá metoda podpory životních funkcí))."
+                "dc:description": "Po\u010det pacient\u016f \u2013 ECMO (mimot\u011bln\u00ed membr\u00e1nov\u00e1 oxygenace (pokro\u010dil\u00e1 metoda podpory \u017eivotn\u00edch funkc\u00ed))."
             },
             {
                 "name": "tezky_upv_ecmo",
                 "titles": "tezky_upv_ecmo",
                 "datatype": "integer",
-                "dc:description": "Počet pacientů v těžkém stavu nebo s vysoce intenzivní péčí (UPV, ECMO)."
+                "dc:description": "Po\u010det pacient\u016f v t\u011b\u017ek\u00e9m stavu nebo s vysoce intenzivn\u00ed p\u00e9\u010d\u00ed (UPV, ECMO)."
             },
             {
                 "name": "umrti",
                 "titles": "umrti",
                 "datatype": "integer",
-                "dc:description": "Počet pacientů, kteří v daný den zemřeli."
+                "dc:description": "Po\u010det pacient\u016f, kte\u0159\u00ed v dan\u00fd den zem\u0159eli."
             },
             {
                 "name": "kum_umrti",
                 "titles": "kum_umrti",
                 "datatype": "integer",
-                "dc:description": "Celkový počet pacientu, kteří zemřeli."
+                "dc:description": "Celkov\u00fd po\u010det pacientu, kte\u0159\u00ed zem\u0159eli."
             }
         ]
     }

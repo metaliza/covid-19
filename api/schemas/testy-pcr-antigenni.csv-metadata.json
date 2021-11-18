@@ -1,133 +1,139 @@
 {
     "@context": [
-        "http://www.w3.org/ns/csvw",
+        "http:\/\/www.w3.org\/ns\/csvw",
         {
             "@language": "cs"
         }
     ],
     "url": "testy-pcr-antigenni.csv",
-    "dc:title": "COVID-19: Přehled provedených testů podle typu a indikace",
-    "dc:description": "Datová sada obsahující denní počty provedených testů s rozlišením na PCR testy a antigenní testy na onemocnění COVID-19 dle hlášení laboratoří. Dále jsou v sadě uvedeny počty testů dle indikace (diagnostické indikace, epidemiologické indikace, preventivní a plošné testování, ostatní), pozitivní záchyty dle indikace testu a pozitivní záchyty dle typu testu (symptomy jsou objektivně vyšetřeny u indikovaných osob, v rámci plošného testování jde o vyjádření subjektivního posouzení testovaného). Zdrojem dat je centrální Informační systém infekčních nemocí (ISIN). Primární data byla analyticky zpracována a následně transformována do podoby publikovatelné online týmem ÚZIS ČR.",
-    "dc:source": "Informační systém infekčních nemocí (ISIN) - https://www.uzis.cz/index.php?pg=registry-sber-dat--ochrana-verejneho-zdravi--informacni-system-infekcni-nemoci, kontakt: helpdesk.registry@uzis.cz",
+    "dc:title": "testy-pcr-antigenni",
+    "dc:description": "Datov\u00e1 sada obsahuj\u00edc\u00ed denn\u00ed po\u010dty proveden\u00fdch test\u016f s rozli\u0161en\u00edm na PCR testy a antigenn\u00ed testy na onemocn\u011bn\u00ed COVID-19 dle hl\u00e1\u0161en\u00ed laborato\u0159\u00ed. D\u00e1le jsou v sad\u011b uvedeny po\u010dty test\u016f dle indikace (diagnostick\u00e9 indikace, epidemiologick\u00e9 indikace, preventivn\u00ed a plo\u0161n\u00e9 testov\u00e1n\u00ed, ostatn\u00ed), pozitivn\u00ed z\u00e1chyty dle indikace testu a pozitivn\u00ed z\u00e1chyty dle typu testu (symptomy jsou objektivn\u011b vy\u0161et\u0159eny u indikovan\u00fdch osob, v r\u00e1mci plo\u0161n\u00e9ho testov\u00e1n\u00ed jde o vyj\u00e1d\u0159en\u00ed subjektivn\u00edho posouzen\u00ed testovan\u00e9ho). Zdrojem dat je centr\u00e1ln\u00ed Informa\u010dn\u00ed syst\u00e9m infek\u010dn\u00edch nemoc\u00ed (ISIN). Prim\u00e1rn\u00ed data byla analyticky zpracov\u00e1na a n\u00e1sledn\u011b transformov\u00e1na do podoby publikovateln\u00e9 online t\u00fdmem \u00daZIS \u010cR.",
+    "dc:source": "Informa\u010dn\u00ed syst\u00e9m infek\u010dn\u00edch nemoc\u00ed (ISIN) - https:\/\/www.uzis.cz\/index.php?pg=registry-sber-dat--ochrana-verejneho-zdravi--informacni-system-infekcni-nemoci, kontakt: helpdesk.registry@uzis.cz",
     "dcat:keyword": [
         "PCR testy",
-        "Antigenní testy",
-        "Diagnostické indikace",
-        "Epidemiologické indikace",
-        "Pozitivní záchyty",
-        "Preventivní a plošné testování",
-        "Symptomatické případy",
-        "Asymptomatické případy"
+        "Antigenn\u00ed testy",
+        "Diagnostick\u00e9 indikace",
+        "Epidemiologick\u00e9 indikace",
+        "Pozitivn\u00ed z\u00e1chyty",
+        "Preventivn\u00ed a plo\u0161n\u00e9 testov\u00e1n\u00ed",
+        "Symptomatick\u00e9 p\u0159\u00edpady",
+        "Asymptomatick\u00e9 p\u0159\u00edpady"
     ],
     "dc:publisher": {
-        "schema:name": "ÚZIS ČR",
+        "schema:name": "\u00daZIS \u010cR",
         "schema:url": {
-            "@id": "https://www.uzis.cz/"
+            "@id": "https:\/\/www.uzis.cz\/"
         }
     },
     "dc:license": {
-        "@id": "http://data.gov.cz/podmínky-užití/volný-přístup/"
+        "@id": "https:\/\/data.gov.cz\/podm\u00ednky-u\u017eit\u00ed\/voln\u00fd-p\u0159\u00edstup\/"
     },
     "dc:modified": {
-        "@value": "2021-10-26",
+        "@value": "2021-11-18",
         "@type": "xsd:date"
     },
     "tableSchema": {
         "columns": [
             {
+                "name": "id",
+                "titles": "id",
+                "datatype": "string"
+            },
+            {
                 "name": "datum",
                 "titles": "datum",
-                "datatype": "date"
+                "datatype": "string",
+                "dc:description": "Datum, ve kter\u00e9m byla o\u010dkov\u00e1n\u00ed v dan\u00e9m kraji provedena."
             },
             {
                 "name": "pocet_PCR_testy",
                 "titles": "pocet_PCR_testy",
                 "datatype": "integer",
-                "dc:description": "Přírůstkový počet provedených PCR testů."
+                "dc:description": "P\u0159\u00edr\u016fstkov\u00fd po\u010det proveden\u00fdch PCR test\u016f."
             },
             {
                 "name": "pocet_AG_testy",
                 "titles": "pocet_AG_testy",
                 "datatype": "integer",
-                "dc:description": "Přírůstkový počet provedených antigenních testů."
+                "dc:description": "P\u0159\u00edr\u016fstkov\u00fd po\u010det proveden\u00fdch antigenn\u00edch test\u016f."
             },
             {
                 "name": "typologie_test_indik_diagnosticka",
                 "titles": "typologie_test_indik_diagnosticka",
                 "datatype": "integer",
-                "dc:description": "Diagnostické indikace."
+                "dc:description": "Diagnostick\u00e9 indikace."
             },
             {
                 "name": "typologie_test_indik_epidemiologicka",
                 "titles": "typologie_test_indik_epidemiologicka",
                 "datatype": "integer",
-                "dc:description": "Epidemiologické indikace."
+                "dc:description": "Epidemiologick\u00e9 indikace."
             },
             {
                 "name": "typologie_test_indik_preventivni",
                 "titles": "typologie_test_indik_preventivni",
                 "datatype": "integer",
-                "dc:description": "Preventivní a plošné testování."
+                "dc:description": "Preventivn\u00ed a plo\u0161n\u00e9 testov\u00e1n\u00ed."
             },
             {
                 "name": "typologie_test_indik_ostatni",
                 "titles": "typologie_test_indik_ostatni",
                 "datatype": "integer",
-                "dc:description": "Ostatní."
+                "dc:description": "Ostatn\u00ed."
             },
             {
                 "name": "incidence_pozitivni",
                 "titles": "incidence_pozitivni",
                 "datatype": "integer",
-                "dc:description": "Pozitivní záchyty dle indikace testu celkem."
+                "dc:description": "Pozitivn\u00ed z\u00e1chyty dle indikace testu celkem."
             },
             {
                 "name": "pozit_typologie_test_indik_diagnosticka",
                 "titles": "pozit_typologie_test_indik_diagnosticka",
                 "datatype": "integer",
-                "dc:description": "Pozitivní záchyty dle indikace testu: diagnostické indikace."
+                "dc:description": "Pozitivn\u00ed z\u00e1chyty dle indikace testu: diagnostick\u00e9 indikace."
             },
             {
                 "name": "pozit_typologie_test_indik_epidemiologicka",
                 "titles": "pozit_typologie_test_indik_epidemiologicka",
                 "datatype": "integer",
-                "dc:description": "Pozitivní záchyty dle indikace testu: epidemiologické indikace."
+                "dc:description": "Pozitivn\u00ed z\u00e1chyty dle indikace testu: epidemiologick\u00e9 indikace."
             },
             {
                 "name": "pozit_typologie_test_indik_preventivni",
                 "titles": "pozit_typologie_test_indik_preventivni",
                 "datatype": "integer",
-                "dc:description": "Pozitivní záchyty dle indikace testu: preventivní a plošné testy."
+                "dc:description": "Pozitivn\u00ed z\u00e1chyty dle indikace testu: preventivn\u00ed a plo\u0161n\u00e9 testy."
             },
             {
                 "name": "pozit_typologie_test_indik_ostatni",
                 "titles": "pozit_typologie_test_indik_ostatni",
                 "datatype": "integer",
-                "dc:description": "Pozitivní záchyty dle indikace testu: ostatní."
+                "dc:description": "Pozitivn\u00ed z\u00e1chyty dle indikace testu: ostatn\u00ed."
             },
             {
                 "name": "PCR_pozit_sympt",
                 "titles": "PCR_pozit_sympt",
                 "datatype": "integer",
-                "dc:description": "Pozitivní záchyty dle PCR testu: symptomatické případy."
+                "dc:description": "Pozitivn\u00ed z\u00e1chyty dle PCR testu: symptomatick\u00e9 p\u0159\u00edpady."
             },
             {
                 "name": "PCR_pozit_asymp",
                 "titles": "PCR_pozit_asymp",
                 "datatype": "integer",
-                "dc:description": "Pozitivní záchyty dle PCR testu: asymptomatické případy."
+                "dc:description": "Pozitivn\u00ed z\u00e1chyty dle PCR testu: asymptomatick\u00e9 p\u0159\u00edpady."
             },
             {
                 "name": "AG_pozit_symp",
                 "titles": "AG_pozit_symp",
                 "datatype": "integer",
-                "dc:description": "Pozitivní záchyty dle antigenního testu: PCR: symptomatické případy."
+                "dc:description": "Pozitivn\u00ed z\u00e1chyty dle antigenn\u00edho testu: symptomatick\u00e9 p\u0159\u00edpady."
             },
             {
                 "name": "AG_pozit_asymp_PCR_conf",
                 "titles": "AG_pozit_asymp_PCR_conf",
                 "datatype": "integer",
-                "dc:description": "Pozitivní záchyty dle antigenního testu: asymptomatické případy (konfirmováno PCR)."
+                "dc:description": "Pozitivn\u00ed z\u00e1chyty dle antigenn\u00edho testu: asymptomatick\u00e9 p\u0159\u00edpady."
             }
         ]
     }

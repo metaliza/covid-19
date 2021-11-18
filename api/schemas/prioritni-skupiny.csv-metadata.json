@@ -1,31 +1,31 @@
 {
     "@context": [
-        "https://www.w3.org/ns/csvw",
+        "http:\/\/www.w3.org\/ns\/csvw",
         {
             "@language": "cs"
         }
     ],
     "url": "prioritni-skupiny.csv",
-    "dc:title": "COVID-19: Číselník prioritních skupin očkování",
-    "dc:description": "Seznam prioritních skupin pro rozdělení očkovaných osob na základě prioritizačního systému Ministerstvem zdravotnictví ČR, který je použit v datové sadě COVID-19: Přehled vykázaných očkování podle profesí.",
-    "dc:source": "Informační systém infekčních nemocí (ISIN) - https://www.uzis.cz/index.php?pg=registry-sber-dat--ochrana-verejneho-zdravi--informacni-system-infekcni-nemoci, kontakt: helpdesk.registry@uzis.cz",
+    "dc:title": "prioritni-skupiny",
+    "dc:description": "Seznam prioritn\u00edch skupin pro rozd\u011blen\u00ed o\u010dkovan\u00fdch osob na z\u00e1klad\u011b prioritiza\u010dn\u00edho syst\u00e9mu Ministerstvem zdravotnictv\u00ed \u010cR, kter\u00fd je pou\u017eit v datov\u00e9 sad\u011b COVID-19: P\u0159ehled vyk\u00e1zan\u00fdch o\u010dkov\u00e1n\u00ed podle profes\u00ed (o\u010dkovac\u00ed m\u00edsto, bydli\u0161t\u011b o\u010dkovan\u00e9ho).",
+    "dc:source": "Informa\u010dn\u00ed syst\u00e9m infek\u010dn\u00edch nemoc\u00ed (ISIN) - https:\/\/www.uzis.cz\/index.php?pg=registry-sber-dat--ochrana-verejneho-zdravi--informacni-system-infekcni-nemoci, kontakt: helpdesk.registry@uzis.cz",
     "dcat:keyword": [
         "covid-19",
         "koronavirus",
-        "očkování",
-        "prioritní skupina"
+        "o\u010dkov\u00e1n\u00ed",
+        "prioritn\u00ed skupina"
     ],
     "dc:publisher": {
-        "schema:name": "ÚZIS ČR",
+        "schema:name": "\u00daZIS \u010cR",
         "schema:url": {
-            "@id": "https://www.uzis.cz/"
+            "@id": "https:\/\/www.uzis.cz\/"
         }
     },
     "dc:license": {
-        "@id": "http://data.gov.cz/podmínky-užití/volný-přístup/"
+        "@id": "https:\/\/data.gov.cz\/podm\u00ednky-u\u017eit\u00ed\/voln\u00fd-p\u0159\u00edstup\/"
     },
     "dc:modified": {
-        "@value": "2021-08-11",
+        "@value": "2021-11-16",
         "@type": "xsd:date"
     },
     "tableSchema": {
@@ -34,13 +34,13 @@
                 "name": "kod",
                 "titles": "kod",
                 "datatype": "integer",
-                "dc:description": "Kód prioritní skupiny."
+                "dc:description": "K\u00f3d prioritn\u00ed skupiny."
             },
             {
                 "name": "hodnota",
                 "titles": "hodnota",
                 "datatype": "string",
-                "dc:description": "Název prioritní skupiny."
+                "dc:description": "N\u00e1zev prioritn\u00ed skupiny."
             }
         ]
     }

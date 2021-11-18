@@ -1,100 +1,105 @@
 {
     "@context": [
-        "http://www.w3.org/ns/csvw",
+        "http:\/\/www.w3.org\/ns\/csvw",
         {
             "@language": "cs"
         }
     ],
     "url": "ockovaci-zarizeni.csv",
-    "dc:title": "COVID-19: Očkovací zařízení",
-    "dc:description": "Datová sada poskytuje seznam očkovacích zařízení v ČR jako doplnění seznamu očkovacích míst, kde jsou podávány očkovací látky proti onemocnění COVID-19. Jedná se především o praktické lékaře, ale i další, kde se očkování provádí.",
-    "dc:source": "Informační systém infekčních nemocí (ISIN) - https://www.uzis.cz/index.php?pg=registry-sber-dat--ochrana-verejneho-zdravi--informacni-system-infekcni-nemoci, kontakt: helpdesk.registry@uzis.cz",
+    "dc:title": "ockovaci-zarizeni",
+    "dc:description": "Datov\u00e1 sada poskytuje seznam o\u010dkovac\u00edch za\u0159\u00edzen\u00ed v \u010cR jako dopln\u011bn\u00ed seznamu o\u010dkovac\u00edch m\u00edst, kde jsou pod\u00e1v\u00e1ny o\u010dkovac\u00ed l\u00e1tky proti onemocn\u011bn\u00ed COVID-19. Jedn\u00e1 se p\u0159edev\u0161\u00edm o praktick\u00e9 l\u00e9ka\u0159e, ale i dal\u0161\u00ed, kde se o\u010dkov\u00e1n\u00ed prov\u00e1d\u00ed.",
+    "dc:source": "Informa\u010dn\u00ed syst\u00e9m infek\u010dn\u00edch nemoc\u00ed (ISIN) - https:\/\/www.uzis.cz\/index.php?pg=registry-sber-dat--ochrana-verejneho-zdravi--informacni-system-infekcni-nemoci, kontakt: helpdesk.registry@uzis.cz",
     "dcat:keyword": [
         "koronavirus",
         "covid-19",
-        "očkování",
-        "očkovací zařízení"
+        "o\u010dkov\u00e1n\u00ed",
+        "o\u010dkovac\u00ed za\u0159\u00edzen\u00ed"
     ],
     "dc:publisher": {
-        "schema:name": "ÚZIS ČR",
+        "schema:name": "\u00daZIS \u010cR",
         "schema:url": {
-            "@id": "https://www.uzis.cz/"
+            "@id": "https:\/\/www.uzis.cz\/"
         }
     },
     "dc:license": {
-        "@id": "http://data.gov.cz/podmínky-užití/volný-přístup/"
+        "@id": "https:\/\/data.gov.cz\/podm\u00ednky-u\u017eit\u00ed\/voln\u00fd-p\u0159\u00edstup\/"
     },
     "dc:modified": {
-        "@value": "2021-10-26",
+        "@value": "2021-11-18",
         "@type": "xsd:date"
     },
     "tableSchema": {
         "columns": [
             {
+                "name": "id",
+                "titles": "id",
+                "datatype": "string"
+            },
+            {
                 "name": "zarizeni_kod",
                 "titles": "zarizeni_kod",
                 "datatype": "string",
-                "dc:description": "Kód zdravotnického zařízení, ve kterém je prováděno očkování (podle číselníku poskytovatelů zdravotních služeb na úrovni jednotlivých zařízení)."
+                "dc:description": "K\u00f3d zdravotnick\u00e9ho za\u0159\u00edzen\u00ed, ve kter\u00e9m je prov\u00e1d\u011bno o\u010dkov\u00e1n\u00ed (podle \u010d\u00edseln\u00edku poskytovatel\u016f zdravotn\u00edch slu\u017eeb na \u00farovni jednotliv\u00fdch za\u0159\u00edzen\u00ed)."
             },
             {
                 "name": "zarizeni_nazev",
                 "titles": "zarizeni_nazev",
                 "datatype": "string",
-                "dc:description": "Název zdravotnického zařízení, ve kterém je prováděno očkování."
+                "dc:description": "N\u00e1zev zdravotnick\u00e9ho za\u0159\u00edzen\u00ed, ve kter\u00e9m je prov\u00e1d\u011bno o\u010dkov\u00e1n\u00ed."
             },
             {
                 "name": "provoz_zahajen",
                 "titles": "provoz_zahajen",
                 "datatype": "boolean",
-                "dc:description": "Příznak, zda bylo zahájeno očkování v daném zdravotnickém zařízení."
+                "dc:description": "P\u0159\u00edznak, zda bylo zah\u00e1jeno o\u010dkov\u00e1n\u00ed v dan\u00e9m zdravotnick\u00e9m za\u0159\u00edzen\u00ed."
             },
             {
                 "name": "kraj_nuts_kod",
                 "titles": "kraj_nuts_kod",
                 "datatype": "string",
-                "dc:description": "Identifikátor kraje podle klasifikace NUTS 3, ve kterém se nachází očkovací místo."
+                "dc:description": "Identifik\u00e1tor kraje podle klasifikace NUTS 3, ve kter\u00e9m se nach\u00e1z\u00ed o\u010dkovac\u00ed m\u00edsto."
             },
             {
                 "name": "kraj_nazev",
                 "titles": "kraj_nazev",
                 "datatype": "string",
-                "dc:description": "Název kraje, ve kterém se nachází očkovací místo."
+                "dc:description": "N\u00e1zev kraje, ve kter\u00e9m se nach\u00e1z\u00ed o\u010dkovac\u00ed m\u00edsto."
             },
             {
                 "name": "okres_lau_kod",
                 "titles": "okres_lau_kod",
                 "datatype": "string",
-                "dc:description": "Identifikátor okresu podle klasifikace LAU 1, ve kterém se očkovací zařízení nachází."
+                "dc:description": "Identifik\u00e1tor okresu podle klasifikace LAU 1, ve kter\u00e9m se o\u010dkovac\u00ed za\u0159\u00edzen\u00ed nach\u00e1z\u00ed."
             },
             {
                 "name": "okres_nazev",
                 "titles": "okres_nazev",
                 "datatype": "string",
-                "dc:description": "Název okresu, ve kterém se očkovací zařízení nachází."
+                "dc:description": "N\u00e1zev okresu, ve kter\u00e9m se o\u010dkovac\u00ed za\u0159\u00edzen\u00ed nach\u00e1z\u00ed."
             },
             {
                 "name": "zrizovatel_kod",
                 "titles": "zrizovatel_kod",
                 "datatype": "integer",
-                "dc:description": "Kód zřizovatele zdravotnického zařízení podle číselníku ÚZIS."
+                "dc:description": "K\u00f3d z\u0159izovatele zdravotnick\u00e9ho za\u0159\u00edzen\u00ed podle \u010d\u00edseln\u00edku \u00daZIS."
             },
             {
                 "name": "zrizovatel_nazev",
                 "titles": "zrizovatel_nazev",
                 "datatype": "string",
-                "dc:description": "Název zřizovatele zdravotnického zařízení."
+                "dc:description": "N\u00e1zev z\u0159izovatele zdravotnick\u00e9ho za\u0159\u00edzen\u00ed."
             },
             {
                 "name": "provoz_ukoncen",
                 "titles": "provoz_ukoncen",
-                "datatype": "date",
-                "dc:description": "Datum, kdy bylo ukončeno očkování v daném zdravotnickém zařízení."
+                "datatype": "string",
+                "dc:description": "Datum, kdy bylo ukon\u010deno o\u010dkov\u00e1n\u00ed v dan\u00e9m zdravotnick\u00e9m za\u0159\u00edzen\u00ed."
             },
             {
                 "name": "prakticky_lekar",
                 "titles": "prakticky_lekar",
                 "datatype": "boolean",
-                "dc:description": "Příznak, zda se jedná o praktického lékaře."
+                "dc:description": "P\u0159\u00edznak, zda se jedn\u00e1 o praktick\u00e9ho l\u00e9ka\u0159e."
             }
         ]
     }

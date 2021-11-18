@@ -1,125 +1,130 @@
 {
     "@context": [
-        "http://www.w3.org/ns/csvw",
+        "http:\/\/www.w3.org\/ns\/csvw",
         {
             "@language": "cs"
         }
     ],
     "url": "ockovani-distribuce.csv",
-    "dc:title": "COVID-19: Přehled distribuce očkovacích látek v ČR",
-    "dc:description": "Datová sada obsahuje přehled distribuce očkovacích látek proti onemocnění COVID-19 do očkovacích míst v ČR. Každý záznam (řádek) datové sady udává počet ampulek dané očkovací látky, která byla daným očkovacím místem v daný den přijata nebo vydána.",
-    "dc:source": "COVID Forms Application - https://cfa.uzis.cz/, kontakt: crtit@army.cz",
+    "dc:title": "ockovani-distribuce",
+    "dc:description": "Datov\u00e1 sada obsahuje p\u0159ehled distribuce o\u010dkovac\u00edch l\u00e1tek proti onemocn\u011bn\u00ed COVID-19 do o\u010dkovac\u00edch m\u00edst v \u010cR. Ka\u017ed\u00fd z\u00e1znam (\u0159\u00e1dek) datov\u00e9 sady ud\u00e1v\u00e1 po\u010det ampulek dan\u00e9 o\u010dkovac\u00ed l\u00e1tky, kter\u00e1 byla dan\u00fdm o\u010dkovac\u00edm m\u00edstem v dan\u00fd den p\u0159ijata nebo vyd\u00e1na.",
+    "dc:source": "COVID Forms Application - https:\/\/cfa.uzis.cz\/, kontakt: crtit@army.cz",
     "dcat:keyword": [
         "koronavirus",
         "covid-19",
-        "očkování",
+        "o\u010dkov\u00e1n\u00ed",
         "vakcinace",
-        "distribuce očkovacích látek"
+        "distribuce o\u010dkovac\u00edch l\u00e1tek"
     ],
     "dc:publisher": {
-        "schema:name": "ÚZIS ČR",
+        "schema:name": "\u00daZIS \u010cR",
         "schema:url": {
-            "@id": "https://www.uzis.cz/"
+            "@id": "https:\/\/www.uzis.cz\/"
         }
     },
     "dc:license": {
-        "@id": "http://data.gov.cz/podmínky-užití/volný-přístup/"
+        "@id": "https:\/\/data.gov.cz\/podm\u00ednky-u\u017eit\u00ed\/voln\u00fd-p\u0159\u00edstup\/"
     },
     "dc:modified": {
-        "@value": "2021-10-26",
+        "@value": "2021-11-18",
         "@type": "xsd:date"
     },
     "tableSchema": {
         "columns": [
             {
+                "name": "id",
+                "titles": "id",
+                "datatype": "string"
+            },
+            {
                 "name": "datum",
                 "titles": "datum",
-                "datatype": "date",
-                "dc:description": "Den, kdy byla provedena distribuce na dané očkovací místo."
+                "datatype": "string",
+                "dc:description": "Den, kdy byla provedena distribuce na dan\u00e9 o\u010dkovac\u00ed m\u00edsto."
             },
             {
                 "name": "ockovaci_misto_id",
                 "titles": "ockovaci_misto_id",
                 "datatype": "string",
-                "dc:description": "Jednoznačný identifikátor očkovacího místa."
+                "dc:description": "Jednozna\u010dn\u00fd identifik\u00e1tor o\u010dkovac\u00edho m\u00edsta."
             },
             {
                 "name": "ockovaci_misto_nazev",
                 "titles": "ockovaci_misto_nazev",
                 "datatype": "string",
-                "dc:description": "Název očkovacího místa."
+                "dc:description": "N\u00e1zev o\u010dkovac\u00edho m\u00edsta."
             },
             {
                 "name": "kraj_nuts_kod",
                 "titles": "kraj_nuts_kod",
                 "datatype": "string",
-                "dc:description": "Identifikátor kraje podle klasifikace NUTS 3, ve kterém se nachází očkovací místo."
+                "dc:description": "Identifik\u00e1tor kraje podle klasifikace NUTS 3, ve kter\u00e9m se nach\u00e1z\u00ed o\u010dkovac\u00ed m\u00edsto."
             },
             {
                 "name": "kraj_nazev",
                 "titles": "kraj_nazev",
                 "datatype": "string",
-                "dc:description": "Název kraje podle klasifikace NUTS 3, ve kterém se nachází očkovací místo."
+                "dc:description": "N\u00e1zev kraje podle klasifikace NUTS 3, ve kter\u00e9m se nach\u00e1z\u00ed o\u010dkovac\u00ed m\u00edsto."
             },
             {
                 "name": "cilove_ockovaci_misto_id",
                 "titles": "cilove_ockovaci_misto_id",
                 "datatype": "string",
-                "dc:description": "Kód cílového očkovacího místa, kam je očkovací látka distribuována."
+                "dc:description": "K\u00f3d c\u00edlov\u00e9ho o\u010dkovac\u00edho m\u00edsta, kam je o\u010dkovac\u00ed l\u00e1tka distribuov\u00e1na."
             },
             {
                 "name": "cilove_ockovaci_misto_nazev",
                 "titles": "cilove_ockovaci_misto_nazev",
                 "datatype": "string",
-                "dc:description": "Název cílového očkovacího místa, kam je očkovací látka distribuována."
+                "dc:description": "N\u00e1zev c\u00edlov\u00e9ho o\u010dkovac\u00edho m\u00edsta, kam je o\u010dkovac\u00ed l\u00e1tka distribuov\u00e1na."
             },
             {
                 "name": "cilovy_kraj_kod",
                 "titles": "cilovy_kraj_kod",
                 "datatype": "string",
-                "dc:description": "Identifikátor kraje podle klasifikace NUTS 3, ve kterém se nachází očkovací místo, kam je očkovací látka distribuována."
+                "dc:description": "Identifik\u00e1tor kraje podle klasifikace NUTS 3, ve kter\u00e9m se nach\u00e1z\u00ed o\u010dkovac\u00ed m\u00edsto, kam je o\u010dkovac\u00ed l\u00e1tka distribuov\u00e1na."
             },
             {
                 "name": "cilovy_kraj_nazev",
                 "titles": "cilovy_kraj_nazev",
                 "datatype": "string",
-                "dc:description": "Název kraje podle klasifikace NUTS 3, ve kterém se nachází očkovací místo, kam je očkovací látka distribuována."
+                "dc:description": "N\u00e1zev kraje podle klasifikace NUTS 3, ve kter\u00e9m se nach\u00e1z\u00ed o\u010dkovac\u00ed m\u00edsto, kam je o\u010dkovac\u00ed l\u00e1tka distribuov\u00e1na."
             },
             {
                 "name": "ockovaci_latka",
                 "titles": "ockovaci_latka",
                 "datatype": "string",
-                "dc:description": "Název distribuované očkovací látky."
+                "dc:description": "N\u00e1zev distribuovan\u00e9 o\u010dkovac\u00ed l\u00e1tky."
             },
             {
                 "name": "vyrobce",
                 "titles": "vyrobce",
                 "datatype": "string",
-                "dc:description": "Název výrobce distribuované očkovací látky."
+                "dc:description": "N\u00e1zev v\u00fdrobce distribuovan\u00e9 o\u010dkovac\u00ed l\u00e1tky."
             },
             {
                 "name": "akce",
                 "titles": "akce",
                 "datatype": "string",
-                "dc:description": "Příznak, zda se jedná v rámci distribučního procesu o příjem nebo výdej očkovací látky. Příznak „příjem“ označuje, že daná očkovací látka byla dodána na dané očkovací místo z centrálního skladu (cílové očkovací místo není vyplněno). Příznak „výdej“ označuje, že daná očkovací látka byla dále distribuována očkovacím místem na cílové očkovací místo (cílové očkovací místo je vyplněno, v případě nevyplnění cílové očkovací místo není evidováno v centrálním systému – např. praktický lékař)."
+                "dc:description": "P\u0159\u00edznak, zda se jedn\u00e1 v r\u00e1mci distribu\u010dn\u00edho procesu o p\u0159\u00edjem nebo v\u00fddej o\u010dkovac\u00ed l\u00e1tky. P\u0159\u00edznak \u201ep\u0159\u00edjem\u201c ozna\u010duje, \u017ee dan\u00e1 o\u010dkovac\u00ed l\u00e1tka byla dod\u00e1na na dan\u00e9 o\u010dkovac\u00ed m\u00edsto z centr\u00e1ln\u00edho skladu (c\u00edlov\u00e9 o\u010dkovac\u00ed m\u00edsto nen\u00ed vypln\u011bno). P\u0159\u00edznak \u201ev\u00fddej\u201c ozna\u010duje, \u017ee dan\u00e1 o\u010dkovac\u00ed l\u00e1tka byla d\u00e1le distribuov\u00e1na o\u010dkovac\u00edm m\u00edstem na c\u00edlov\u00e9 o\u010dkovac\u00ed m\u00edsto (c\u00edlov\u00e9 o\u010dkovac\u00ed m\u00edsto je vypln\u011bno, v p\u0159\u00edpad\u011b nevypln\u011bn\u00ed c\u00edlov\u00e9 o\u010dkovac\u00ed m\u00edsto nen\u00ed evidov\u00e1no v centr\u00e1ln\u00edm syst\u00e9mu \u2013 nap\u0159. praktick\u00fd l\u00e9ka\u0159)."
             },
             {
                 "name": "pocet_ampulek",
                 "titles": "pocet_ampulek",
                 "datatype": "integer",
-                "dc:description": "Počet ampulek distribuované očkovací látky. Počty dávek očkovací látky podle výrobce: Comirnaty (Pfizer) = 6 dávek/ampulka, COVID-19 Vaccine AstraZeneca (AstraZeneca) = 10 dávek/ampulka, Spikevax (Moderna) = 10 dávek/ampulka, COVID-19 Vaccine Janssen (Janssen) = 10 dávek/ampulka."
+                "dc:description": "Po\u010det ampulek distribuovan\u00e9 o\u010dkovac\u00ed l\u00e1tky. Po\u010dty d\u00e1vek o\u010dkovac\u00ed l\u00e1tky podle v\u00fdrobce: Comirnaty (Pfizer) = 6 d\u00e1vek\/ampulka, COVID-19 Vaccine AstraZeneca (AstraZeneca) = 10 d\u00e1vek\/ampulka, Spikevax (Moderna) = 10 d\u00e1vek\/ampulka, COVID-19 Vaccine Janssen (Janssen) = 10 d\u00e1vek\/ampulka."
             },
             {
                 "name": "pocet_davek",
                 "titles": "pocet_davek",
                 "datatype": "integer",
-                "dc:description": "Počet dávek distribuované očkovací látky (přepočet dávek v jedné ampulce podle informací výrobce): Comirnaty (Pfizer) = 6 dávek/ampulka, COVID-19 Vaccine AstraZeneca (AstraZeneca) = 10 dávek/ampulka, Spikevax (Moderna) = 10 dávek/ampulka, COVID-19 Vaccine Janssen (Janssen) = 10 dávek/ampulka."
+                "dc:description": "Po\u010det d\u00e1vek distribuovan\u00e9 o\u010dkovac\u00ed l\u00e1tky (p\u0159epo\u010det d\u00e1vek v jedn\u00e9 ampulce podle informac\u00ed v\u00fdrobce): Comirnaty (Pfizer) = 6 d\u00e1vek\/ampulka, COVID-19 Vaccine AstraZeneca (AstraZeneca) = 10 d\u00e1vek\/ampulka, Spikevax (Moderna) = 10 d\u00e1vek\/ampulka, COVID-19 Vaccine Janssen (Janssen) = 10 d\u00e1vek\/ampulka."
             },
             {
                 "name": "distribuce_id",
                 "titles": "distribuce_id",
                 "datatype": "string",
-                "dc:description": "Identifikátor distribučního záznamu, který umožňuje sprárovat příjmy a výdaje očkovacíh látek s datovou sadou o distribuci z centrálního skladu."
+                "dc:description": "Identifik\u00e1tor distribu\u010dn\u00edho z\u00e1znamu, kter\u00fd umo\u017e\u0148uje spr\u00e1rovat p\u0159\u00edjmy a v\u00fddaje o\u010dkovac\u00edh l\u00e1tek s datovou sadou o distribuci z centr\u00e1ln\u00edho skladu."
             }
         ]
     }

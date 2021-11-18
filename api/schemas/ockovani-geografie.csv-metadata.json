@@ -1,89 +1,94 @@
 {
     "@context": [
-        "http://www.w3.org/ns/csvw",
+        "http:\/\/www.w3.org\/ns\/csvw",
         {
             "@language": "cs"
         }
     ],
     "url": "ockovani-geografie.csv",
-    "dc:title": "COVID-19: Geografický přehled vykázaných očkování v čase",
-    "dc:description": "Datová sada poskytuje řádková data o vykázaných očkováních v ČR. Každý řádek přehledu popisuje množství vykázaných očkování v daném dni ve vybraném kraji s použitím dané dávky očkovací látky.",
-    "dc:source": "Informační systém infekčních nemocí (ISIN) - https://www.uzis.cz/index.php?pg=registry-sber-dat--ochrana-verejneho-zdravi--informacni-system-infekcni-nemoci, kontakt: helpdesk.registry@uzis.cz",
+    "dc:title": "ockovani-geografie",
+    "dc:description": "Datov\u00e1 sada poskytuje \u0159\u00e1dkov\u00e1 data o vyk\u00e1zan\u00fdch o\u010dkov\u00e1n\u00edch v \u010cR. Ka\u017ed\u00fd \u0159\u00e1dek p\u0159ehledu popisuje mno\u017estv\u00ed vyk\u00e1zan\u00fdch o\u010dkov\u00e1n\u00ed v dan\u00e9m dni ve vybran\u00e9m kraji s pou\u017eit\u00edm dan\u00e9 d\u00e1vky o\u010dkovac\u00ed l\u00e1tky.",
+    "dc:source": "Informa\u010dn\u00ed syst\u00e9m infek\u010dn\u00edch nemoc\u00ed (ISIN) - https:\/\/www.uzis.cz\/index.php?pg=registry-sber-dat--ochrana-verejneho-zdravi--informacni-system-infekcni-nemoci, kontakt: helpdesk.registry@uzis.cz",
     "dcat:keyword": [
         "koronavirus",
         "covid-19",
-        "očkování",
+        "o\u010dkov\u00e1n\u00ed",
         "vakcinace",
-        "očkovací látka"
+        "o\u010dkovac\u00ed l\u00e1tka"
     ],
     "dc:publisher": {
-        "schema:name": "ÚZIS ČR",
+        "schema:name": "\u00daZIS \u010cR",
         "schema:url": {
-            "@id": "https://www.uzis.cz/"
+            "@id": "https:\/\/www.uzis.cz\/"
         }
     },
     "dc:license": {
-        "@id": "http://data.gov.cz/podmínky-užití/volný-přístup/"
+        "@id": "https:\/\/data.gov.cz\/podm\u00ednky-u\u017eit\u00ed\/voln\u00fd-p\u0159\u00edstup\/"
     },
     "dc:modified": {
-        "@value": "2021-10-26",
+        "@value": "2021-11-18",
         "@type": "xsd:date"
     },
     "tableSchema": {
         "columns": [
             {
+                "name": "id",
+                "titles": "id",
+                "datatype": "string"
+            },
+            {
                 "name": "datum",
                 "titles": "datum",
-                "datatype": "date",
-                "dc:description": "Datum, ve kterém byla očkování v daném kraji provedena."
+                "datatype": "string",
+                "dc:description": "Datum, ve kter\u00e9m byla o\u010dkov\u00e1n\u00ed v dan\u00e9m kraji provedena."
             },
             {
                 "name": "vakcina",
                 "titles": "vakcina",
                 "datatype": "string",
-                "dc:description": "Název očkovací látky."
+                "dc:description": "N\u00e1zev o\u010dkovac\u00ed l\u00e1tky."
             },
             {
                 "name": "vakcina_kod",
                 "titles": "vakcina_kod",
                 "datatype": "string",
-                "dc:description": "Kód očkovací látky podle klasifikace ÚZIS ČR."
+                "dc:description": "K\u00f3d o\u010dkovac\u00ed l\u00e1tky podle klasifikace \u00daZIS \u010cR."
             },
             {
                 "name": "poradi_davky",
                 "titles": "poradi_davky",
                 "datatype": "integer",
-                "dc:description": "Pořadí dávky (první, druhá) danou očkovací látkou."
+                "dc:description": "Po\u0159ad\u00ed d\u00e1vky (prvn\u00ed, druh\u00e1, posiluj\u00edc\u00ed) danou o\u010dkovac\u00ed l\u00e1tkou."
             },
             {
                 "name": "kraj_nazev",
                 "titles": "kraj_nazev",
                 "datatype": "string",
-                "dc:description": "Název kraje, ve kterém se nachází očkovací místo."
+                "dc:description": "N\u00e1zev kraje, ve kter\u00e9m se nach\u00e1z\u00ed o\u010dkovac\u00ed m\u00edsto."
             },
             {
                 "name": "kraj_nuts_kod",
                 "titles": "kraj_nuts_kod",
                 "datatype": "string",
-                "dc:description": "Identifikátor kraje podle klasifikace NUTS 3, ve kterém se nachází očkovací místo."
+                "dc:description": "Identifik\u00e1tor kraje podle klasifikace NUTS 3, ve kter\u00e9m se nach\u00e1z\u00ed o\u010dkovac\u00ed m\u00edsto."
             },
             {
                 "name": "orp_bydliste",
                 "titles": "orp_bydliste",
                 "datatype": "string",
-                "dc:description": "Bydliště (na úrovni názvu obce s rozšířenou působností) očkované osoby."
+                "dc:description": "Bydli\u0161t\u011b (na \u00farovni n\u00e1zvu obce s roz\u0161\u00ed\u0159enou p\u016fsobnost\u00ed) o\u010dkovan\u00e9 osoby."
             },
             {
                 "name": "orp_bydliste_kod",
                 "titles": "orp_bydliste_kod",
                 "datatype": "integer",
-                "dc:description": "Bydliště (na úrovni kódu obce s rozšířenou působností) podle číselníku ÚZIS ČR (https://pzu-api.uzis.cz/api/orp) očkované osoby."
+                "dc:description": "Bydli\u0161t\u011b (na \u00farovni k\u00f3du obce s roz\u0161\u00ed\u0159enou p\u016fsobnost\u00ed) podle \u010d\u00edseln\u00edku \u00daZIS \u010cR (https:\/\/pzu-api.uzis.cz\/api\/orp) o\u010dkovan\u00e9 osoby."
             },
             {
                 "name": "pocet_davek",
                 "titles": "pocet_davek",
                 "datatype": "integer",
-                "dc:description": "Počet vykázaných dávek očkování."
+                "dc:description": "Po\u010det vyk\u00e1zan\u00fdch d\u00e1vek o\u010dkov\u00e1n\u00ed."
             }
         ]
     }
