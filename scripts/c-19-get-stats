@@ -13,7 +13,7 @@ DIR_NAME=$(dirname $0)
 if [ -d "$target" -a -d "$ccTarget" ]; then
   downloadCouple zakladni-prehled ${DISEASE_URL_BASE}/zakladni-prehled true false $downloadMeta
   downloadCouple osoby ${DISEASE_URL_BASE}/osoby true false $downloadMeta
-  downloadCouple nakaza ${DISEASE_URL_BASE}/nakaza true false $downloadMeta
+  downloadCouple nakaza ${DISEASE_URL_BASE}/nakaza true false false
   downloadCouple vyleceni ${DISEASE_URL_BASE}/vyleceni true false $downloadMeta
   downloadCouple umrti ${DISEASE_URL_BASE}/umrti true false $downloadMeta
   downloadCouple hospitalizace ${DISEASE_URL_BASE}/hospitalizace true true $downloadMeta           # copy
@@ -26,10 +26,11 @@ if [ -d "$target" -a -d "$ccTarget" ]; then
   downloadCouple incidence-7-14-kraje ${DISEASE_URL_BASE}/incidence-7-14-kraje true false $downloadMeta
   downloadCouple incidence-7-14-okresy ${DISEASE_URL_BASE}/incidence-7-14-okresy true false $downloadMeta
   
-  downloadCouple testy ${DISEASE_URL_BASE}/testy true false $downloadMeta
+  downloadCouple testy ${DISEASE_URL_BASE}/testy true false false
   downloadCouple testy-pcr-antigenni ${DISEASE_URL_BASE}/testy-pcr-antigenni true false $downloadMeta
   downloadCouple kraj-okres-testy ${DISEASE_URL_BASE}/kraj-okres-testy true false $downloadMeta
   downloadCouple prehled-odberovych-mist ${DISEASE_URL_BASE}/prehled-odberovych-mist true false $downloadMeta
+  downloadCouple testy-kraje ${DISEASE_URL_BASE}/testy-kraje true false $downloadMeta
   
   downloadCouple ockovani ${DISEASE_URL_BASE}/ockovani true false $downloadMeta
   downloadCouple ockovaci-mista ${DISEASE_URL_BASE}/ockovaci-mista false false $downloadMeta
@@ -44,13 +45,22 @@ if [ -d "$target" -a -d "$ccTarget" ]; then
   downloadCouple ockovani-geografie ${DISEASE_URL_BASE}/ockovani-geografie true false $downloadMeta
   downloadCouple ockovaci-zarizeni ${DISEASE_URL_BASE}/ockovaci-zarizeni true false $downloadMeta
   downloadCouple ockovani-zakladni-prehled ${DISEASE_URL_BASE}/ockovani-zakladni-prehled true false $downloadMeta
+  downloadCouple ockovani-pozitivni ${DISEASE_URL_BASE}/ockovani-pozitivni true false $downloadMeta
+  downloadCouple ockovani-pozitivni65 ${DISEASE_URL_BASE}/ockovani-pozitivni65 true false $downloadMeta
+  downloadCouple ockovani-umrti ${DISEASE_URL_BASE}/ockovani-umrti true false $downloadMeta
+  downloadCouple ockovani-hospitalizace ${DISEASE_URL_BASE}/ockovani-hospitalizace true false $downloadMeta
+  downloadCouple ockovani-jip ${DISEASE_URL_BASE}/ockovani-jip true false $downloadMeta
+  downloadCouple ockovani-pozitivni-tyden ${DISEASE_URL_BASE}/ockovani-pozitivni-tyden true false $downloadMeta
+  downloadCouple ockovani-hospitalizace-tyden ${DISEASE_URL_BASE}/ockovani-hospitalizace-tyden true false $downloadMeta
+  downloadCouple ockovani-jip-tyden ${DISEASE_URL_BASE}/ockovani-jip-tyden true false $downloadMeta
   downloadCouple prioritni-skupiny ${DISEASE_URL_BASE}/prioritni-skupiny true false $downloadMeta
   
-  downloadCouple pomucky ${DISEASE_URL_BASE}/pomucky true false $downloadMeta
+  downloadCouple pomucky ${DISEASE_URL_BASE}/pomucky true false false
   
   download kapacity-intenzivni-pece-vlna-2 ${DIP_URL_BASE}/kapacity-intenzivni-pece-vlna-2 csv false $downloadMeta
   download kapacity-intenzivni-pece-zdravotnicke-zarizeni ${DIP_URL_BASE}/kapacity-intenzivni-pece-zdravotnicke-zarizeni csv false $downloadMeta
   download kapacity-intenzivni-pece-zdravotnicke-zarizeni-04-2021 ${DIP_URL_BASE}/kapacity-intenzivni-pece-zdravotnicke-zarizeni-04-2021 csv false $downloadMeta
+  download kapacity-intenzivni-pece-zdravotnicke-zarizeni-10-2021 ${DIP_URL_BASE}/kapacity-intenzivni-pece-zdravotnicke-zarizeni-10-2021 csv false $downloadMeta
   
   # 'obce' in old format
   downloadSimple https://share.uzis.cz/s/dCZBiARJ27ayeoS/download $target/obce-$(getTstmp).zip obce.zip
