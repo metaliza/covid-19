@@ -1,0 +1,95 @@
+{
+    "@context": [
+        "http:\/\/www.w3.org\/ns\/csvw",
+        {
+            "@language": "cs"
+        }
+    ],
+    "url": "ockovani-pozitivni-tyden.csv",
+    "dc:title": "ockovani-pozitivni-tyden",
+    "dc:description": "Datov\u00e1 sada obsahuje po\u010det osob s prok\u00e1zanou n\u00e1kazou dle rozd\u011blen\u00ed do jednotliv\u00fdch v\u011bkov\u00fdch kategori\u00ed. Ka\u017ed\u00fd \u0159\u00e1dek ud\u00e1v\u00e1 souhrnn\u00e9 \u00fadaje osob v dan\u00fd t\u00fdden a v dan\u00e9 v\u011bkov\u00e9 kategorii rozd\u011blen\u00fdch do skupin podle stavu o\u010dkovanosti: bez o\u010dkov\u00e1n\u00ed, s nedokon\u010den\u00fdm o\u010dkov\u00e1n\u00edm, s dokon\u010den\u00fdm o\u010dkov\u00e1n\u00edm nebo s dokon\u010den\u00fdm o\u010dkov\u00e1n\u00edm v\u010detn\u011b posiluj\u00edc\u00ed d\u00e1vky.",
+    "dc:source": "Informa\u010dn\u00ed syst\u00e9m infek\u010dn\u00edch nemoc\u00ed (ISIN) - https:\/\/www.uzis.cz\/index.php?pg=registry-sber-dat--ochrana-verejneho-zdravi--informacni-system-infekcni-nemoci, kontakt: helpdesk.registry@uzis.cz",
+    "dcat:keyword": [
+        "koronavirus",
+        "covid-19",
+        "o\u010dkov\u00e1n\u00ed",
+        "vakcinace",
+        "prok\u00e1zan\u00e1 n\u00e1kaza"
+    ],
+    "dc:publisher": {
+        "schema:name": "\u00daZIS \u010cR",
+        "schema:url": {
+            "@id": "https:\/\/www.uzis.cz\/"
+        }
+    },
+    "dc:license": {
+        "@id": "https:\/\/data.gov.cz\/podm\u00ednky-u\u017eit\u00ed\/voln\u00fd-p\u0159\u00edstup\/"
+    },
+    "dc:modified": {
+        "@value": "2021-11-20",
+        "@type": "xsd:date"
+    },
+    "tableSchema": {
+        "columns": [
+            {
+                "name": "id",
+                "titles": "id",
+                "datatype": "string"
+            },
+            {
+                "name": "tyden",
+                "titles": "tyden",
+                "datatype": "string",
+                "dc:description": "Po\u0159ad\u00ed dan\u00e9ho t\u00fddne v roce."
+            },
+            {
+                "name": "tyden_od",
+                "titles": "tyden_od",
+                "datatype": "string",
+                "dc:description": "Datum prvn\u00edho dne v dan\u00e9m t\u00fddnu."
+            },
+            {
+                "name": "tyden_do",
+                "titles": "tyden_do",
+                "datatype": "string",
+                "dc:description": "Datum posledn\u00edho dne v dan\u00e9m t\u00fddnu."
+            },
+            {
+                "name": "vekova_skupina",
+                "titles": "vekova_skupina",
+                "datatype": "string",
+                "dc:description": "Rozd\u011blen\u00ed pozitivn\u00edch podle v\u011bkov\u00fdch kategori\u00ed."
+            },
+            {
+                "name": "pozitivni_celkem",
+                "titles": "pozitivni_celkem",
+                "datatype": "integer",
+                "dc:description": "Celkov\u00fd po\u010det pozitivn\u00edch v dan\u00e9 v\u011bkov\u00e9 kategorii."
+            },
+            {
+                "name": "pozitivni_bez_ockovani",
+                "titles": "pozitivni_bez_ockovani",
+                "datatype": "integer",
+                "dc:description": "Po\u010det pozitivn\u00edch bez o\u010dkov\u00e1n\u00ed v dan\u00e9 v\u011bkov\u00e9 kategorii."
+            },
+            {
+                "name": "pozitivni_nedokoncene_ockovani",
+                "titles": "pozitivni_nedokoncene_ockovani",
+                "datatype": "integer",
+                "dc:description": "Po\u010det pozitivn\u00edch s nedokon\u010den\u00fdm o\u010dkov\u00e1n\u00edm (pouze 1. d\u00e1vka u dvoud\u00e1vkov\u00e9 vakc\u00edny) v dan\u00e9 v\u011bkov\u00e9 kategorii."
+            },
+            {
+                "name": "pozitivni_dokoncene_ockovani",
+                "titles": "pozitivni_dokoncene_ockovani",
+                "datatype": "integer",
+                "dc:description": "Po\u010det pozitivn\u00edch s dokon\u010den\u00fdm o\u010dkov\u00e1n\u00edm (v\u00edce ne\u017e 14 dn\u00ed po 2. d\u00e1vce dvoud\u00e1vkov\u00e9 vakc\u00edny nebo v\u00edce ne\u017e 14 dn\u00ed po jednod\u00e1vkov\u00e9 vakcinaci) v dan\u00e9 v\u011bkov\u00e9 kategorii."
+            },
+            {
+                "name": "pozitivni_posilujici_davka",
+                "titles": "pozitivni_posilujici_davka",
+                "datatype": "integer",
+                "dc:description": "Po\u010det pozitivn\u00edch s dokon\u010den\u00fdm o\u010dkov\u00e1n\u00edm v\u010detn\u011b posiluj\u00edc\u00ed d\u00e1vky v dan\u00e9 v\u011bkov\u00e9 kategorii."
+            }
+        ]
+    }
+}

@@ -1,0 +1,103 @@
+{
+    "@context": [
+        "http:\/\/www.w3.org\/ns\/csvw",
+        {
+            "@language": "cs"
+        }
+    ],
+    "url": "testy-kraje.csv",
+    "dc:title": "testy-kraje",
+    "dc:description": "Datov\u00e1 sada obsahuj\u00edc\u00ed denn\u00ed po\u010dty proveden\u00fdch test\u016f s rozli\u0161en\u00edm na PCR testy a antigenn\u00ed testy na onemocn\u011bn\u00ed COVID-19 dle hl\u00e1\u0161en\u00ed laborato\u0159\u00ed s rozd\u011blen\u00edm na kraje \u010cR. D\u00e1le jsou v sad\u011b uvedeny po\u010dty test\u016f dle indikace (diagnostick\u00e9 indikace, epidemiologick\u00e9 indikace, preventivn\u00ed a plo\u0161n\u00e9 testov\u00e1n\u00ed, ostatn\u00ed), pozitivn\u00ed z\u00e1chyty dle indikace testu a pozitivn\u00ed z\u00e1chyty dle typu testu (symptomy jsou objektivn\u011b vy\u0161et\u0159eny u indikovan\u00fdch osob, v r\u00e1mci plo\u0161n\u00e9ho testov\u00e1n\u00ed jde o vyj\u00e1d\u0159en\u00ed subjektivn\u00edho posouzen\u00ed testovan\u00e9ho). Zdrojem dat je centr\u00e1ln\u00ed Informa\u010dn\u00ed syst\u00e9m infek\u010dn\u00edch nemoc\u00ed (ISIN). Prim\u00e1rn\u00ed data byla analyticky zpracov\u00e1na a n\u00e1sledn\u011b transformov\u00e1na do podoby publikovateln\u00e9 online t\u00fdmem \u00daZIS \u010cR.",
+    "dc:source": "Informa\u010dn\u00ed syst\u00e9m infek\u010dn\u00edch nemoc\u00ed (ISIN) - https:\/\/www.uzis.cz\/index.php?pg=registry-sber-dat--ochrana-verejneho-zdravi--informacni-system-infekcni-nemoci, kontakt: helpdesk.registry@uzis.cz",
+    "dcat:keyword": [
+        "koronavirus",
+        "covid-19",
+        "PCR testy",
+        "Antigenn\u00ed testy",
+        "Diagnostick\u00e9 indikace",
+        "Epidemiologick\u00e9 indikace",
+        "Preventivn\u00ed a plo\u0161n\u00e9 testov\u00e1n\u00ed"
+    ],
+    "dc:publisher": {
+        "schema:name": "\u00daZIS \u010cR",
+        "schema:url": {
+            "@id": "https:\/\/www.uzis.cz\/"
+        }
+    },
+    "dc:license": {
+        "@id": "https:\/\/data.gov.cz\/podm\u00ednky-u\u017eit\u00ed\/voln\u00fd-p\u0159\u00edstup\/"
+    },
+    "dc:modified": {
+        "@value": "2021-11-20",
+        "@type": "xsd:date"
+    },
+    "tableSchema": {
+        "columns": [
+            {
+                "name": "id",
+                "titles": "id",
+                "datatype": "string"
+            },
+            {
+                "name": "datum",
+                "titles": "datum",
+                "datatype": "string",
+                "dc:description": "Datum."
+            },
+            {
+                "name": "kraj_nuts_kod",
+                "titles": "kraj_nuts_kod",
+                "datatype": "string",
+                "dc:description": "Identifik\u00e1tor kraje podle klasifikace NUTS 3."
+            },
+            {
+                "name": "kraj_nazev",
+                "titles": "kraj_nazev",
+                "datatype": "string",
+                "dc:description": "N\u00e1zev kraje."
+            },
+            {
+                "name": "kumulativni_pocet_testu",
+                "titles": "kumulativni_pocet_testu",
+                "datatype": "integer",
+                "dc:description": "Kumulativn\u00ed po\u010det v\u0161ech proveden\u00fdch test\u016f v dan\u00e9m kraji."
+            },
+            {
+                "name": "pocet_PCR_testy",
+                "titles": "pocet_PCR_testy",
+                "datatype": "integer",
+                "dc:description": "P\u0159\u00edr\u016fstkov\u00fd po\u010det proveden\u00fdch PCR test\u016f."
+            },
+            {
+                "name": "pocet_AG_testy",
+                "titles": "pocet_AG_testy",
+                "datatype": "integer",
+                "dc:description": "P\u0159\u00edr\u016fstkov\u00fd po\u010det proveden\u00fdch antigenn\u00edch test\u016f."
+            },
+            {
+                "name": "typologie_test_indik_diagnosticka",
+                "titles": "typologie_test_indik_diagnosticka",
+                "datatype": "integer",
+                "dc:description": "Diagnostick\u00e9 indikace."
+            },
+            {
+                "name": "typologie_test_indik_epidemiologicka",
+                "titles": "typologie_test_indik_epidemiologicka",
+                "datatype": "integer",
+                "dc:description": "Epidemiologick\u00e9 indikace."
+            },
+            {
+                "name": "typologie_test_indik_preventivni",
+                "titles": "typologie_test_indik_preventivni",
+                "datatype": "integer",
+                "dc:description": "Preventivn\u00ed a plo\u0161n\u00e9 testov\u00e1n\u00ed."
+            },
+            {
+                "name": "typologie_test_indik_ostatni",
+                "titles": "typologie_test_indik_ostatni",
+                "datatype": "integer",
+                "dc:description": "Ostatn\u00ed."
+            }
+        ]
+    }
+}
