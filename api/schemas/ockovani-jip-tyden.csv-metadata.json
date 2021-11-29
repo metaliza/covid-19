@@ -7,7 +7,7 @@
     ],
     "url": "ockovani-jip-tyden.csv",
     "dc:title": "ockovani-jip-tyden",
-    "dc:description": "Datov\u00e1 sada obsahuje po\u010det hospitalizovan\u00fdch osob na jednotce intenzivn\u00ed p\u00e9\u010de (JIP) dle rozd\u011blen\u00ed do jednotliv\u00fdch v\u011bkov\u00fdch kategori\u00ed. Ka\u017ed\u00fd \u0159\u00e1dek ud\u00e1v\u00e1 souhrnn\u00e9 \u00fadaje osob v dan\u00fd t\u00fdden a v dan\u00e9 v\u011bkov\u00e9 kategorii rozd\u011blen\u00fdch do skupin podle stavu o\u010dkovanosti: bez o\u010dkov\u00e1n\u00ed, s nedokon\u010den\u00fdm o\u010dkov\u00e1n\u00edm, s dokon\u010den\u00fdm o\u010dkov\u00e1n\u00edm nebo s dokon\u010den\u00fdm o\u010dkov\u00e1n\u00edm v\u010detn\u011b posiluj\u00edc\u00ed d\u00e1vky.",
+    "dc:description": "Datov\u00e1 sada obsahuje po\u010det nov\u011b hospitalizovan\u00fdch osob na jednotce intenzivn\u00ed p\u00e9\u010de (JIP) dle rozd\u011blen\u00ed do jednotliv\u00fdch v\u011bkov\u00fdch kategori\u00ed. Ka\u017ed\u00fd \u0159\u00e1dek ud\u00e1v\u00e1 souhrnn\u00e9 \u00fadaje osob v dan\u00fd t\u00fdden a v dan\u00e9 v\u011bkov\u00e9 kategorii rozd\u011blen\u00fdch do skupin podle stavu o\u010dkovanosti: bez o\u010dkov\u00e1n\u00ed, s nedokon\u010den\u00fdm o\u010dkov\u00e1n\u00edm, s dokon\u010den\u00fdm o\u010dkov\u00e1n\u00edm nebo s dokon\u010den\u00fdm o\u010dkov\u00e1n\u00edm v\u010detn\u011b posiluj\u00edc\u00ed d\u00e1vky.",
     "dc:source": "Informa\u010dn\u00ed syst\u00e9m infek\u010dn\u00edch nemoc\u00ed (ISIN) - https:\/\/www.uzis.cz\/index.php?pg=registry-sber-dat--ochrana-verejneho-zdravi--informacni-system-infekcni-nemoci, kontakt: helpdesk.registry@uzis.cz",
     "dcat:keyword": [
         "koronavirus",
@@ -28,7 +28,7 @@
         "@id": "https:\/\/data.gov.cz\/podm\u00ednky-u\u017eit\u00ed\/voln\u00fd-p\u0159\u00edstup\/"
     },
     "dc:modified": {
-        "@value": "2021-11-20",
+        "@value": "2021-11-28",
         "@type": "xsd:date"
     },
     "tableSchema": {

@@ -29,7 +29,7 @@
         "@id": "https:\/\/data.gov.cz\/podm\u00ednky-u\u017eit\u00ed\/voln\u00fd-p\u0159\u00edstup\/"
     },
     "dc:modified": {
-        "@value": "2021-11-18",
+        "@value": "2021-11-28",
         "@type": "xsd:date"
     },
     "tableSchema": {
@@ -176,6 +176,12 @@
                 "titles": "ukoncujici_davka",
                 "datatype": "boolean",
                 "dc:description": "Ur\u010den\u00ed, zda osoba, kter\u00e9 odpov\u00edd\u00e1 vyk\u00e1zan\u00e9 o\u010dkov\u00e1n\u00ed (bez ohledu na po\u0159ad\u00ed d\u00e1vky), obdr\u017eela ukon\u010duj\u00edc\u00ed d\u00e1vku. Prost\u0159ednictv\u00edm tohoto p\u0159\u00edznaku je mo\u017en\u00e9 rozli\u0161it ty osoby, kter\u00e9 prozat\u00edm nemaj\u00ed ukon\u010den\u00e9 o\u010dkov\u00e1n\u00ed."
+            },
+            {
+                "name": "bez_registrace",
+                "titles": "bez_registrace",
+                "datatype": "boolean",
+                "dc:description": "Ur\u010den\u00ed, zda vyk\u00e1zan\u00e9 o\u010dkov\u00e1n\u00ed dan\u00e9 osoby (bez ohledu na po\u0159ad\u00ed d\u00e1vky) bylo provedeno bez p\u0159edchoz\u00ed registrace v centr\u00e1ln\u00edm syst\u00e9mu (typicky ve walk-in centrech)."
             }
         ]
     }
