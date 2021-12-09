@@ -30,7 +30,7 @@ if [ -d "$target" ]; then
   if [ -d "${prefix}0" ]; then
     tar -cf - ${prefix}0 | xz -9 > $target/${prefix}0.tar.xz
   fi
-  if [ -d "${prefix}0" ]; then
+  if [ -d "${prefix}1" ]; then
     tar -cf - ${prefix}1 | xz -9 > $target/${prefix}1.tar.xz
   fi
   
