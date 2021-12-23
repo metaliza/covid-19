@@ -24,8 +24,8 @@
         "@id": "https:\/\/data.gov.cz\/podm\u00ednky-u\u017eit\u00ed\/voln\u00fd-p\u0159\u00edstup\/"
     },
     "dc:modified": {
-        "@value": "2021-11-18",
-        "@type": "xsd:date"
+        "@value": "2021-12-23T04:41:02+01:00",
+        "@type": "xsd:dateTime"
     },
     "tableSchema": {
         "columns": [
