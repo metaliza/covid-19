@@ -1,0 +1,172 @@
+{
+    "@context": [
+        "http:\/\/www.w3.org\/ns\/csvw",
+        {
+            "@language": "cs"
+        }
+    ],
+    "url": "ockovani-pozitivni-hospitalizovani.csv",
+    "dc:title": "ockovani-pozitivni-hospitalizovani",
+    "dc:description": "Datov\u00e1 sada poskytuje \u0159\u00e1dkov\u00e1 anonymizovan\u00e1 data o osob\u00e1ch s proveden\u00fdm o\u010dkov\u00e1n\u00edm v\u010detn\u011b informace o prok\u00e1zan\u00e9 n\u00e1kaze SARS-CoV-2. Ka\u017ed\u00fd \u0159\u00e1dek p\u0159ehledu uv\u00e1d\u00ed detailn\u00ed popis osoby (datum prvn\u00ed, druh\u00e9  nebo posiluj\u00edc\u00ed d\u00e1vky, datum dokon\u010den\u00e9ho  o\u010dkov\u00e1n\u00ed) podle bydli\u0161t\u011b o\u010dkovan\u00e9 osoby, v\u011bkov\u00e9 kategorie a o\u010dkovac\u00ed l\u00e1tky. V sad\u011b jsou uvedeny stavy p\u0159ed a po o\u010dkov\u00e1n\u00ed z pohledu indikace testu, pozitivity, hospitalizace a l\u00e9\u010dby na jednotce intenzivn\u00ed p\u00e9\u010de (JIP) s onemocn\u011bn\u00edm COVID-19. Hrani\u010dn\u00ed datum pro definici o\u010dkov\u00e1n\u00ed je v\u017edy 14 dn\u00ed po datu dokon\u010den\u00ed o\u010dkov\u00e1n\u00ed.",
+    "dc:source": "Informa\u010dn\u00ed syst\u00e9m infek\u010dn\u00edch nemoc\u00ed (ISIN) - https:\/\/www.uzis.cz\/index.php?pg=registry-sber-dat--ochrana-verejneho-zdravi--informacni-system-infekcni-nemoci, kontakt: helpdesk.registry@uzis.cz",
+    "dcat:keyword": [
+        "koronavirus",
+        "covid-19",
+        "o\u010dkov\u00e1n\u00ed",
+        "vakcinace",
+        "kraj",
+        "v\u011bkov\u00e1 kategorie",
+        "indikace testu",
+        "prok\u00e1zan\u00e1 n\u00e1kaza",
+        "hospitalizace",
+        "JIP"
+    ],
+    "dc:publisher": {
+        "schema:name": "\u00daZIS \u010cR",
+        "schema:url": {
+            "@id": "https:\/\/www.uzis.cz\/"
+        }
+    },
+    "dc:license": {
+        "@id": "https:\/\/data.gov.cz\/podm\u00ednky-u\u017eit\u00ed\/voln\u00fd-p\u0159\u00edstup\/"
+    },
+    "dc:modified": {
+        "@value": "2021-12-26T10:49:27+01:00",
+        "@type": "xsd:dateTime"
+    },
+    "tableSchema": {
+        "columns": [
+            {
+                "name": "id",
+                "titles": "id",
+                "datatype": "string"
+            },
+            {
+                "name": "kraj_bydliste_nazev",
+                "titles": "kraj_bydliste_nazev",
+                "datatype": "string",
+                "dc:description": "N\u00e1zev kraje, ve kter\u00e9m se nach\u00e1z\u00ed bydli\u0161t\u011b o\u010dkovan\u00e9 osoby."
+            },
+            {
+                "name": "kraj_bydliste_kod",
+                "titles": "kraj_bydliste_kod",
+                "datatype": "string",
+                "dc:description": "Identifik\u00e1tor kraje podle klasifikace NUTS 3, ve kter\u00e9m se nach\u00e1z\u00ed bydli\u0161t\u011b o\u010dkovan\u00e9 osoby."
+            },
+            {
+                "name": "orp_bydliste_nazev",
+                "titles": "orp_bydliste_nazev",
+                "datatype": "string",
+                "dc:description": "N\u00e1zev obce s roz\u0161\u00ed\u0159enou p\u016fsobnost\u00ed, ve kter\u00e9 se nach\u00e1z\u00ed bydli\u0161t\u011b o\u010dkovan\u00e9 osoby."
+            },
+            {
+                "name": "orp_bydliste_kod",
+                "titles": "orp_bydliste_kod",
+                "datatype": "integer",
+                "dc:description": "Identifik\u00e1tor na \u00farovni k\u00f3du obce s roz\u0161\u00ed\u0159enou p\u016fsobnost\u00ed podle \u010d\u00edseln\u00edku \u00daZIS \u010cR (https:\/\/pzu-api.uzis.cz\/api\/orp), ve kter\u00e9m se nach\u00e1z\u00ed bydli\u0161t\u011b o\u010dkovan\u00e9 osoby."
+            },
+            {
+                "name": "vekova_kategorie",
+                "titles": "vekova_kategorie",
+                "datatype": "string",
+                "dc:description": "Rozd\u011blen\u00ed o\u010dkovan\u00fdch osob podle v\u011bku do skupin (0\u201311, 12\u201315, 16\u201317, 18\u201324, 25\u201329, 30\u201334, 35\u201339, 40\u201344, 45\u201349, 50\u201354, 55\u201359, 60\u201364, 65\u201369, 70\u201374, 75\u201379, 80\u201384, 85+, neza\u0159azeno \u2013 nelze ur\u010dit v\u011bkovou skupinu)."
+            },
+            {
+                "name": "ockovaci_latka_nazev",
+                "titles": "ockovaci_latka_nazev",
+                "datatype": "string",
+                "dc:description": "N\u00e1zev o\u010dkovac\u00ed l\u00e1tky (ur\u010deno podle prvn\u00ed podan\u00e9 d\u00e1vky)."
+            },
+            {
+                "name": "ockovaci_latka_kod",
+                "titles": "ockovaci_latka_kod",
+                "datatype": "string",
+                "dc:description": "K\u00f3d o\u010dkovac\u00ed l\u00e1tky (ur\u010deno podle prvn\u00ed podan\u00e9 d\u00e1vky)."
+            },
+            {
+                "name": "prvni_davka",
+                "titles": "prvni_davka",
+                "datatype": "string",
+                "dc:description": "Datum, kdy byla pod\u00e1na prvn\u00ed d\u00e1vka o\u010dkov\u00e1n\u00ed (o\u010dkov\u00e1n\u00ed 27. 12. 2020 \u2013 31. 12. 2020 jsou n\u00e1hodn\u011b p\u0159esunuta do 1. t\u00fddne roku 2021)."
+            },
+            {
+                "name": "druha_davka",
+                "titles": "druha_davka",
+                "datatype": "string",
+                "dc:description": "Datum, kdy byla pod\u00e1na druh\u00e1 d\u00e1vka o\u010dkov\u00e1n\u00ed."
+            },
+            {
+                "name": "dokoncene_ockovani",
+                "titles": "dokoncene_ockovani",
+                "datatype": "string",
+                "dc:description": "Datum dokon\u010den\u00e9ho o\u010dkov\u00e1n\u00ed (15 dn\u00ed po 2. d\u00e1vce dvoud\u00e1vkov\u00e9 vakc\u00edny nebo 15 dn\u00ed po jednod\u00e1vkov\u00e9 vakcinaci)."
+            },
+            {
+                "name": "posilujici_davka",
+                "titles": "posilujici_davka",
+                "datatype": "string",
+                "dc:description": "Datum, kdy byla pod\u00e1na posiluj\u00edc\u00ed d\u00e1vka o\u010dkov\u00e1n\u00ed."
+            },
+            {
+                "name": "indikace_pred_ockovanim",
+                "titles": "indikace_pred_ockovanim",
+                "datatype": "string",
+                "dc:description": "Indikace testu prokazuj\u00edc\u00edho n\u00e1kazu dan\u00e9 osoby SARS-CoV-2 p\u0159ed o\u010dkov\u00e1n\u00edm (diagnostick\u00e1 indikace, epidemiologick\u00e1 indikace, preventivn\u00ed a plo\u0161n\u00e9 testov\u00e1n\u00ed, ostatn\u00ed)."
+            },
+            {
+                "name": "pozivita_pred_ockovanim",
+                "titles": "pozivita_pred_ockovanim",
+                "datatype": "boolean",
+                "dc:description": "Ur\u010duje, zda byla u dan\u00e9 osoby p\u0159ed o\u010dkov\u00e1n\u00edm prok\u00e1z\u00e1na n\u00e1kaza SARS-CoV-2."
+            },
+            {
+                "name": "pozivita_pred_ockovanim_datum",
+                "titles": "pozivita_pred_ockovanim_datum",
+                "datatype": "string",
+                "dc:description": "Datum, kdy byla u dan\u00e9 osoby p\u0159ed o\u010dkov\u00e1n\u00edm prok\u00e1z\u00e1na n\u00e1kaza SARS-CoV-2, ve form\u00e1tu m\u011bs\u00edc a rok."
+            },
+            {
+                "name": "hospitalizace_pred_ockovanim",
+                "titles": "hospitalizace_pred_ockovanim",
+                "datatype": "boolean",
+                "dc:description": "Ur\u010duje, zda byla dan\u00e1 osoba p\u0159ed o\u010dkov\u00e1n\u00edm hospitalizov\u00e1na s prok\u00e1zanou n\u00e1kazou SARS-CoV-2."
+            },
+            {
+                "name": "jip_pred_ockovanim",
+                "titles": "jip_pred_ockovanim",
+                "datatype": "boolean",
+                "dc:description": "Ur\u010duje, zda byla dan\u00e1 osoba p\u0159ed o\u010dkov\u00e1n\u00edm um\u00edst\u011bna na jednotku intenzivn\u00ed p\u00e9\u010de (JIP) s prok\u00e1zanou n\u00e1kazou SARS-CoV-2."
+            },
+            {
+                "name": "indikace_po_ockovani",
+                "titles": "indikace_po_ockovani",
+                "datatype": "string",
+                "dc:description": "Indikace testu prokazuj\u00edc\u00edho pozitivitu dan\u00e9 osoby po o\u010dkov\u00e1n\u00ed (diagnostick\u00e1 indikace, epidemiologick\u00e1 indikace, preventivn\u00ed a plo\u0161n\u00e9 testov\u00e1n\u00ed, ostatn\u00ed)."
+            },
+            {
+                "name": "pozivita_po_ockovani",
+                "titles": "pozivita_po_ockovani",
+                "datatype": "boolean",
+                "dc:description": "Ur\u010duje, zda byla u dan\u00e9 osoby po o\u010dkov\u00e1n\u00ed prok\u00e1z\u00e1na n\u00e1kaza SARS-CoV-2."
+            },
+            {
+                "name": "pozivita_po_ockovani_datum",
+                "titles": "pozivita_po_ockovani_datum",
+                "datatype": "string",
+                "dc:description": "Datum, kdy byla u dan\u00e9 osoby po o\u010dkov\u00e1n\u00ed prok\u00e1z\u00e1na n\u00e1kaza SARS-CoV-2, ve form\u00e1tu m\u011bs\u00edc a rok."
+            },
+            {
+                "name": "hospitalizace_po_ockovani",
+                "titles": "hospitalizace_po_ockovani",
+                "datatype": "boolean",
+                "dc:description": "Ur\u010duje, zda byla dan\u00e1 osoba po o\u010dkov\u00e1n\u00ed hospitalizov\u00e1na s prok\u00e1zanou n\u00e1kazou SARS-CoV-2."
+            },
+            {
+                "name": "jip_po_ockovani",
+                "titles": "jip_po_ockovani",
+                "datatype": "boolean",
+                "dc:description": "Ur\u010duje, zda byla dan\u00e1 osoba  po o\u010dkov\u00e1n\u00ed um\u00edst\u011bna na jednotku intenzivn\u00ed p\u00e9\u010de (JIP) s prok\u00e1zanou n\u00e1kazou SARS-CoV-2."
+            }
+        ]
+    }
+}

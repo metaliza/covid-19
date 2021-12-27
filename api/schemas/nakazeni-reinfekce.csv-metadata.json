@@ -1,0 +1,193 @@
+{
+    "@context": [
+        "http:\/\/www.w3.org\/ns\/csvw",
+        {
+            "@language": "cs"
+        }
+    ],
+    "url": "nakazeni-reinfekce.csv",
+    "dc:title": "nakazeni-reinfekce",
+    "dc:description": "Datov\u00e1 sada poskytuje agregovan\u00e1 data o nov\u011b prok\u00e1zan\u00fdch n\u00e1kaz\u00e1ch  SARS-CoV-2. Ka\u017ed\u00fd \u0159\u00e1dek p\u0159ehledu uv\u00e1d\u00ed po\u010dty osob z pohledu nov\u011b potvrzen\u00fdch p\u0159\u00edpad\u016f, opakovan\u011b potvrzen\u00fdch p\u0159\u00edpad\u016f (reinfekc\u00ed), potvrzen\u00fdch p\u0159\u00edpad\u016f ve vztahu k nedokon\u010den\u00e9mu o\u010dkov\u00e1n\u00ed, dokon\u010den\u00e9mu o\u010dkov\u00e1n\u00ed a prod\u011blan\u00e9 n\u00e1kaze SARS-CoV-2, hospitalizaci a l\u00e9\u010db\u011b na jednotce intenzivn\u00ed p\u00e9\u010de (JIP).",
+    "dc:source": "Informa\u010dn\u00ed syst\u00e9m infek\u010dn\u00edch nemoc\u00ed (ISIN) - https:\/\/www.uzis.cz\/index.php?pg=registry-sber-dat--ochrana-verejneho-zdravi--informacni-system-infekcni-nemoci, kontakt: helpdesk.registry@uzis.cz",
+    "dcat:keyword": [
+        "koronavirus",
+        "covid-19",
+        "o\u010dkov\u00e1n\u00ed",
+        "vakcinace",
+        "hospitalizace",
+        "JIP",
+        "reinfekce"
+    ],
+    "dc:publisher": {
+        "schema:name": "\u00daZIS \u010cR",
+        "schema:url": {
+            "@id": "https:\/\/www.uzis.cz\/"
+        }
+    },
+    "dc:license": {
+        "@id": "https:\/\/data.gov.cz\/podm\u00ednky-u\u017eit\u00ed\/voln\u00fd-p\u0159\u00edstup\/"
+    },
+    "dc:modified": {
+        "@value": "2021-12-27T04:53:48+01:00",
+        "@type": "xsd:dateTime"
+    },
+    "tableSchema": {
+        "columns": [
+            {
+                "name": "id",
+                "titles": "id",
+                "datatype": "string"
+            },
+            {
+                "name": "datum",
+                "titles": "datum",
+                "datatype": "string",
+                "dc:description": "Datum, ke kter\u00e9mu se vztahuj\u00ed jednotliv\u00e9 agregovan\u00e9 po\u010dty (viz dal\u0161\u00ed atributy datov\u00e9 sady)."
+            },
+            {
+                "name": "nove_pripady",
+                "titles": "nove_pripady",
+                "datatype": "integer",
+                "dc:description": "Po\u010det osob s nov\u011b prok\u00e1zanou n\u00e1kazou SARS-CoV-2. S ohledem na fakt, \u017ee u publikovan\u00fdch dat prob\u00edh\u00e1 validace a pr\u016fb\u011b\u017en\u00e9 dopl\u0148ov\u00e1n\u00ed hl\u00e1\u0161en\u00ed, jsou po\u010dty osob s laboratorn\u011b prok\u00e1zanou n\u00e1kazou SARS-CoV-2 dle hl\u00e1\u0161en\u00ed KHS a laborato\u0159\u00ed uv\u00e1d\u011bny k datu hl\u00e1\u0161en\u00ed do syst\u00e9mu a mohou se zp\u011btn\u011b m\u011bnit."
+            },
+            {
+                "name": "nove_reinfekce",
+                "titles": "nove_reinfekce",
+                "datatype": "integer",
+                "dc:description": "Po\u010det osob s nov\u011b prok\u00e1zanou opakovanou n\u00e1kazou (reinfekc\u00ed) SARS-CoV-2, kter\u00e9 nejsou zahrnuty mezi nov\u011b potvrzen\u00fdmi p\u0159\u00edpady n\u00e1kazy. S ohledem  na  fakt, \u017ee u publikovan\u00fdch dat prob\u00edh\u00e1 validace a pr\u016fb\u011b\u017en\u00e9 dopl\u0148ov\u00e1n\u00ed hl\u00e1\u0161en\u00ed, jsou po\u010dty osob s laboratorn\u011b prok\u00e1zanou n\u00e1kazou SARS-CoV-2 dle hl\u00e1\u0161en\u00ed KHS a laborato\u0159\u00ed uv\u00e1d\u011bny k datu hl\u00e1\u0161en\u00ed do syst\u00e9mu a mohou se zp\u011btn\u011b m\u011bnit."
+            },
+            {
+                "name": "pripady_neockovani_neprodelali",
+                "titles": "pripady_neockovani_neprodelali",
+                "datatype": "integer",
+                "dc:description": "Po\u010det osob s prok\u00e1zanou n\u00e1kazou SARS-CoV-2, kter\u00e9 nejsou o\u010dkov\u00e1ny nebo nemaj\u00ed doposud dokon\u010den\u00e9 o\u010dkov\u00e1n\u00ed a sou\u010dasn\u011b neprod\u011blaly v minulosti n\u00e1kazu SARS-CoV-2."
+            },
+            {
+                "name": "pripady_neockovani_prodelali",
+                "titles": "pripady_neockovani_prodelali",
+                "datatype": "integer",
+                "dc:description": "Po\u010det osob s prok\u00e1zanou n\u00e1kazou SARS-CoV-2, kter\u00e9 nejsou o\u010dkov\u00e1ny nebo nemaj\u00ed doposud dokon\u010den\u00e9 o\u010dkov\u00e1n\u00ed a sou\u010dasn\u011b prod\u011blaly v minulosti n\u00e1kazu SARS-CoV-2."
+            },
+            {
+                "name": "pripady_ockovani_neprodelali",
+                "titles": "pripady_ockovani_neprodelali",
+                "datatype": "integer",
+                "dc:description": "Po\u010det osob s prok\u00e1zanou n\u00e1kazou SARS-CoV-2, kter\u00e9 jsou o\u010dkov\u00e1ny a sou\u010dasn\u011b neprod\u011blaly v minulosti n\u00e1kazu SARS-CoV-2."
+            },
+            {
+                "name": "pripady_ockovani_prodelali",
+                "titles": "pripady_ockovani_prodelali",
+                "datatype": "integer",
+                "dc:description": "Po\u010det osob s prok\u00e1zanou n\u00e1kazou SARS-CoV-2, kter\u00e9 jsou o\u010dkov\u00e1ny a sou\u010dasn\u011b prod\u011blaly v minulosti n\u00e1kazu SARS-CoV-2."
+            },
+            {
+                "name": "hospitalizace_bez_reinfekce",
+                "titles": "hospitalizace_bez_reinfekce",
+                "datatype": "integer",
+                "dc:description": "Po\u010det aktu\u00e1ln\u011b hospitalizovan\u00fdch osob (bez reinfekc\u00ed) s prok\u00e1zanou n\u00e1kazou SARS-CoV-2."
+            },
+            {
+                "name": "hospitalizace_vcetne_reinfekce",
+                "titles": "hospitalizace_vcetne_reinfekce",
+                "datatype": "integer",
+                "dc:description": "Po\u010det aktu\u00e1ln\u011b hospitalizovan\u00fdch osob (v\u010detn\u011b reinfekc\u00ed) s prok\u00e1zanou n\u00e1kazou SARS-CoV-2."
+            },
+            {
+                "name": "hospitalizace_pouze_reinfekce",
+                "titles": "hospitalizace_pouze_reinfekce",
+                "datatype": "integer",
+                "dc:description": "Po\u010det aktu\u00e1ln\u011b hospitalizovan\u00fdch osob (pouze s reinfekc\u00ed) s prok\u00e1zanou n\u00e1kazou SARS-CoV-2."
+            },
+            {
+                "name": "nove_hospitalizace",
+                "titles": "nove_hospitalizace",
+                "datatype": "integer",
+                "dc:description": "Po\u010det nov\u011b hospitalizovan\u00fdch osob bez hospitalizace v minulosti s prok\u00e1zanou n\u00e1kazou SARS-CoV-2."
+            },
+            {
+                "name": "nove_hospitalizace_komplet",
+                "titles": "nove_hospitalizace_komplet",
+                "datatype": "integer",
+                "dc:description": "Po\u010det nov\u011b hospitalizovan\u00fdch osob bez ohledu na p\u0159edchoz\u00ed hospitalizace s prok\u00e1zanou n\u00e1kazou SARS-CoV-2."
+            },
+            {
+                "name": "hospitalizace_neockovani_neprodelali",
+                "titles": "hospitalizace_neockovani_neprodelali",
+                "datatype": "integer",
+                "dc:description": "Po\u010det aktu\u00e1ln\u011b hospitalizovan\u00fdch  osob, kter\u00e9 nejsou o\u010dkov\u00e1ny nebo nemaj\u00ed doposud dokon\u010den\u00e9 o\u010dkov\u00e1n\u00ed a sou\u010dasn\u011b neprod\u011blaly v minulosti n\u00e1kazu SARS-CoV-2."
+            },
+            {
+                "name": "hospitalizace_neockovani_prodelali",
+                "titles": "hospitalizace_neockovani_prodelali",
+                "datatype": "integer",
+                "dc:description": "Po\u010det aktu\u00e1ln\u011b hospitalizovan\u00fdch osob, kter\u00e9 nejsou o\u010dkov\u00e1ny nebo nemaj\u00ed doposud dokon\u010den\u00e9 o\u010dkov\u00e1n\u00ed a sou\u010dasn\u011b prod\u011blaly v minulosti n\u00e1kazu SARS-CoV-2."
+            },
+            {
+                "name": "hospitalizace_ockovani_neprodelali",
+                "titles": "hospitalizace_ockovani_neprodelali",
+                "datatype": "integer",
+                "dc:description": "Po\u010det aktu\u00e1ln\u011b hospitalizovan\u00fdch osob, kter\u00e9 jsou o\u010dkov\u00e1ny a sou\u010dasn\u011b neprod\u011blaly v minulosti n\u00e1kazu SARS-CoV-2."
+            },
+            {
+                "name": "hospitalizace_ockovani_prodelali",
+                "titles": "hospitalizace_ockovani_prodelali",
+                "datatype": "integer",
+                "dc:description": "Po\u010det aktu\u00e1ln\u011b hospitalizovan\u00fdch osob, kter\u00e9 jsou o\u010dkov\u00e1ny a sou\u010dasn\u011b prod\u011blaly v minulosti n\u00e1kazu SARS-CoV-2."
+            },
+            {
+                "name": "jip_bez_reinfekce",
+                "titles": "jip_bez_reinfekce",
+                "datatype": "integer",
+                "dc:description": "Po\u010det aktu\u00e1ln\u011b l\u00e9\u010den\u00fdch osob na JIP (bez reinfekc\u00ed) s prok\u00e1zanou n\u00e1kazou SARS-CoV-2."
+            },
+            {
+                "name": "jip_vcetne_reinfekce",
+                "titles": "jip_vcetne_reinfekce",
+                "datatype": "integer",
+                "dc:description": "Po\u010det aktu\u00e1ln\u011b l\u00e9\u010den\u00fdch osob na JIP (v\u010detn\u011b reinfekc\u00ed) s prok\u00e1zanou n\u00e1kazou SARS-CoV-2."
+            },
+            {
+                "name": "jip_pouze_reinfekce",
+                "titles": "jip_pouze_reinfekce",
+                "datatype": "integer",
+                "dc:description": "Po\u010det aktu\u00e1ln\u011b l\u00e9\u010den\u00fdch osob na JIP (pouze s reinfekc\u00ed) s prok\u00e1zanou n\u00e1kazou SARS-CoV-2."
+            },
+            {
+                "name": "nove_jip",
+                "titles": "nove_jip",
+                "datatype": "integer",
+                "dc:description": "Po\u010det nov\u011b l\u00e9\u010den\u00fdch osob na JIP bez p\u0159edchoz\u00ed hospitalizace s prok\u00e1zanou n\u00e1kazou SARS-CoV-2."
+            },
+            {
+                "name": "nove_jip_komplet",
+                "titles": "nove_jip_komplet",
+                "datatype": "integer",
+                "dc:description": "Po\u010det nov\u011b l\u00e9\u010den\u00fdch osob na JIP bez ohledu na  p\u0159edchoz\u00ed hospitalizace s prok\u00e1zanou n\u00e1kazou SARS-CoV-2."
+            },
+            {
+                "name": "jip_neockovani_neprodelali",
+                "titles": "jip_neockovani_neprodelali",
+                "datatype": "integer",
+                "dc:description": "Po\u010det osob aktu\u00e1ln\u011b l\u00e9\u010den\u00fdch na JIP, kter\u00e9 nejsou o\u010dkov\u00e1ny nebo nemaj\u00ed doposud dokon\u010den\u00e9 o\u010dkov\u00e1n\u00ed a sou\u010dasn\u011b neprod\u011blaly v minulosti n\u00e1kazu SARS-CoV-2."
+            },
+            {
+                "name": "jip_neockovani_prodelali",
+                "titles": "jip_neockovani_prodelali",
+                "datatype": "integer",
+                "dc:description": "Po\u010det osob aktu\u00e1ln\u011b l\u00e9\u010den\u00fdch na JIP, kter\u00e9 nejsou o\u010dkov\u00e1ny nebo nemaj\u00ed doposud dokon\u010den\u00e9 o\u010dkov\u00e1n\u00ed a sou\u010dasn\u011b prod\u011blaly v minulosti n\u00e1kazu SARS-CoV-2."
+            },
+            {
+                "name": "jip_ockovani_neprodelali",
+                "titles": "jip_ockovani_neprodelali",
+                "datatype": "integer",
+                "dc:description": "Po\u010det osob aktu\u00e1ln\u011b l\u00e9\u010den\u00fdch na JIP, kter\u00e9 jsou o\u010dkov\u00e1ny a sou\u010dasn\u011b neprod\u011blaly v minulosti n\u00e1kazu SARS-CoV-2."
+            },
+            {
+                "name": "jip_ockovani_prodelali",
+                "titles": "jip_ockovani_prodelali",
+                "datatype": "integer",
+                "dc:description": "Po\u010det osob aktu\u00e1ln\u011b l\u00e9\u010den\u00fdch na JIP, kter\u00e9 jsou o\u010dkov\u00e1ny a sou\u010dasn\u011b prod\u011blaly v minulosti n\u00e1kazu SARS-CoV-2."
+            }
+        ]
+    }
+}
