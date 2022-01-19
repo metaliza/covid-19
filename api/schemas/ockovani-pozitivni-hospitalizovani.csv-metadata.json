@@ -6,7 +6,7 @@
         }
     ],
     "url": "ockovani-pozitivni-hospitalizovani.csv",
-    "dc:title": "ockovani-pozitivni-hospitalizovani",
+    "dc:title": "COVID-19: P\u0159ehled osob s vyk\u00e1zan\u00fdm o\u010dkov\u00e1n\u00edm s ohledem na n\u00e1kazu SARS-CoV-2",
     "dc:description": "Datov\u00e1 sada poskytuje \u0159\u00e1dkov\u00e1 anonymizovan\u00e1 data o osob\u00e1ch s proveden\u00fdm o\u010dkov\u00e1n\u00edm v\u010detn\u011b informace o prok\u00e1zan\u00e9 n\u00e1kaze SARS-CoV-2. Ka\u017ed\u00fd \u0159\u00e1dek p\u0159ehledu uv\u00e1d\u00ed detailn\u00ed popis osoby (datum prvn\u00ed, druh\u00e9  nebo posiluj\u00edc\u00ed d\u00e1vky, datum dokon\u010den\u00e9ho  o\u010dkov\u00e1n\u00ed) podle bydli\u0161t\u011b o\u010dkovan\u00e9 osoby, v\u011bkov\u00e9 kategorie a o\u010dkovac\u00ed l\u00e1tky. V sad\u011b jsou uvedeny stavy p\u0159ed a po o\u010dkov\u00e1n\u00ed z pohledu indikace testu, pozitivity, hospitalizace a l\u00e9\u010dby na jednotce intenzivn\u00ed p\u00e9\u010de (JIP) s onemocn\u011bn\u00edm COVID-19. Hrani\u010dn\u00ed datum pro definici o\u010dkov\u00e1n\u00ed je v\u017edy 14 dn\u00ed po datu dokon\u010den\u00ed o\u010dkov\u00e1n\u00ed.",
     "dc:source": "Informa\u010dn\u00ed syst\u00e9m infek\u010dn\u00edch nemoc\u00ed (ISIN) - https:\/\/www.uzis.cz\/index.php?pg=registry-sber-dat--ochrana-verejneho-zdravi--informacni-system-infekcni-nemoci, kontakt: helpdesk.registry@uzis.cz",
     "dcat:keyword": [
@@ -31,7 +31,7 @@
         "@id": "https:\/\/data.gov.cz\/podm\u00ednky-u\u017eit\u00ed\/voln\u00fd-p\u0159\u00edstup\/"
     },
     "dc:modified": {
-        "@value": "2021-12-26T10:49:27+01:00",
+        "@value": "2022-01-15T11:02:31+01:00",
         "@type": "xsd:dateTime"
     },
     "tableSchema": {

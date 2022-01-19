@@ -6,7 +6,7 @@
         }
     ],
     "url": "ockovani-orp.csv",
-    "dc:title": "ockovani-orp",
+    "dc:title": "COVID-19: Denn\u00ed agregovan\u00fd p\u0159ehled vyk\u00e1zan\u00fdch o\u010dkov\u00e1n\u00ed",
     "dc:description": "Datov\u00e1 sada poskytuje agregovan\u00e1 data o vyk\u00e1zan\u00fdch o\u010dkov\u00e1n\u00edch proti onemocn\u011bn\u00ed COVID-19. Ka\u017ed\u00fd \u0159\u00e1dek p\u0159ehledu uv\u00e1d\u00ed po\u010det osob (s prvn\u00ed, druhou a posiluj\u00edc\u00ed d\u00e1vkou, s dokon\u010den\u00fdm o\u010dkov\u00e1n\u00edm) v dan\u00fd den rozd\u011blen\u00fd podle bydli\u0161t\u011b o\u010dkovan\u00e9 osoby na \u00farovni obce s roz\u0161\u00ed\u0159enou p\u016fsobnost\u00ed (ORP), v\u011bkov\u00e9 kategorie a o\u010dkovac\u00ed l\u00e1tky.",
     "dc:source": "Informa\u010dn\u00ed syst\u00e9m infek\u010dn\u00edch nemoc\u00ed (ISIN) - https:\/\/www.uzis.cz\/index.php?pg=registry-sber-dat--ochrana-verejneho-zdravi--informacni-system-infekcni-nemoci, kontakt: helpdesk.registry@uzis.cz",
     "dcat:keyword": [
@@ -27,7 +27,7 @@
         "@id": "https:\/\/data.gov.cz\/podm\u00ednky-u\u017eit\u00ed\/voln\u00fd-p\u0159\u00edstup\/"
     },
     "dc:modified": {
-        "@value": "2021-12-26T10:47:45+01:00",
+        "@value": "2022-01-15T11:00:42+01:00",
         "@type": "xsd:dateTime"
     },
     "tableSchema": {

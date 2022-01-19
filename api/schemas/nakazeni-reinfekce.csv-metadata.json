@@ -6,7 +6,7 @@
         }
     ],
     "url": "nakazeni-reinfekce.csv",
-    "dc:title": "nakazeni-reinfekce",
+    "dc:title": "COVID-19: P\u0159ehled osob s nov\u011b prok\u00e1zanou n\u00e1kazou",
     "dc:description": "Datov\u00e1 sada poskytuje agregovan\u00e1 data o nov\u011b prok\u00e1zan\u00fdch n\u00e1kaz\u00e1ch  SARS-CoV-2. Ka\u017ed\u00fd \u0159\u00e1dek p\u0159ehledu uv\u00e1d\u00ed po\u010dty osob z pohledu nov\u011b potvrzen\u00fdch p\u0159\u00edpad\u016f, opakovan\u011b potvrzen\u00fdch p\u0159\u00edpad\u016f (reinfekc\u00ed), potvrzen\u00fdch p\u0159\u00edpad\u016f ve vztahu k nedokon\u010den\u00e9mu o\u010dkov\u00e1n\u00ed, dokon\u010den\u00e9mu o\u010dkov\u00e1n\u00ed a prod\u011blan\u00e9 n\u00e1kaze SARS-CoV-2, hospitalizaci a l\u00e9\u010db\u011b na jednotce intenzivn\u00ed p\u00e9\u010de (JIP).",
     "dc:source": "Informa\u010dn\u00ed syst\u00e9m infek\u010dn\u00edch nemoc\u00ed (ISIN) - https:\/\/www.uzis.cz\/index.php?pg=registry-sber-dat--ochrana-verejneho-zdravi--informacni-system-infekcni-nemoci, kontakt: helpdesk.registry@uzis.cz",
     "dcat:keyword": [
@@ -28,7 +28,7 @@
         "@id": "https:\/\/data.gov.cz\/podm\u00ednky-u\u017eit\u00ed\/voln\u00fd-p\u0159\u00edstup\/"
     },
     "dc:modified": {
-        "@value": "2021-12-27T04:53:48+01:00",
+        "@value": "2022-01-19T04:55:01+01:00",
         "@type": "xsd:dateTime"
     },
     "tableSchema": {

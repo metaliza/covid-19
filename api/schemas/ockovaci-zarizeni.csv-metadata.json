@@ -6,7 +6,7 @@
         }
     ],
     "url": "ockovaci-zarizeni.csv",
-    "dc:title": "ockovaci-zarizeni",
+    "dc:title": "COVID-19: O\u010dkovac\u00ed za\u0159\u00edzen\u00ed",
     "dc:description": "Datov\u00e1 sada poskytuje seznam o\u010dkovac\u00edch za\u0159\u00edzen\u00ed v \u010cR jako dopln\u011bn\u00ed seznamu o\u010dkovac\u00edch m\u00edst, kde jsou pod\u00e1v\u00e1ny o\u010dkovac\u00ed l\u00e1tky proti onemocn\u011bn\u00ed COVID-19. Jedn\u00e1 se p\u0159edev\u0161\u00edm o praktick\u00e9 l\u00e9ka\u0159e, ale i dal\u0161\u00ed, kde se o\u010dkov\u00e1n\u00ed prov\u00e1d\u00ed.",
     "dc:source": "Informa\u010dn\u00ed syst\u00e9m infek\u010dn\u00edch nemoc\u00ed (ISIN) - https:\/\/www.uzis.cz\/index.php?pg=registry-sber-dat--ochrana-verejneho-zdravi--informacni-system-infekcni-nemoci, kontakt: helpdesk.registry@uzis.cz",
     "dcat:keyword": [
@@ -25,7 +25,7 @@
         "@id": "https:\/\/data.gov.cz\/podm\u00ednky-u\u017eit\u00ed\/voln\u00fd-p\u0159\u00edstup\/"
     },
     "dc:modified": {
-        "@value": "2021-12-23T04:53:40+01:00",
+        "@value": "2022-01-19T04:54:52+01:00",
         "@type": "xsd:dateTime"
     },
     "tableSchema": {
@@ -100,6 +100,18 @@
                 "titles": "prakticky_lekar",
                 "datatype": "boolean",
                 "dc:description": "P\u0159\u00edznak, zda se jedn\u00e1 o praktick\u00e9ho l\u00e9ka\u0159e."
+            },
+            {
+                "name": "prakticky_lekar_deti",
+                "titles": "prakticky_lekar_deti",
+                "datatype": "boolean",
+                "dc:description": "P\u0159\u00edznak, zda se jedn\u00e1 o praktick\u00e9ho l\u00e9ka\u0159e pro d\u011bti a dorost."
+            },
+            {
+                "name": "prakticky_lekar_dospeli",
+                "titles": "prakticky_lekar_dospeli",
+                "datatype": "boolean",
+                "dc:description": "P\u0159\u00edznak, zda se jedn\u00e1 o praktick\u00e9ho l\u00e9ka\u0159e pro dosp\u011bl\u00e9."
             }
         ]
     }

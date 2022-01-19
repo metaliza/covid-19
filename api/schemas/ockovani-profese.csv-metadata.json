@@ -6,8 +6,8 @@
         }
     ],
     "url": "ockovani-profese.csv",
-    "dc:title": "ockovani-profese",
-    "dc:description": "Datov\u00e1 sada poskytuje \u0159\u00e1dkov\u00e1 data o vyk\u00e1zan\u00fdch o\u010dkov\u00e1n\u00edch na jednotliv\u00fdch o\u010dkovac\u00edch m\u00edstech \u010cR. Ka\u017ed\u00fd \u0159\u00e1dek p\u0159ehledu popisuje jedno vyk\u00e1zan\u00e9 o\u010dkov\u00e1n\u00ed v dan\u00e9m dni a indika\u010dn\u00ed skupin\u011b profese, s pou\u017eit\u00edm dan\u00e9 d\u00e1vky o\u010dkovac\u00ed l\u00e1tky, na konkr\u00e9tn\u00edm o\u010dkovac\u00edm m\u00edstu a ve vybran\u00e9m kraji. Datov\u00e1 sada obsahuje tak\u00e9 informaci o po\u0159ad\u00ed d\u00e1vky (prvn\u00ed, druh\u00e1 nebo posiluj\u00edc\u00ed d\u00e1vka) a zda byla dan\u00e1 d\u00e1vky ukon\u010duj\u00edc\u00ed.",
+    "dc:title": "COVID-19: P\u0159ehled vyk\u00e1zan\u00fdch o\u010dkov\u00e1n\u00ed podle profes\u00ed (o\u010dkovac\u00ed m\u00edsto, bydli\u0161t\u011b o\u010dkovan\u00e9ho)",
+    "dc:description": "Datov\u00e1 sada poskytuje \u0159\u00e1dkov\u00e1 data o vyk\u00e1zan\u00fdch o\u010dkov\u00e1n\u00edch na jednotliv\u00fdch o\u010dkovac\u00edch m\u00edstech \u010cR. Ka\u017ed\u00fd \u0159\u00e1dek p\u0159ehledu popisuje jedno vyk\u00e1zan\u00e9 o\u010dkov\u00e1n\u00ed v dan\u00e9m dni a indika\u010dn\u00ed skupin\u011b profese, s pou\u017eit\u00edm dan\u00e9 d\u00e1vky o\u010dkovac\u00ed l\u00e1tky, na konkr\u00e9tn\u00edm o\u010dkovac\u00edm m\u00edstu a ve vybran\u00e9m kraji. Datov\u00e1 sada obsahuje tak\u00e9 informaci o po\u0159ad\u00ed d\u00e1vky (prvn\u00ed, druh\u00e1 nebo posiluj\u00edc\u00ed d\u00e1vka) a informaci o ukon\u010duj\u00edc\u00ed d\u00e1vce, kter\u00e1 ur\u010duje, zda osoba, kter\u00e9 odpov\u00edd\u00e1 vyk\u00e1zan\u00e9 o\u010dkov\u00e1n\u00ed (bez ohledu na po\u0159ad\u00ed d\u00e1vky), obdr\u017eela ukon\u010duj\u00edc\u00ed d\u00e1vku.",
     "dc:source": "Informa\u010dn\u00ed syst\u00e9m infek\u010dn\u00edch nemoc\u00ed (ISIN) - https:\/\/www.uzis.cz\/index.php?pg=registry-sber-dat--ochrana-verejneho-zdravi--informacni-system-infekcni-nemoci, kontakt: helpdesk.registry@uzis.cz",
     "dcat:keyword": [
         "koronavirus",
@@ -29,7 +29,7 @@
         "@id": "https:\/\/data.gov.cz\/podm\u00ednky-u\u017eit\u00ed\/voln\u00fd-p\u0159\u00edstup\/"
     },
     "dc:modified": {
-        "@value": "2021-12-23T04:46:39+01:00",
+        "@value": "2022-01-19T04:47:04+01:00",
         "@type": "xsd:dateTime"
     },
     "tableSchema": {

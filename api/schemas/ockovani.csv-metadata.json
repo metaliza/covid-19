@@ -6,7 +6,7 @@
         }
     ],
     "url": "ockovani.csv",
-    "dc:title": "ockovani",
+    "dc:title": "COVID-19: P\u0159ehled vyk\u00e1zan\u00fdch o\u010dkov\u00e1n\u00ed podle kraj\u016f \u010cR",
     "dc:description": "Datov\u00e1 sada poskytuje agregovan\u00e1 data o vyk\u00e1zan\u00fdch o\u010dkov\u00e1n\u00edch na \u00farovni kraj\u016f \u010cR. Ka\u017ed\u00fd \u0159\u00e1dek p\u0159ehledu popisuje po\u010det vyk\u00e1zan\u00fdch o\u010dkov\u00e1n\u00ed v dan\u00e9m dni, za v\u011bkovou skupinu, s pou\u017eit\u00edm vybran\u00e9 o\u010dkovac\u00ed l\u00e1tky a ve vybran\u00e9m kraji. Za jeden den tedy p\u0159ehled obsahuje maxim\u00e1ln\u011b X \u0159\u00e1dk\u016f, kde X = po\u010det kraj\u016f (14) x po\u010det v\u011bkov\u00fdch skupin (15) x po\u010det druh\u016f o\u010dkovac\u00edch l\u00e1tek (v okam\u017eik publikace 4) = 840. Data jsou aktualizov\u00e1na k \u010dasu 20.00 h p\u0159edchoz\u00edho dne a mohou se zp\u011btn\u011b m\u00edrn\u011b m\u011bnit z d\u016fvodu pr\u016fb\u011b\u017en\u00e9ho dopl\u0148ov\u00e1n\u00ed.",
     "dc:source": "Centr\u00e1ln\u00ed rezerva\u010dn\u00ed syst\u00e9m - https:\/\/crs.uzis.cz\/, kontakt: covid-podpora@nakit.cz",
     "dcat:keyword": [
@@ -27,7 +27,7 @@
         "@id": "https:\/\/data.gov.cz\/podm\u00ednky-u\u017eit\u00ed\/voln\u00fd-p\u0159\u00edstup\/"
     },
     "dc:modified": {
-        "@value": "2021-12-23T04:42:12+01:00",
+        "@value": "2022-01-19T04:42:18+01:00",
         "@type": "xsd:dateTime"
     },
     "tableSchema": {

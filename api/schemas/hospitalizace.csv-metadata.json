@@ -6,7 +6,7 @@
         }
     ],
     "url": "hospitalizace.csv",
-    "dc:title": "hospitalizace",
+    "dc:title": "COVID-19: P\u0159ehled hospitalizac\u00ed",
     "dc:description": "Datov\u00e1 sada obsahuj\u00edc\u00ed data hospitalizovan\u00fdch pacient\u016f popisuj\u00edc\u00ed pr\u016fb\u011bh hospitalizace (aktu\u00e1ln\u00ed a celkov\u00fd po\u010det hospitalizovan\u00fdch, rozd\u011blen\u00ed podle p\u0159\u00edznak\u016f, rozd\u011blen\u00ed podle podp\u016frn\u00fdch p\u0159\u00edstroj\u016f, po\u010det \u00famrt\u00ed).",
     "dc:source": "Informa\u010dn\u00ed syst\u00e9m infek\u010dn\u00edch nemoc\u00ed (ISIN) - https:\/\/www.uzis.cz\/index.php?pg=registry-sber-dat--ochrana-verejneho-zdravi--informacni-system-infekcni-nemoci, kontakt: helpdesk.registry@uzis.cz",
     "dcat:keyword": [
@@ -24,7 +24,7 @@
         "@id": "https:\/\/data.gov.cz\/podm\u00ednky-u\u017eit\u00ed\/voln\u00fd-p\u0159\u00edstup\/"
     },
     "dc:modified": {
-        "@value": "2021-12-23T04:41:02+01:00",
+        "@value": "2022-01-19T04:41:07+01:00",
         "@type": "xsd:dateTime"
     },
     "tableSchema": {

@@ -6,7 +6,7 @@
         }
     ],
     "url": "vyleceni.csv",
-    "dc:title": "vyleceni",
+    "dc:title": "COVID-19: P\u0159ehled vyl\u00e9\u010den\u00fdch dle hl\u00e1\u0161en\u00ed krajsk\u00fdch hygienick\u00fdch stanic",
     "dc:description": "Datov\u00e1 sada obsahuj\u00edc\u00ed z\u00e1znamy o vyl\u00e9\u010den\u00fdch po onemocn\u011bn\u00ed COVID\u201119 dle hl\u00e1\u0161en\u00ed krajsk\u00fdch hygienick\u00fdch stanic. S ohledem na fakt, \u017ee vykazov\u00e1n\u00ed vyl\u00e9\u010den\u00fdch osob m\u00e1 ur\u010dit\u00e9 zpo\u017ed\u011bn\u00ed oproti re\u00e1ln\u00e9mu stavu z d\u016fvodu validace a uzav\u00edr\u00e1n\u00ed p\u0159\u00edpad\u016f krajsk\u00fdch hygienick\u00fdch stanic, se mohou denn\u00ed z\u00e1znamy zp\u011btn\u011b m\u011bnit pr\u00e1v\u011b z d\u016fvodu pr\u016fb\u011b\u017en\u00e9ho dopl\u0148ov\u00e1n\u00ed.",
     "dc:source": "Informa\u010dn\u00ed syst\u00e9m infek\u010dn\u00edch nemoc\u00ed (ISIN) - https:\/\/www.uzis.cz\/index.php?pg=registry-sber-dat--ochrana-verejneho-zdravi--informacni-system-infekcni-nemoci, kontakt: helpdesk.registry@uzis.cz",
     "dcat:keyword": [
@@ -27,7 +27,7 @@
         "@id": "https:\/\/data.gov.cz\/podm\u00ednky-u\u017eit\u00ed\/voln\u00fd-p\u0159\u00edstup\/"
     },
     "dc:modified": {
-        "@value": "2021-12-23T04:40:54+01:00",
+        "@value": "2022-01-19T04:40:56+01:00",
         "@type": "xsd:dateTime"
     },
     "tableSchema": {

@@ -6,7 +6,7 @@
         }
     ],
     "url": "osoby.csv",
-    "dc:title": "osoby",
+    "dc:title": "COVID-19: P\u0159ehled osob s prok\u00e1zanou n\u00e1kazou dle hl\u00e1\u0161en\u00ed krajsk\u00fdch hygienick\u00fdch stanic (v2)",
     "dc:description": "Datov\u00e1 sada obsahuj\u00edc\u00ed z\u00e1kladn\u00ed denn\u00ed inciden\u010dn\u00ed p\u0159ehled osob s prok\u00e1zanou n\u00e1kazou COVID-19 dle hl\u00e1\u0161en\u00ed krajsk\u00fdch hygienick\u00fdch stanic v\u010detn\u011b laborato\u0159\u00ed (datum hl\u00e1\u0161en\u00ed, v\u011bk a pohlav\u00ed naka\u017een\u00e9 osoby, KHS, informace o m\u00edst\u011b a zemi n\u00e1kazy, nahl\u00e1\u0161eno na krajskou hygienickou stanici). Datov\u00e1 sada nahrazuje p\u0159edchoz\u00ed verzi dostupnou na adrese https:\/\/onemocneni-aktualne.mzcr.cz\/api\/v1\/covid-19\/ .",
     "dc:source": "Informa\u010dn\u00ed syst\u00e9m infek\u010dn\u00edch nemoc\u00ed (ISIN) - https:\/\/www.uzis.cz\/index.php?pg=registry-sber-dat--ochrana-verejneho-zdravi--informacni-system-infekcni-nemoci, kontakt: helpdesk.registry@uzis.cz",
     "dcat:keyword": [
@@ -25,7 +25,7 @@
         "@id": "https:\/\/data.gov.cz\/podm\u00ednky-u\u017eit\u00ed\/voln\u00fd-p\u0159\u00edstup\/"
     },
     "dc:modified": {
-        "@value": "2021-12-23T04:40:29+01:00",
+        "@value": "2022-01-19T04:40:30+01:00",
         "@type": "xsd:dateTime"
     },
     "tableSchema": {

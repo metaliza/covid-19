@@ -6,7 +6,7 @@
         }
     ],
     "url": "ockovani-zakladni-prehled.csv",
-    "dc:title": "ockovani-zakladni-prehled",
+    "dc:title": "COVID-19: Z\u00e1kladn\u00ed p\u0159ehled vyk\u00e1zan\u00fdch o\u010dkov\u00e1n\u00ed",
     "dc:description": "Datov\u00e1 sada poskytuje \u0159\u00e1dkov\u00e1 data o vyk\u00e1zan\u00fdch o\u010dkov\u00e1n\u00edch v \u010cR. Ka\u017ed\u00fd \u0159\u00e1dek p\u0159ehledu popisuje mno\u017estv\u00ed vyk\u00e1zan\u00fdch o\u010dkov\u00e1n\u00ed v dan\u00e9m kraji a ORP s pou\u017eit\u00edm dan\u00e9 d\u00e1vky o\u010dkovac\u00ed l\u00e1tky u konkr\u00e9tn\u00ed v\u011bkov\u00e9 skupiny a pohlav\u00ed.",
     "dc:source": "Informa\u010dn\u00ed syst\u00e9m infek\u010dn\u00edch nemoc\u00ed (ISIN) - https:\/\/www.uzis.cz\/index.php?pg=registry-sber-dat--ochrana-verejneho-zdravi--informacni-system-infekcni-nemoci, kontakt: helpdesk.registry@uzis.cz",
     "dcat:keyword": [
@@ -26,7 +26,7 @@
         "@id": "https:\/\/data.gov.cz\/podm\u00ednky-u\u017eit\u00ed\/voln\u00fd-p\u0159\u00edstup\/"
     },
     "dc:modified": {
-        "@value": "2021-12-23T04:51:59+01:00",
+        "@value": "2022-01-19T04:52:57+01:00",
         "@type": "xsd:dateTime"
     },
     "tableSchema": {

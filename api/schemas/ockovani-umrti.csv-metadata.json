@@ -6,7 +6,7 @@
         }
     ],
     "url": "ockovani-umrti.csv",
-    "dc:title": "ockovani-umrti",
+    "dc:title": "COVID-19: P\u0159ehled \u00famrt\u00ed s ohledem na vyk\u00e1zan\u00e1 o\u010dkov\u00e1n\u00ed",
     "dc:description": "Datov\u00e1 sada obsahuje po\u010det, procento a pr\u016fm\u011brn\u00fd v\u011bk zem\u0159el\u00fdch. Ka\u017ed\u00fd \u0159\u00e1dek ud\u00e1v\u00e1 souhrnn\u00e9 \u00fadaje osob v dan\u00fd den rozd\u011blen\u00fdch do skupin podle stavu o\u010dkovanosti: bez o\u010dkov\u00e1n\u00ed, s nedokon\u010den\u00fdm o\u010dkov\u00e1n\u00edm, s dokon\u010den\u00fdm o\u010dkov\u00e1n\u00edm nebo s dokon\u010den\u00fdm o\u010dkov\u00e1n\u00edm v\u010detn\u011b posiluj\u00edc\u00ed d\u00e1vky.",
     "dc:source": "Informa\u010dn\u00ed syst\u00e9m infek\u010dn\u00edch nemoc\u00ed (ISIN) - https:\/\/www.uzis.cz\/index.php?pg=registry-sber-dat--ochrana-verejneho-zdravi--informacni-system-infekcni-nemoci, kontakt: helpdesk.registry@uzis.cz",
     "dcat:keyword": [
@@ -26,7 +26,7 @@
         "@id": "https:\/\/data.gov.cz\/podm\u00ednky-u\u017eit\u00ed\/voln\u00fd-p\u0159\u00edstup\/"
     },
     "dc:modified": {
-        "@value": "2021-12-23T04:53:43+01:00",
+        "@value": "2022-01-19T04:54:55+01:00",
         "@type": "xsd:dateTime"
     },
     "tableSchema": {

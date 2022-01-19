@@ -6,7 +6,7 @@
         }
     ],
     "url": "incidence-7-14-kraje.csv",
-    "dc:title": "incidence-7-14-kraje",
+    "dc:title": "COVID-19: P\u0159ehled osob s prok\u00e1zanou n\u00e1kazou dle krajsk\u00fdch hygienick\u00fdch stanic v\u010detn\u011b laborato\u0159\u00ed za 7 a 14 dn\u00ed podle kraj\u016f",
     "dc:description": "Datov\u00e1 sada obsahuj\u00edc\u00ed po\u010dty potvrzen\u00fdch p\u0159\u00edpad\u016f za posledn\u00edch 7 a 14 dn\u00ed za kraje \u010cR v\u010detn\u011b p\u0159epo\u010dtu na 100 000 obyvatel. Pro p\u0159epo\u010det na 100 000 obyvatel je pou\u017eita otev\u0159en\u00e1 datov\u00e1 sada Obyvatelstvo podle p\u011btilet\u00fdch v\u011bkov\u00fdch skupin a pohlav\u00ed v kraj\u00edch a okresech (https:\/\/www.czso.cz\/csu\/czso\/obyvatelstvo-podle-petiletych-vekovych-skupin-a-pohlavi-v-krajich-a-okresech).",
     "dc:source": "Informa\u010dn\u00ed syst\u00e9m infek\u010dn\u00edch nemoc\u00ed (ISIN) - https:\/\/www.uzis.cz\/index.php?pg=registry-sber-dat--ochrana-verejneho-zdravi--informacni-system-infekcni-nemoci, kontakt: helpdesk.registry@uzis.cz",
     "dcat:keyword": [
@@ -25,7 +25,7 @@
         "@id": "https:\/\/data.gov.cz\/podm\u00ednky-u\u017eit\u00ed\/voln\u00fd-p\u0159\u00edstup\/"
     },
     "dc:modified": {
-        "@value": "2021-12-23T04:40:57+01:00",
+        "@value": "2022-01-19T04:41:00+01:00",
         "@type": "xsd:dateTime"
     },
     "tableSchema": {

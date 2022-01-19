@@ -6,7 +6,7 @@
         }
     ],
     "url": "orp.csv",
-    "dc:title": "orp",
+    "dc:title": "COVID-19: P\u0159ehled epidemiologick\u00e9 situace dle hl\u00e1\u0161en\u00ed krajsk\u00fdch hygienick\u00fdch stanic podle ORP",
     "dc:description": "Obsahem je komplexn\u00ed p\u0159ehled z\u00e1kladn\u00edch epidemiologick\u00fdch parametr\u016f (po\u010dty diagnostikovan\u00fdch osob s COVID-19, po\u010dty aktu\u00e1ln\u011b naka\u017een\u00fdch, hospitalizovan\u00ed pacienti) se zam\u011b\u0159en\u00edm na seniorn\u00ed zraniteln\u00e9 skupiny obyvatel (kategorie v\u011bku 65+, 75+) na geografick\u00e9 \u00farovni obc\u00ed s roz\u0161\u00ed\u0159enou p\u016fsobnost\u00ed (ORP).",
     "dc:source": "Informa\u010dn\u00ed syst\u00e9m infek\u010dn\u00edch nemoc\u00ed (ISIN) - https:\/\/www.uzis.cz\/index.php?pg=registry-sber-dat--ochrana-verejneho-zdravi--informacni-system-infekcni-nemoci, kontakt: helpdesk.registry@uzis.cz",
     "dcat:keyword": [
@@ -30,7 +30,7 @@
         "@id": "https:\/\/data.gov.cz\/podm\u00ednky-u\u017eit\u00ed\/voln\u00fd-p\u0159\u00edstup\/"
     },
     "dc:modified": {
-        "@value": "2021-12-23T04:41:05+01:00",
+        "@value": "2022-01-19T04:41:09+01:00",
         "@type": "xsd:dateTime"
     },
     "tableSchema": {

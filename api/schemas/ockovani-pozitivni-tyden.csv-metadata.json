@@ -6,7 +6,7 @@
         }
     ],
     "url": "ockovani-pozitivni-tyden.csv",
-    "dc:title": "ockovani-pozitivni-tyden",
+    "dc:title": "COVID-19: T\u00fddenn\u00ed p\u0159ehled osob s prok\u00e1zanou n\u00e1kazou s ohledem na vyk\u00e1zan\u00e1 o\u010dkov\u00e1n\u00ed podle v\u011bkov\u00fdch kategori\u00ed",
     "dc:description": "Datov\u00e1 sada obsahuje po\u010det osob s prok\u00e1zanou n\u00e1kazou dle rozd\u011blen\u00ed do jednotliv\u00fdch v\u011bkov\u00fdch kategori\u00ed. Ka\u017ed\u00fd \u0159\u00e1dek ud\u00e1v\u00e1 souhrnn\u00e9 \u00fadaje osob v dan\u00fd t\u00fdden a v dan\u00e9 v\u011bkov\u00e9 kategorii rozd\u011blen\u00fdch do skupin podle stavu o\u010dkovanosti: bez o\u010dkov\u00e1n\u00ed, s nedokon\u010den\u00fdm o\u010dkov\u00e1n\u00edm, s dokon\u010den\u00fdm o\u010dkov\u00e1n\u00edm nebo s dokon\u010den\u00fdm o\u010dkov\u00e1n\u00edm v\u010detn\u011b posiluj\u00edc\u00ed d\u00e1vky.",
     "dc:source": "Informa\u010dn\u00ed syst\u00e9m infek\u010dn\u00edch nemoc\u00ed (ISIN) - https:\/\/www.uzis.cz\/index.php?pg=registry-sber-dat--ochrana-verejneho-zdravi--informacni-system-infekcni-nemoci, kontakt: helpdesk.registry@uzis.cz",
     "dcat:keyword": [
@@ -26,7 +26,7 @@
         "@id": "https:\/\/data.gov.cz\/podm\u00ednky-u\u017eit\u00ed\/voln\u00fd-p\u0159\u00edstup\/"
     },
     "dc:modified": {
-        "@value": "2021-12-23T04:53:45+01:00",
+        "@value": "2022-01-19T04:54:58+01:00",
         "@type": "xsd:dateTime"
     },
     "tableSchema": {
