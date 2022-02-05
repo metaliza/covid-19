@@ -17,7 +17,7 @@ if [ -d "$target" -a -d "$ccTarget" ]; then
   downloadCouple vyleceni ${DISEASE_URL_BASE}/vyleceni true false $downloadMeta
   downloadCouple umrti ${DISEASE_URL_BASE}/umrti true false $downloadMeta
   downloadCouple hospitalizace ${DISEASE_URL_BASE}/hospitalizace true true $downloadMeta           # copy
-  downloadCouple nakazeni-vyleceni-umrti-testy ${DISEASE_URL_BASE}/nakazeni-vyleceni-umrti-testy true true $downloadMeta         # copy
+  downloadCouple nakazeni-vyleceni-umrti-testy ${DISEASE_URL_BASE}/nakazeni-vyleceni-umrti-testy true true $downloadMeta           # copy
   downloadCouple kraj-okres-nakazeni-vyleceni-umrti ${DISEASE_URL_BASE}/kraj-okres-nakazeni-vyleceni-umrti true false $downloadMeta
   downloadCouple orp ${DISEASE_URL_BASE}/orp true false $downloadMeta
   downloadCouple obce ${DISEASE_URL_BASE}/obce false false $downloadMeta
@@ -25,7 +25,7 @@ if [ -d "$target" -a -d "$ccTarget" ]; then
   downloadCouple incidence-7-14-cr ${DISEASE_URL_BASE}/incidence-7-14-cr true false $downloadMeta
   downloadCouple incidence-7-14-kraje ${DISEASE_URL_BASE}/incidence-7-14-kraje true false $downloadMeta
   downloadCouple incidence-7-14-okresy ${DISEASE_URL_BASE}/incidence-7-14-okresy true false $downloadMeta
-  downloadCouple nakazeni-reinfekce ${DISEASE_URL_BASE}/nakazeni-reinfekce true false $downloadMeta
+  downloadCouple nakazeni-reinfekce ${DISEASE_URL_BASE}/nakazeni-reinfekce true true $downloadMeta           # copy
   downloadCouple nakazeni-hospitalizace-testy ${DISEASE_URL_BASE}/nakazeni-hospitalizace-testy true false $downloadMeta
   
   downloadCouple testy ${DISEASE_URL_BASE}/testy true false false

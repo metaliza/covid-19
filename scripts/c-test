@@ -19,7 +19,7 @@ if [ -d "$target" -a -d "$ccTarget" ]; then
 #   downloadCouple umrti ${DISEASE_URL_BASE}/umrti true false $downloadMeta
 #   download umrti ${DISEASE_URL_BASE}/umrti csv false
 #   downloadCouple hospitalizace ${DISEASE_URL_BASE}/hospitalizace true true $downloadMeta           # copy
-#   downloadCouple nakazeni-vyleceni-umrti-testy ${DISEASE_URL_BASE}/nakazeni-vyleceni-umrti-testy true true $downloadMeta         # copy
+#   downloadCouple nakazeni-vyleceni-umrti-testy ${DISEASE_URL_BASE}/nakazeni-vyleceni-umrti-testy true true $downloadMeta           # copy
 #   download nakazeni-vyleceni-umrti-testy ${DISEASE_URL_BASE}/nakazeni-vyleceni-umrti-testy csv true
 #   downloadCouple kraj-okres-nakazeni-vyleceni-umrti ${DISEASE_URL_BASE}/kraj-okres-nakazeni-vyleceni-umrti true false $downloadMeta
 #   downloadCouple orp ${DISEASE_URL_BASE}/orp true false $downloadMeta
@@ -28,7 +28,7 @@ if [ -d "$target" -a -d "$ccTarget" ]; then
 #   downloadCouple incidence-7-14-cr ${DISEASE_URL_BASE}/incidence-7-14-cr true false $downloadMeta
 #   downloadCouple incidence-7-14-kraje ${DISEASE_URL_BASE}/incidence-7-14-kraje true false $downloadMeta
 #   downloadCouple incidence-7-14-okresy ${DISEASE_URL_BASE}/incidence-7-14-okresy csv false $downloadMeta
-#   downloadCouple nakazeni-reinfekce ${DISEASE_URL_BASE}/nakazeni-reinfekce true false $downloadMeta
+#   downloadCouple nakazeni-reinfekce ${DISEASE_URL_BASE}/nakazeni-reinfekce true true $downloadMeta           # copy
 #   downloadCouple nakazeni-hospitalizace-testy ${DISEASE_URL_BASE}/nakazeni-hospitalizace-testy true false $downloadMeta
 #   download nic http://localhost/badurl csv
   
@@ -95,7 +95,7 @@ if [ -d "$target" -a -d "$ccTarget" ]; then
   download vyleceni ${DISEASE_URL_BASE}/vyleceni csv false $downloadMeta
   download umrti ${DISEASE_URL_BASE}/umrti csv false $downloadMeta
   download hospitalizace ${DISEASE_URL_BASE}/hospitalizace csv true $downloadMeta           # copy
-  download nakazeni-vyleceni-umrti-testy ${DISEASE_URL_BASE}/nakazeni-vyleceni-umrti-testy csv true $downloadMeta         # copy
+  download nakazeni-vyleceni-umrti-testy ${DISEASE_URL_BASE}/nakazeni-vyleceni-umrti-testy csv true $downloadMeta           # copy
   download kraj-okres-nakazeni-vyleceni-umrti ${DISEASE_URL_BASE}/kraj-okres-nakazeni-vyleceni-umrti csv false $downloadMeta
   download orp ${DISEASE_URL_BASE}/orp csv false $downloadMeta
   download obce ${DISEASE_URL_BASE}/obce csv false $downloadMeta
@@ -103,7 +103,7 @@ if [ -d "$target" -a -d "$ccTarget" ]; then
   download incidence-7-14-cr ${DISEASE_URL_BASE}/incidence-7-14-cr csv false $downloadMeta
   download incidence-7-14-kraje ${DISEASE_URL_BASE}/incidence-7-14-kraje csv false $downloadMeta
   download incidence-7-14-okresy ${DISEASE_URL_BASE}/incidence-7-14-okresy csv false $downloadMeta
-  download nakazeni-reinfekce ${DISEASE_URL_BASE}/nakazeni-reinfekce csv false $downloadMeta
+  download nakazeni-reinfekce ${DISEASE_URL_BASE}/nakazeni-reinfekce csv true $downloadMeta           # copy
   download nakazeni-hospitalizace-testy ${DISEASE_URL_BASE}/nakazeni-hospitalizace-testy csv false $downloadMeta
   
   download testy ${DISEASE_URL_BASE}/testy csv false false
