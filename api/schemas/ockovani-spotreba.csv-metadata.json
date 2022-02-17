@@ -7,7 +7,7 @@
     ],
     "url": "ockovani-spotreba.csv",
     "dc:title": "COVID-19: P\u0159ehled spot\u0159eby podle o\u010dkovac\u00edch m\u00edst \u010cR",
-    "dc:description": "Datov\u00e1 sada obsahuje p\u0159ehled spot\u0159eby o\u010dkovac\u00edch l\u00e1tek (pou\u017eit\u00e9 a znehodnocen\u00e9 ampulky) proti onemocn\u011bn\u00ed COVID-19 v o\u010dkovac\u00edch m\u00edstech v \u010cR. Ka\u017ed\u00fd z\u00e1znam (\u0159\u00e1dek) datov\u00e9 sady ud\u00e1v\u00e1 po\u010det pou\u017eit\u00fdch a znehodnocen\u00fdch ampulek dan\u00e9 o\u010dkovac\u00ed l\u00e1tky na dan\u00e9m o\u010dkovac\u00edm m\u00edst\u011b v dan\u00fd den.",
+    "dc:description": "Z d\u016fvodu nekonzistence vstupn\u00edch dat z registru ISIN je aktualizace datov\u00e9 sady do\u010dasn\u011b pozastavena. Datov\u00e1 sada obsahuje p\u0159ehled spot\u0159eby o\u010dkovac\u00edch l\u00e1tek (pou\u017eit\u00e9 a znehodnocen\u00e9 ampulky) proti onemocn\u011bn\u00ed COVID-19 v o\u010dkovac\u00edch m\u00edstech v \u010cR. Ka\u017ed\u00fd z\u00e1znam (\u0159\u00e1dek) datov\u00e9 sady ud\u00e1v\u00e1 po\u010det pou\u017eit\u00fdch a znehodnocen\u00fdch ampulek dan\u00e9 o\u010dkovac\u00ed l\u00e1tky na dan\u00e9m o\u010dkovac\u00edm m\u00edst\u011b v dan\u00fd den.",
     "dc:source": "Informa\u010dn\u00ed syst\u00e9m infek\u010dn\u00edch nemoc\u00ed (ISIN) - https:\/\/www.uzis.cz\/index.php?pg=registry-sber-dat--ochrana-verejneho-zdravi--informacni-system-infekcni-nemoci, kontakt: helpdesk.registry@uzis.cz",
     "dcat:keyword": [
         "koronavirus",
@@ -28,7 +28,7 @@
         "@id": "https:\/\/data.gov.cz\/podm\u00ednky-u\u017eit\u00ed\/voln\u00fd-p\u0159\u00edstup\/"
     },
     "dc:modified": {
-        "@value": "2022-01-19T04:52:59+01:00",
+        "@value": "2022-02-16T04:53:51+01:00",
         "@type": "xsd:dateTime"
     },
     "tableSchema": {
