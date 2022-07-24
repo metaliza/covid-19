@@ -6,7 +6,7 @@
         }
     ],
     "url": "ockovaci-mista.csv",
-    "dc:title": "ockovaci-mista",
+    "dc:title": "COVID-19: P\u0159ehled vyk\u00e1zan\u00fdch o\u010dkov\u00e1n\u00ed podle o\u010dkovac\u00edch m\u00edst \u010cR",
     "dc:description": "Datov\u00e1 sada poskytuje \u0159\u00e1dkov\u00e1 data o vyk\u00e1zan\u00fdch o\u010dkov\u00e1n\u00edch na jednotliv\u00fdch o\u010dkovac\u00edch m\u00edstech \u010cR. Ka\u017ed\u00fd \u0159\u00e1dek p\u0159ehledu popisuje jedno vyk\u00e1zan\u00e9 o\u010dkov\u00e1n\u00ed v dan\u00e9m dni a v\u011bkov\u00e9 skupin\u011b, s pou\u017eit\u00edm vybran\u00e9 o\u010dkovac\u00ed l\u00e1tky, na konkr\u00e9tn\u00edm o\u010dkovac\u00edm m\u00edstu a ve vybran\u00e9m kraji.",
     "dc:source": "Informa\u010dn\u00ed syst\u00e9m infek\u010dn\u00edch nemoc\u00ed (ISIN) - https:\/\/www.uzis.cz\/index.php?pg=registry-sber-dat--ochrana-verejneho-zdravi--informacni-system-infekcni-nemoci, kontakt: helpdesk.registry@uzis.cz",
     "dcat:keyword": [
@@ -28,8 +28,8 @@
         "@id": "https:\/\/data.gov.cz\/podm\u00ednky-u\u017eit\u00ed\/voln\u00fd-p\u0159\u00edstup\/"
     },
     "dc:modified": {
-        "@value": "2021-11-18",
-        "@type": "xsd:date"
+        "@value": "2022-06-18T04:52:27+02:00",
+        "@type": "xsd:dateTime"
     },
     "tableSchema": {
         "columns": [

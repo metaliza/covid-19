@@ -6,7 +6,7 @@
         }
     ],
     "url": "ockovani-demografie.csv",
-    "dc:title": "ockovani-demografie",
+    "dc:title": "COVID-19: Demografick\u00fd p\u0159ehled vyk\u00e1zan\u00fdch o\u010dkov\u00e1n\u00ed v \u010dase",
     "dc:description": "Datov\u00e1 sada poskytuje \u0159\u00e1dkov\u00e1 data o vyk\u00e1zan\u00fdch o\u010dkov\u00e1n\u00edch v \u010cR. Ka\u017ed\u00fd \u0159\u00e1dek p\u0159ehledu popisuje mno\u017estv\u00ed vyk\u00e1zan\u00fdch o\u010dkov\u00e1n\u00ed v dan\u00e9m dni s pou\u017eit\u00edm dan\u00e9 d\u00e1vky o\u010dkovac\u00ed l\u00e1tky u konkr\u00e9tn\u00edho pohlav\u00ed a v konkr\u00e9tn\u00ed v\u011bkov\u00e9 skupin\u011b.",
     "dc:source": "Informa\u010dn\u00ed syst\u00e9m infek\u010dn\u00edch nemoc\u00ed (ISIN) - https:\/\/www.uzis.cz\/index.php?pg=registry-sber-dat--ochrana-verejneho-zdravi--informacni-system-infekcni-nemoci, kontakt: helpdesk.registry@uzis.cz",
     "dcat:keyword": [
@@ -26,8 +26,8 @@
         "@id": "https:\/\/data.gov.cz\/podm\u00ednky-u\u017eit\u00ed\/voln\u00fd-p\u0159\u00edstup\/"
     },
     "dc:modified": {
-        "@value": "2021-11-18",
-        "@type": "xsd:date"
+        "@value": "2022-06-18T04:52:58+02:00",
+        "@type": "xsd:dateTime"
     },
     "tableSchema": {
         "columns": [

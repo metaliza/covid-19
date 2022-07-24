@@ -6,7 +6,7 @@
         }
     ],
     "url": "ockovani-registrace.csv",
-    "dc:title": "ockovani-registrace",
+    "dc:title": "COVID-19: P\u0159ehled registrac\u00ed podle o\u010dkovac\u00edch m\u00edst \u010cR",
     "dc:description": "Datov\u00e1 sada poskytuje p\u0159ehled vytvo\u0159en\u00fdch registrac\u00ed v centr\u00e1ln\u00edm rezerva\u010dn\u00edm syst\u00e9mu na o\u010dkov\u00e1n\u00ed proti onemocn\u011bn\u00ed COVID-19 (https:\/\/registrace.mzcr.cz\/). Z\u00e1znamy (\u0159\u00e1dky) datov\u00e9 sady popisuj\u00ed jednotliv\u00e9 anonymizovan\u00e9 registrace, kter\u00e9 byly vytvo\u0159eny na dan\u00e9 o\u010dkovac\u00ed m\u00edsto v dan\u00fd den. Do datov\u00e9 sady spadaj\u00ed tak\u00e9 osoby, kter\u00e9 ji\u017e byly o\u010dkov\u00e1ny. Registrovan\u00e1 osoba je definov\u00e1na tak, \u017ee spad\u00e1 do jedn\u00e9 s n\u00e1sleduj\u00edc\u00edch skupin: (i) osoba je registrovan\u00e1 a \u010dek\u00e1 na p\u0159id\u011blen\u00ed mo\u017enosti v\u00fdb\u011bru term\u00ednu o\u010dkov\u00e1n\u00ed, (ii) osoba obdr\u017eela mo\u017enost v\u00fdb\u011bru term\u00ednu o\u010dkov\u00e1n\u00ed, (iii) osoba provedla v\u00fdb\u011br term\u00ednu a m\u00e1 tedy rezervaci.\\n\\nPopis procesu rezervace a registrace: (1) Osoba se registruje v centr\u00e1ln\u00edm rezerva\u010dn\u00edm syst\u00e9mu na o\u010dkov\u00e1n\u00ed. (2) Prob\u00edh\u00e1 proces ztoto\u017en\u011bn\u00ed proti centr\u00e1ln\u00edmu registru obyvatel. (3) Po ov\u011b\u0159en\u00ed toto\u017enosti \u010dek\u00e1 osoba na p\u0159id\u011blen\u00ed mo\u017enosti v\u00fdb\u011bru term\u00ednu (stav p\u0159ed z\u00e1vorou). (4) Po p\u0159id\u011blen\u00ed mo\u017enosti v\u00fdb\u011bru term\u00ednu si osoba vyb\u00edr\u00e1 vhodn\u00fd term\u00edn (stav za z\u00e1vorou). (5) Po v\u00fdb\u011bru term\u00ednu m\u00e1 dan\u00e1 osoba provedenu rezervaci term\u00ednu na o\u010dkov\u00e1n\u00ed. (6) Po proveden\u00ed o\u010dkov\u00e1n\u00ed z\u016fst\u00e1v\u00e1 z\u00e1znam v datov\u00e9 sad\u011b s blokovanou registrac\u00ed (zablokovano = ANO) a sou\u010dasn\u011b je uveden d\u016fvod blokace (blokace_duvod = Ztoto\u017en\u011bn, ale ji\u017e vakcinov\u00e1n).",
     "dc:source": "Informa\u010dn\u00ed syst\u00e9m infek\u010dn\u00edch nemoc\u00ed (ISIN) - https:\/\/www.uzis.cz\/index.php?pg=registry-sber-dat--ochrana-verejneho-zdravi--informacni-system-infekcni-nemoci, kontakt: helpdesk.registry@uzis.cz",
     "dcat:keyword": [
@@ -27,8 +27,8 @@
         "@id": "https:\/\/data.gov.cz\/podm\u00ednky-u\u017eit\u00ed\/voln\u00fd-p\u0159\u00edstup\/"
     },
     "dc:modified": {
-        "@value": "2021-11-18",
-        "@type": "xsd:date"
+        "@value": "2022-06-18T04:54:49+02:00",
+        "@type": "xsd:dateTime"
     },
     "tableSchema": {
         "columns": [
