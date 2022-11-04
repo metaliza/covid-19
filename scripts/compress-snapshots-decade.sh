@@ -30,14 +30,30 @@ if [ -d "$target" ]; then
   if [ -d "${prefix}0" ]; then
     tar -cf - ${prefix}0 | xz -9 > $target/${prefix}0.tar.xz
   fi
-  tar -cf - ${prefix}1 | xz -9 > $target/${prefix}1.tar.xz
-  tar -cf - ${prefix}2 | xz -9 > $target/${prefix}2.tar.xz
-  tar -cf - ${prefix}3 | xz -9 > $target/${prefix}3.tar.xz
-  tar -cf - ${prefix}4 | xz -9 > $target/${prefix}4.tar.xz
-  tar -cf - ${prefix}5 | xz -9 > $target/${prefix}5.tar.xz
-  tar -cf - ${prefix}6 | xz -9 > $target/${prefix}6.tar.xz
-  tar -cf - ${prefix}7 | xz -9 > $target/${prefix}7.tar.xz
-  tar -cf - ${prefix}8 | xz -9 > $target/${prefix}8.tar.xz
+  if [ -d "${prefix}1" ]; then
+    tar -cf - ${prefix}1 | xz -9 > $target/${prefix}1.tar.xz
+  fi
+  if [ -d "${prefix}2" ]; then
+    tar -cf - ${prefix}2 | xz -9 > $target/${prefix}2.tar.xz
+  fi
+  if [ -d "${prefix}3" ]; then
+    tar -cf - ${prefix}3 | xz -9 > $target/${prefix}3.tar.xz
+  fi
+  if [ -d "${prefix}4" ]; then
+    tar -cf - ${prefix}4 | xz -9 > $target/${prefix}4.tar.xz
+  fi
+  if [ -d "${prefix}5" ]; then
+    tar -cf - ${prefix}5 | xz -9 > $target/${prefix}5.tar.xz
+  fi
+  if [ -d "${prefix}6" ]; then
+    tar -cf - ${prefix}6 | xz -9 > $target/${prefix}6.tar.xz
+  fi
+  if [ -d "${prefix}7" ]; then
+    tar -cf - ${prefix}7 | xz -9 > $target/${prefix}7.tar.xz
+  fi
+  if [ -d "${prefix}8" ]; then
+    tar -cf - ${prefix}8 | xz -9 > $target/${prefix}8.tar.xz
+  fi
   if [ -d "${prefix}9" ]; then
     tar -cf - ${prefix}9 | xz -9 > $target/${prefix}9.tar.xz
   fi
