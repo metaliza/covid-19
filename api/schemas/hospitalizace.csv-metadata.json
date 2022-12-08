@@ -24,7 +24,7 @@
         "@id": "https:\/\/data.gov.cz\/podm\u00ednky-u\u017eit\u00ed\/voln\u00fd-p\u0159\u00edstup\/"
     },
     "dc:modified": {
-        "@value": "2022-01-19T04:41:07+01:00",
+        "@value": "2022-12-07T05:31:56+01:00",
         "@type": "xsd:dateTime"
     },
     "tableSchema": {
@@ -121,13 +121,13 @@
                 "name": "umrti",
                 "titles": "umrti",
                 "datatype": "integer",
-                "dc:description": "Po\u010det pacient\u016f, kte\u0159\u00ed v dan\u00fd den zem\u0159eli."
+                "dc:description": "Po\u010det pacient\u016f, kte\u0159\u00ed v dan\u00fd den zem\u0159eli v nemocnici."
             },
             {
                 "name": "kum_umrti",
                 "titles": "kum_umrti",
                 "datatype": "integer",
-                "dc:description": "Celkov\u00fd po\u010det pacientu, kte\u0159\u00ed zem\u0159eli."
+                "dc:description": "Celkov\u00fd po\u010det pacientu, kte\u0159\u00ed zem\u0159eli p\u0159i pobytu v nemocnici."
             }
         ]
     }

@@ -7,7 +7,7 @@
     ],
     "url": "nakazeni-hospitalizace-testy.csv",
     "dc:title": "COVID-19: Denn\u00ed p\u0159ehled test\u016f, prok\u00e1zan\u00fdch n\u00e1kaz, hospitalizac\u00ed a JIP",
-    "dc:description": "Datov\u00e1 sada poskytuje agregovan\u00e1 data v souvislosti s onemocn\u011bn\u00edm COVID-19. Ka\u017ed\u00fd \u0159\u00e1dek p\u0159ehledu uv\u00e1d\u00ed po\u010dty test\u016f nebo osob (po\u010dty proveden\u00fdch test\u016f, nov\u011b potvrzen\u00e9 p\u0159\u00edpady n\u00e1kazy SARS-CoV-2, nov\u00e9 hospitalizace a nov\u00e9 pacienty na jednotce intenzivn\u00ed p\u00e9\u010de) podle v\u011bkov\u00e9 kategorie, indikace proveden\u00e9ho testu, dokon\u010den\u00e9ho o\u010dkov\u00e1n\u00ed a p\u0159edchoz\u00ed pozitivity.",
+    "dc:description": "Datov\u00e1 sada poskytuje agregovan\u00e1 data v souvislosti s onemocn\u011bn\u00edm COVID-19. Ka\u017ed\u00fd \u0159\u00e1dek p\u0159ehledu uv\u00e1d\u00ed po\u010dty test\u016f nebo osob (po\u010dty proveden\u00fdch test\u016f, nov\u011b potvrzen\u00e9 p\u0159\u00edpady n\u00e1kazy SARS-CoV-2 v\u010detn\u011b reinfekc\u00ed, nov\u00e9 hospitalizace a nov\u00e9 pacienty na jednotce intenzivn\u00ed p\u00e9\u010de) podle v\u011bkov\u00e9 kategorie, indikace proveden\u00e9ho testu, dokon\u010den\u00e9ho o\u010dkov\u00e1n\u00ed a p\u0159edchoz\u00ed pozitivity.",
     "dc:source": "Informa\u010dn\u00ed syst\u00e9m infek\u010dn\u00edch nemoc\u00ed (ISIN) - https:\/\/www.uzis.cz\/index.php?pg=registry-sber-dat--ochrana-verejneho-zdravi--informacni-system-infekcni-nemoci, kontakt: helpdesk.registry@uzis.cz",
     "dcat:keyword": [
         "koronavirus",
@@ -29,7 +29,7 @@
         "@id": "https:\/\/data.gov.cz\/podm\u00ednky-u\u017eit\u00ed\/voln\u00fd-p\u0159\u00edstup\/"
     },
     "dc:modified": {
-        "@value": "2022-01-15T11:00:04+01:00",
+        "@value": "2022-12-03T11:00:06+01:00",
         "@type": "xsd:dateTime"
     },
     "tableSchema": {

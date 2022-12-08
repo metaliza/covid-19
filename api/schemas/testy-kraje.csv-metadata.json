@@ -7,7 +7,7 @@
     ],
     "url": "testy-kraje.csv",
     "dc:title": "COVID-19: P\u0159ehled proveden\u00fdch test\u016f podle kraj\u016f \u010cR",
-    "dc:description": "Datov\u00e1 sada obsahuj\u00edc\u00ed denn\u00ed po\u010dty proveden\u00fdch test\u016f s rozli\u0161en\u00edm na PCR testy a antigenn\u00ed testy na onemocn\u011bn\u00ed COVID-19 dle hl\u00e1\u0161en\u00ed laborato\u0159\u00ed s rozd\u011blen\u00edm na kraje \u010cR. D\u00e1le jsou v sad\u011b uvedeny po\u010dty test\u016f dle indikace (diagnostick\u00e9 indikace, epidemiologick\u00e9 indikace, preventivn\u00ed a plo\u0161n\u00e9 testov\u00e1n\u00ed, ostatn\u00ed), pozitivn\u00ed z\u00e1chyty dle indikace testu a pozitivn\u00ed z\u00e1chyty dle typu testu (symptomy jsou objektivn\u011b vy\u0161et\u0159eny u indikovan\u00fdch osob, v r\u00e1mci plo\u0161n\u00e9ho testov\u00e1n\u00ed jde o vyj\u00e1d\u0159en\u00ed subjektivn\u00edho posouzen\u00ed testovan\u00e9ho).",
+    "dc:description": "Datov\u00e1 sada obsahuj\u00edc\u00ed denn\u00ed po\u010dty proveden\u00fdch test\u016f s rozli\u0161en\u00edm na PCR testy a antigenn\u00ed testy na onemocn\u011bn\u00ed COVID-19 dle hl\u00e1\u0161en\u00ed laborato\u0159\u00ed s rozd\u011blen\u00edm na kraje \u010cR. D\u00e1le jsou v sad\u011b uvedeny po\u010dty test\u016f dle indikace (diagnostick\u00e9 indikace, epidemiologick\u00e9 indikace, preventivn\u00ed a plo\u0161n\u00e9 testov\u00e1n\u00ed, ostatn\u00ed), pozitivn\u00ed z\u00e1chyty dle indikace testu a pozitivn\u00ed z\u00e1chyty (v\u010detn\u011b reinfekc\u00ed) dle typu testu (symptomy jsou objektivn\u011b vy\u0161et\u0159eny u indikovan\u00fdch osob, v r\u00e1mci plo\u0161n\u00e9ho testov\u00e1n\u00ed jde o vyj\u00e1d\u0159en\u00ed subjektivn\u00edho posouzen\u00ed testovan\u00e9ho).",
     "dc:source": "Informa\u010dn\u00ed syst\u00e9m infek\u010dn\u00edch nemoc\u00ed (ISIN) - https:\/\/www.uzis.cz\/index.php?pg=registry-sber-dat--ochrana-verejneho-zdravi--informacni-system-infekcni-nemoci, kontakt: helpdesk.registry@uzis.cz",
     "dcat:keyword": [
         "koronavirus",
@@ -28,7 +28,7 @@
         "@id": "https:\/\/data.gov.cz\/podm\u00ednky-u\u017eit\u00ed\/voln\u00fd-p\u0159\u00edstup\/"
     },
     "dc:modified": {
-        "@value": "2022-01-19T04:41:05+01:00",
+        "@value": "2022-12-07T05:31:55+01:00",
         "@type": "xsd:dateTime"
     },
     "tableSchema": {

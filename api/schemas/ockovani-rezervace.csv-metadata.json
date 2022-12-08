@@ -29,7 +29,7 @@
         "@id": "https:\/\/data.gov.cz\/podm\u00ednky-u\u017eit\u00ed\/voln\u00fd-p\u0159\u00edstup\/"
     },
     "dc:modified": {
-        "@value": "2022-01-19T04:54:51+01:00",
+        "@value": "2022-12-07T05:49:25+01:00",
         "@type": "xsd:dateTime"
     },
     "tableSchema": {
@@ -85,7 +85,7 @@
                 "name": "kalendar_ockovani",
                 "titles": "kalendar_ockovani",
                 "datatype": "string",
-                "dc:description": "Identifik\u00e1tor, zda se jedn\u00e1 o rezervaci na prvn\u00ed d\u00e1vku (hodnota V1), druhou d\u00e1vku (hodnota V2) nebo jde o p\u0159ednostn\u00ed rezervaci (nap\u0159. l\u00e9ka\u0159\u016f) (hodnota VX)."
+                "dc:description": "Identifik\u00e1tor, zda se jedn\u00e1 o rezervaci na prvn\u00ed d\u00e1vku (hodnota V1), druhou d\u00e1vku (hodnota V2), t\u0159et\u00ed a dal\u0161\u00ed d\u00e1vku (souhrnn\u00e1 hodnota VN) nebo jde o p\u0159ednostn\u00ed rezervaci, nap\u0159. l\u00e9ka\u0159\u016f \u010di jin\u00e9 skupiny (hodnota VX)."
             }
         ]
     }
