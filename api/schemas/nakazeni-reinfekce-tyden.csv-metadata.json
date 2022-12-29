@@ -1,0 +1,88 @@
+{
+    "@context": [
+        "http:\/\/www.w3.org\/ns\/csvw",
+        {
+            "@language": "cs"
+        }
+    ],
+    "url": "nakazeni-reinfekce-tyden.csv",
+    "dc:title": "COVID-19: T\u00fddenn\u00ed p\u0159ehled nov\u011b potvrzen\u00fdch p\u0159\u00edpad\u016f s rozd\u011blen\u00edm na prvoinfekce a reinfekce",
+    "dc:description": "Datov\u00e1 sada obsahuje t\u00fddenn\u00ed p\u0159ehled osob s prok\u00e1zanou n\u00e1kazou COVID-19 s rozd\u011blen\u00edm dle po\u0159ad\u00ed n\u00e1kazy na prvoinfekce a opakovan\u00e9 infekce (prvn\u00ed, druh\u00e9 a t\u0159et\u00ed\/dal\u0161\u00ed reinfekce).",
+    "dc:source": "Informa\u010dn\u00ed syst\u00e9m infek\u010dn\u00edch nemoc\u00ed (ISIN) - https:\/\/www.uzis.cz\/index.php?pg=registry-sber-dat--ochrana-verejneho-zdravi--informacni-system-infekcni-nemoci, kontakt: helpdesk.registry@uzis.cz",
+    "dcat:keyword": [
+        "koronavirus",
+        "covid-19",
+        "nov\u00e9 p\u0159\u00edpady",
+        "reinfekce"
+    ],
+    "dc:publisher": {
+        "schema:name": "\u00daZIS \u010cR",
+        "schema:url": {
+            "@id": "https:\/\/www.uzis.cz\/"
+        }
+    },
+    "dc:license": {
+        "@id": "https:\/\/data.gov.cz\/podm\u00ednky-u\u017eit\u00ed\/voln\u00fd-p\u0159\u00edstup\/"
+    },
+    "dc:modified": {
+        "@value": "2022-12-24T11:02:26+01:00",
+        "@type": "xsd:dateTime"
+    },
+    "tableSchema": {
+        "columns": [
+            {
+                "name": "id",
+                "titles": "id",
+                "datatype": "string"
+            },
+            {
+                "name": "tyden_od",
+                "titles": "tyden_od",
+                "datatype": "string",
+                "dc:description": "Datum prvn\u00edho dne v dan\u00e9m t\u00fddnu."
+            },
+            {
+                "name": "tyden_do",
+                "titles": "tyden_do",
+                "datatype": "string",
+                "dc:description": "Datum posledn\u00edho dne v dan\u00e9m t\u00fddnu."
+            },
+            {
+                "name": "tyden",
+                "titles": "tyden",
+                "datatype": "string",
+                "dc:description": "Po\u0159ad\u00ed dan\u00e9ho t\u00fddne v roce."
+            },
+            {
+                "name": "nove_pripady_celkem",
+                "titles": "nove_pripady_celkem",
+                "datatype": "integer",
+                "dc:description": "Celkov\u00fd po\u010det nov\u011b naka\u017een\u00fdch"
+            },
+            {
+                "name": "primoinfekce",
+                "titles": "primoinfekce",
+                "datatype": "integer",
+                "dc:description": "Po\u010det nov\u011b naka\u017een\u00fdch, kte\u0159\u00ed v minulosti neprod\u011blali nemoc COVID-19."
+            },
+            {
+                "name": "prvni_reinfekce",
+                "titles": "prvni_reinfekce",
+                "datatype": "integer",
+                "dc:description": "Po\u010det nov\u011b naka\u017een\u00fdch, u kter\u00fdch byla prok\u00e1zan\u00e1 n\u00e1kaza COVID-19 pr\u00e1v\u011b jednou."
+            },
+            {
+                "name": "druhe_reinfekce",
+                "titles": "druhe_reinfekce",
+                "datatype": "integer",
+                "dc:description": "Po\u010det nov\u011b naka\u017een\u00fdch, u kter\u00fdch byla prok\u00e1zan\u00e1 n\u00e1kaza COVID-19 dvakr\u00e1t."
+            },
+            {
+                "name": "treti_a_dalsi_reinfekce",
+                "titles": "treti_a_dalsi_reinfekce",
+                "datatype": "integer",
+                "dc:description": "Po\u010det nov\u011b naka\u017een\u00fdch, u kter\u00fdch byla prok\u00e1zan\u00e1 n\u00e1kaza COVID-19 t\u0159ikr\u00e1t, nebo v\u00edcekr\u00e1t."
+            }
+        ]
+    }
+}

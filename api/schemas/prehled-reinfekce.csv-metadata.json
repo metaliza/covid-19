@@ -1,0 +1,47 @@
+{
+    "@context": [
+        "http:\/\/www.w3.org\/ns\/csvw",
+        {
+            "@language": "cs"
+        }
+    ],
+    "url": "prehled-reinfekce.csv",
+    "dc:title": "COVID-19: P\u0159ehled reinfekc\u00ed",
+    "dc:description": "Datov\u00e1 sada obsahuj\u00edc\u00ed denn\u00ed p\u0159ehled suspektn\u00edch p\u0159\u00edpad\u016f reinfekc\u00ed COVID-19, kter\u00e9 jsou v souladu s doporu\u010den\u00edm ECDC ur\u010deny na z\u00e1klad\u011b nov\u011b pozitivn\u00edho PCR testu s minim\u00e1ln\u00edm odstupem 60 dn\u016f od p\u0159edchoz\u00ed potvrzen\u00e9 pozitivity a nejsou zahrnuty v souhrnn\u00e9m po\u010dtu potvrzen\u00fdch p\u0159\u00edpad\u016f. Suspektn\u00ed p\u0159\u00edpady jsou n\u00e1sledn\u011b validov\u00e1ny a hl\u00e1\u0161eny do mezin\u00e1rodn\u00ed datab\u00e1ze.",
+    "dc:source": "Informa\u010dn\u00ed syst\u00e9m infek\u010dn\u00edch nemoc\u00ed (ISIN) - https:\/\/www.uzis.cz\/index.php?pg=registry-sber-dat--ochrana-verejneho-zdravi--informacni-system-infekcni-nemoci, kontakt: helpdesk.registry@uzis.cz",
+    "dcat:keyword": [
+        "koronavirus",
+        "covid-19",
+        "reinfekce",
+        "ECDC"
+    ],
+    "dc:publisher": {
+        "schema:name": "\u00daZIS \u010cR",
+        "schema:url": {
+            "@id": "https:\/\/www.uzis.cz\/"
+        }
+    },
+    "dc:license": {
+        "@id": "https:\/\/data.gov.cz\/podm\u00ednky-u\u017eit\u00ed\/voln\u00fd-p\u0159\u00edstup\/"
+    },
+    "dc:modified": {
+        "@value": "2022-12-28T05:49:42+01:00",
+        "@type": "xsd:dateTime"
+    },
+    "tableSchema": {
+        "columns": [
+            {
+                "name": "datum",
+                "titles": "datum",
+                "datatype": "string",
+                "dc:description": "Datum, ke kter\u00e9mu jsou suspektn\u00ed reinfekce evidov\u00e1ny v centr\u00e1ln\u00edm syst\u00e9mu."
+            },
+            {
+                "name": "60_dnu",
+                "titles": "60_dnu",
+                "datatype": "integer",
+                "dc:description": "Po\u010det suspektn\u00edch p\u0159\u00edpad\u016f reinfekc\u00ed COVID-19 k dan\u00e9mu dni."
+            }
+        ]
+    }
+}

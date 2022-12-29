@@ -1,0 +1,110 @@
+{
+    "@context": [
+        "http:\/\/www.w3.org\/ns\/csvw",
+        {
+            "@language": "cs"
+        }
+    ],
+    "url": "pozitivni-pripady.csv",
+    "dc:title": "COVID-19: P\u0159ehled p\u0159\u00edpad\u016f s prod\u011blan\u00fdm onemocn\u011bn\u00edm",
+    "dc:description": "Datov\u00e1 sada posktuje \u0159\u00e1dkov\u00e1 anonymizovan\u00e1 data o p\u0159\u00edpadech infekce onemocn\u011bn\u00ed Covid-19, v\u010detn\u011b informac\u00ed o o\u010dkov\u00e1n\u00ed. Ka\u017ed\u00fd \u0159\u00e1dek p\u0159ehledu uv\u00e1d\u00ed popis p\u0159\u00edpadu (po\u0159ad\u00ed infekce \u010dlov\u011bka, hospitalizace a hospitalizace na jednotce intenzivn\u00ed p\u00e9\u010de (JIP)) podle bydli\u0161t\u011b osoby, pohlav\u00ed a v\u011bkov\u00e9 kategorie). V sad\u011b jsou uvedeny datumy ukon\u010den\u00ed o\u010dkov\u00e1n\u00ed a aplikace posiluj\u00edc\u00ed d\u00e1vky.",
+    "dc:source": "Informa\u010dn\u00ed syst\u00e9m infek\u010dn\u00edch nemoc\u00ed (ISIN) - https:\/\/www.uzis.cz\/index.php?pg=registry-sber-dat--ochrana-verejneho-zdravi--informacni-system-infekcni-nemoci, kontakt: helpdesk.registry@uzis.cz",
+    "dcat:keyword": [
+        "koronavirus",
+        "covid-19",
+        "pozitivn\u00ed",
+        "hospitalizace",
+        "jip",
+        "vakcinace",
+        "o\u010dkov\u00e1n\u00ed"
+    ],
+    "dc:publisher": {
+        "schema:name": "\u00daZIS \u010cR",
+        "schema:url": {
+            "@id": "https:\/\/www.uzis.cz\/"
+        }
+    },
+    "dc:license": {
+        "@id": "https:\/\/data.gov.cz\/podm\u00ednky-u\u017eit\u00ed\/voln\u00fd-p\u0159\u00edstup\/"
+    },
+    "dc:modified": {
+        "@value": "2022-12-28T05:50:24+01:00",
+        "@type": "xsd:dateTime"
+    },
+    "tableSchema": {
+        "columns": [
+            {
+                "name": "id_zaznamu",
+                "titles": "id_zaznamu",
+                "datatype": "integer",
+                "dc:description": "Generovan\u00fd identifik\u00e1tor z\u00e1znamu na z\u00e1klad\u011b data pozitivity."
+            },
+            {
+                "name": "kraj_nuts_kod",
+                "titles": "kraj_nuts_kod",
+                "datatype": "string",
+                "dc:description": "Identifik\u00e1tor kraje podle klasifikace NUTS 3, ve kter\u00e9m se nach\u00e1z\u00ed bydli\u0161t\u011b dan\u00e9 osoby."
+            },
+            {
+                "name": "okres_lau_kod",
+                "titles": "okres_lau_kod",
+                "datatype": "string",
+                "dc:description": "K\u00f3d okresu podle klasifikace LAU 1, ve kter\u00e9m se nach\u00e1z\u00ed bydli\u0161t\u011b dan\u00e9 osoby."
+            },
+            {
+                "name": "okres_nazev",
+                "titles": "okres_nazev",
+                "datatype": "string",
+                "dc:description": "N\u00e1zev okresu podle klasifikace LAU 1, ve kter\u00e9m se nach\u00e1z\u00ed bydli\u0161t\u011b dan\u00e9 osoby."
+            },
+            {
+                "name": "epizoda",
+                "titles": "epizoda",
+                "datatype": "integer",
+                "dc:description": "Po\u0159ad\u00ed infekce dan\u00e9 osoby."
+            },
+            {
+                "name": "datum_pozitivity",
+                "titles": "datum_pozitivity",
+                "datatype": "string",
+                "dc:description": "Datum, k n\u011bmu\u017e byla osoba ur\u010dena jako pozitivn\u00ed na COVID-19."
+            },
+            {
+                "name": "vekova_skupina",
+                "titles": "vekova_skupina",
+                "datatype": "string",
+                "dc:description": "Rozd\u011blen\u00ed o\u010dkovan\u00fdch osob podle v\u011bku do skupin (0\u20134 let, 5\u20139 let, 10\u201314 let, 15\u201319 let, 20\u201324 let, 25\u201329 let, 30\u201334 let, 35\u201339 let, 40\u201344 let, 45\u201349 let, 50\u201354 let, 55\u201359 let, 60\u201364 let, 65\u201369 let, 70\u201374 let, 75\u201379 let, 80\u201384 let, 85\u201389 let, 90\u201394 let, 95\u201399 let, 100+ let)."
+            },
+            {
+                "name": "pohlavi",
+                "titles": "pohlavi",
+                "datatype": "string",
+                "dc:description": "Pohlav\u00ed dan\u00e9 osoby."
+            },
+            {
+                "name": "dokoncene_ockovani",
+                "titles": "dokoncene_ockovani",
+                "datatype": "string",
+                "dc:description": "Datum pod\u00e1n\u00ed ukon\u010dovac\u00ed d\u00e1vky o\u010dkov\u00e1n\u00ed."
+            },
+            {
+                "name": "posilujici_davka",
+                "titles": "posilujici_davka",
+                "datatype": "string",
+                "dc:description": "Datum, kdy byla pod\u00e1na posiluj\u00edc\u00ed d\u00e1vka o\u010dkov\u00e1n\u00ed."
+            },
+            {
+                "name": "hospitalizace",
+                "titles": "hospitalizace",
+                "datatype": "boolean",
+                "dc:description": "Informace o tom, zda byl \u010dlov\u011bk do 60 dn\u016f od pozitivity hospitalizov\u00e1n s COVID-19."
+            },
+            {
+                "name": "jip",
+                "titles": "jip",
+                "datatype": "boolean",
+                "dc:description": "Informace o tom, zda byl \u010dlov\u011bk do 60 dn\u016f od pozitivity hospitalizov\u00e1n s COVID-19 a byl alespo\u0148 jeden den hospitalizov\u00e1n na JIP."
+            }
+        ]
+    }
+}
