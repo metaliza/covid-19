@@ -29,7 +29,7 @@
         "@id": "https:\/\/data.gov.cz\/podm\u00ednky-u\u017eit\u00ed\/voln\u00fd-p\u0159\u00edstup\/"
     },
     "dc:modified": {
-        "@value": "2022-01-19T04:47:04+01:00",
+        "@value": "2023-02-21T05:39:21+01:00",
         "@type": "xsd:dateTime"
     },
     "tableSchema": {
@@ -182,6 +182,12 @@
                 "titles": "bez_registrace",
                 "datatype": "boolean",
                 "dc:description": "Ur\u010den\u00ed, zda vyk\u00e1zan\u00e9 o\u010dkov\u00e1n\u00ed dan\u00e9 osoby (bez ohledu na po\u0159ad\u00ed d\u00e1vky) bylo provedeno bez p\u0159edchoz\u00ed registrace v centr\u00e1ln\u00edm syst\u00e9mu (typicky ve walk-in centrech)."
+            },
+            {
+                "name": "stav_vakcinace",
+                "titles": "stav_vakcinace",
+                "datatype": "string",
+                "dc:description": "Atribut ozna\u010duje stupe\u0148 o\u010dkov\u00e1n\u00ed u dan\u00e9 osoby. Zna\u010d\u00ed, zda se jedn\u00e1 o zahajovac\u00ed d\u00e1vku (Za), ukon\u010dovac\u00ed d\u00e1vku (Uk), mezid\u00e1vku u v\u00edced\u00e1vkov\u00fdch o\u010dkovac\u00edch sch\u00e9mat (M), posiluj\u00edc\u00ed d\u00e1vku (P1, P2, P3), nebo d\u00e1vku mimo standardn\u00ed o\u010dkovac\u00ed sch\u00e9ma (J)."
             }
         ]
     }
