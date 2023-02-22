@@ -89,9 +89,11 @@ if [ -d "$target" -a -d "$ccTarget" ]; then
 
   # ====== temp block for csv ======
   
+#   download kapacity-intenzivni-pece-zdravotnicke-zarizeni-10-2021 ${DIP_URL_BASE}/kapacity-intenzivni-pece-zdravotnicke-zarizeni-10-2021 csv false $downloadMeta
+  
   download zakladni-prehled ${DISEASE_URL_BASE}/zakladni-prehled csv false $downloadMeta
   download osoby ${DISEASE_URL_BASE}/osoby csv false $downloadMeta
-  download nakaza ${DISEASE_URL_BASE}/nakaza csv false false
+#   download nakaza ${DISEASE_URL_BASE}/nakaza csv false false
   download vyleceni ${DISEASE_URL_BASE}/vyleceni csv false $downloadMeta
   download umrti ${DISEASE_URL_BASE}/umrti csv false $downloadMeta
   download hospitalizace ${DISEASE_URL_BASE}/hospitalizace csv true $downloadMeta           # copy
@@ -105,22 +107,28 @@ if [ -d "$target" -a -d "$ccTarget" ]; then
   download incidence-7-14-okresy ${DISEASE_URL_BASE}/incidence-7-14-okresy csv false $downloadMeta
   download nakazeni-reinfekce ${DISEASE_URL_BASE}/nakazeni-reinfekce csv true $downloadMeta           # copy
   download nakazeni-hospitalizace-testy ${DISEASE_URL_BASE}/nakazeni-hospitalizace-testy csv false $downloadMeta
+  download prehled-reinfekce ${DISEASE_URL_BASE}/prehled-reinfekce csv false $downloadMeta
+  download pozitivni-pripady ${DISEASE_URL_BASE}/pozitivni-pripady csv false $downloadMeta
+  download nakazeni-reinfekce-tyden ${DISEASE_URL_BASE}/nakazeni-reinfekce-tyden csv false $downloadMeta
+  download reinfekce-denni-prehled ${DISEASE_URL_BASE}/reinfekce-denni-prehled csv false $downloadMeta
   
-  download testy ${DISEASE_URL_BASE}/testy csv false false
+#   download testy ${DISEASE_URL_BASE}/testy csv false false
   download testy-pcr-antigenni ${DISEASE_URL_BASE}/testy-pcr-antigenni csv false $downloadMeta
   download kraj-okres-testy ${DISEASE_URL_BASE}/kraj-okres-testy csv false $downloadMeta
   download prehled-odberovych-mist ${DISEASE_URL_BASE}/prehled-odberovych-mist csv false $downloadMeta
   download testy-kraje ${DISEASE_URL_BASE}/testy-kraje csv false $downloadMeta
   
   download ockovani ${DISEASE_URL_BASE}/ockovani csv false $downloadMeta
-#   download ockovaci-mista ${DISEASE_URL_BASE}/ockovaci-mista csv false $downloadMeta
+  download ockovaci-mista ${DISEASE_URL_BASE}/ockovaci-mista csv false $downloadMeta
   download prehled-ockovacich-mist ${DISEASE_URL_BASE}/prehled-ockovacich-mist csv false $downloadMeta
-  download ockovani-spotreba ${DISEASE_URL_BASE}/ockovani-spotreba csv false $downloadMeta
-  download ockovani-distribuce ${DISEASE_URL_BASE}/ockovani-distribuce csv false $downloadMeta
+#   download ockovani-spotreba ${DISEASE_URL_BASE}/ockovani-spotreba csv false $downloadMeta
+#   download ockovani-distribuce ${DISEASE_URL_BASE}/ockovani-distribuce csv false $downloadMeta
   download ockovani-distribuce-sklad ${DISEASE_URL_BASE}/ockovani-distribuce-sklad csv false $downloadMeta
-#   download ockovani-registrace ${DISEASE_URL_BASE}/ockovani-registrace csv false $downloadMeta
+  download ockovani-registrace ${DISEASE_URL_BASE}/ockovani-registrace csv false $downloadMeta
   download ockovani-rezervace ${DISEASE_URL_BASE}/ockovani-rezervace csv false $downloadMeta
-  download ockovani-profese ${DISEASE_URL_BASE}/ockovani-profese csv link $downloadMeta
+  download ockovani-profese ${DISEASE_URL_BASE}/ockovani-profese csv link $downloadMeta                     # link temporary to target
+  download ockovani-demografie ${DISEASE_URL_BASE}/ockovani-demografie csv false $downloadMeta
+  download ockovani-geografie ${DISEASE_URL_BASE}/ockovani-geografie csv false $downloadMeta
   download ockovaci-zarizeni ${DISEASE_URL_BASE}/ockovaci-zarizeni csv false $downloadMeta
   download ockovani-zakladni-prehled ${DISEASE_URL_BASE}/ockovani-zakladni-prehled csv false $downloadMeta
   download ockovani-pozitivni ${DISEASE_URL_BASE}/ockovani-pozitivni csv false $downloadMeta
@@ -133,13 +141,13 @@ if [ -d "$target" -a -d "$ccTarget" ]; then
   download ockovani-jip-tyden ${DISEASE_URL_BASE}/ockovani-jip-tyden csv false $downloadMeta
   download ockovani-orp ${DISEASE_URL_BASE}/ockovani-orp csv false $downloadMeta
   download ockovani-pozitivni-hospitalizovani ${DISEASE_URL_BASE}/ockovani-pozitivni-hospitalizovani csv false $downloadMeta
-  download prioritni-skupiny ${DISEASE_URL_BASE}/prioritni-skupiny csv false $downloadMeta
+#   download prioritni-skupiny ${DISEASE_URL_BASE}/prioritni-skupiny csv false $downloadMeta
   
   download pomucky ${DISEASE_URL_BASE}/pomucky csv false false
   
-  download kapacity-intenzivni-pece-vlna-2 ${DIP_URL_BASE}/kapacity-intenzivni-pece-vlna-2 csv false $downloadMeta
-  download kapacity-intenzivni-pece-zdravotnicke-zarizeni ${DIP_URL_BASE}/kapacity-intenzivni-pece-zdravotnicke-zarizeni csv false $downloadMeta
-  download kapacity-intenzivni-pece-zdravotnicke-zarizeni-04-2021 ${DIP_URL_BASE}/kapacity-intenzivni-pece-zdravotnicke-zarizeni-04-2021 csv false $downloadMeta
+#   download kapacity-intenzivni-pece-vlna-2 ${DIP_URL_BASE}/kapacity-intenzivni-pece-vlna-2 csv false $downloadMeta
+#   download kapacity-intenzivni-pece-zdravotnicke-zarizeni ${DIP_URL_BASE}/kapacity-intenzivni-pece-zdravotnicke-zarizeni csv false $downloadMeta
+#   download kapacity-intenzivni-pece-zdravotnicke-zarizeni-04-2021 ${DIP_URL_BASE}/kapacity-intenzivni-pece-zdravotnicke-zarizeni-04-2021 csv false $downloadMeta
   download kapacity-intenzivni-pece-zdravotnicke-zarizeni-10-2021 ${DIP_URL_BASE}/kapacity-intenzivni-pece-zdravotnicke-zarizeni-10-2021 csv false $downloadMeta
 
   # 'obce' in old format
