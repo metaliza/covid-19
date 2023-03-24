@@ -38,7 +38,7 @@ cumulativeCode=0
 # @param $1 code - exit code of download process
 # @param $2 filename - name of file (simple name) which caused the error
 #
-# @Depracated
+# @Deprecated
 function errDownload() {
   echo "Error during donwload: $2" >&2
 }
